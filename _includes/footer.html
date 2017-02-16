@@ -1,0 +1,169 @@
+{% if page.url contains "/client/" or page.url contains "/work/" or page.url contains "/portfolio/" %}
+<div class="footer">
+    <div class="call-out-contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-7 col-sm-offset-1 content-wrapper">
+            <p><a href="/contact/">Have a project you'd like to discuss with me?</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endif %}
+
+<script src="/assets/js/nprogress.min.js"></script>
+<script>
+NProgress.start();
+</script>
+{% js main %}
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.dkkma.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '8']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<script>
+  NProgress.set(0.2);
+</script>
+{% js extra async %}
+<script>
+  NProgress.set(0.4);
+</script>
+<script>
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70
+  });
+  document.querySelector('.toggle-button').addEventListener('click', function() {
+    slideout.toggle();
+  });
+</script>
+<script>
+$(window).load(function () {
+  exLink.init({
+    protocols: ['http', 'https'],
+    filetypes: ['pdf', 'xls', 'docx', 'doc', 'ppt', 'pptx'],
+    noFollow: true,
+    linkWarning: false,
+    gaTrackLabel: 'External Links'
+  });
+});
+</script>
+{% if page.url contains "/client/" %}
+<script async src="https://api.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js"></script>
+<link async href="https://api.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css" rel="stylesheet"/>
+<script>
+$(window).load(function () {
+  mapboxgl.accessToken = "pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw";
+  var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/dark-v9',
+      center: [{{ page.map }}],
+      zoom: 6
+  });
+});
+</script>
+{% elsif page.url contains "/work/" %}
+<script type="text/javascript">
+$(window).load(function () {
+  ;( function( $ ) {
+    $( '.swipebox' ).swipebox();
+  } )( jQuery );
+});
+</script>
+{% elsif page.url contains "/gist/" %}
+<script type="text/javascript">
+$(window).load(function () {
+  ;( function( $ ) {
+    $( '.swipebox' ).swipebox();
+  } )( jQuery );
+});
+</script>
+{% elsif page.url contains "/contact/" %}
+<script>
+$(window).load(function () {
+  (function()
+  {
+    var NowMoment = moment.utc().add(1, 'hours').format('LT');
+    var eDisplayMoment = document.getElementById('time');
+    eDisplayMoment.innerHTML = NowMoment;
+  })();
+});
+</script>
+<script>
+$(window).load(function () {
+  $.simpleWeather({
+    location: 'Berlin',
+    unit: 'c',
+    success: function(weather) {
+      html = ', '+weather.text+' and only '+weather.temp+'&deg;'+weather.units.temp+' outside.';
+      $("#weather").html(html);
+    },
+    error: function(error) {}
+  });
+});
+</script>
+<script async src="https://api.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js"></script>
+<link async href="https://api.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css" rel="stylesheet"/>
+<script>
+$(window).load(function () {
+  mapboxgl.accessToken = "pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw";
+  var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/dark-v9',
+      center: [{{ page.map }}],
+      zoom: 2
+  });
+});
+</script>
+<script>
+  $('#contact').collapse({
+	  toggle: false
+	})
+</script>
+{% endif %}
+<script>
+  NProgress.set(0.6);
+</script>
+<script type="text/javascript">
+  var url = window.location.href;
+  var msg = document.getElementById('welcome_referral');
+  if( url.search( 'client_referral' ) > 0 ) {
+      msg.style.display = "block";
+  }
+</script>
+<script>
+$(document).ready(function() {
+  bitcoinprices.init({
+    url: "https://api.bitcoinaverage.com/ticker/all",
+    marketRateVariable: "24h_avg",
+    currencies: ["USD", "EUR", "CNY"],
+    symbols: {
+        "BTC": "<i class='fa fa-btc'></i>"
+    },
+    defaultCurrency: "EUR",
+    ux : {
+        clickPrices : true,
+        menu : true,
+        clickableCurrencySymbol:  true
+    },
+    jQuery: jQuery,
+    priceAttribute: "data-btc-price",
+    priceOrignalCurrency: "BTC"
+  });
+});
+</script>
+<script>
+  $(window).on("load", function() {
+    NProgress.done();
+  });
+</script>

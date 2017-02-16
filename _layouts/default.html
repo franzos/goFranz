@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include header.html %}
+
+  <body>
+    {% include mobile-nav.html %}
+    {% if page.bg %}
+    <main id="panel" class="bg{% if page.layout == "index" %} index{% endif %} bg-{{ page.bg }}">
+    {% else %}
+    <main id="panel" class="bg{% if page.layout == "index" %} index{% endif %}">
+    {% endif %}
+      <div class="wrapper">
+        {% include nav.html %}
+        {{ content }}
+        {% include footer.html %}
+      </div>
+    </main>
+  </body>
+</html>

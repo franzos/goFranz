@@ -1,0 +1,8 @@
+<ul class="projects small clean">
+{% for work in site.work reversed %}
+{% if page.client == work.client %}
+  <li class="project"><a href="{{ work.url }}"><intro>Open project</intro>
+  <br>{{ work.title }}<country>{{ work.client }}</country></a></li>
+{% endif %}
+{% endfor %}
+</ul>

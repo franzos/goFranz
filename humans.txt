@@ -1,0 +1,14 @@
+---
+title:
+---
+
+/* OWNER */
+Owner: Franz Geffke
+Site: m [at] f-a.nz, https://f-a.nz/
+Location: Don't track, ask.
+
+/* SITE */
+Last update: {{ site.time }}
+Language: English / German
+Doctype: HTML5
+IDE: Atom, Photoshop

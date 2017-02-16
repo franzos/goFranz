@@ -1,0 +1,23 @@
+{% if page.url contains "work" %}
+<div id="welcome_referral">
+  <div class="container-fluid">
+    <p>Welcome, my name is Franz Geffke. I help organizations such as <b>{{ page.client }}</b> succeed online: Increase reach and revenue, sharpen customer focus and lower aquisition cost - If you think it's time to grow, <a href="/contact/">contact me</a>.</p>
+    <p><small>You are here because you clicked on the referral link on my clients website: {{ page.web }}.</small></p>
+  </div>
+</div>
+{% endif %}
+{% if page.url contains "client" %}
+<div id="welcome_referral">
+  <div class="container-fluid">
+    <p>Welcome, my name is Franz Geffke. I help organizations such as <b>{{ page.title }}</b> succeed online: Increase reach and revenue, sharpen customer focus and lower aquisition cost - If you think it's time to grow, <a href="/contact/">contact me</a>.</p>
+    <p><small>You are here because you clicked on the referral link on my clients website: {{ page.web }}.</small></p>
+  </div>
+</div>
+{% endif %}
+{% if page.url contains "contact" %}
+<div id="welcome_referral">
+  <div class="container-fluid">
+    <p>Welcome, you're here because you visited the contact page on my portfolio piece dkkma.com (DKKMA). If you're interested in working with me, please get in touch below.</p>
+  </div>
+</div>
+{% endif %}

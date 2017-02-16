@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/franzs
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://f-a.nz
+  * I am franzs (https://keybase.io/franzs) on keybase.
+  * I have a public key ASBNploV8AZ4KBdkd6puO7lRJHuEtJIJ8UaiYRAo7t7EPQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120d961fd51e2747239881430dcff500c1f881366ecf65a6babb098268f90d896b60a",
+            "host": "keybase.io",
+            "kid": "01204da65a15f0067828176477aa6e3bb951247b84b49209f146a2611028eedec43d0a",
+            "uid": "1f457cd9295c68d87eb03bb6720c3619",
+            "username": "franzs"
+        },
+        "service": {
+            "hostname": "f-a.nz",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1486668764,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1486668751,
+        "hash": "a3110fc841320a1cd82bb38e3df647a2d75223686fa0fa9071a42ac3d08747feb00f44753065e38c80b8bef818c07470b338db68cca534d144b87771ba87dc88",
+        "seqno": 861766
+    },
+    "prev": "4cfd756421a5abd25d789f05c5f7ec5bf58367d32dbf0a77b25c87b471513682",
+    "seqno": 27,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgTaZaFfAGeCgXZHeqbju5USR7hLSSCfFGomEQKO7exD0Kp3BheWxvYWTFAu17ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZDk2MWZkNTFlMjc0NzIzOTg4MTQzMGRjZmY1MDBjMWY4ODEzNjZlY2Y2NWE2YmFiYjA5ODI2OGY5MGQ4OTZiNjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNGRhNjVhMTVmMDA2NzgyODE3NjQ3N2FhNmUzYmI5NTEyNDdiODRiNDkyMDlmMTQ2YTI2MTEwMjhlZWRlYzQzZDBhIiwidWlkIjoiMWY0NTdjZDkyOTVjNjhkODdlYjAzYmI2NzIwYzM2MTkiLCJ1c2VybmFtZSI6ImZyYW56cyJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiZi1hLm56IiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTgifSwiY3RpbWUiOjE0ODY2Njg3NjQsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ4NjY2ODc1MSwiaGFzaCI6ImEzMTEwZmM4NDEzMjBhMWNkODJiYjM4ZTNkZjY0N2EyZDc1MjIzNjg2ZmEwZmE5MDcxYTQyYWMzZDA4NzQ3ZmViMDBmNDQ3NTMwNjVlMzhjODBiOGJlZjgxOGMwNzQ3MGIzMzhkYjY4Y2NhNTM0ZDE0NGI4Nzc3MWJhODdkYzg4Iiwic2Vxbm8iOjg2MTc2Nn0sInByZXYiOiI0Y2ZkNzU2NDIxYTVhYmQyNWQ3ODlmMDVjNWY3ZWM1YmY1ODM2N2QzMmRiZjBhNzdiMjVjODdiNDcxNTEzNjgyIiwic2Vxbm8iOjI3LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQNU+/kv+x84RHersK+Udkvx3GTZqq7ER89rw2KGW8JKKMaQSqYnyOHbYI2OXXJmIUxKMxxSrPTSMYERK1vTIRguoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCCAI8TP6vUj1Cabbw/I6fYEIMOxPWki4eWG8scjqQYM0aN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/franzs
+
+==================================================================

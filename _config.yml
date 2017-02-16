@@ -1,0 +1,46 @@
+title: Franz Geffke
+description:
+baseurl: ""
+url: "https://f-a.nz"
+bitcoin: 1MfbsSexrSb74ZDQPqMrKGzZhRubHZBkCB
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+  - jekyll-assets
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+- gist
+- dev
+- projects
+- clients
+- testimonials
+
+collections:
+  gist:
+    output: true
+    permalink: /gist/:path/
+  dev:
+    output: true
+    permalink: /dev/:path/
+  work:
+    output: true
+    permalink: /work/:path/
+  clients:
+    output: true
+    permalink: /client/:path/
+  testimonials:
+    output: false
+
+assets:
+  sources:
+    - /assets/css
+    - /assets/js
+    - /assets/swipebox/css
+    - /assets/swipebox/js

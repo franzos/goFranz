@@ -1,0 +1,13 @@
+---
+title: Work
+layout: page-clean
+bg: molly-porter
+permalink: /work/
+---
+
+<ul class="projects clean">
+{% for work in site.work reversed %}
+  <li class="project"><a href="{{ work.url }}"><intro>Open project</intro>
+  <br>{{ work.title }}<country>{% for client in site.clients %}{% if work.client == client.client %}{{ client.country }}{% endif %}{% endfor %}</country></a></li>
+{% endfor %}
+</ul>

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="container-fluid content-wrapper">
+  <div class="row">
+    <div class="col-sm-11 col-sm-offset-1">
+      <h1>{{ page.title }}</h1>
+      <div class="content">
+        {{ content }}
+        {% if page.url contains "work"%}
+          {% for client in site.clients %}
+          {% if page.client == client.client %}
+            <a href="{{ client.url }}"><intro><- return to client profile</a>
+          {% endif %}
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

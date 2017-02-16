@@ -1,0 +1,37 @@
+{% if page.url contains "/client/" %}
+
+  <p class="title">Client</p>
+
+  <img class="grayscale client-logo" src="/assets/images/clients/{{ page.client }}.png">
+
+  <p><b>{{ page.title }}</b>
+  <br><a href="http://{{ page.web }}" target="_blank">{{ page.web }}</a>
+  <br>{{ page.city }}, {{ page.country }}</p>
+  <div id="map"></div>
+  <p>{{ page.introduction }}</p>
+  <!--
+    <div class="sidebar-nav">
+      <p class="title second">Related</p>
+      <ul>
+      {% for project in site.projects reversed | sort: 'date' %}
+        <li><a href="{{ project.url }}">{{ project.client }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+  -->
+{% elsif page.url contains "/contact/" %}
+  <p class="title">My Details</p>
+  <p><b>Franz Geffke</b>
+  <br><a href="mailto:m@f-a.nz">m@f-a.nz</a></p>
+  <p>It's <time id="time"></time><weather id="weather"></weather></p>
+  <div id="map"></div>
+
+  <div class="sidebar-nav">
+    <p class="title second">Notes & Links</p>
+    <ul>
+      <li><a href="/bitcoin-payments/">Bitcoin payments</a></li>
+      <li><a href="/dev/">Developer notes</a></li>
+      <li><a href="/privacy/">Privacy</a></li>
+    </ul>
+  </div>
+{% endif %}

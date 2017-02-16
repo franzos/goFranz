@@ -1,0 +1,9 @@
+{% for testimonial in site.testimonials reversed %}
+{% if page.client == testimonial.client %}
+  <h2>Testimonial</h2>
+  <blockquote>
+  <span>{{ testimonial.content }}</span>
+  <footer>- {{ testimonial.title }} <cite title="Source Title">{{ testimonial.position }}</cite></footer>
+  </blockquote>
+{% endif %}
+{% endfor %}

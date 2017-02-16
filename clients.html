@@ -1,0 +1,22 @@
+---
+title: Clients
+layout: page-clean
+bg: mark-asthoff
+permalink: /clients/
+---
+
+<div class="clients visible-lg visible-md">
+  {% for client in site.clients reversed %}
+  <div class="logo-wrapper">
+    <a class="logo" style="background-image:url(/assets/images/clients/{{ client.client }}.png)" href="{{ client.url }}"></a>
+  </div>
+  {% endfor %}
+</div>
+
+<ul class="projects">
+{% for client in site.clients reversed %}
+  <li class="project"><a href="{{ client.url }}"><intro>{{ client.introduction }}</intro>
+  <br>
+  <br>{{ client.title }}<country>{{ client.country }}</country></a></li>
+{% endfor %}
+</ul>
