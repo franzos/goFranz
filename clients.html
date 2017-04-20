@@ -1,7 +1,7 @@
 ---
 title: Clients
-layout: page-clean
-bg: mark-asthoff
+layout: page_clean
+bg: pattern_015
 permalink: /clients/
 ---
 
@@ -15,7 +15,7 @@ permalink: /clients/
 
 <ul class="projects">
 {% for client in site.clients reversed %}
-  <li class="project"><a href="{{ client.url }}"><intro>{{ client.introduction }}</intro>
+  <li class="project{% if forloop.last %} last{% endif %}"><a {% if forloop.last %}class="last" {% endif %}href="{{ client.url }}"><intro>{{ client.introduction }}</intro>
   <br>
   <br>{{ client.title }}<country>{{ client.country }}</country></a></li>
 {% endfor %}

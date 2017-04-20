@@ -2,6 +2,73 @@ html {
   overflow-y: scroll;
 }
 
+/* overpass-300 - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/overpass-v1-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Overpass Light'), local('Overpass-Light'),
+       url('../assets/fonts/overpass-v1-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/overpass-v1-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/overpass-v1-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/overpass-v1-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/overpass-v1-latin-300.svg#Overpass') format('svg'); /* Legacy iOS */
+}
+/* overpass-regular - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/overpass-v1-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Overpass Regular'), local('Overpass-Regular'),
+       url('../assets/fonts/overpass-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/overpass-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/overpass-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/overpass-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/overpass-v1-latin-regular.svg#Overpass') format('svg'); /* Legacy iOS */
+}
+/* overpass-italic - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../assets/fonts/overpass-v1-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('Overpass Italic'), local('Overpass-Italic'),
+       url('../assets/fonts/overpass-v1-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/overpass-v1-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/overpass-v1-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/overpass-v1-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/overpass-v1-latin-italic.svg#Overpass') format('svg'); /* Legacy iOS */
+}
+/* overpass-700 - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/overpass-v1-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Overpass Bold'), local('Overpass-Bold'),
+       url('../assets/fonts/overpass-v1-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/overpass-v1-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/overpass-v1-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/overpass-v1-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/overpass-v1-latin-700.svg#Overpass') format('svg'); /* Legacy iOS */
+}
+
+/* overpass-mono-regular - latin */
+@font-face {
+  font-family: 'Overpass Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/overpass-mono-v2-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Overpass Mono Regular'), local('OverpassMono-Regular'),
+       url('../assets/fonts/overpass-mono-v2-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/overpass-mono-v2-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/overpass-mono-v2-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/overpass-mono-v2-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/overpass-mono-v2-latin-regular.svg#OverpassMono') format('svg'); /* Legacy iOS */
+}
+
 body {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -10,6 +77,14 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Overpass', sans-serif;
   color: #000;
+  background-size: 320px;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.index {
+  background-size: cover;
 }
 
 body.bright {
@@ -26,11 +101,14 @@ body.dark {
   max-width: 1200px;
 }
 
+.container-fluid.entry {
+}
+
 .content, .sidebar {
   padding-bottom: 80px;
 }
 
-.content p, .content a, .content h1, .content h2, .content h3, .content h4, .content table, .content ul, .content ol {
+.content p, .content a, .content h1, .content h2, .content h3, .content h4, .content table, .content ul, .content ol, .content code, .content .highlighter-rouge {
   max-width:600px;
 }
 
@@ -44,7 +122,7 @@ p, a, li, {
 
 a:hover {
   color: #fff;
-  background-color: #550092;
+  background-color: #451668;
   text-decoration: none;
 }
 
@@ -70,20 +148,43 @@ p, li {
   line-height: 1.5em;
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #bcbcbc;
+  font-size: 0.9em;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #bcbcbc;
+  font-size: 0.9em;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #bcbcbc;
+  font-size: 0.9em;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #bcbcbc;
+  font-size: 0.9em;
+}
+
 ul {
   margin-bottom:1em;
 }
 
 a {
-  color: #550092;
-  padding:0px 2px 0px 2px;
-  margin: 0px -2px 0px -2px;
+  color: #451668;
+  padding: 2px 2px 2px 2px;
+  margin: -2px -2px -2px -2px;
 }
 
 .footer {
   bottom: 0;
-  position: absolute;
   width: 100%;
+  background-color: #000;
+  background-image: url(/assets/bg/footer.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  left: 0;
+  position: relative;
 }
 
 .grayscale {
@@ -165,7 +266,7 @@ caption {
 }
 
 .magicsauce {
-  color: #550092;
+  color: #451668;
 }
 
 img.franz {
@@ -218,7 +319,7 @@ img.franz {
 
 .nav ul li a:hover, .nav ul li.nl:hover {
   color:#fff;
-  background-color: #550092;
+  background-color: #451668;
 }
 
 .nav ul li.logo a {
@@ -243,11 +344,12 @@ img.franz {
   padding: 6px 12px;
   font-size: 1em;
   font-weight:700;
-  line-height: 1.42857143;
-  color: #550092;
+  line-height: 1.6em;
+  color: #451668;
   background-color: #fff;
   background-image: none;
-  border: 2px solid #d8d8d8;
+  border:0px;
+  border-bottom: 2px solid #d8d8d8;
   border-radius: 2px;
   -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
@@ -257,8 +359,8 @@ img.franz {
 .form-control:focus {
     border-color: #000;
     outline: 0;
-    -webkit-box-shadow: inset 0 14px 1px rgba(0, 0, 0, 0.02), 0 0 6px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 14px 1px rgba(0, 0, 0, 0.02), 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.02), 0 0 4px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.02), 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 .form-group textarea.form-control {
@@ -283,17 +385,18 @@ img.franz {
   user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0px;
   background-color: #fff;
 }
 
 .btn:hover {
-  background-color: #550092;
+  background-color: #451668;
   color: #fff;
 }
 
 .contact-form {
   max-width: 400px;
+  margin-top:40px;
 }
 
 label {
@@ -304,7 +407,6 @@ label {
 }
 
 #panel {
-  background-color: #FFF;
 }
 
 #panel.bg-home .content {
@@ -312,12 +414,12 @@ label {
 }
 
 #nprogress .spinner-icon {
-  border-top-color: #550092;
-  border-left-color: #550092;
+  border-top-color: #451668;
+  border-left-color: #451668;
 }
 
 #nprogress .bar {
-  background: #550092;
+  background: #451668;
 }
 
 .slideout-open #menu {
@@ -336,10 +438,11 @@ label {
 
 #menu ul li a, #menu ul li.nl {
   display: block;
-  padding: 14px;
+  padding: 14px 14px 14px 14px;
   color: #000;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.8);
+  margin: 0px 0px 0px 0px;
 }
 
 #menu ul li a:hover {
@@ -351,7 +454,18 @@ label {
 }
 
 #menu ul li.nl.bt {
-  padding-bottom: 2em;
+}
+
+.wrapper.title {
+}
+
+.wrapper.page {
+  min-height:100vh;
+  background-color: #fff;
+}
+
+.wrapper.entry {
+  min-height: 50vh;
 }
 
 .slideout-open .wrapper li.logo {
@@ -409,9 +523,13 @@ ul.projects li {
 
 }
 
+ul.projects li.project.last {
+  padding-bottom: 40px;
+}
+
 ul.projects li a {
   color: #fff;
-  background-color: #bbb;
+  background-color: #451668;
   font-size:1.2em;
   font-weight: 700;
   text-transform: uppercase;
@@ -421,6 +539,10 @@ ul.projects li a {
   margin-bottom: 40px;
 }
 
+ul.projects li a.last {
+  margin-bottom: 0px;
+}
+
 ul.projects li a:hover {
   color: #000;
   background-color: #000;
@@ -428,15 +550,19 @@ ul.projects li a:hover {
 
 ul.projects li a country {
   float: right;
-  color: #d4d4d4;
+  color: #5e2986;
+}
+
+.projects.clean {
+  margin: 0px;
 }
 
 ul.projects.clean li a intro {
-  color: #bbb;
+  color: #451668;
 }
 
 ul.projects li a:hover country {
-  color: #550092;
+  color: #451668;
 }
 
 ul.projects li a:hover intro {
@@ -485,33 +611,40 @@ ul.projects li a intro {
 
 .sidebar-nav ul li a:hover {
   color: #fff;
-  background-color: #550092;
+  background-color: #451668;
 }
 
 .call-out-contact {
-  background-color: #000;
-  color: #fff;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .call-out-contact a {
   color: #fff;
+  font-size: 2vw;
+  background-color: #451668;
+  padding:10px;
+}
+
+.call-out-contact a:hover {
+  color: #451668;
+  background-color: #fff;
 }
 
 code, kbd, pre, samp {
-  background-color: #000;
-  padding-left: 2px;
-  padding-right: 2px;
+  font-family: 'Overpass Mono', monospace;
   color: #fff;
+  padding: 2px;
+  background-color: #000;
 }
 
 .content img {
   max-width: 100%;
 }
 
-#welcome_referral {
+#welcome_referral, #internal_referral {
   background-color: #000;
   color: #fff;
   font-weight: bold;
@@ -521,12 +654,12 @@ code, kbd, pre, samp {
   display: none;
 }
 
-#welcome_referral a {
+#welcome_referral a, #internal_referral a {
   color: #fff;
 }
 
-#welcome_referral small {
-  color: #550092;
+#welcome_referral small, #internal_referral small {
+  color: #451668;
 }
 
 .clients {
@@ -584,13 +717,13 @@ table td, table th {
 
 
 blockquote {
-  padding: 8px;
+  font-size: 1em;
+  padding: 24px;
   margin: 5px;
   background-image: url(../assets/images/openquote.png);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 24px;
-  text-indent: 23px;
 }
 blockquote span {
 	display: block;
@@ -613,33 +746,43 @@ blockquote footer {
   color: #fff;
   background: #000;
 }
-
-a::-moz-selection {
+a::-moz-selection, code::-moz-selection {
   color: #fff;
-  background: #550092;
+  background: #451668;
 }
-a::selection {
+a::selection, code::selection {
   color: #fff;
-  background: #550092;
+  background: #451668;
+}
+
+ul.pagination {
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 40px;
+}
+
+ul.pagination li {
+  float:left;
+}
+
+ul.pagination li a {
+
 }
 
 @media (min-width: 750px) {
   .wrapper {
-    min-height:100vh;
     margin-right: 160px;
     background-color: #fff;
     position: relative;
   }
   #panel {
-    background-color: #000;
   }
   #panel.bg {
-    background-size: 320px;
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
   }
   #panel.bg-home .wrapper {
+    background-color: transparent;
+  }
+  #panel.index .wrapper {
     background-color: transparent;
   }
   #panel.bg.index {
@@ -649,6 +792,9 @@ a::selection {
 @media (max-width:786px) {
   .image-wrapper a.thumbnail {
     height:160px;
+  }
+  .content, .sidebar {
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 920px) {
@@ -671,8 +817,6 @@ a::selection {
     background-color: #fff;
   }
   #panel.bg.index {
-    background-image:url(../assets/bg/home.jpg);
-    background-size: cover;
   }
   ul.projects li a {
     font-size: 1em;
@@ -695,13 +839,16 @@ a::selection {
     padding: 3em;
   }
   ul.projects li a:hover {
-    color: #550092;
+    color: #451668;
+  }
+  .slideout-panel {
+    background-color: #fff;
   }
 }
 @media (min-width: 920px) {
   .nav ul li a, .nav ul li.nl {
-    padding: 0px 2px 0px 2px;
-    margin: 20px 18px 20px 18px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
   }
   ul.projects li a {
     padding: 60px 20px 20px 96px;
@@ -735,7 +882,7 @@ a::selection {
 }
 @media (min-width: 1400px) {
   .content img, .content .image-wrapper, .content a {
-    max-width:1000px;
+    max-width:900px;
   }
   .image-wrapper a.thumbnail {
     height:500px;

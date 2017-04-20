@@ -1,7 +1,7 @@
 ---
 title: About Me
 layout: page
-bg: california-far
+bg: pattern_029
 permalink: /about/
 ---
 
@@ -41,4 +41,4 @@ __Here's some of what I do:__
 - Marketing Automation, ERP and CRM implementation for SME
 - Investor pitch, seed funding advice, product placement
 
-Check out my [ongoing and past work](/work/).
+Check out my [portfolio](/portfolio/).

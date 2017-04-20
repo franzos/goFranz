@@ -1,5 +1,5 @@
 ---
-layout: page-sidebar
+layout: page_sidebar
 title:  "GEW UK"
 date:   2014-06-01 00:00:00 +0200
 client: "gewuk"

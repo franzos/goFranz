@@ -17,9 +17,7 @@ If you don't even want me to know that you're visiting, you can opt-out below:
 
 ## External
 
-This website also connects to two, external API's. Firstly to retrieve the current Bitcoin Price and secondly, to download the required set of fonts to make this site look as good as it does.
+This website also connects to two, external API's. Firstly to retrieve the current Bitcoin Price and secondly, to download the required set of maps to make this site look as good as it does.
 
 1. Bitcoin Price: [api.bitcoinaverage.com](https://api.bitcoinaverage.com/ticker/all)
-2. Fonts: [fonts.googleapis.com](https://fonts.googleapis.com)
-
-I'm working to replace Google Fonts.
+2. Maps: [api.mapbox.com](https://api.mapbox.com)

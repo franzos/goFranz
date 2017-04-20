@@ -1,5 +1,5 @@
 ---
 title: f-a.nz - Business Growth Mentor
 layout: index
-bg: home
+bg: home_6
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page-sidebar
+layout: page_sidebar
 title:  "Q-Windows Malaysia"
 date:   2017-01-01 00:00:00 +0200
 client: "qwindows"

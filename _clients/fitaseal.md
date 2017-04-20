@@ -1,5 +1,5 @@
 ---
-layout: page-sidebar
+layout: page_sidebar
 title:  "Fit-A-Seal GmbH"
 date:   2016-06-01 00:00:00 +0200
 client: "fitaseal"

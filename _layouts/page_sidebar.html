@@ -1,0 +1,23 @@
+---
+layout: ly_page
+---
+
+{% include welcome_referral.html %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-7 col-sm-offset-1 content-wrapper">
+      <div class="content">
+        {% if page.url contains "client" %}
+          {{ content }}
+          {% include client-projects.html %}
+          {% include client-testimonial.html %}
+        {%  else %}
+          {{ content }}
+        {% endif %}
+      </div>
+    </div>
+    <div class="col-sm-3 col-sm-offset-1 sidebar">
+      {% include page-sidebar-nav.html %}
+    </div>
+  </div>
+</div>

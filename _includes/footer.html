@@ -1,10 +1,10 @@
 {% if page.url contains "/client/" or page.url contains "/work/" or page.url contains "/portfolio/" %}
 <div class="footer">
     <div class="call-out-contact">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-7 col-sm-offset-1 content-wrapper">
-            <p><a href="/contact/">Have a project you'd like to discuss with me?</a></p>
+          <div class="col-sm-12">
+            <p><a href="/contact/?internal_referral">Have a project you'd like to discuss with me?</a></p>
           </div>
         </div>
       </div>
@@ -22,13 +22,14 @@ NProgress.start();
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="//stats.dkkma.com/";
+    var u="https://stats.dkkma.com/";
     _paq.push(['setTrackerUrl', u+'piwik.php']);
     _paq.push(['setSiteId', '8']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
+<noscript><p><img src="https://stats.dkkma.com/piwik.php?idsite=8&rec=1" style="border:0;" alt="" /></p></noscript>
 <script>
   NProgress.set(0.2);
 </script>
@@ -93,7 +94,7 @@ $(window).load(function () {
 $(window).load(function () {
   (function()
   {
-    var NowMoment = moment.utc().add(1, 'hours').format('LT');
+    var NowMoment = moment.utc().add(2, 'hours').format('LT');
     var eDisplayMoment = document.getElementById('time');
     eDisplayMoment.innerHTML = NowMoment;
   })();
@@ -125,11 +126,6 @@ $(window).load(function () {
   });
 });
 </script>
-<script>
-  $('#contact').collapse({
-	  toggle: false
-	})
-</script>
 {% endif %}
 <script>
   NProgress.set(0.6);
@@ -140,6 +136,16 @@ $(window).load(function () {
   if( url.search( 'client_referral' ) > 0 ) {
       msg.style.display = "block";
   }
+  {% if page.url contains "/contact/" %}
+  var msg = document.getElementById('internal_referral');
+  if( url.search( 'internal_referral' ) > 0 ) {
+      msg.style.display = "block";
+  }
+  var msg = document.getElementById('introduction');
+  if( url.search( 'internal_referral' ) > 0 ) {
+      msg.style.display = "none";
+  }
+  {% endif %}
 </script>
 <script>
 $(document).ready(function() {

@@ -1,5 +1,21 @@
 ---
-layout: default
+layout: ly_page
 ---
 
-{{ content }}
+<div class="container-fluid content-wrapper">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="content">
+        {% include welcome_referral.html %}
+        {{ content }}
+        {% if page.url contains "work"%}
+          {% for client in site.clients %}
+          {% if page.client == client.client %}
+            <a href="{{ client.url }}"><intro><- return to client profile</a>
+          {% endif %}
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

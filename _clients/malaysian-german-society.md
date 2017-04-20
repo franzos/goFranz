@@ -1,5 +1,5 @@
 ---
-layout: page-sidebar
+layout: page_sidebar
 title:  "Malaysian German Society"
 date:   2016-02-01 00:00:00 +0200
 client: "mgs"

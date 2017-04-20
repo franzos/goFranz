@@ -7,9 +7,16 @@ bitcoin: 1MfbsSexrSb74ZDQPqMrKGzZhRubHZBkCB
 # Build settings
 markdown: kramdown
 theme: minima
+
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page/:num/'
+
 gems:
   - jekyll-feed
   - jekyll-assets
+  - jekyll-paginate-v2
 
 exclude:
   - Gemfile
@@ -25,16 +32,16 @@ collections:
 collections:
   gist:
     output: true
-    permalink: /gist/:path/
+    permalink: /gist/:title/
   dev:
     output: true
-    permalink: /dev/:path/
+    permalink: /dev/:title/
   work:
     output: true
-    permalink: /work/:path/
+    permalink: /work/:title/
   clients:
     output: true
-    permalink: /client/:path/
+    permalink: /client/:title/
   testimonials:
     output: false
 

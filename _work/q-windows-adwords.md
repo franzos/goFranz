@@ -12,9 +12,13 @@ Google Adwords has allowed Q-Windows Malaysia to actively pursue new clients and
 
 ## What I did
 
-{% include project-image.html image="q-windows-06.jpg" %}
+{% include project-image.html caption="Landing Page: January 2017" image="q-windows-06.jpg" %}
 
-In an effort to capture leads from Google Adwords and Facebook ads, I have come up with a custom landing page. To maximize efficiency, we're A/B testing the landing page to maximize conversion rate and thus maximize our ROI on ads.
+In an effort to capture leads from Google Adwords and Facebook ads, I have come up with a custom landing page.
+
+{% include project-image.html caption="Landing Page: April 2017" image="q-windows-13.jpg" %}
+
+To maximize efficiency, I'm using analytics, heat mapping and traditional A/B testing to increase our conversion rate and thus maximize ROI on ad-spend. In the meantime, I'm reducing overall Google Adwords campaign cost and ensure we target the right audience, with matching keywords.
 
 ## The effects
 

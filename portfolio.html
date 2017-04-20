@@ -1,57 +1,58 @@
 ---
 title: Portfolio
-layout: page-clean
-bg: mark-asthoff_02
+layout: ly_flex
+bg: pattern_071
 permalink: /portfolio/
 ---
 
 {% for client in site.clients reversed %}
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-7 col-sm-offset-1 content-wrapper">
-      <div class="content">
+<div class="wrapper entry">
+  <div class="container-fluid entry">
+    <div class="row">
+      <div class="col-sm-7 col-sm-offset-1 content-wrapper">
+        <div class="content">
 
-        <h2>{{ client.title }}</h2>
+          <h2>{{ client.title }}</h2>
 
-        <ul class="projects small clean">
-        {% for work in site.work reversed %}
-        {% if client.client == work.client %}
-          <li class="project"><a href="{{ work.url }}"><intro>Open project</intro>
-          <br>{{ work.title }}<country>{{ work.client }}</country></a></li>
-        {% endif %}
-        {% endfor %}
-        </ul>
+          <ul class="projects small clean">
+          {% for work in site.work reversed %}
+          {% if client.client == work.client %}
+            <li class="project"><a href="{{ work.url }}"><intro>Open project</intro>
+            <br>{{ work.title }}<country>{{ work.client }}</country></a></li>
+          {% endif %}
+          {% endfor %}
+          </ul>
 
-        {% for testimonial in site.testimonials reversed %}
-        {% if client.client == testimonial.client %}
-          <h3>Testimonial</h3>
-          <blockquote>
-          <span>{{ testimonial.content }}</span>
-          <footer>- {{ testimonial.title }} <cite title="Source Title">{{ testimonial.position }}</cite></footer>
-          </blockquote>
-        {% endif %}
-        {% endfor %}
+          {% for testimonial in site.testimonials reversed %}
+          {% if client.client == testimonial.client %}
+            <h3>Testimonial</h3>
+            <blockquote>
+            <span>{{ testimonial.content }}</span>
+            <footer>- {{ testimonial.title }} <cite title="Source Title">{{ testimonial.position }}</cite></footer>
+            </blockquote>
+          {% endif %}
+          {% endfor %}
+
+        </div>
+      </div>
+      <div class="col-sm-3 col-sm-offset-1 sidebar">
+
+          <p class="title">Client</p>
+
+          <img class="grayscale client-logo" src="/assets/images/clients/{{ client.client }}.png">
+
+          <p><b>{{ client.title }}</b>
+          <br><a href="http://{{ client.web }}" target="_blank">{{ client.web }}</a>
+          <br>{{ client.city }}, {{ client.country }}</p>
+
+          <div class="map-static">
+            <img class="img-responsive" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ client.map }},6,0/200x100@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw&logo=false">
+          </div>
+
+          <p>{{ client.introduction }}</p>
 
       </div>
     </div>
-    <div class="col-sm-3 col-sm-offset-1 sidebar">
-
-        <p class="title">Client</p>
-
-        <img class="grayscale client-logo" src="/assets/images/clients/{{ client.client }}.png">
-
-        <p><b>{{ client.title }}</b>
-        <br><a href="http://{{ client.web }}" target="_blank">{{ client.web }}</a>
-        <br>{{ client.city }}, {{ client.country }}</p>
-
-        <div class="map-static">
-          <img class="img-responsive" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ client.map }},6,0/200x100@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw&logo=false">
-        </div>
-
-        <p>{{ client.introduction }}</p>
-
-    </div>
   </div>
 </div>
-<hr>
 {% endfor %}

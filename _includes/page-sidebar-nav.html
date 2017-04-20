@@ -7,7 +7,7 @@
   <p><b>{{ page.title }}</b>
   <br><a href="http://{{ page.web }}" target="_blank">{{ page.web }}</a>
   <br>{{ page.city }}, {{ page.country }}</p>
-  <div id="map"></div>
+  <div id="map" data-slideout-ignore></div>
   <p>{{ page.introduction }}</p>
   <!--
     <div class="sidebar-nav">
@@ -24,14 +24,17 @@
   <p><b>Franz Geffke</b>
   <br><a href="mailto:m@f-a.nz">m@f-a.nz</a></p>
   <p>It's <time id="time"></time><weather id="weather"></weather></p>
-  <div id="map"></div>
+  <div id="map" data-slideout-ignore></div>
 
   <div class="sidebar-nav">
     <p class="title second">Notes & Links</p>
     <ul>
-      <li><a href="/bitcoin-payments/">Bitcoin payments</a></li>
-      <li><a href="/dev/">Developer notes</a></li>
+      <li><a href="/pgp/">My Public key (PGP)</a></li>
       <li><a href="/privacy/">Privacy</a></li>
     </ul>
+
+    <p class="title second">Bitcoin Node</p>
+    <code>node_btc.f-a.nz
+    <br>(54.93.180.33)</code>
   </div>
 {% endif %}

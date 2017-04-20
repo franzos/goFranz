@@ -1,13 +1,35 @@
 ---
 title: Gist
-layout: page-clean
-bg: henning-witzel
+layout: page_clean
+bg: pattern_018
 permalink: /gist/
+pagination:
+  enabled: true
+  collection: gist
+  sort_reverse: true
+  sort_field: 'date'
 ---
 
 <ul class="projects clean">
-{% for gist in site.gist %}
+{% for gist in paginator.posts %}
   <li class="project"><a href="{{ gist.url }}"><intro>Read gist</intro>
   <br>{{ gist.title }}<country>{{ gist.categories | join: ", " }}</country></a></li>
 {% endfor %}
 </ul>
+
+{% if paginator.total_pages > 1 %}
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    {% if paginator.next_page %}
+    <li>
+      <a class="btn" href="{{ paginator.next_page_path | prepend: site.baseurl }}" aria-label="Next">Older</a>
+    </li>
+    {% endif %}
+    {% if paginator.previous_page %}
+    <li>
+      <a class="btn" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" aria-label="Previous">Newer</a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>
+{% endif %}
