@@ -3,9 +3,11 @@ layout: post
 title:  "The 4 Stages of a Successful Inbound Marketing Campaign"
 date:   2015-05-09 08:00:00
 category:
-  - Inbound Marketing
+  - marketing
+  - business
+  - growth
 tags:
-  - 'Inbound Marketing'
+  - 'inbound marketing'
 excerpt: "Here's how you make sure that your tweets are seen and reach the maximum number of people."
 cover: inbound-marketing-4-step-how-to-guide.jpg
 newsletter: true

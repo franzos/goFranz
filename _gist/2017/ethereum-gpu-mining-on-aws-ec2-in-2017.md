@@ -1,13 +1,18 @@
 ---
 title: "Ethereum GPU mining on AWS EC2 in 2017"
-layout: page
+layout: post
 source:
-date: 2017-01-01 00:00:00 +0200
-categories:
-- mining
-- test
+date: 2017-02-03 08:00:00 +0200
+category:
+  - Cryptocurrency
+tags:
+  - crypto
+  - mining
+  - aws
+  - ethereum
 bg: ferdinand-stohr
 bg-author: Ferdinand Stohr
+author: Franz Geffke
 ---
 
 Cryptocurrency mining is as popular as ever, as it in theory allows you to turn idle computing resources into a passive income. The problem is, that these days you require extremely powerful, specifically optimized hardware as well as access to very cheap or even free electricity.
@@ -70,3 +75,36 @@ After around a week of EC2 mining, I have now shut down all AWS server. The Spot
 | 2017-02-12T02:21:34 | 3166292    | 3166838  | 2.1          | 0.09638 ETH |
 | 2017-02-12T00:14:57 | 3165750    | 3166277  | 2.1          | 0.09927 ETH |
 | 2017-02-11T22:10:29 | 3165252    | 3165747  | 1.9          | 0.09592 ETH |
+
+<hr>
+
+**Update: 2017-05-22**
+
+As of today, Ethereum is valued at 1 ETH = 173.8 USD. However, due to enormous demand, EC2 spot pricing is nowhere near what I paid in early 2017. **Mining on AWS EC2 is and will remain unprofitable - forever.**
+
+**Monthly cost**: $1860
+<br>**Mining revenue**: $220 _(assuming 44 MH/s)_
+<br>**Profit**: $ -1640
+
+<hr>
+
+**Update: 2017-07-09**
+
+Ethereum dual-mining profitability comparison (late June 2017). Keep in mind that as more miners join the network, and the Ethereum price fluctuates, so will your payout / return of investment.
+
+| Measured       | by Card | by Month | by Month DUAL | total DUAL    | % of Baseline |
+|----------------|---------|----------|---------------|---------------|---------------|
+| SIA            | 5770    | 1154     | 381 €         |               | 46.23%        |
+| ZEC            | 1490.4  | 298.08   | 373 €         |               | 45.23%        |
+| ETH            | 112     | 22.4     | 601 €         |               | 73.02%        |
+| ETH (ZEC) Dual | 104     | 20.8     | 558 €         |               |               |   
+| ZEC (ETH) Dual | 20.2    | 4.04     | 5 €           | 564 €         | 68.41%        |
+| ETH (SIA) Dual | 103     | 20.6     | 553 €         |               |               |
+| SIA (ETH) Dual | 4100    | 820      | 271 €         | 824 €         | 100.00%       |
+| ETH (DEC) Dual | 109     | 21.8     | 585 €         |               |               |
+| DEC (ETH) Dual | 3274    | 654.8    | 164 €         | 749 €         | 90.93%        |
+
+<hr>
+
+Appreciate the time I spend on this? Send a thanks to (ETH):
+*0x031FE3346207DEF2EB9dDc4b19A621a85B554D9f*

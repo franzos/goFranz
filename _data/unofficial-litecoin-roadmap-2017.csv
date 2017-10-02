@@ -1,0 +1,13 @@
+date,news,link1t,link1,link2t,link2
+01.05.2017,Litcoin now works with Bitcoin library for the .NET framework,NBitcoin on Github,https://github.com/MetacoSA/NBitcoin,As promised Litecoin can now be used with NBitcoin with the new nuget package NBitcoin.Litecoin,https://twitter.com/NicolasDorier/status/859139345151909891
+03.05.2017,Coinbase adds support for Litecoin,,
+10.05.2017,SegWit activation on Litecoin (Block 1201536),Notice for Litecoin mining pools regarding Segwit and CSV,https://litecoincore.org/ltc-segwit-pool.pdf
+10.05.2017,mSIGNA adds Litecoin support,mSigna Homepage,https://ciphrex.com/litecoin.php,Twitter,https://twitter.com/Ciphrex/status/862327976368586752
+N/A,Initial production run of Lightning on Litecoin,The Litening Network: Litecoin Support in LND,http://lightning.community/release/software/lnd/lightning/2017/05/03/litening/,Litecoin Has Now Deployed Segregated Witness,http://www.nasdaq.com/article/litecoin-has-now-deployed-segregated-witness-cm787577
+N/A,Lightning Network activation,Part 1 Building a Bidirectional Bitcoin Payment Channel,https://bitcoinmagazine.com/articles/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel-1464710791/
+N/A,Confidential Transactions,Confidential Transaction for Litecoin,https://litecointalk.io/t/confidential-transaction-for-litecoin/69,We're working on Confidential Transaction for a future release of Litecoin.,https://litecointalk.io/t/anonimity-features-zcash-integration/45/5
+N/A,Smart Contracts Solution (MAST),The Next Step to Improve Bitcoin’s Flexibility Scalability and Privacy Is Called MAST,https://bitcoinmagazine.com/articles/the-next-step-to-improve-bitcoin-s-flexibility-scalability-and-privacy-is-called-mast-1476388597/,Twitter,https://twitter.com/johnsonlau01/status/854213772684046337
+N/A,Schnorr signatures,The Power of Schnorr: The Signature Algorithm to Increase Bitcoin's Scale and Privacy,https://bitcoinmagazine.com/articles/the-power-of-schnorr-the-signature-algorithm-to-increase-bitcoin-s-scale-and-privacy-1460642496/
+N/A,TumbleBit,Better Bitcoin Privacy Scalability: Developers Making TumbleBit a Reality,https://bitcoinmagazine.com/articles/better-bitcoin-privacy-scalability-developers-are-making-tumblebit-reality/
+N/A,Port Litecoin to Lamassu ATMs,Core Development Team Release 2016 Roadmap,/assets/content/2017/litecoin-roadmap-2016.pdf
+N/A,LiteVault V2 multi-signature and BTC-LTC conversion,Litevault,https://www.litevault.net/

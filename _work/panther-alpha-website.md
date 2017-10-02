@@ -3,8 +3,11 @@ layout: page
 title:  "Panther Alpha Website"
 date:   2016-07-01 00:00:00 +0200
 client: "panther"
-cover: panther-mpc-01.jpg
 bg: california
+cover: panther-mpc-01.jpg
+tags: "web development"
+introduction: Jekyll powered, static website for Panther Alpha MicroPC.
+featured: true
 ---
 
 {% include project-image.html caption="Homepage" image="panther-mpc-01.jpg" %}
@@ -12,11 +15,11 @@ bg: california
 {% include project-image.html image="panther-mpc-03.jpg" %}
 {% include project-image.html image="panther-mpc-05.jpg" %}
 
-### Website Technology
+### Website technology
 
-The website is completely static.
+This website is powered by Jekyll, a static site generator that compiles raw assets such as Markdown files into a deployment ready website that allows for secure, efficient hosting without PHP, MYSQL or downtime.
 
-- Completely static (no PHP, no MYSQL, no RUBY)
-- Hosted trough AWS CloudFront CDN (99,99999% uptime)
+- Completely static
 - Mobile-first design
+- Hosted on AWS S3, AWS CloudFront CDN (99.9% SLA)
 - Secured by SSL Certificate

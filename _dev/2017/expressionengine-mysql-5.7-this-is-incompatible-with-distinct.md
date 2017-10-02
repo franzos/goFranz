@@ -7,7 +7,11 @@ os:
   - Linux
 source:
 date: 2017-01-01 00:00:00 +0200
-categories: dev
+category:
+  - development
+tags:
+  - 'expression engine'
+  - mysql
 ---
 
 If you've just tried running ExpressionEngine 2.9.2+ on MYSQL 5.7... This is what happened:

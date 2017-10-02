@@ -2,7 +2,11 @@
 layout: post
 title:  "The 20 Largest ExpressionEngine Sites"
 date:   2015-03-18 08:00:00
-category: Development
+category:
+  - development
+tags:
+  - 'expression engine'
+  - development
 excerpt: "All of the 20 largest ExpressionEngine sites are based in the United States."
 cover: the-20-largest-expressionengine-sites-2015.jpg
 author: Franz Geffke

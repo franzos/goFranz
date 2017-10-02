@@ -8,14 +8,70 @@ layout: ly_page
       <div class="content">
         {% include welcome_referral.html %}
         {{ content }}
-        {% if page.url contains "work"%}
-          {% for client in site.clients %}
-          {% if page.client == client.client %}
-            <a href="{{ client.url }}"><intro><- return to client profile</a>
-          {% endif %}
-          {% endfor %}
-        {% endif %}
       </div>
     </div>
   </div>
 </div>
+
+{% if page.url contains "/gist/" or page.url contains "/dev/" %}
+
+<div class="container-fluid content-wrapper">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="content">
+        <div class="inline-section">
+          {% include related.html %}
+        </div>
+        <div class="inline-section">
+          <h2 class="block">Contact the author</h2>
+          <div itemscope itemtype="http://schema.org/Person" class="schema">
+
+            <div class="row">
+              <div class="col-sm-4">
+                <p><a href="https://f-a.nz/" itemprop="author">Franz Geffke</a>
+                <br><a href="mailto:m@f-a.nz" itemprop="email">m@f-a.nz</a> (<a href="/pgp/">public key</a>)</p>
+              </div>
+            </div>
+            <p>Published on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %B %Y"}}</time></p>
+        </div>
+      </div>
+      <div class="inline-section">
+        <h2 class="block">Leave a comment</h2>
+
+          <p class="light">I respect your privacy: Unless you're using Facebook to sign in, no data is exchanged with 3rd party providers. Either way, it'll only take a sec.</p>
+          <div class="talk-comments" id="coral_talk_1743242202202422"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endif %}
+{% if page.url contains "/gistss/" or page.url contains "/devss/" %}
+<!--
+
+<div class="container-fluid open-comments-toggle" id="comments-toggle" data-toggle="collapse" data-target="#open-comments" type="button">
+  <div class="row">
+    <div class="col-sm-7 col-sm-offset-1">
+      <div class="content">
+        <h2>Leave a live comment</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="open-comments" class="container-fluid content-wrapper comments-wrapper collapse">
+  <div class="row">
+    <div class="col-sm-7 col-sm-offset-1">
+      <div class="content" id="comment">
+
+        <p class="light">I respect your privacy: Unless you're using Facebook to sign in, no data is exchanged with 3rd party providers.</p>
+
+        <div id="coral_talk_37484575676122844"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+-->
+{% endif %}

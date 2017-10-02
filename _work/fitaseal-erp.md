@@ -1,10 +1,13 @@
 ---
 layout: page
 title:  "Fit-A-Seal ERP"
-date:   2016-06-01 00:00:00 +0200
+date:   2017-01-02 00:00:00 +0200
 client: "fitaseal"
-cover: fitaseal-01.jpg
+cover: fitaseal-08.jpg
 bg: roman-kraft
+tags: "business intelligence"
+introduction: Powerful, mobile-ready ERP system with email integration.
+featured: true
 ---
 
 ## The challenge
@@ -32,12 +35,10 @@ The online manual features numerous video tutorials and adapts to the size of yo
 - Detailed permission, Franchisee companies, central article registrar
 - Reporting on all process
 
-### Website Technology
-
-The website is completely static.
+### Website technology
 
 - PHP, Python
-- Hosted on AWS, Route53
+- Hosted on AWS EC2, AWS SES, AWS Route53
 - Mobile-ready design
 - Open source
 - Secured by SSL Certificate

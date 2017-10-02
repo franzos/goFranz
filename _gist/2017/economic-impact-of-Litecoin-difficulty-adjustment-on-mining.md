@@ -1,13 +1,17 @@
 ---
 title: "Economic impact of 31% Litecoin difficulty adjustment on mining"
-layout: page
+layout: post
 source:
-date: 2017-04-19 00:00:00 +0200
-categories:
-- mining
-- litecoin
+date: 2017-04-19 08:00:00 +0200
+category:
+  - Cryptocurrency
+tags:
+  - crypto
+  - mining
+  - litecoin
 bg: austin-neill
 bg-author: Austin Neill
+author: Franz Geffke
 ---
 
 In about 19 hours (20/21 April), the Litecoin network difficulty will adjust by approximately 31%. In economic terms, that means that miners will earn roughly 31% less - just what sort of impact will this have on a bigger scale?

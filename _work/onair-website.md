@@ -23,10 +23,9 @@ bg: california
 {% include project-image.html image="onair-05.jpg" %}
 {% include project-image.html image="onair-06.jpg" %}
 
-### Website Technology
+### Website technology
 
-The MGS Website is powered by EllisLab ExpressionEngine 2.
+The On Air website is powered by EllisLab ExpressionEngine 2.
 
 - ExpressionEngine 2
 - Responsive design
-- Secured by SSL Certificate

@@ -14,11 +14,11 @@ bg: roman-kraft
 {% include project-image.html image="fitaseal-05.jpg" %}
 {% include project-image.html image="fitaseal-06.jpg" %}
 
-### Website Technology
+### Website technology
 
-The website is completely static.
+This website is powered by Jekyll, a static site generator that compiles raw assets such as Markdown files into a deployment ready website that allows for secure, efficient hosting without PHP, MYSQL or downtime.
 
-- Completely static (no PHP, no MYSQL, no RUBY)
-- Hosted trough AWS CloudFront CDN (99,99999% uptime)
+- Completely static
 - Mobile-first design
+- Hosted on AWS S3, AWS CloudFront CDN (99.9% SLA)
 - Secured by SSL Certificate

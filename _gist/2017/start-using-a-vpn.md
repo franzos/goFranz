@@ -1,14 +1,18 @@
 ---
 title: "Start using a VPN (with IPv6 support)"
-layout: page
+layout: post
 source:
-date: 2017-01-01 00:00:00 +0200
-categories:
-- privacy
-- security
-- test
+date: 2017-01-01 08:00:00 +0200
+category:
+  - Privacy
+tags:
+  - vpn
+  - privacy
+  - browser
+  - security
 bg: austin-neill
 bg-author: Austin Neill
+author: Franz Geffke
 ---
 
 A VPN connection allows you to access region restricted content such as Netflix, helps circumvent government censorship ("The big firewall") and increases your security and privacy online. What's not to like?

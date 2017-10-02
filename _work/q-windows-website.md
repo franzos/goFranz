@@ -1,10 +1,13 @@
 ---
 layout: page
 title:  "Q-Windows Website"
-date:   2017-01-01 00:00:00 +0200
+date:   2017-01-02 00:00:00 +0200
 client: "qwindows"
-cover: q-windows-01.jpg
+cover: q-windows-08.jpg
 bg: malaysia
+tags: "web development"
+introduction: Modern, responsive product portal for German window manufacturer.
+featured: true
 ---
 
 ## The challenge
@@ -28,6 +31,7 @@ A modern, mobile-friendly audio player allows desktop visitors to compare the no
 This section works like a technical catalog: All window and door types are listed with their individual configuration options.
 
 {% include project-image.html image="q-windows-11.jpg" %}
+{% include project-image.html image="q-windows-14.jpg" %}
 {% include project-image.html image="q-windows-12.jpg" %}
 
 The contact form connects directly to the Q-Windows insightly.com CRM account. All submissions automatically show up on their internal dashboard and a custom tracking plugin allows Q-Windows staff understand where leads came from and what pages they looked at.
@@ -36,11 +40,11 @@ The contact form connects directly to the Q-Windows insightly.com CRM account. A
 
 The website is not only a lot easier to maintain, but also a lot faster. Page load time is down by 65% and time spend browsing is up by 25%.
 
-### Website Technology
+### Website technology
 
-The website is completely static.
+This website is powered by Jekyll, a static site generator that compiles raw assets such as Markdown files into a deployment ready website that allows for secure, efficient hosting without PHP, MYSQL or downtime.
 
-- Completely static (no PHP, no MYSQL, no RUBY)
-- Hosted trough AWS CloudFront CDN (99,99999% uptime)
+- Completely static
 - Mobile-first design
+- Hosted on AWS S3, AWS CloudFront CDN (99.9% SLA)
 - Secured by SSL Certificate

@@ -35,12 +35,11 @@ Event category pages list all upcoming and recent past events. Past events often
 
 The new website features a state of the art library. Visitors can check for the availability of all of the societies books online. Previously the only way to find out whether a book was available or even part of the library was only possible on-site or via phone.
 
-### Website Technology
+### Website technology
 
 The MGS Website is powered by EllisLab ExpressionEngine 2 Core.
 
 - ExpressionEngine 2 Core
 - Running on PHP/Apache trough a NGINX Proxy
-- Dynamic, Javascript based translation
 - Responsive design
 - Secured by SSL Certificate

@@ -1,0 +1,30 @@
+---
+layout: ly_page
+---
+
+<div class="container-fluid content-wrapper resume">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="content">
+        {% include welcome_referral.html %}
+        <div class="page">
+          <div class="contact">
+            <h2>Franz Geffke</h2>
+              <p><a href="mailto:m@f-a.nz">p@f-a.nz</a></p>
+          </div>
+          {{ content }}
+        </div>
+        <h2 id="independent-work">Independent work</h2>
+        {% for client in site.clients reversed %}
+        <h3>{{ client.title }}, <location>{{ client.city }}, {{ client.country }}</location></h3>
+        {% for work in site.work reversed %}
+        {% if client.client == work.client %}
+          <div><date>{{ work.date | date: "%Y" }}</date>
+          <a href="{{ work.url }}"><position>{{ work.title }}</position></a></div>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

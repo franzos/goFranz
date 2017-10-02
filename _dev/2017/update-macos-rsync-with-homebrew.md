@@ -6,7 +6,11 @@ os:
   - macOS
 source: https://stackoverflow.com/questions/30842005/upgrading-rsync-on-os-x-using-homebrew
 date: 2017-01-01 00:00:00 +0200
-categories: dev
+category:
+  - development
+tags:
+  - development
+  - macOS
 ---
 
 Here's a joke: Apple ships 10 year old software with macOS.

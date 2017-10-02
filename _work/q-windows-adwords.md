@@ -1,9 +1,13 @@
 ---
 layout: page
 title:  "Q-Windows Adwords"
-date:   2017-01-01 00:00:00 +0200
+date:   2017-01-02 00:00:00 +0200
 client: "qwindows"
 bg: malaysia
+cover: q-windows-13.jpg
+tags: "growth"
+introduction: "Growth optimization: cost down by 60%, enquiries up by 200%."
+featured: true
 ---
 
 ## The challenge

@@ -6,7 +6,10 @@ os:
   - macOS
 source:
 date: 2017-01-01 00:00:00 +0200
-categories: dev
+category:
+  - troubleshooting
+tags:
+  - macOS
 ---
 
 If you've seen this error more frequently in recent months: Welcome to macOS Sierra and the future of personal computing. What's happening here is, that Gatekeeper, a security feature that's been around since Mac OS X 10.7.5, is a lot more aggressive since Sierra.

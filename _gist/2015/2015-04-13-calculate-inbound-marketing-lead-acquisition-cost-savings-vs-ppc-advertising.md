@@ -3,11 +3,13 @@ layout: post
 title:  "Calculate Inbound Marketing Lead Acquisition Cost Savings vs. PPC Advertising"
 date:   2015-04-13 08:00:00
 category:
-  - Inbound Marketing
-  - Productivity
+  - marketing
+  - advertising
+  - business
+  - growth
 tags:
-  - 'Inbound Marketing'
-  - 'Lead Acquisition Cost'
+  - 'inbound marketing'
+  - 'ppc'
 excerpt: "Easily calculate and compare the cost to acquire a lead via inbound marketing compared to traditional channels such as PPC (pay per click)."
 cover: calculate-inbound-marketing-lead-acquisition-cost-savings-vs-ppc-advertising.jpg
 newsletter: true

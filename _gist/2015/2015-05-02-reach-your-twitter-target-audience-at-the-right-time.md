@@ -3,11 +3,11 @@ layout: post
 title:  "3 Steps: How To Reach Your Twitter Target Audience At The Right Time"
 date:   2015-05-02 08:00:00
 category:
-  - Inbound Marketing
-  - Social Media
+  - marketing
+  - business
 tags:
-  - 'Social Media'
-  - 'Inbound Marketing'
+  - 'social media'
+  - 'inbound marketing'
 excerpt: "Here's how you make sure that your tweets are seen and reach the maximum number of people."
 cover: reach-your-twitter-target-audience-at-the-right-time.jpg
 newsletter: true

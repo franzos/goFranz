@@ -3,6 +3,7 @@ title: Portfolio
 layout: ly_flex
 bg: pattern_071
 permalink: /portfolio/
+welcome:
 ---
 
 {% for client in site.clients reversed %}
@@ -12,7 +13,7 @@ permalink: /portfolio/
       <div class="col-sm-7 col-sm-offset-1 content-wrapper">
         <div class="content">
 
-          <h2>{{ client.title }}</h2>
+          <h2 class="block">{{ client.title }}</h2>
 
           <ul class="projects small clean">
           {% for work in site.work reversed %}
@@ -37,7 +38,7 @@ permalink: /portfolio/
       </div>
       <div class="col-sm-3 col-sm-offset-1 sidebar">
 
-          <p class="title">Client</p>
+          <p class="title clean">Client</p>
 
           <img class="grayscale client-logo" src="/assets/images/clients/{{ client.client }}.png">
 

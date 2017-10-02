@@ -1,10 +1,13 @@
 ---
 layout: page
 title:  "Sky-Hype AG Real Estate Portal"
-date:   2016-01-01 00:00:00 +0200
+date:   2016-01-02 00:00:00 +0200
 client: "skyhype"
 cover: sky-hype-01.jpg
 bg: switzerland
+tags: "web development"
+introduction: Powerful, ExpressionEngine 3 based, worldwide real estate portal.
+featured: true
 ---
 
 ## The challenge
@@ -53,7 +56,7 @@ The custom, PHP based metasearch engine already connects to 8 sources with over 
 - Sweden; booli.com
 - Switzerland; homegate.ch
 
-### Website Technology
+### Website technology
 
 Initially developed on EE 2, Sky-Hype is now powered by EllisLab ExpressionEngine 3.
 

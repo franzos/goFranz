@@ -3,8 +3,11 @@ layout: post
 title:  "Is Facebook an effective marketing tool for your business?"
 date:   2014-01-07 08:00:00
 category:
-- Social Media
-- Inbound Marketing
+  - marketing
+tags:
+  - 'social media'
+  - 'inbound marketing'
+  - twitter
 excerpt: "In a survey published in 2013, 73% of Retail / Wholesale / Consumer Goods companies responded that they have acquired a customer using a lead from Facebook."
 cover: is-facebook-an-effective-marketing-tool-for-your-business.jpg
 ---

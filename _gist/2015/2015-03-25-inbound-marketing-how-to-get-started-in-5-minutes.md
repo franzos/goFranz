@@ -3,11 +3,10 @@ layout: post
 title:  "Inbound Marketing How-To: Getting Started in 5 Minutes"
 date:   2015-03-25 08:00:00
 category:
-  - Social Media
-  - Inbound Marketing
+  - marketing
 tags:
-  - 'Inbound Marketing'
-  - 'How-To'
+  - 'social media'
+  - 'inbound marketing'
 excerpt: "If you are a busy person, and I’m sure you are, this how-to will help you get started with Inbound Marketing without spending too much of your valuable time AND money."
 cover: inbound-marketing-how-to-get-started-in-5-minutes.jpg
 author: Franz Geffke

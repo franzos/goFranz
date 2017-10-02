@@ -3,8 +3,12 @@ layout: post
 title:  "Here's Why Your Own Real Estate Website Doesn't Have To cost a Fortune"
 date:   2015-04-10 08:00:00
 category:
-- Development
-- Business
+  - development
+  - business
+tags:
+  - development
+  - 'expression engine'
+  - 'real estate'
 excerpt: "If you are in the real estate business, you know how important it is to get your properties noticed. With the help of ExpressionEngine, we can built your dream real estate website within your budget."
 cover: your-own-real-estate-website-does-not-have-to-cost-a-fortune-expressionengine-development.jpg
 newsletter: false

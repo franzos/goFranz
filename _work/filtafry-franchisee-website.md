@@ -16,3 +16,12 @@ Filtafry franchisee websites are a powered by a homegrown system based on Jekyll
 - filtafrysuedwest.de
 - filtafry-osnabrueck.de
 - ecofry.de
+
+### Website(s) technology
+
+This website is powered by Jekyll, a static site generator that compiles raw assets such as Markdown files into a deployment ready website that allows for secure, efficient hosting without PHP, MYSQL or downtime.
+
+- Completely static
+- Mobile-first design
+- Hosted on AWS S3, AWS CloudFront CDN (99.9% SLA)
+- Secured by SSL Certificate

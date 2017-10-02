@@ -1,10 +1,17 @@
 ---
-title: "How-To run a UASF Litecoin Node on Ubuntu"
+title: "How-To set-up a UASF / SegWit ready Litecoin node on Ubuntu"
 layout: post
 os:
   - Linux
 date: 2017-04-10 00:00:00 +0200
-categories: dev
+category:
+  - development
+  - cryptocurrency
+tags:
+  - litecoin
+  - development
+  - ubuntu
+  - linux
 ---
 
 ## Minimum Requirements
@@ -105,11 +112,6 @@ Based on this output, we can verify that we're signaling UASF `0.13.2(UASF-SegWi
 #### 7) Open Ports
 
 Finally, make sure that port 8333 is open. There are some great, easy to follow instructions on [bitcoin.org](https://bitcoin.org/en/full-node#enabling-connections).
-
-
-### Comments and donations
-
-If you have a comment / question / idea / run your own node, drop me a mail at [litecoin@f-a.nz](mailto:litecoin@f-a.nz) or send me a tweet [twitter.com/f_anzs](https://twitter.com/f_anzs). For donations, use `LXaRSNPEazHZzZ48YdVYiumV9dvmSeQw3C` (LTC) and `17HXMSFuxbZ4cScKif4fj5QtESz8HdZ7Bo` (BTC).
 
 #### Running nodes
 
