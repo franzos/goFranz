@@ -3,7 +3,7 @@ layout: page
 title:  "Lingel UAE Website"
 date:   2017-07-31 00:00:00 +0200
 client: "lingel"
-cover: q-windows-08.jpg
+cover: lingel-01.jpg
 bg: malaysia
 tags: "web development"
 introduction: Modern, responsive product portal for German window manufacturer.

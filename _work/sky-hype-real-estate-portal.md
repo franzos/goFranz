@@ -3,7 +3,7 @@ layout: page
 title:  "Sky-Hype AG Real Estate Portal"
 date:   2016-01-02 00:00:00 +0200
 client: "skyhype"
-cover: sky-hype-01.jpg
+cover: sky-hype-05.jpg
 bg: switzerland
 tags: "web development"
 introduction: Powerful, ExpressionEngine 3 based, worldwide real estate portal.
@@ -14,7 +14,9 @@ featured: true
 
 Sky-Hype AG approached me with the vision to plan, design, develop and maintain the largest, free property portal in the world. With a powerful metasearch engine and over 100 planned source portals, a huge project!
 
-{% include project-image.html image="sky-hype-01.jpg" %}
+{% include project-image.html caption="January 2017, Homepage" image="sky-hype-01.jpg" %}
+
+{% include project-image.html caption="September 2017, Homepage" image="sky-hype-05.jpg" %}
 
 ## What I did
 
@@ -23,25 +25,32 @@ Sky-Hype AG approached me with the vision to plan, design, develop and maintain 
 - Free real estate listings in over 100 countries
 - Private account area, user profiles, messaging system
 - Listings with up to 10 high-resolution images, drafts
-- Translated in 4 languages, 48 more planned
+- Translated in 10 languages, 48 more planned
 - Metasearch engine with 8 sources, more planned
 - Mobile ready
 
-{% include project-image.html image="sky-hype-04.jpg" %}
+{% include project-image.html image="sky-hype-06.jpg" %}
 
 #### Real estate listings
 
-Sky-Hype allows for easy and free real estate listings in over 100 countries all around the world. It takes less than 3 minutes to register and create the first listing.
+Sky-Hype allows for easy and free real estate listings in over 100 countries all around the world. It takes less than 1 minutes to register and create the first listing.
 
 #### Multi-language
 
-The site's translation is centrally managed and allows for unlimited flexibility. At the moment we're supporting 3 languages with over 48 planned.
+The site's translation is centrally managed and allows for unlimited flexibility. At the moment we're supporting 10 languages with over 48 planned.
 
 - German
 - English
+- Arabic
+- Chinese
+- Greek
+- Spanish
+- French
+- Italian
 - Russian
+- Turkish
 
-{% include project-image.html image="sky-hype-03.jpg" %}
+{% include project-image.html image="sky-hype-07.jpg" %}
 
 #### Metasearch engine
 
