@@ -4,3 +4,4 @@ _site
 .jekyll-metadata
 .DS_Store
 s3_website.yml
+node_modules

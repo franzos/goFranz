@@ -9,13 +9,14 @@ layout: ly_page
         {% include welcome_referral.html %}
         <div class="page">
           <div class="contact">
-            <h2>Franz Geffke</h2>
-              <p>Remote-OK
-              <br>-- Looking --
+            <h2>Franz</h2>
+              <p>Front-End Developer / Growth Marketer
+              <br>Remote (GMT +2)
               <br><a href="mailto:m@f-a.nz">m@f-a.nz</a></p>
           </div>
           {{ content }}
         </div>
+        <a class="print" onclick="window.print();">Print this page</a>
         <h2 id="independent-work">Independent work</h2>
         {% for client in site.clients reversed %}
         <h3>{{ client.title }}, <location>{{ client.city }}, {{ client.country }}</location></h3>

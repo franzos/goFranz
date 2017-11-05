@@ -1,0 +1,120 @@
+<!--
+Firebase, Vue.js 2 and Vuefire: To-Do List
+https://developers.pipedrive.com/docs/api/v1/#!/Persons/get_persons
+-->
+
+<script src="https://unpkg.com/vue"></script>
+<script src="https://gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+
+<div id="demo">
+  <ol>
+    <li v-for="task in tasks" class="task" :key="task['.key']">
+      <span>{{ task.text }}</span>
+      <button v-on:click="removeTask(task)">X</button>
+    </li>
+  </ol>
+  <form id="add" v-on:submit.prevent="addTask">
+    <input type="text" name="addTask" v-model="newTask.text">
+    <input type="submit" value="Add task">
+  </form>
+  <ul class="errors">
+    <li v-show="!validation.text">Task cannot be empty.</li>
+  </ul>
+</div>
+
+<script>
+
+// Replace vuejs-todo-c86c4 with your Firebase domain (ex. vuejs-c86csa4)
+// Set-up Firebase to allow public access (Database Rules, see entry)
+
+var config = {
+  authDomain: "vuejs-todo-c86c4.firebaseapp.com",
+  databaseURL: "https://vuejs-todo-c86c4.firebaseio.com/"
+}
+firebase.initializeApp(config)
+
+var tasksRef = firebase.database().ref('tasks')
+
+var app = new Vue({
+  el: '#demo',
+  data: {
+    newTask: {
+      text: ''
+    }
+  },
+  firebase: {
+    tasks: tasksRef
+  },
+  computed: {
+    validation: function () {
+      return {
+        text: !!this.newTask.text.trim()
+      }
+    },
+    isValid: function () {
+      var validation = this.validation
+      return Object.keys(validation).every(function (key) {
+        return validation[key]
+      })
+    }
+  },
+
+  methods: {
+    addTask: function () {
+      if (this.isValid) {
+        tasksRef.push(this.newTask)
+        this.newTask.text = ''
+      }
+    },
+    removeTask: function (task) {
+      tasksRef.child(task['.key']).remove()
+    }
+  }
+})
+</script>
+
+<style>
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+ol, ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+#demo {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.task {
+  height: 30px;
+  line-height: 30px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  overflow: hidden;
+  transition: all .25s ease;
+}
+
+.task:last-child {
+  border-bottom: 1px solid #eee;
+}
+
+.v-enter, .v-leave-active {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+
+.errors {
+  color: #f00;
+}
+</style>

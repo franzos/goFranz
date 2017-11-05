@@ -1,0 +1,57 @@
+<!--
+Pipedrive API and Vue.js 2: Get all persons
+https://developers.pipedrive.com/docs/api/v1/#!/Persons/get_persons
+-->
+
+<script src="https://unpkg.com/vue"></script>
+
+<div id="demo">
+  <form id="search" v-on:submit.prevent>
+    Enter your Pipedrive API Token <input name="api_token" v-model="api_token">
+    <button v-on:click="fetchData">Set Token and fetch data</button>
+  </form>
+  <ul>
+    <li v-for="person in persons.data">
+      <p><strong>{{ person.name }}</strong>
+      <br>by {{ person.owner_id.name }}</p>
+    </li>
+  </ul>
+</div>
+
+<script>
+var apiURL = 'https://api.pipedrive.com/v1/persons?start=0&api_token='
+
+var demo = new Vue({
+
+  el: '#demo',
+
+  data: {
+    persons: [],
+    name: null,
+    api_token: null
+  },
+
+  methods: {
+
+    fetchData: function () {
+      var xhr = new XMLHttpRequest()
+      var self = this
+      xhr.open('GET', apiURL + self.api_token)
+      xhr.onload = function () {
+        self.persons = JSON.parse(xhr.responseText)
+      }
+      xhr.send()
+    }
+  }
+})
+</script>
+
+<style>
+#demo {
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+li {
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+</style>

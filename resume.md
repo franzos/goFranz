@@ -7,52 +7,57 @@ sitemap:
   exclude: 'yes'
 ---
 
-## Experience
+## Work Experience
 
 For latest projects, kindly refer to my <a href="#independent-work">independent work</a>
 
 ### Sky-Hype AG, <location>St. Gallen, Switzerland</location>
-<date>2017-2018</date>
-<position>Management / Development</position>
+<date>2016-2018</date>
+<position>Full-Stack Developer, Marketing</position>
 
-- Development of Sky-Hype Website (Front- and Backend)
-- Growth and maintenance of international Facebook groups with 100,000+ Users
-- Guidelines for new user outreach, internal communication and development best practice
-- Worldwide user acquisition with initial focus on Europe, Middle-East and South-East Asia
-- Longterm strategy, value proposition and opportunities (Sky-Hype Earth API)
+- Designed and developed front-end code using Bootstrap 4, AJAX, jQuery, Vue.js
+- Implemented i18next based translation with over 10 language pairs
+- Developed backend using ExpressionEngine 3, PHP, MYSQL
+- Build 3rd party API integration for metasearch
+- Implemented and worked with Intercom CRM, Mailtrain for email marketing (SES)
+- Grown international Facebook group with 100,000+ Users
+- Overseen outbound sales to Europe, Middle-East and South-East Asia
 
 ### Panther MPC, Inc., <location>Dover, Delaware</location>
 <date>Winter 2016</date>
-<position>Co-Founder</position>
+<position>Hustler, Front-End Developer</position>
 
+- Designed and developed front-end code using Bootstrap 3, jQuery
+- Worked with Jekyll, Grunt, PHP for custom ranking dashboard
 - Investor pitch, initial funding of $36k
 - Interviewed, negotiated and hired embedded software developer
 - Negotiated terms with China / S-Korea based supplier
-- Acquisition of pre-orders from Europe, Middle-East and South-East Asia
+- Generated pre-orders from Europe, Middle-East and South-East Asia
 - Researched specs for Panther Alpha (ARM board) and Panther OS (ARM Linux)
 - Coordinated development of Panther OS for Panther Alpha
 - Developed and launched $43k Kickstarter campaign
-- Designed, developed all branding, marketing material, website, drip campaign
 
 ### HootSuite Media Inc., <location>London, United Kingdom</location>
 <date>2014–2016</date>
 <position>Community Ambassador</position>
 
+- Extensively used HootSuite to manage client's social media
+- Organised local community meetings to educate about social media management
 - Provided product feedback and regional insights
-- Developed local presence trough events and online advocacy
 
 ### DKKMA Agency, <location>London, United Kingdom</location>
 <date>2014-2016</date>
-<position>Creative Director</position>
+<position>Front-End Developer</position>
 
-- Invent new ideas for branding, advertising campaigns and marketing messages
-- Analyze trends, help clients keep up with change
+- Designed and developed countless of client sites using Bootstrap 3
+- Developed with Wordpress, Bolt CMS, ExpressionEngine, Jekyll
+- Worked on email marketing using Mailtrain, Amazon SES
+- Used Metabase to generate performance dashboard based on Google Analytics / MYSQL
+- Met with clients, negotiated contacts, managed multiple projects trough completion
 - Decide on final copy, final art, finished commercials
-- Manage multiple projects from concept through completion
-- Meet with corporate heads and clients
 
 <date>2013-2014</date>
-<position>Head of Creative</position>
+<position>Marketing</position>
 
 - Managed relationship with key clients
 - Developed new strategies for lead generation (Inbound Marketing)
@@ -61,8 +66,10 @@ For latest projects, kindly refer to my <a href="#independent-work">independent 
 
 ### Q-Windows, <location>Bangkok, Thailand</location>
 <date>2011-2013</date>
-<position>Management</position>
+<position>Marketing / Outbound Sales</position>
 
+- Designed and developed company website using Wordpress, Bootstrap 2
+- Implemented Salesforce CRM, managed outbound sales
 - Development of supplier relationship, negotiation of contracts
 - Acquisition of projects in the region
 - Meet with clients, see projects from initial pitch trough completion
@@ -78,11 +85,9 @@ For latest projects, kindly refer to my <a href="#independent-work">independent 
 <date>Early 2010</date>
 <position>Marketing Assistant</position>
 
-- Ad placement in Chinese magazines
+- Ad design and placement in Chinese magazines
 
 What was Corporate Payment Behaviour in China in 2009? The German Chamber of Commerce in China, Beijing in cooperation with BenCham, the China-Italy Chamber, the French Chamber, and SwissCham Beijing
-
-<br>**References (or writing samples/ transcripts) will be furnished upon request**
 
 ## Education
 
@@ -90,8 +95,18 @@ What was Corporate Payment Behaviour in China in 2009? The German Chamber of Com
 <date>2008–2010</date>
 <position>International Business</position>
 
-- Carpie Diem, Editorial Board Committee
+- Carpie Diem, Member of Editorial Board Committee
 
-### German European School Singapore, <location>Singapore</location>
+### German European School, <location>Singapore</location>
 <date>2006–2008</date>
 <position>High School</position>
+
+## Certification
+
+### Hubspot Academy, <location>Online</location>
+<date>Summer 2015</date>
+<position>Inbound Marketing Certification</position>
+
+- Website optimization
+- Landing page anatomy
+- Inbound sales skills

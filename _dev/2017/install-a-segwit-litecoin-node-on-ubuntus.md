@@ -149,7 +149,7 @@ Finally, make sure that port 8333 is open. There are some great, easy to follow 
 
 #### Running nodes
 
-_Last update: 2017-04-10_
+_Last update: 2017-10-26_
 
-`52.59.225.35` - (BTC) Satoshi:0.13.2(UASF-SegWit-BIP148)
-<br>`54.93.180.33` - (LTC) Satoshi:0.14.0(UASF-SegWit-BIP148)
+`52.59.225.35` - (BTC) Satoshi:0.13.2(UASF-SegWit-BIP148) - *offline*
+<br>`54.93.180.33` - (LTC) Satoshi:0.14.0(UASF-SegWit-BIP148) - *offline*

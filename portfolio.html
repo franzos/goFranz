@@ -38,17 +38,19 @@ welcome:
       </div>
       <div class="col-sm-3 col-sm-offset-1 sidebar">
 
-          <p class="title clean">Client</p>
+          <p class="title clean">{% unless client.client == "independent" %}Client{% endunless %}</p>
 
-          <img class="grayscale client-logo" src="/assets/images/clients/{{ client.client }}.png">
+          {% unless client.client == "independent" %}<img class="grayscale client-logo" src="/assets/images/clients/{{ client.client }}.png">{% endunless %}
 
           <p><b>{{ client.title }}</b>
           <br><a href="http://{{ client.web }}" target="_blank">{{ client.web }}</a>
-          <br>{{ client.city }}, {{ client.country }}</p>
+          {% unless client.client == "independent" %}<br>{{ client.city }}, {{ client.country }}{% endunless %}</p>
 
+          {% unless client.client == "independent" %}
           <div class="map-static">
             <img class="img-responsive" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ client.map }},6,0/200x100@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw&logo=false">
           </div>
+          {% endunless %}
 
           <p>{{ client.introduction }}</p>
 

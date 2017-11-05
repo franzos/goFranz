@@ -13,7 +13,7 @@ pagination:
 <ul class="projects clean">
 {% for gist in paginator.posts %}
   <li class="project"><a href="{{ gist.url }}"><intro>Read gist</intro>
-  <br>{{ gist.title }}<country>{{ gist.categories | join: ", " }}</country></a></li>
+  <br>{{ gist.title }}<country>{{ gist.categories | join: " / " }}</country></a></li>
 {% endfor %}
 </ul>
 

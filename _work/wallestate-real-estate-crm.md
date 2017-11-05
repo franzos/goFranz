@@ -2,7 +2,7 @@
 layout: page
 title:  "Wall.Estate Real Estate CRM"
 date:   2017-08-01 00:00:00 +0200
-client: "skyhype"
+client: "independent"
 cover: wall-estate-01.jpg
 bg: switzerland
 tags: "web development"

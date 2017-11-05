@@ -1,4 +1,4 @@
-<div class="nav">
+<div class="nav hidden-print">
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1">
@@ -9,6 +9,7 @@
           <li class="visible-md visible-lg{% if page.url contains "/portfolio/" or page.url contains "/work/" or page.url contains "/client/" %} active{% endif %}"><a href="/portfolio/">portfolio</a></li>
           <!-- <li class="visible-md visible-lg{% if page.url == "/mutual-investment-fund/" %} active{% endif %}"><a href="/mutual-investment-fund/">fund</a></li> -->
           <li class="visible-md visible-lg{% if page.url contains "/gist/" %} active{% endif %}"><a href="/gist/">gist</a></li>
+          <li class="visible-md visible-lg{% if page.url contains "/dev/" %} active{% endif %}"><a href="/dev/">dev</a></li>
           <li class="visible-md visible-lg{% if page.url == "/contact/" %} active{% endif %}"><a href="/contact/">contact</a></li>
           <!-- <li class="nl visible-md visible-lg">1 BTC: <span data-btc-price="1.0">000.00 EUR</span></li> -->
         </ul>

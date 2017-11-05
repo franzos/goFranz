@@ -1,0 +1,60 @@
+<!--
+Pipedrive API and Vue.js 2: Search
+https://developers.pipedrive.com/docs/api/v1/#!/SearchResults/get_searchResults
+-->
+
+<script src="https://unpkg.com/vue"></script>
+
+<div id="demo">
+  <form id="search" v-on:submit.prevent>
+    Enter your Pipedrive API Token <input name="api_token" v-model="api_token">
+    and search <input name="query" v-model="searchQuery">
+    <button v-on:click="fetchData">Search</button>
+  </form>
+  <ul>
+    <li v-for="result in results.data">
+      <p><strong>{{ result.title }} ({{ result.type }})</strong>
+      <br>Score: {{ result.result_score }}</p>
+    </li>
+  </ul>
+</div>
+
+<script>
+var apiURL = 'https://api.pipedrive.com/v1/searchResults?term='
+
+var demo = new Vue({
+
+  el: '#demo',
+
+  data: {
+    results: [],
+    searchQuery: null,
+    title: null,
+    api_token: null,
+  },
+
+  methods: {
+
+    fetchData: function () {
+      var xhr = new XMLHttpRequest()
+      var self = this
+      xhr.open('GET', apiURL + self.searchQuery + '&start=0&api_token=' + self.api_token)
+      xhr.onload = function () {
+        self.results = JSON.parse(xhr.responseText)
+        console.log(self.results)
+      }
+      xhr.send()
+    }
+  }
+})
+</script>
+
+<style>
+#demo {
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+li {
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+</style>

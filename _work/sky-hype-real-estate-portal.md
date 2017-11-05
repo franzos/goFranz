@@ -73,6 +73,6 @@ Initially developed on EE 2, Sky-Hype is now powered by EllisLab ExpressionEngin
 - Running on PHP/Apache trough a NGINX Proxy
 - Dynamic, Javascript based translation
 - Unlimited image storage on Amazon AWS S3 in Ireland
-- Custom PHP metasearch engine with over 100 connections
+- Custom PHP metasearch engine with over 8 sources
 - Responsive design
 - Secured by SSL Certificate

@@ -8,6 +8,10 @@ bitcoin: 1MfbsSexrSb74ZDQPqMrKGzZhRubHZBkCB
 markdown: kramdown
 theme: minima
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 pagination:
   enabled: true
   per_page: 10
@@ -21,6 +25,12 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - gulpfile.js
+  - package-lock.json
+  - package.json
+  - yarn.lock
+  - src
 
 collections:
 - gist
@@ -44,10 +54,3 @@ collections:
     permalink: /client/:title/
   testimonials:
     output: false
-
-assets:
-  sources:
-    - /assets/css
-    - /assets/js
-    - /assets/swipebox/css
-    - /assets/swipebox/js

@@ -8,6 +8,6 @@ permalink: /dev/
 <ul class="projects clean">
 {% for dev in site.dev reversed %}
   <li class="project"><a href="{{ dev.url }}"><intro>Read entry</intro>
-  <br>{{ dev.title }}<country>{{ dev.category }}</country></a></li>
+  <br>{{ dev.title }}<country>{{ dev.category | join: " / " }}</country></a></li>
 {% endfor %}
 </ul>
