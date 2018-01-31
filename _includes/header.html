@@ -36,14 +36,29 @@
   <style>
   #menu {display: none;}
   </style>
+
   {% if page.layout == "index" %}
     <style>
-    @media (min-width: 750px) {body.bg {background-image: url(/assets/bg/{{ page.bg | remove: "bg-"}}.jpg);}}
-    @media (max-width: 920px) {#panel {background-image: url(/assets/bg/{{ page.bg | remove: "bg-"}}.jpg);background-size: cover;}}
+    body {
+      overflow: hidden;
+    }
+    body.bg {
+      background-color: #f8f8f8
+    }
+    #particles {
+      position: absolute;
+      margin-top: -150px;
+    }
+    .wrapper.nav, .franz {
+      z-index: 100000;
+    }
+    /*
+    @media (min-width: 750px) {}
+    @media (max-width: 920px) {#panel {background-image: url(/assets/bg/{{ page.bg | remove: "bg-"}}.jpg);background-size: cover;}} */
     </style>
   {% else %}
     <style>
-    @media (min-width: 750px) {body.bg {background-image: url(/assets/bg/pattern_071.jpg);}}
+    @media (min-width: 750px) {body.bg {background-image: url(/assets/bg/pattern_004.jpg);}}
     {% unless page.layout == "index" %}@media (max-width: 920px) {#menu {background-image: url(/assets/bg/pattern_005.jpg);}}{% endunless %}
     </style>
   {% endif %}

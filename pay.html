@@ -1,0 +1,110 @@
+---
+title: Online Payment
+layout: page
+bg: mark-asthoff_02
+permalink: /pay/
+---
+
+<div id="loading">
+  <p>Hold on, decoding URL ...
+    <br><small>Please make sure you've copied the complete URL from the Email.</small></p>
+</div>
+
+<div id="app">
+
+  <div v-if="amount > 0">
+    <h2>Welcome back <% name %></h2>
+
+    <p>This page allows you to easily and securely settle your invoice <b><% invoice %></b> online. If you prefer a traditional wire transfer, please refer to the PDF invoice for my bank details.</p>
+
+    <h3>Payment methods</h3>
+
+    <div class="row">
+      <div class="col-sm-4 text-center">
+        <div class="frame">
+          <h4>Credit Card
+            <br><small>(EUR/USD/YEN)</small></h4>
+          <p>You may use Visa, Master or Amex. All payments are processed using Stripe.</p>
+          <p><b><% amount | formatFiat %> Euro</b></p>
+          <button id="customButton" class="btn btn-default">Pay with CC</button>
+          <p><small><em>confirmation within 7 days</em></small></p>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="frame">
+          <h4><i class="cc XRP" title="XRP"></i> Ripple
+            <br><small>(XRP)</small></h4>
+          <p>To settle the payment in XRP, simply transfer the amount to my XRP wallet.</p>
+          <p><b><% amountXRP | formatCrypto %> XRP</b></p>
+          <button v-on:click="collapsedXRP = !collapsedXRP" data-toggle="modal" data-target="#myModal" class="btn btn-default">Pay with XRP</button>
+          <p><small><em>1.5 seconds</em></small></p>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="frame">
+          <h4><i class="cc ETH" title="ETH"></i> Ether
+            <br><small>(ETH)</small></h4>
+          <p>To settle the payment in ETH, simply transfer the amount to my ETH wallet.</p>
+          <p><b><% amountETH | formatCrypto %> ETH</b></p>
+          <button v-on:click="collapsedETH = !collapsedETH" class="btn btn-default">Pay with ETH</button>
+          <p><small><em>10 minutes</em></small></p>
+        </div>
+      </div>
+    </div>
+
+    <transition name="fade">
+      <div class="frame mt20" v-show="collapsedXRP">
+        <div class="form-group">
+          <label for="XRP">Transfer <b><% amountXRP | formatCrypto %> XRP</b> to:</label>
+          <input type="XRP" class="form-control" value="Coming soon ... (use ETH instead)">
+        </div>
+      </div>
+    </transition>
+    <transition name="fade">
+      <div class="frame mt20" v-show="collapsedETH">
+        <div class="form-group">
+          <label for="ETH">Transfer <b><% amountETH | formatCrypto %> ETH</b> to:</label>
+          <input type="ETH" class="form-control" value="0x031FE3346207DEF2EB9dDc4b19A621a85B554D9f">
+        </div>
+      </div>
+    </transition>
+
+    <p class="mt60">All rates are live. If you prefer to pay with another cryptocurrency such as DGD, LTC or BCH, please use <a href="https://shapeshift.io/">Shapeshift</a> asset exchange, and set my ETH or XRP wallet address as destination.</p>
+
+    <p>Learn more about <a href="/cryptocurrencies/">cryptocurrencies</a>.</p>
+
+  </div>
+
+</div>
+
+<style>
+h4, h4 .cc, h4 .cc::before {
+  color: #451668;
+}
+.text-center {
+  text-align: center;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt60 {
+  margin-top: 60px;
+}
+.frame {
+  padding: 40px;
+  background-color: #fff;
+}
+.frame button {
+  background-color: #f8f8f8;
+}
+.frame p.address {
+  padding: 10px;
+  color: #fff;
+  background-color: #000;
+}
+@media (max-width:786px) {
+  .frame {
+    margin-bottom: 20px;
+  }
+}
+</style>

@@ -21,7 +21,7 @@ My work covers a variety of aspects but to summarize, __I help organizations inc
 
 - GEW, UK
 - Lingel Windows, Germany
-- Filtafry, Germany
+- FiltaFry, Germany
 - Fit-A-Seal, Germany
 - Sky-Hype, Switzerland
 - Malaysian-German Society, Malaysia
@@ -47,3 +47,27 @@ Check out my [portfolio](/portfolio/) or review my featured work below.
 ### Featured work
 
 {% include about_featured.html %}
+
+### Tech Stack
+
+#### Front-end
+
+- Vanilla JS, Vue.js, jQuery
+- Bulma, Bootstrap (Sass, Less)
+- gulp, Grunt
+- npm, Yarn
+
+#### Back-end
+
+- Node.js, Python, PHP
+- nuxt.js, ExpressionEngine, Jekyll (why not...), Bolt.cm, Strapi
+- npm, composer, pip
+- MongoDB, MySQL, Memcached, Redis, Firebase
+
+#### DevOps
+
+- Debian, Centos, Ubuntu (sored by preference)
+- Nagios, New Relic
+- Docker
+- Nginx, Apache, HAProxy
+- AWS, Heroku (only node.js), Digitalocean, Firebase

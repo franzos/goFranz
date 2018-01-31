@@ -12,7 +12,7 @@ sitemap:
 For latest projects, kindly refer to my <a href="#independent-work">independent work</a>
 
 ### Sky-Hype AG, <location>St. Gallen, Switzerland</location>
-<date>2016-2018</date>
+<date>2016-2017</date>
 <position>Full-Stack Developer, Marketing</position>
 
 - Designed and developed front-end code using Bootstrap 4, AJAX, jQuery, Vue.js

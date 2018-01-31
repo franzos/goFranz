@@ -93,7 +93,7 @@ $(window).load(function () {
 $(window).load(function () {
   (function()
   {
-    var NowMoment = moment.utc().add(3, 'hours').format('LT');
+    var NowMoment = moment.utc().add({{ page.offset }}, 'hours').format('LT');
     var eDisplayMoment = document.getElementById('time');
     eDisplayMoment.innerHTML = NowMoment;
   })();
@@ -102,7 +102,7 @@ $(window).load(function () {
 <script>
 $(window).load(function () {
   $.simpleWeather({
-    location: 'Istanbul',
+    location: '{{ page.location }}',
     unit: 'c',
     success: function(weather) {
       html = ', '+weather.text+' and '+weather.temp+'&deg;'+weather.units.temp+' outside.';
@@ -120,7 +120,7 @@ $(window).load(function () {
       container: 'map',
       style: 'mapbox://styles/mapbox/dark-v9',
       center: [{{ page.map }}],
-      zoom: 2
+      zoom: 1
   });
 });
 </script>
@@ -215,49 +215,46 @@ var map = L.mapbox.map('map')
 <script>
 var ctx = document.getElementById("myChart");
 var myLineChart = Chart.Line(ctx, {
-    data: {
-        labels: [{% for entry in site.data.mutual-investment-fund %}"{{ entry.date }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
-        datasets: [
-            {
-                label: 'Net asset value (NAV) in Euro',
-                fill: true,
-                lineTension: 0,
-                backgroundColor: "#451668",
-                borderColor: "#451668",
-                borderCapStyle: 'butt',
-                borderDash: [],
-                borderDashOffset: 0.0,
-                borderJoinStyle: 'miter',
-                pointBorderColor: "#451668",
-                pointBackgroundColor: "#fff",
-                pointBorderWidth: 2,
-                pointHoverRadius: 5,
-                pointHoverBackgroundColor: "#fff",
-                pointHoverBorderColor: "#451668",
-                pointHoverBorderWidth: 3,
-                pointRadius: 5,
-                pointHitRadius: 10,
-                data: [{% for entry in site.data.mutual-investment-fund %}{{ entry.rate }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
-                spanGaps: false,
-            }
-        ]
-    }
+  data: {
+    labels: [{% for entry in site.data.mutual-investment-fund %}"{{ entry.date }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
+    datasets: [
+      {
+        label: 'Net asset value (NAV) in Euro',
+        fill: true,
+        lineTension: 0,
+        backgroundColor: "#451668",
+        borderColor: "#451668",
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: "#451668",
+        pointBackgroundColor: "#fff",
+        pointBorderWidth: 2,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: "#fff",
+        pointHoverBorderColor: "#451668",
+        pointHoverBorderWidth: 3,
+        pointRadius: 5,
+        pointHitRadius: 10,
+        data: [{% for entry in site.data.mutual-investment-fund %}{{ entry.rate }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
+        spanGaps: false,
+      }
+    ]
+  }
 });
 </script>
 {% endif %}
-{% if page.url contains "/gist/" or page.url contains "/dev/" %}
+{% if page.url contains "/gist/" or page.url contains "/dev/" or page.url contains "/cryptocurrencies/" %}
 <!-- <script src="/assets/js/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script> -->
 <script>
   NProgress.set(0.9);
 </script>
-<script src="https://franz-comments.herokuapp.com/embed.js" async onload="
-if( $('#coral_talk_1743242202202422').length )
-{
-  Coral.Talk.render(document.getElementById('coral_talk_1743242202202422'), {
+<script src="https://franz-comments.herokuapp.com/static/embed.js" async onload="
+  Coral.Talk.render(document.getElementById('coral_talk_stream'), {
     talk: 'https://franz-comments.herokuapp.com/'
   });
-}
 "></script>
 <!--
 <script>
@@ -271,6 +268,106 @@ $("#comments-toggle").on("click" ,function(){
 </script>
 -->
 {% endif %}
+{% if page.url contains "/pay" %}
+<script src="/assets/js/pay.min.js"></script>
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<script>
+var getQueryString = function ( field, url ) {
+	var href = url ? url : window.location.href;
+	var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+	var string = reg.exec(href);
+	return string ? string[1] : null;
+};
+
+// /pay/?n=Mike&e=mike@me.com&a=10000&i=FA-123
+
+var app = new Vue({
+  delimiters:['<%', '%>'],
+  el: '#app',
+  data: {
+    name: getQueryString('n'),
+    amount: getQueryString('a') / 10,
+    invoice: getQueryString('i'),
+    xrpeur: null,
+    amountXRP: null,
+    etheur: null,
+    amountETH: null,
+    collapsedXRP: false,
+    collapsedETH: false
+  },
+  created() {
+    var self = this;
+    axios.get('https://cache.f-a.nz/cryptowat/markets/kraken/xrpeur/price')
+    .then(function (res) {
+      console.log(res.data.result.price)
+      res = res.data.result.price
+      self.amountXRP = (getQueryString('a') / 10) / res
+      console.log(self.amountXRP)
+      self.xrpeur = res
+    });
+    axios.get('https://cache.f-a.nz/cryptowat/markets/kraken/etheur/price')
+    .then(function (res) {
+      console.log(res.data.result.price)
+      res = res.data.result.price
+      self.amountETH = (getQueryString('a') / 10) / res
+      console.log(self.amountETH)
+      self.etheur = res
+      if (self.etheur > 0) {
+        document.getElementById('loading').classList.add('hidden');
+      }
+    });
+  },
+  filters: {
+    formatCrypto: function (value) {
+      if (!value) return ''
+      value = accounting.formatMoney(value, '', 4)
+      return value
+    },
+    formatFiat: function (value) {
+      if (!value) return ''
+      value = accounting.formatMoney(value, '', 2)
+      return value
+    }
+  }
+})
+</script>
+
+<script>
+var handler = StripeCheckout.configure({
+  key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+  // pk_live_aS8I0BNMivxfYiI5UZtzd8vt
+  image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+  locale: 'auto',
+  token: function(token) {
+    // You can access the token ID with `token.id`.
+    // Get the token ID to your server-side code for use.
+  }
+});
+
+document.getElementById('customButton').addEventListener('click', function(e) {
+  // Open Checkout with further options:
+  handler.open({
+    name: 'F-A.NZ',
+    email: getQueryString('e'),
+    description: 'Invoice ' + getQueryString('i'),
+    zipCode: true,
+    currency: 'EUR',
+    amount: getQueryString('a')
+  });
+  e.preventDefault();
+});
+
+// Close Checkout on page navigation:
+window.addEventListener('popstate', function() {
+  handler.close();
+});
+</script>
+{% endif %}
+
+{% if page.url == "/" %}
+<script src="/assets/js/particles.min.js"></script>
+{% endif %}
+
 <script>
   $(window).on("load", function() {
     NProgress.done();

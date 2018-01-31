@@ -78,11 +78,11 @@
 }
 
 .Tab__buttonSubActive___3zYeu, .Tab__buttonSubActive___3zYeu:focus, .Tab__buttonSubActive___3zYeu:hover {
-  border-bottom: 3px solid #441767;
+  border-bottom: 3px solid #441767!important;
 }
 
 .TabCount__rootSubActive___1hOR1 {
-  background: #441767;
+  background: #441767!important;
 }
 
 .styles__footer___lXNAw a {
@@ -90,16 +90,19 @@
 }
 
 .Tab__buttonActive___2Tiaz, .Tab__buttonActive___2Tiaz:focus, .Tab__buttonActive___2Tiaz:hover {
-  background: #441767;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  color: #fff;
+  background: #fff;
   font-weight: 700;
-  border-bottom: none;
+  border-bottom: 1px solid #d8d8d8;
+  color: #4e5259;
+  border-radius: 0px;
 }
 
 .Tab__button___25mye {
   background: #f8f8f8;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border: none;
+  border-bottom: 1px solid #d8d8d8;
+  background: #f0f0f0;
+  font-size: 13px;
+  outline: none;
+  border-radius: 0px;
 }

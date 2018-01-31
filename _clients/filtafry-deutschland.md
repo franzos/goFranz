@@ -1,9 +1,9 @@
 ---
 layout: page_sidebar
-title:  "Filtafry Deutschland GmbH"
+title:  "FiltaFry Deutschland GmbH"
 date:   2016-06-01 00:00:00 +0200
 client: "filtafry"
-introduction: "Filtafry is an innovative, new franchise specializing in cooking oil and micro-filtration service for restaurants and other food establishments in Germany."
+introduction: "FiltaFry is an innovative, new franchise specializing in cooking oil and micro-filtration service for restaurants and other food establishments in Germany."
 city: Emsbüren
 country: Germany
 map: "7.1794796,52.4083766"
@@ -15,4 +15,4 @@ cover: filtafry-01.jpg
 bg: roman-kraft
 ---
 
-Filtafry is a young, innovative franchise from Germany. I have been working with Filtafry from the very start, helping them develop their website, unified franchisee sub-sites with individual domains as well as a company-wide ERP (enterprise resource planning) system that helps coordinating efforts company wide.
+FiltaFry is a young, innovative franchise from Germany. I have been working with FiltaFry from the very start, helping them develop their website, unified franchisee sub-sites with individual domains as well as a company-wide ERP (enterprise resource planning) system that helps coordinating efforts company wide.

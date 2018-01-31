@@ -5,9 +5,15 @@ bg: mark-asthoff_02
 permalink: /bitcoin/
 ---
 
-Bitcoin are arguably the best way to send and receive money from around the world. While there are certainly strong arguments for _and_ against Bitcoin, I continue to wholeheartedly support this  cryptocurrency.
+~~Bitcoin are arguably the best way to send and receive money from around the world. While there are certainly strong arguments for _and_ against Bitcoin, I continue to wholeheartedly support this cryptocurrency.~~
 
-Please request a one-time Bitcoin address via <a href="mailto:m@f-a.nz?subject=Bitcoin%20address"> email.
+~~Please request a one-time Bitcoin address via <a href="mailto:m@f-a.nz?subject=Bitcoin%20Address%20Request">email</a>.~~
+
+<hr>
+
+**Update: 2018-01-20**
+
+I've decided to stop accepting Bitcoin payments due to high fees and long confirmation times. Instead, I prefer payments in XRP, ETH, or DGX. To request a one-time wallet address, please send me an <a href="mailto:m@f-a.nz?subject=Wallet%20Address%20Request">email</a>.
 
 ## Where to buy Bitcoin?
 

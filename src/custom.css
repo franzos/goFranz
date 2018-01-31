@@ -83,9 +83,20 @@ body {
   background-attachment: fixed;
 }
 
+.cc, .cc::before {
+  font-size: 1em;
+  margin: 2px;
+  color: #d8d8d8;
+}
+
 .meta {
   font-family: 'Overpass Mono';
 }
+
+.hidden {
+    display: none;
+}
+
 
 body.index {
   background-size: cover;
@@ -1063,7 +1074,7 @@ ul.pagination li a {
   .content img, .content img.img-responsive, .content table {
     margin: 20px 0px 20px 20px;
   }
-  .content #map img {
+  .content #map img, .content .wrapper img {
     margin: 0px;
   }
 }
@@ -1073,6 +1084,10 @@ ul.pagination li a {
   }
   .content, .sidebar {
     padding-bottom: 20px;
+  }
+  .call-out-contact a {
+    font-size: 2em;
+    line-height: 2em;
   }
 }
 @media (max-width: 920px) {
@@ -1150,9 +1165,12 @@ ul.pagination li a {
   .wrapper {
     margin-right: 320px;
   }
-  .image-wrapper {
-    margin-top: 80px;
+  .image-wrapper, .content img.image-wrapper {
+    margin-top: 60px;
     margin-bottom: 20px;
+  }
+  .content img.image-wrapper {
+    margin-left: 0px;
   }
   .image-wrapper a.thumbnail {
     height:400px;

@@ -13,10 +13,11 @@ gulp.task('css', function () {
       'node_modules/nprogress/nprogress.css',
       'node_modules/swipebox/src/css/swipebox.css',
       'node_modules/mapbox-gl/dist/mapbox-gl.css',
+			'node_modules/cryptocoins-icons/webfont/cryptocoins.css',
 			'node_modules/highlight.js/styles/monokai-sublime.css',
       'src/print.css',
       'src/custom.css'
-    ])
+		])
     .pipe(concat('main.min.css'))
     .pipe(cleanCss())
     .pipe(gulp.dest('assets/css'));
@@ -30,6 +31,36 @@ gulp.task('js', function (cb) {
           'node_modules/slideout/dist/slideout.js'
         ]),
         concat('main.min.js'),
+        uglify(),
+        gulp.dest('assets/js')
+    ],
+    cb
+  );
+});
+
+gulp.task('js-particles', function (cb) {
+  pump([
+        gulp.src
+        ([
+          'src/particles.js'
+        ]),
+        concat('particles.min.js'),
+        uglify(),
+        gulp.dest('assets/js')
+    ],
+    cb
+  );
+});
+
+gulp.task('js-pay', function (cb) {
+  pump([
+        gulp.src
+        ([
+					'node_modules/vue/dist/vue.min.js',
+          'node_modules/axios/dist/axios.js',
+          'node_modules/accounting/accounting.js'
+        ]),
+        concat('pay.min.js'),
         uglify(),
         gulp.dest('assets/js')
     ],
@@ -99,6 +130,8 @@ gulp.task('js-chart', function () {
 gulp.task('files', function () {
     gulp.src('node_modules/swipebox/src/img/*')
         .pipe(gulp.dest('assets/img/'));
+		gulp.src('node_modules/cryptocoins-icons/webfont/*')
+        .pipe(gulp.dest('assets/fonts/'));
 		gulp.src('src/highlight.min.js')
         .pipe(gulp.dest('assets/js'));
 		gulp.src('src/comments.css')
@@ -109,4 +142,4 @@ gulp.task('watch', function() {
     gulp.watch('src/*.css', ['css'])
 });
 
-gulp.task('default', ['css', 'js', 'js-bundle', 'js-progress', 'js-mapbox', 'js-mapbox-gl', 'js-chart', 'files']);
+gulp.task('default', ['css', 'js', 'js-bundle', 'js-progress', 'js-particles', 'js-mapbox', 'js-mapbox-gl', 'js-chart', 'files']);

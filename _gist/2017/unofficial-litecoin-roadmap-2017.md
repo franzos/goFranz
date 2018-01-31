@@ -17,7 +17,7 @@ author: Franz Geffke
 
 **Edit**: The official Litecoin roadmap has been published on [litecoincore.org](https://litecoincore.org/).
 
-## Litecoin roadmap 2017
+## Litecoin roadmap 2017 / 2018
 
 <table>
   <thead>
@@ -38,11 +38,12 @@ author: Franz Geffke
   </tbody>
 </table>
 
-Because a lot of this tech was initially meant for Bitcoin, there are only few articles that specifically mention Litecoin. Fortunately, the tech behind these two coins is relatively similiar, so Litecoin users can now ,with minimal porting, take advantage of many of the features that have originally been designed for post-SegWit Bitcoin.
+Because a lot of this tech was initially meant for Bitcoin, there are only few articles that specifically mention Litecoin. Fortunately, the tech behind these two coins is relatively similiar, so Litecoin users can now, with minimal porting, take advantage of many of the features that have originally been designed for post-SegWit Bitcoin.
 
 ## Litecoin network status
 
 - [Litecoin difficulty](https://bitcoinwisdom.com/litecoin/difficulty)
 - [Litecoin hash rate distribution](https://www.litecoinpool.org/pools)
+- [Litecoin core dev. roadmap 2017](https://litecoincore.org/)
 
-_I will add entries as I discover them. I cannot guarantee that all information presented is correct / up to date. Last update: 11.05.2017._
+_I will add entries as I discover them. I cannot guarantee that all information presented is correct / up to date. Last update: 31.01.2018. **If you have anything to add / change, leave a comment below. Thanks!**_

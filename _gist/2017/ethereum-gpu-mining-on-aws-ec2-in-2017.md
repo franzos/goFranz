@@ -106,5 +106,54 @@ Ethereum dual-mining profitability comparison (late June 2017). Keep in mind tha
 
 <hr>
 
+**Update: 2017-12-16**
+
+Ethereum is valued at 1 ETH = 706 USD.
+
+**Monthly cost**: $1860
+<br>**Mining revenue**: $115.14 _(assuming 44 MH/s)_
+<br>**Profit**: $ -1744.86
+
+**Mining on AWS EC2 is still, and will remain unprofitable - forever.**
+
+<hr>
+
+**Update: 2018-01-31**
+
+Amazon's latest EC2 P3 generation features up to [8x Nvidia Tesla V100](https://aws.amazon.com/blogs/aws/new-amazon-ec2-instances-with-up-to-8-nvidia-tesla-v100-gpus-p3/) GPU's. The V100 (5,120 CUDA cores) is significantly more powerful than the previous generation NVIDIA GRID K520 (1,536 CUDA cores), however the high-end EC2 p3.16xlarge also costs significantly more.
+
+EC2 p3.16xlarge
+- 8x V100 with 5,120 CUDA core each
+- $24.48 per hour, $587.52 per day
+- Reported ETH hash rate of 90.58 MH/s per card (724.64 MH/s combined)
+
+**Monthly cost**: $17625.6
+<br>**Mining revenue**: $2009.36 _(assuming 724.64 MH/s)_
+<br>**Profit**: $ -15616.24
+
+<hr>
+
+## Q&A
+
+If you have a question, I'd prefer you leave a [comment](#comments) below.
+
+#### EC2 Elastic GPU service
+
+> What about using the recently launched Amazon EC2 Elastic GPU service. What is the potential for mining with this service? - M.
+
+The Amazon [EC2 Elastic GPU services](https://aws.amazon.com/ec2/elastic-gpus/details/) comes with a number of severe limitations, that make it unsuitable for mining cryptocurrency. Here's what I've noticed:
+
+1. The GPU is attached via network (latency, bandwidth usage)
+2. You can attach only 1x Elastic GPU to each EC2 instance
+3. This services requires a special driver which only supports OpenGL 4.2
+
+#### Dual-Mining
+
+> What is Dual-Mining? What is considered baseline, the AWS instance cost? - D.
+
+DUAL stands for dual-mining. That means, that you are concurrently mining 2 or more currencies. For example, you could be mining Ethereum (ETH) and Siacoin (SC) together, thus making a higher profit compared to only mining Ethereum. The baseline is ETH + SIA, so mining only ETH would generate around 27% less profit.
+
+<hr>
+
 Appreciate the time I spend on this? Send a thanks to (ETH):
 *0x031FE3346207DEF2EB9dDc4b19A621a85B554D9f*
