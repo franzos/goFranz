@@ -1152,6 +1152,9 @@ ul.pagination li a {
   .content img, .content .image-wrapper, .content a, .content table, .content .live-preview, .content .gist {
     max-width:640px;
   }
+  .np {
+    padding: 0px;
+  }
 }
 @media (min-width: 1100px) {
   .wrapper {
