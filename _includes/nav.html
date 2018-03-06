@@ -6,9 +6,10 @@
           <li class="logo{% if page.bg == "home" %} visible-md visible-lg{% endif %}"><a href="/"><img alt="Franz" src=/assets/images/franz.svg></a></li>
           <li class="visible-xs visible-sm toggle"><a class="toggle-button">navigation</a></li>
           <li class="visible-md visible-lg{% if page.url == "/about/" %} active{% endif %}"><a href="/about/">about</a></li>
-          <li class="visible-md visible-lg{% if page.url contains "/portfolio/" or page.url contains "/work/" or page.url contains "/client/" %} active{% endif %}"><a href="/portfolio/">portfolio</a></li>
+          <li class="visible-md visible-lg{% if page.url contains "/portfolio/" or page.url contains "/work/" %} active{% endif %}"><a href="/portfolio/">portfolio</a></li>
+          <li class="visible-md visible-lg{% if page.url contains "/clients/" or page.url contains "/client/" %} active{% endif %}"><a href="/clients/">clients</a></li>
           <!-- <li class="visible-md visible-lg{% if page.url == "/mutual-investment-fund/" %} active{% endif %}"><a href="/mutual-investment-fund/">fund</a></li> -->
-          <li class="visible-md visible-lg{% if page.url contains "/gist/" %} active{% endif %}"><a href="/gist/">gist</a></li>
+          <li class="visible-md visible-lg{% if page.url contains "/gist/" %} active{% endif %}"><a href="/gist/">blog</a></li>
           <li class="visible-md visible-lg{% if page.url contains "/dev/" %} active{% endif %}"><a href="/dev/">dev</a></li>
           <li class="visible-md visible-lg{% if page.url contains "/cryptocurrencies/" %} active{% endif %}"><a href="/cryptocurrencies/">crypto</a></li>
           <li class="visible-md visible-lg{% if page.url == "/contact/" %} active{% endif %}"><a href="/contact/">contact</a></li>

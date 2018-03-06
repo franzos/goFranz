@@ -14,7 +14,7 @@ featured: true
 
 Learning Vue.js by writing my first application based on the JS framework.
 
-[Preview on Heroku](https://ethereum-address-inspector.herokuapp.com/) / [Source code on Github](https://github.com/franzos/ethereum-address-inspector)
+[Preview on Heroku](https://ethereum-address-inspector.herokuapp.com/) / [Source code](https://github.com/franzos/ethereum-address-inspector)
 
 _* Heroku may take up to 30s to respond on initial load (free dyno)_
 

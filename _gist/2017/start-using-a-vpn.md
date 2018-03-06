@@ -58,3 +58,22 @@ _The speeds tests have been done connected to the ovpn.se VPN from Berlin, Germa
 ## Conclusion
 
 A VPN does does not protect you 100% but it's a huge step in terms of what you can do to increase your privacy and security online.
+
+<hr>
+
+**Update: 2018-02-03**
+
+I've recently replaced proxy.sh with [AzireVPN](https://www.azirevpn.com/) as my second, and backup connection. The speed is good, the connection stable and the number of servers more than sufficient. Their privacy-efforts also seem reasonable, with an option to sign-up without Email, and even pay with Bitcoin.
+
+- Based in Sweden
+- IPv4 / IPv6 support (essential!)
+- OpenVPN and WireGuard
+- No logging (claim!)
+
+While you can never completely trust your VPN provider, something does seem odd: "We do NOT log the number of your active sessions or total sessions. - AzireVPN". I doubt that they would allow a single user, or account to connect an unlimited number of devices.
+
+Either way, I'm satisfied.
+
+<hr>
+
+**What VPN provider are you using? Comment below:**

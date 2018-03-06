@@ -94,15 +94,15 @@ Ethereum dual-mining profitability comparison (late June 2017). Keep in mind tha
 
 | Measured       | by Card | by Month | by Month DUAL | total DUAL    | % of Baseline |
 |----------------|---------|----------|---------------|---------------|---------------|
-| SIA            | 5770    | 1154     | 381 €         |               | 46.23%        |
-| ZEC            | 1490.4  | 298.08   | 373 €         |               | 45.23%        |
+| SIA            | 5,70    | 1,154    | 381 €         |               | 46.23%        |
+| ZEC            | 1,490.4 | 298.08   | 373 €         |               | 45.23%        |
 | ETH            | 112     | 22.4     | 601 €         |               | 73.02%        |
 | ETH (ZEC) Dual | 104     | 20.8     | 558 €         |               |               |   
 | ZEC (ETH) Dual | 20.2    | 4.04     | 5 €           | 564 €         | 68.41%        |
 | ETH (SIA) Dual | 103     | 20.6     | 553 €         |               |               |
-| SIA (ETH) Dual | 4100    | 820      | 271 €         | 824 €         | 100.00%       |
+| SIA (ETH) Dual | 4,100   | 820      | 271 €         | 824 €         | 100.00%       |
 | ETH (DEC) Dual | 109     | 21.8     | 585 €         |               |               |
-| DEC (ETH) Dual | 3274    | 654.8    | 164 €         | 749 €         | 90.93%        |
+| DEC (ETH) Dual | 3,274   | 654.8    | 164 €         | 749 €         | 90.93%        |
 
 <hr>
 
@@ -110,9 +110,9 @@ Ethereum dual-mining profitability comparison (late June 2017). Keep in mind tha
 
 Ethereum is valued at 1 ETH = 706 USD.
 
-**Monthly cost**: $1860
+**Monthly cost**: $1,860
 <br>**Mining revenue**: $115.14 _(assuming 44 MH/s)_
-<br>**Profit**: $ -1744.86
+<br>**Profit**: $ -1,744.86
 
 **Mining on AWS EC2 is still, and will remain unprofitable - forever.**
 
@@ -127,9 +127,9 @@ EC2 p3.16xlarge
 - $24.48 per hour, $587.52 per day
 - Reported ETH hash rate of 90.58 MH/s per card (724.64 MH/s combined)
 
-**Monthly cost**: $17625.6
-<br>**Mining revenue**: $2009.36 _(assuming 724.64 MH/s)_
-<br>**Profit**: $ -15616.24
+**Monthly cost**: $17,625.6
+<br>**Mining revenue**: $2,009.36 _(assuming 724.64 MH/s)_
+<br>**Profit**: $ -15,616.24
 
 <hr>
 
