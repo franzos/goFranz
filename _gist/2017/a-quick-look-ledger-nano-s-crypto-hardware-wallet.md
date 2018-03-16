@@ -90,12 +90,12 @@ Looks gorgeous, doesn't it? That's what I want for my Ledger!
 
 ## Additional Apps
 
-I've found additional apps for the Ledger Nano S. There's even an early beta of PGP and 2FA ala Google Authenticator. Cool stuff!
+I've found additional apps for the Ledger Nano S. There's even an early beta of GPG and 2FA ala Google Authenticator. Cool stuff!
 
 - Komodo (via Ledger Manager)
-- SSH/PGP Agent (via Ledger Manager)
+- SSH/GPG Agent (via Ledger Manager)
 - Password Manager (via Ledger Manager)
-- Open PGP (via Ledger Manager)
+- Open GPG (via Ledger Manager)
 - [OTP 2FA App](https://parkerhoyes.com/bolos-apps) (HOTP 2FA)
 - [Snake App](https://parkerhoyes.com/bolos-apps)
 

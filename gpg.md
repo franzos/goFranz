@@ -1,8 +1,8 @@
 ---
-title: My PGP public key
+title: My GPG public key
 layout: page
 bg: mark-asthoff_02
-permalink: /pgp/
+permalink: /gpg/
 ---
 
 
