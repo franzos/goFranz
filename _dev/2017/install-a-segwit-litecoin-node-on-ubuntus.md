@@ -5,7 +5,7 @@ os:
   - Linux
 date: 2017-05-04 00:00:00 +0200
 category:
-  - development
+  - dev
   - cryptocurrency
 tags:
   - litecoin

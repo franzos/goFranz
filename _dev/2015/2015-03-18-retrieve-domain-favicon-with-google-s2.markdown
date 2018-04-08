@@ -4,6 +4,11 @@ title:  "Retrieve a domain's favicon with Google S2"
 date:   2015-03-18 08:00:00
 excerpt: "It's easy and free to retrieve a favicon with Google S2"
 categories: HTTP, HTML
+category:
+  - dev
+  - frontend
+tags:
+  - development
 version: 2.9.1
 packages: HTTP, HTML
 source:

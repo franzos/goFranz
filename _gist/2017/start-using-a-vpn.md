@@ -76,4 +76,10 @@ Either way, I'm satisfied.
 
 <hr>
 
+**Update: 2018-04-08**
+
+I have recently discovered [That One Privacy Site](https://thatoneprivacysite.net/vpn-section/) which contains a very comprehensive comparison of different VPN and Email providers. Check it out!
+
+<hr>
+
 **What VPN provider are you using? Comment below:**

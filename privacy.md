@@ -17,9 +17,34 @@ If you don't even want me to know that you're visiting, you can opt-out below:
 
 ## External
 
-This website also connects to two, external API's. Firstly to retrieve the current Cryptocurrency prices and secondly, to download the required set of maps to make this site look as good as it does.
+This website also connects to three, external API's. To retrieve comments, to get the latest weather and to download the required set of maps to make this site look as good as it does.
 
-1. Cryptocurrency Rates: [api.cryptowat.ch](https://api.cryptowat.ch/) (via proxy)
-2. Maps: [api.mapbox.com](https://api.mapbox.com)
+1. Comments: [franz-comments.herokuapp.com](https://franz-comments.herokuapp.com)
+2. Weather [query.yahooapis.com](https://query.yahooapis.com)
+3. Maps: [api.mapbox.com](https://api.mapbox.com)
 
-~~Bitcoin Price: [api.bitcoinaverage.com](https://api.bitcoinaverage.com/ticker/all)~~
+## Your Data
+
+Depending on how you interact with this website, different data will be submitted.
+
+### Just visting
+
+Unless your browser is set to "Do Not Track", your visit will be recorded in my Manotog, a self-hosted, open-source analytics software.
+
+- 1 byte of your IP address is anonymized
+- no data is shared with 3rd parties
+
+### Leaving a comment
+
+If you're leaving a comment, you submit your email address and chosen password to Talk, a self-hosted, open source commenting software. There's no additional tracking, and your data will never leave the software. It will only be used to authenticate you against the service.
+
+- uses email address and password to authenticate you
+- no data is shared with 3rd parties
+
+### Getting in touch
+
+If you're sending me a message trough the contact form, your submission will be send to my Email. My Emails are hosted with Fastmail, an Australian Email provider that complies with GDPR.
+
+- your data is stored in my Fastmail account
+- your data is not being analyzed, processed or stored elsewhere
+- no data is shared with 3rd parties

@@ -7,7 +7,7 @@ os:
 source: https://stackoverflow.com/questions/30842005/upgrading-rsync-on-os-x-using-homebrew
 date: 2017-01-01 00:00:00 +0200
 category:
-  - development
+  - dev
 tags:
   - development
   - macOS

@@ -5,6 +5,8 @@ date:   2016-02-01 00:00:00 +0200
 client: "mgs"
 cover: mgs-01.jpg
 bg: malaysia
+introduction: Jekyll powered, static website for the Malaysian-German Society in Penang.
+featured: true
 ---
 
 {% include project-image.html image="mgs-01.jpg" %}

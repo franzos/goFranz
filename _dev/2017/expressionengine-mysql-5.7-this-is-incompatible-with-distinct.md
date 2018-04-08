@@ -8,7 +8,7 @@ os:
 source:
 date: 2017-01-01 00:00:00 +0200
 category:
-  - development
+  - dev
 tags:
   - 'expression engine'
   - mysql

@@ -17,19 +17,6 @@
 NProgress.start();
 </script>
 <script src="/assets/js/main.min.js"></script>
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://stats.dkkma.com/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '8']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="https://stats.dkkma.com/piwik.php?idsite=8&rec=1" style="border:0;" alt="" /></p></noscript>
 <script>
   NProgress.set(0.2);
 </script>
@@ -163,8 +150,6 @@ var map = L.mapbox.map('map')
     .setView([27.2741606,3.2739257], 2);
     var myLayer = L.mapbox.featureLayer().addTo(map);
     var styleLayer = L.mapbox.styleLayer('mapbox://styles/dkkma/cj27hvld100112smweocii6o3').addTo(map);
-
-    // The GeoJSON representing the two point features
     var geojson = {
         type: 'FeatureCollection',
         features: [{% for place in site.data.places %}{
@@ -199,12 +184,8 @@ var map = L.mapbox.map('map')
         {% endfor %}
       ]
     };
-
     map.scrollWheelZoom.disable();
     myLayer.setGeoJSON(geojson);
-    //myLayer.on('click', function(e) {
-    //    window.open(e.layer.feature.properties.url);
-    //});
 </script>
 {% endif %}
 <script>
@@ -246,8 +227,6 @@ var myLineChart = Chart.Line(ctx, {
 </script>
 {% endif %}
 {% if page.url contains "/gist/" or page.url contains "/dev/" or page.url contains "/cryptocurrencies/" %}
-<!-- <script src="/assets/js/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script> -->
 <script>
   NProgress.set(0.9);
 </script>
@@ -256,17 +235,6 @@ var myLineChart = Chart.Line(ctx, {
     talk: 'https://franz-comments.herokuapp.com/'
   });
 "></script>
-<!--
-<script>
-$("#comments-toggle").on("click" ,function(){
-    setTimeout(function(){
-      document.querySelector('#comment').scrollIntoView({
-      behavior: 'smooth'
-    });
-  }, 1);
-});
-</script>
--->
 {% endif %}
 {% if page.url contains "/pay" %}
 <script src="/assets/js/pay.min.js"></script>
@@ -345,7 +313,6 @@ var handler = StripeCheckout.configure({
 });
 
 document.getElementById('customButton').addEventListener('click', function(e) {
-  // Open Checkout with further options:
   handler.open({
     name: 'F-A.NZ',
     email: getQueryString('e'),
@@ -357,7 +324,6 @@ document.getElementById('customButton').addEventListener('click', function(e) {
   e.preventDefault();
 });
 
-// Close Checkout on page navigation:
 window.addEventListener('popstate', function() {
   handler.close();
 });
@@ -367,6 +333,20 @@ window.addEventListener('popstate', function() {
 {% if page.url == "/" %}
 <script src="/assets/js/particles.min.js"></script>
 {% endif %}
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.dkkma.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '8']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="https://stats.dkkma.com/piwik.php?idsite=8&rec=1" style="border:0;" alt="" /></p></noscript>
 
 <script>
   $(window).on("load", function() {

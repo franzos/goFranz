@@ -4,6 +4,11 @@ title:  "Bolt CMS: Filter entries by category"
 date:   2015-04-11 08:00:00
 excerpt: "Bolt CMS makes it easy to filter entries by category."
 categories: PHP, "Bolt CMS"
+category:
+  - dev
+tags:
+  - development
+  - cms
 version: 2.1.4
 packages: PHP, Twig
 source:

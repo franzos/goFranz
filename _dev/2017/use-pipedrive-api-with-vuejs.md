@@ -3,7 +3,7 @@ title: "Use Pipedrive API with Vue.js"
 layout: post
 date: 2017-10-26 00:00:00 +0200
 category:
-  - development
+  - dev
   - frontend
 tags:
   - development

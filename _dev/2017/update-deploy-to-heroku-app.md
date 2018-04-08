@@ -3,7 +3,7 @@ title: "Manually update app after 'Deploy to Heroku' on Github"
 layout: post
 date: 2017-10-23 00:00:00 +0200
 category:
-  - development
+  - dev
 tags:
   - development
   - heroku

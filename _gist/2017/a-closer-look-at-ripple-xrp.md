@@ -51,7 +51,7 @@ So, Ripple doesn't effectively need to reach the endusers, but works with financ
 The following video takes a closer look at how settlement works and at which point the balances reflects in the ledger. The most important piece is the ILP ([Interledger Protocol](https://ripple.com/insights/implementing-the-interledger-protocol/)):
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5e2jDFL1kKI" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bU79HunxJp8" allowfullscreen></iframe>
 </div>
 
 ### Ripple for Enduser
