@@ -1382,5 +1382,205 @@
     "latin": "",
     "phonetic": "hær chi, hær væght, beh hær su:ræt",
     "formal": false
+  },
+  {
+    "english": "What's your name?",
+    "german": "",
+    "farsi": "نام شما چيست؟",
+    "latin": "Esmetun chie?",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "My name is [name]",
+    "german": "",
+    "farsi": "",
+    "latin": "Esm e man [name] ast",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Where are you from?",
+    "german": "",
+    "farsi": "اهل کجايي؟",
+    "latin": "Ahle kojayee?",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "I'm from [place]",
+    "german": "",
+    "farsi": "",
+    "latin": "Man az [place] hastam",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "I don't understand",
+    "german": "",
+    "farsi": "نمي فهمم",
+    "latin": "Nemifahmam",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Please say that again",
+    "german": "",
+    "farsi": "مي شه دوباره بگيد؟",
+    "latin": "Miše dobâre begid?",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Yes, a little",
+    "german": "",
+    "farsi": "",
+    "latin": "Bale, ye kam",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "How much is it?",
+    "german": "",
+    "farsi": "",
+    "latin": "Gheymatesh chande?",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "How much is this?",
+    "german": "",
+    "farsi": "",
+    "latin": "Gheymate in chand ast?",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Sorry",
+    "german": "",
+    "farsi": "",
+    "latin": "Moteassefam",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Leave me alone!",
+    "german": "",
+    "farsi": "",
+    "latin": "Mano tanha bezar!",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Help!",
+    "german": "",
+    "farsi": "",
+    "latin": "Komak!",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Fire!",
+    "german": "",
+    "farsi": "",
+    "latin": "Atiš!",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Stop",
+    "german": "",
+    "farsi": "",
+    "latin": "Vâysâ!",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Call the police!",
+    "german": "",
+    "farsi": "",
+    "latin": "Poliso xabar konid",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "I'm lost",
+    "german": "",
+    "farsi": "من گم شدم ",
+    "latin": "Man gom shodam",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Can I help you?",
+    "german": "",
+    "farsi": "میتونم که کمکتون کنم؟",
+    "latin": "Mitoonam ke komaketoon konam?",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Come with me!",
+    "german": "",
+    "farsi": "",
+    "latin": "Ba man bia",
+    "phonetic": "با من بیا ",
+    "formal": false
+  },
+  {
+    "english": "How old are you?",
+    "german": "",
+    "farsi": "چند سالت هست؟",
+    "latin": "Chand salet hast?",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Oh! That's good!",
+    "german": "",
+    "farsi": "اوه ! خوبه",
+    "latin": "Oh, che khoob!",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "What do you do for a living?",
+    "german": "",
+    "farsi": "شغل شما چی هست؟",
+    "latin": "Shoghl e shoma chist?",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Bless you (Sneezing)",
+    "german": "Gesundheit!",
+    "farsi": "عافیت باشد",
+    "latin": "A’afiat bashad",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "What time is it?",
+    "german": "",
+    "farsi": "ساعت چند است؟",
+    "latin": "Sa’at chand ast?",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Really!",
+    "german": "",
+    "farsi": "واقعا",
+    "latin": "Vaghea’an!",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Give me this!",
+    "german": "",
+    "farsi": "اینو به من بده",
+    "latin": "Ino be man bede!",
+    "phonetic": "",
+    "formal": false
   }
 ]
