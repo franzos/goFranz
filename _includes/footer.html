@@ -226,7 +226,7 @@ var myLineChart = Chart.Line(ctx, {
 });
 </script>
 {% endif %}
-{% if page.url contains "/gist/" or page.url contains "/dev/" or page.url contains "/cryptocurrencies/" or page.url contains "/dgx-escrow/" %}
+{% if page.url contains "/gist/" or page.url contains "/dev/" or page.url contains "/cryptocurrencies/" or page.url contains "/dgx-escrow/" or page.url contains "/persian/dictionary/" %}
 <script>
   NProgress.set(0.9);
 </script>
@@ -332,6 +332,33 @@ window.addEventListener('popstate', function() {
 
 {% if page.url == "/" %}
 <script src="/assets/js/particles.min.js"></script>
+{% endif %}
+
+{% if page.url == "/persian/dictionary/" %}
+<script src="/assets/js/persian.min.js"></script>
+<script>
+var request = new XMLHttpRequest();
+   request.open("GET", "/assets/data/persian.json", false);
+   request.send(null)
+   var json = JSON.parse(request.responseText);
+
+var app = new Vue({
+  delimiters:['<%', '%>'],
+  el: '#dictionary',
+  data: {
+    search: '',
+    dictionary: json
+  },
+  computed: {
+    filteredItems() {
+      return this.dictionary.filter(item => {
+         return String(item.english.toLowerCase()).indexOf(this.search.toLowerCase()) !== -1
+      })
+    }
+  }
+})
+
+</script>
 {% endif %}
 
 <script type="text/javascript">

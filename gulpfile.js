@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var cleanCss = require('gulp-clean-css');
 var image = require('gulp-image');
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify-es').default;
 var watch = require('gulp-watch');
 var pump = require('pump');
 
@@ -61,6 +61,21 @@ gulp.task('js-pay', function (cb) {
           'node_modules/accounting/accounting.js'
         ]),
         concat('pay.min.js'),
+        uglify(),
+        gulp.dest('assets/js')
+    ],
+    cb
+  );
+});
+
+gulp.task('js-persian', function (cb) {
+  pump([
+        gulp.src
+        ([
+					'node_modules/vue/dist/vue.js',
+					'src/persian.js'
+        ]),
+        concat('persian.min.js'),
         uglify(),
         gulp.dest('assets/js')
     ],
@@ -140,6 +155,10 @@ gulp.task('files', function () {
 
 gulp.task('watch', function() {
     gulp.watch('src/*.css', ['css'])
+});
+
+gulp.task('watch-persian', function() {
+    gulp.watch('src/*.js', ['js-persian'])
 });
 
 gulp.task('default', ['css', 'js', 'js-bundle', 'js-progress', 'js-particles', 'js-mapbox', 'js-mapbox-gl', 'js-chart', 'files']);

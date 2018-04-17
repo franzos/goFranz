@@ -1,0 +1,1386 @@
+[
+  {
+    "english": "Good Morning",
+    "german": "Guten Morgen",
+    "farsi": "",
+    "latin": "Sobh Bekheir",
+    "formal": false
+  },
+  {
+    "english": "Good Night",
+    "german": "Gute Nacht",
+    "farsi": "",
+    "latin": "Shab beh kheir",
+    "phonetic": "shæb beh kheir",
+    "formal": false
+  },
+  {
+    "english": "Hello",
+    "german": "Hallo",
+    "farsi": "",
+    "latin": "Salam",
+    "formal": false
+  },
+  {
+    "english": "I miss you",
+    "german": "Ich vermisse dich",
+    "farsi": "",
+    "latin": "Delam barat tang shode",
+    "formal": false
+  },
+  {
+    "english": "I miss you",
+    "german": "Ich vermisse dich",
+    "farsi": "",
+    "latin": "Delam barat tang misheh",
+    "phonetic": "/delæm bæra:t tæng misheh/.",
+    "formal": false
+  },
+  {
+    "english": "How are you?",
+    "german": "",
+    "farsi": "",
+    "latin": "Shoma chetori?",
+    "formal": false
+  },
+  {
+    "english": "I'm fine, thanks!",
+    "german": "",
+    "farsi": "",
+    "latin": "Man khoobam, Mamnoon!",
+    "formal": false
+  },
+  {
+    "english": "And you?",
+    "german": "",
+    "farsi": "",
+    "latin": "Va shoma",
+    "formal": false
+  },
+  {
+    "english": "Good",
+    "german": "",
+    "farsi": "",
+    "latin": "Khoob",
+    "formal": false
+  },
+  {
+    "english": "You're welcome!",
+    "german": "",
+    "farsi": "",
+    "latin": "Khahesh mikonam",
+    "phonetic": "kha:hesh mikonæm",
+    "formal": false
+  },
+  {
+    "english": "Friend!",
+    "german": "",
+    "farsi": "",
+    "latin": "Refigh!",
+    "formal": false
+  },
+  {
+    "english": "What's New?",
+    "german": "",
+    "farsi": "",
+    "latin": "Che khabar?",
+    "formal": false
+  },
+  {
+    "english": "Nothing Much",
+    "german": "",
+    "farsi": "",
+    "latin": "Khabari nist",
+    "formal": false
+  },
+  {
+    "english": "See you later",
+    "german": "",
+    "farsi": "",
+    "latin": "Ba’adan mibinamet",
+    "formal": false
+  },
+  {
+    "english": "Good Luck!",
+    "german": "",
+    "farsi": "",
+    "latin": "Mo’afagh bashed",
+    "formal": false
+  },
+  {
+    "english": "Happy Birthday!",
+    "german": "",
+    "farsi": "",
+    "latin": "Tavalodat mobarak",
+    "phonetic": "taval.lodet moba:ræk!",
+    "formal": false
+  },
+  {
+    "english": "Happy New Year!",
+    "german": "",
+    "farsi": "",
+    "latin": "Sal e no mobarak",
+    "phonetics": "sa:l-e- no moba:ræk",
+    "formal": false
+  },
+  {
+    "english": "Merry Christmas!",
+    "german": "",
+    "farsi": "",
+    "latin": "Kirismass Mobarak",
+    "formal": false
+  },
+  {
+    "english": "Congratulations!",
+    "german": "",
+    "farsi": "",
+    "latin": "Tabrik migoyam",
+    "formal": false
+  },
+  {
+    "english": "Enjoy (your meal ...)",
+    "german": "",
+    "farsi": "",
+    "latin": "Nooshe jon",
+    "formal": false
+  },
+  {
+    "english": "I'm always thinking of you",
+    "german": "",
+    "farsi": "",
+    "latin": "Hamishe be to fekr mikonam",
+    "formal": false
+  },
+  {
+    "english": "I love you more every day and I am always thinking of you.",
+    "german": "",
+    "farsi": "",
+    "latin": "Hamishe be to fekr mikonam",
+    "phonetics": "hær ru:z bish æz ru:z-e- ghæbl du:set da:ræm væ hær læhzeh beh ya:detæm",
+    "formal": false
+  },
+  {
+    "english": "You make me happy",
+    "german": "",
+    "farsi": "",
+    "latin": "Tou mano khoshhal mikony",
+    "formal": false
+  },
+  {
+    "english": "I'd like to visit Iran one day",
+    "german": "",
+    "farsi": "من دوست دارم که یک روز ایران رو ببینم",
+    "latin": "Man dost daram ke yek rooz iran ra bebinam",
+    "formal": false
+  },
+  {
+    "english": "Say hi to John for me",
+    "german": "",
+    "farsi": "",
+    "latin": "Be John salam e man ra beresoonid",
+    "formal": false
+  },
+  {
+    "english": "Bless you (when sneezing)",
+    "german": "",
+    "farsi": "افیت باشد",
+    "latin": "A’afiat bashad",
+    "formal": false
+  },
+  {
+    "english": "Good night & sweet dreams!",
+    "german": "",
+    "farsi": "شب بخیر و خوابهای خوب ببینی",
+    "latin": "Shab bekheyr va khab hay e khoob bebini",
+    "formal": false
+  },
+  {
+    "english": "I'm sorry!",
+    "german": "",
+    "farsi": "",
+    "latin": "Bebakhshid",
+    "phonetic": "bebækh shid",
+    "formal": false
+  },
+  {
+    "english": "Excuse me",
+    "german": "",
+    "farsi": "",
+    "latin": "Bebakhshid",
+    "phonetic": "bebækh shid",
+    "formal": false
+  },
+  {
+    "english": "No problem!",
+    "german": "",
+    "farsi": "",
+    "latin": "Moshkeli nist",
+    "formal": false
+  },
+  {
+    "english": "Can you say it again?",
+    "german": "",
+    "farsi": "",
+    "latin": "Mish tekrar konid?",
+    "formal": false
+  },
+  {
+    "english": "Can you speak slowly?",
+    "german": "",
+    "farsi": "",
+    "latin": "Mishe ahesteh tar sohbat konid",
+    "formal": false
+  },
+  {
+    "english": "Write it down pease!",
+    "german": "",
+    "farsi": "",
+    "latin": "Lotfan yaddasht konid",
+    "formal": false
+  },
+  {
+    "english": "I don't understand!",
+    "german": "",
+    "farsi": "",
+    "latin": "Motavajjeh nemisham",
+    "formal": false
+  },
+  {
+    "english": "I don't know!",
+    "german": "",
+    "farsi": "",
+    "latin": "Nemidunam",
+    "formal": false
+  },
+  {
+    "english": "I Have No Idea.",
+    "german": "",
+    "farsi": "",
+    "latin": "Nazari nadaram",
+    "formal": false
+  },
+  {
+    "english": "You are my world",
+    "german": "",
+    "farsi": "",
+    "latin": "Toe donya man hastie",
+    "formal": false
+  },
+  {
+    "english": "I love you",
+    "german": "",
+    "farsi": "عاشقتم",
+    "latin": "Asheghetam",
+    "formal": false
+  },
+  {
+    "english": "I love you (I like you)",
+    "german": "",
+    "farsi": "عاشقتم",
+    "latin": "Duset daram",
+    "phonetic": "/du:set da:ræm/",
+    "formal": false
+  },
+  {
+    "english": "You look very nice today",
+    "german": "",
+    "farsi": "",
+    "latin": "Emrooz cheghadr khoshgel shody",
+    "formal": false
+  },
+  {
+    "english": "Stay with me",
+    "german": "",
+    "farsi": "",
+    "latin": "Ba man bemoon",
+    "formal": false
+  },
+  {
+    "english": "Come visit me",
+    "german": "",
+    "farsi": "",
+    "latin": "Be man sar bezan",
+    "formal": false
+  },
+  {
+    "english": "Please call me",
+    "german": "",
+    "farsi": "",
+    "latin": "Lotfan be man zang bezan",
+    "formal": false
+  },
+  {
+    "english": "You are my best friend",
+    "german": "",
+    "farsi": "",
+    "latin": "To behtarin doostam hasti",
+    "formal": false
+  },
+  {
+    "english": "I will die without you",
+    "german": "",
+    "farsi": "",
+    "latin": "Bi to mimiram",
+    "formal": false
+  },
+  {
+    "english": "Kiss you",
+    "german": "",
+    "farsi": "",
+    "latin": "Miboosamet",
+    "formal": false
+  },
+  {
+    "english": "May I take you for a walk?",
+    "german": "",
+    "farsi": "",
+    "latin": "Miay berim gardesh",
+    "formal": false
+  },
+  {
+    "english": "I can't sleep without you",
+    "german": "",
+    "farsi": "",
+    "latin": "Bi to khabam nemibareh",
+    "formal": false
+  },
+  {
+    "english": "I see you in my dreams every night.",
+    "german": "",
+    "farsi": "",
+    "latin": "Harshab khabeto mibinam",
+    "formal": false
+  },
+  {
+    "english": "Please know me",
+    "german": "",
+    "farsi": "",
+    "latin": "Lotfan mano befahm",
+    "formal": false
+  },
+  {
+    "english": "I like your hairstyle",
+    "german": "",
+    "farsi": "",
+    "latin": "Nodele moohato doost daram",
+    "formal": false
+  },
+  {
+    "english": "Don't leave me alone",
+    "german": "",
+    "farsi": "",
+    "latin": "Mano tanha nagzar",
+    "formal": false
+  },
+  {
+    "english": "Thank you",
+    "german": "",
+    "farsi": "",
+    "latin": "Mamnoon",
+    "phonetic": "mæm nu:næm",
+    "formal": false
+  },
+  {
+    "english": "Thanks",
+    "german": "",
+    "farsi": "",
+    "latin": "Tashakor",
+    "phonetic": "tæshækor",
+    "formal": false
+  },
+  {
+    "english": "Your eyes look amazing",
+    "german": "",
+    "farsi": "",
+    "latin": "Cheshmat kheili ghashange",
+    "formal": false
+  },
+  {
+    "english": "What a beautiful dress",
+    "german": "",
+    "farsi": "",
+    "latin": "Che lebase ghashangi",
+    "formal": false
+  },
+  {
+    "english": "I wish I would see you",
+    "german": "",
+    "farsi": "",
+    "latin": "Kash mididamet",
+    "formal": false
+  },
+  {
+    "english": "I wish you were here ",
+    "german": "",
+    "farsi": "",
+    "latin": "Kash inja boodi",
+    "formal": false
+  },
+  {
+    "english": "Have a good time",
+    "german": "",
+    "farsi": "",
+    "latin": "Khosh begzareh",
+    "formal": false
+  },
+  {
+    "english": "You are always on my mind",
+    "german": "",
+    "farsi": "",
+    "latin": "Hamishe be yadetam",
+    "formal": false
+  },
+  {
+    "english": "Take care",
+    "german": "",
+    "farsi": "",
+    "latin": "Movazebe khodet bash",
+    "formal": false
+  },
+  {
+    "english": "Always take good care of yourself because I really care about you.",
+    "german": "",
+    "farsi": "",
+    "latin": "Hamishe movâzebe khodet bâsh chon barâm azizi",
+    "formal": false
+  },
+  {
+    "english": "I love you more than you'll ever know.",
+    "german": "",
+    "farsi": "",
+    "latin": "Bish az ânche tasavvor koni dustet dâram",
+    "formal": false
+  },
+  {
+    "english": "Good night, I hope to see you in my dreams..",
+    "german": "",
+    "farsi": "",
+    "latin": "Shab khosh, omidvâram khâbeto bebinam",
+    "formal": false
+  },
+  {
+    "english": "Welcome (Greeting)",
+    "german": "",
+    "farsi": "",
+    "latin": "Khosh Amadid!",
+    "formal": false
+  },
+  {
+    "english": "What Is This?",
+    "german": "",
+    "farsi": "",
+    "latin": "In chieh?",
+    "formal": false
+  },
+  {
+    "english": "I need to practice my Farsi",
+    "german": "",
+    "farsi": "",
+    "latin": "Man bayad farsi ro bishtar tamrin konam",
+    "formal": false
+  },
+  {
+    "english": "Don't worry about it!",
+    "german": "",
+    "farsi": "",
+    "latin": "Negaranesh nabash",
+    "phonetic": "negæra:nesh næba:sh",
+    "formal": false
+  },
+  {
+    "english": "I want to go home",
+    "german": "",
+    "farsi": "",
+    "latin": "Mikham beram khooneh",
+    "phonetic": "mikha:m beræm khu:neh",
+    "formal": false
+  },
+  {
+    "english": "How are you?",
+    "german": "",
+    "farsi": "",
+    "latin": "Haletoon chetoreh?",
+    "phonetic": "ha:letu:n chetoreh?",
+    "formal": false
+  },
+  {
+    "english": "May I come in?",
+    "german": "",
+    "farsi": "",
+    "latin": "Mitunam biyam tu?",
+    "phonetic": "mitu:næm biya:m tu:?",
+    "formal": false
+  },
+  {
+    "english": "I’ll come to see you tomorrow",
+    "german": "",
+    "farsi": "",
+    "latin": "Farda miyam bebinamet",
+    "phonetic": "færda: miya:m bebinæmet",
+    "formal": false
+  },
+  {
+    "english": "Nice to meet you",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "æz a:shna: i: tu:n khosh bækh tæm",
+    "formal": false
+  },
+  {
+    "english": "I wish I could see you once more",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "ei ka:sh yek ba:r-e- digær mididæmet",
+    "formal": false
+  },
+  {
+    "english": "I will impatiently wait for you to come back.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "bi sæbra:neh montæzeretæm ta: bærgærdi",
+    "formal": false
+  },
+  {
+    "english": "You are so beautiful! ",
+    "german": "",
+    "farsi": "",
+    "latin": "Kheili khosh geli",
+    "phonetic": "kheili khosh geli:",
+    "formal": false
+  },
+  {
+    "english": "When will you come back?",
+    "german": "",
+    "farsi": "",
+    "latin": "Kei bar migardi",
+    "phonetic": "kei bær migærdi",
+    "formal": false
+  },
+  {
+    "english": "Grandfather",
+    "german": "",
+    "farsi": "",
+    "latin": "Pedar bozorg",
+    "phonetic": "pedær bozorg",
+    "formal": false
+  },
+  {
+    "english": "Grandmother",
+    "german": "",
+    "farsi": "",
+    "latin": "Madar bozorg",
+    "phonetic": "ma:dær bozorg",
+    "formal": false
+  },
+  {
+    "english": "A red rose is like a hot kiss, and I am sending you a whole bunch of them!",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "hær gol-e- sorkh bu:seh ye da:ghist væ mæn hælgheh i: særsha:r æz a:n miferestæmæt",
+    "formal": false
+  },
+  {
+    "english": "I want...",
+    "german": "",
+    "farsi": "",
+    "latin": "Mikham",
+    "phonetic": "mikha:m",
+    "formal": false
+  },
+  {
+    "english": "Please forgive me, I am still the same lover!",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "lotfæn mænu: bebækhsh, mæn hænu:z hæmu:n a:sheghetæm",
+    "formal": false
+  },
+  {
+    "english": "I speak a little Persian",
+    "german": "",
+    "farsi": "",
+    "latin": "Man kami farsi baladam",
+    "phonetic": "mæn kæmi fa:rsi bælædæm",
+    "formal": false
+  },
+  {
+    "english": "You are big",
+    "german": "",
+    "farsi": "",
+    "latin": "To bozorgi",
+    "phonetic": "to bozorgi",
+    "formal": false
+  },
+  {
+    "english": "It’s very cool",
+    "german": "",
+    "farsi": "",
+    "latin": "Kheili ba haleh",
+    "phonetic": "kheili ba: ha:leh",
+    "formal": false
+  },
+  {
+    "english": "You are very cool",
+    "german": "",
+    "farsi": "",
+    "latin": "Kheili ba hali",
+    "phonetic": "kheili ba: ha:li",
+    "formal": false
+  },
+  {
+    "english": "I want to do with you what spring does to the Cherry trees.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "mikha:hæm bæra: yæt hæm chu:n bæha:ri bæra: ye sheku:f-e- ha: ye gi:la:s ba:shæm",
+    "formal": false
+  },
+  {
+    "english": "Hey, my friend, Nice meeting you since the beginning of the year.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "chetori ræfigh? Ræfti ha:ji ha:ji mækeh, ha:",
+    "formal": false
+  },
+  {
+    "english": "You are like the sun, when I think of you, you brighten up my day.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "o hæma:nænd _e_ khorshidi:, hær ga:h keh beh to biændishæm ru:zæm monæv.vær æst",
+    "formal": false
+  },
+  {
+    "english": "You have beautiful eyes! ",
+    "german": "",
+    "farsi": "",
+    "latin": "Chesha ye ghashangi dari",
+    "phonetic": "chesha: ye ghæshængi da:ri",
+    "formal": false
+  },
+  {
+    "english": "Happy anniversary",
+    "german": "",
+    "farsi": "",
+    "latin": "Sal ruz mobarak",
+    "phonetic": "sa:l ru:z moba:ræk",
+    "formal": false
+  },
+  {
+    "english": "Can I speak to Helen?",
+    "german": "",
+    "farsi": "",
+    "latin": "Mitunam ba helen sohbat konam?",
+    "phonetic": "mitu:næm ba: Helen sohbæt konæm",
+    "formal": false
+  },
+  {
+    "english": "Little sister",
+    "german": "",
+    "farsi": "",
+    "latin": "Khahar kuchulu",
+    "phonetic": "kha:hær ku:chu:lu:",
+    "formal": false
+  },
+  {
+    "english": "I love talking to you",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "mæn æz hærf zædæn ba:ha:t lezæt mi bæræm",
+    "formal": false
+  },
+  {
+    "english": "Could you do me a favour please?",
+    "german": "",
+    "farsi": "",
+    "latin": "Mish e ye lotfi dar hagham bokoni",
+    "phonetic": "mish_e_ ye lotfi dær hæghæm bokoni",
+    "formal": false
+  },
+  {
+    "english": "When will you call me again?",
+    "german": "",
+    "farsi": "",
+    "latin": "Dubareh kei behem zang mizani",
+    "phonetic": "du:ba:reh kei behem zæng mizæni",
+    "formal": false
+  },
+  {
+    "english": "When will you write a letter to me?",
+    "german": "",
+    "farsi": "",
+    "latin": "Kei behem nameh midi",
+    "phonetic": "kei behem na:meh midi",
+    "formal": false
+  },
+  {
+    "english": "What?",
+    "german": "",
+    "farsi": "",
+    "latin": "Cheh",
+    "phonetic": "cheh",
+    "formal": false
+  },
+  {
+    "english": "Where?",
+    "german": "",
+    "farsi": "",
+    "latin": "Koja?",
+    "phonetic": "koja:",
+    "formal": false
+  },
+  {
+    "english": "How?",
+    "german": "",
+    "farsi": "",
+    "latin": "Chetor?",
+    "phonetic": "chetor",
+    "formal": false
+  },
+  {
+    "english": "When?",
+    "german": "",
+    "farsi": "",
+    "latin": "Kei",
+    "phonetic": "kei",
+    "formal": false
+  },
+  {
+    "english": "Who",
+    "german": "",
+    "farsi": "",
+    "latin": "Ki",
+    "phonetic": "ki",
+    "formal": false
+  },
+  {
+    "english": "Why",
+    "german": "",
+    "farsi": "",
+    "latin": "Chera",
+    "phonetic": "chera:",
+    "formal": false
+  },
+  {
+    "english": "Please, do not doubt my love for you.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "lotfæn, dær eshghæm beh to shæk nækon",
+    "formal": false
+  },
+  {
+    "english": "I love you and miss you like the desert needs the rain.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "hæm chu:n biya:ba:n _e_ teshneh ye ba:ra:n du:stæt da:ræm væ bighæra:retæm",
+    "formal": false
+  },
+  {
+    "english": "I hate them all!",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "æz hæmæshu:n motenæferæm",
+    "formal": false
+  },
+  {
+    "english": "Will you marry me?",
+    "german": "",
+    "farsi": "",
+    "latin": "Aya baham ezdevaj mikoni",
+    "phonetic": "a:ya: ba:ha:m ezdeva:j mikoni",
+    "formal": false
+  },
+  {
+    "english": "Are you ignoring me?",
+    "german": "",
+    "farsi": "",
+    "latin": "Sari bi khiyalam mishi",
+    "phonetic": "da:ri bi khiya:læm mishi",
+    "formal": false
+  },
+  {
+    "english": "I enjoyed our time at the river.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "kena:r _ e _ ru:d khu:neh kheili behem khosh gozæsht",
+    "formal": false
+  },
+  {
+    "english": "Would you like have a coffee with me?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "ma:yeli yeh fenju:n ghæhveh ba: hæm bokhorim",
+    "formal": false
+  },
+  {
+    "english": "I adore my crazy boyfriend!",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "ghorbu:n _e_ du:st pesær _e_ divu:næm beræm, ela:hi",
+    "formal": false
+  },
+  {
+    "english": "We have been through much together, it has made our love stronger.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "kheili ba: hæm gha:ti shodim, væ in esh-ghemu:n o ghævitær kærdeh",
+    "formal": false
+  },
+  {
+    "english": "How is Dr. Hossein doing in Iran?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": ":gha: ye doktor Hussein tu: ira:n chetoræn",
+    "formal": false
+  },
+  {
+    "english": "I wish we could get together for discussion and tea",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "ei ka:sh mitu:nestim ye cha: i: ba: hæm bokhorim o gæpi bezænim",
+    "formal": false
+  },
+  {
+    "english": "My name is William! ",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "esmæm William _e_",
+    "formal": false
+  },
+  {
+    "english": "You are the most beautiful girl on earth and I want to marry you!",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "to khosh gel tærin dokhtær _e_ ru: ye zæmini væ mæn mikha:m ba:ha:t ezdeva:j konæm",
+    "formal": false
+  },
+  {
+    "english": "I want you, I want you so bad, it’s driving me mad!",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "mikha:met, bæd ju:ri mikha:met, da:ræm divu:neh mishæm",
+    "formal": false
+  },
+  {
+    "english": "You are bothering me!",
+    "german": "",
+    "farsi": "",
+    "latin": "Dari aziyat mikoni",
+    "phonetic": "da:ri æziyæt mikoni",
+    "formal": false
+  },
+  {
+    "english": "My love and my heart have been lost in the depth of your meaningful look. Will you take them back to me?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "eshegh _e_ mæn, ghælb_e_ mæn dær omgh_e_ nega:h_e_ por mæna:ye to gom shodeh. mia:rish bæra:m?",
+    "formal": false
+  },
+  {
+    "english": "Dreaming is the real magic power.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "kha:b didæn ghodræt _e_ ja:du: i: ye va:gheh i:st",
+    "formal": false
+  },
+  {
+    "english": "Can you speak a bit slower please?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "misheh lotfæn yeh kæm a:ru:m tær sohbæt konin",
+    "formal": false
+  },
+  {
+    "english": "How do you say [word] in Farsi?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "[word] beh Fa:rsi chi misheh",
+    "formal": false
+  },
+  {
+    "english": "How long are you living in Belgium?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "chæn væght e tu: Belzhik zendegi mikonin",
+    "formal": false
+  },
+  {
+    "english": "Excuse me, my knowledge of Farsi is very limited but I’m learning.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "bebækh shid, da:nesh e Fa:rsim kheili mæhdu:d e, væli da:ræm ya:d migiræm",
+    "formal": false
+  },
+  {
+    "english": "[name], since I met you, my world has become complete.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "[name], æz væghti keh didæmet donya:m ka:mel shodeh",
+    "formal": false
+  },
+  {
+    "english": "You are very kind",
+    "german": "",
+    "farsi": "",
+    "latin": "Lotf darin",
+    "phonetic": "lotf da:rin",
+    "formal": false
+  },
+  {
+    "english": "The food is delicious. ",
+    "german": "",
+    "farsi": "",
+    "latin": "Ghaza kheili khosh mazas",
+    "phonetic": "ghæza: kheili khosh mæz.zæs",
+    "formal": false
+  },
+  {
+    "english": "It’s wonderful.",
+    "german": "",
+    "farsi": "",
+    "latin": "Aali ye",
+    "phonetic": "a:li ye",
+    "formal": false
+  },
+  {
+    "english": "I want to love you for the rest of my life.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "mikha:m ba:ghi ye omræmo a:sheghet ba:shæm",
+    "formal": false
+  },
+  {
+    "english": "Thank you for being my best friend",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "mæmnu:næm æz in keh behtærin du:st _e_ mæni",
+    "formal": false
+  },
+  {
+    "english": "I hope that you are fine",
+    "german": "",
+    "farsi": "",
+    "latin": "Omidvaram haletun khub basheh",
+    "phonetic": "omid va:ræm ha:letu:n khu:b ba:sheh",
+    "formal": false
+  },
+  {
+    "english": "Would you like to go for tea?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "ma:yeli berim ye cha: i: ba: ham bezanim?",
+    "formal": false
+  },
+  {
+    "english": "Are you cheating on me?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "da:ri særæm kola: miza:ri",
+    "formal": false
+  },
+  {
+    "english": "You are punishing me so?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "da:ri in ju:ri moja:za:tæm midi?",
+    "formal": false
+  },
+  {
+    "english": "You’re a babe!",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "bæch.cheh i:",
+    "formal": false
+  },
+  {
+    "english": "Your smile is amazing",
+    "german": "",
+    "farsi": "",
+    "latin": "Labkhandet mahshareh",
+    "phonetic": "læb khændet mæh shær e",
+    "formal": false
+  },
+  {
+    "english": "Please be patient with me.",
+    "german": "",
+    "farsi": "",
+    "latin": "Lotfan sabur bash",
+    "phonetic": "Lotfæn ba: mæn sæbu:r ba:sh",
+    "formal": false
+  },
+  {
+    "english": "We are different but equal.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "ma: æz hæm motefa:vet væli yeksa:nim",
+    "formal": false
+  },
+  {
+    "english": "Please be gentle and slow with me.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "lotfæn ba: mæn mehræba:n væ a:ra:m ba:sh",
+    "formal": false
+  },
+  {
+    "english": "I’m fine",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "mæn khu:bæm",
+    "formal": false
+  },
+  {
+    "english": "Can you repeat that?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "momkeneh lotfan hærfeto tekra:r koni",
+    "formal": false
+  },
+  {
+    "english": "I’m sorry for my late?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "bebækh shid keh dir kærdæm",
+    "formal": false
+  },
+  {
+    "english": "Excuse me, I can’t hear you.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "bebækh shid, seda:t o nemish nævæm",
+    "formal": false
+  },
+  {
+    "english": "Sweetheart",
+    "german": "",
+    "farsi": "",
+    "latin": "Mahbubeh",
+    "phonetic": "mæhbu:beh",
+    "formal": false
+  },
+  {
+    "english": "Honey!",
+    "german": "",
+    "farsi": "",
+    "latin": "azizam",
+    "phonetic": "æzizæm",
+    "formal": false
+  },
+  {
+    "english": "I am so lucky to have you in my life.",
+    "german": "",
+    "farsi": "",
+    "latin": "I am so lucky to have you in my life.",
+    "phonetic": "kheili khosh sha:nsæm keh to tu: zendegi ye mæni",
+    "formal": false
+  },
+  {
+    "english": "Yes",
+    "german": "",
+    "farsi": "",
+    "latin": "Baleh",
+    "phonetic": "bæleh",
+    "formal": false
+  },
+  {
+    "english": "Yes",
+    "german": "",
+    "farsi": "",
+    "latin": "Areh",
+    "phonetic": "a:reh",
+    "formal": false
+  },
+  {
+    "english": "No",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "næh",
+    "formal": false
+  },
+  {
+    "english": "Please",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "lotfæn",
+    "formal": false
+  },
+  {
+    "english": "May I have a fork please?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "misheh lotfæn yeh chænga:l beh mæn bedin",
+    "formal": false
+  },
+  {
+    "english": "Good day",
+    "german": "",
+    "farsi": "",
+    "latin": "ruz bekheir",
+    "phonetic": "ru:z beh kheir",
+    "formal": false
+  },
+  {
+    "english": "Good evening",
+    "german": "",
+    "farsi": "",
+    "latin": "asr bekheir",
+    "phonetic": "æsr beh kheir",
+    "formal": false
+  },
+  {
+    "english": "I like spending time with you.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "u:st da:ræm keh ba: to væghtæm o sær konæm",
+    "formal": false
+  },
+  {
+    "english": "We are perfect for each other.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "mæn o to va:seh hæm sa:khteh shodim",
+    "formal": false
+  },
+  {
+    "english": "You are so sweet to me, you deserve a thousand kisses.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "to bæra: ye mæn kheili æzizi, heza:ra:n bu:seh mi ærzi",
+    "formal": false
+  },
+  {
+    "english": "[name], you are the most important thing in my life – and I love you so much – and I hope that the same girl I fell in love with will come back to me",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "[name], to mohem tærin bækhsh e zendegi æm hæsti – væ mæn kheili du:set da:ræm – væ omidva:ræm keh hæma:n dokhtæri keh a:sheghæsh shodæm beh pishæm bær gærdeh",
+    "formal": false
+  },
+  {
+    "english": "You bring out the real happiness in me. I am forever grateful for your love – and even though I am so far, I will be back with my love soon.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "to khoshi ye va:gheh i: ro beh mæn midi – hæmisheh mæmnu:n e eshghetæm – væ hær chænd kheili æzæt du:ræm – bezu:di ba: eshghæm pishet bær mi gærdæm",
+    "formal": false
+  },
+  {
+    "english": "Do you speak English?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "englisi bælædi",
+    "formal": false
+  },
+  {
+    "english": "The first Sunday in every month we have a meeting, if you would like to come.ævælin yek shænbeh ye hær ma:h ma: dor e hæm jæm mi shim. ægeh du:st da:shti biya:",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "ævælin yek shænbeh ye hær ma:h ma: dor e hæm jæm mi shim. ægeh du:st da:shti biya:",
+    "formal": false
+  },
+  {
+    "english": "Life without you isn’t worth living.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "bi to zendegi ærzesh e zi:stæn ra: næda:ræd",
+    "formal": false
+  },
+  {
+    "english": "God gave me the best gift, and that’s you.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "khoda: behtærin hedya ro beh mæn da:deh væ u:n to i:",
+    "formal": false
+  },
+  {
+    "english": "Cook me some Iranian food! ",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "ye ghæza: ye ira:ni va:sæm dorost kon",
+    "formal": false
+  },
+  {
+    "english": "How was your day?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "ru:zet chetor bu:d",
+    "formal": false
+  },
+  {
+    "english": "It’s time to go outside",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "væght e biru:n ræftæn e",
+    "formal": false
+  },
+  {
+    "english": "Are you feeling okay?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "ha:let khu:beh",
+    "formal": false
+  },
+  {
+    "english": "Thank you",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "mæmnu:næm",
+    "formal": false
+  },
+  {
+    "english": "Thank you",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "moteshækeræm",
+    "formal": false
+  },
+  {
+    "english": "Tomorrow there is no school",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "færda: mædreseh tætileh",
+    "formal": false
+  },
+  {
+    "english": "You are my best friend",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "to behtærin du:st væ eshgh e zendegi ye mæni",
+    "formal": false
+  },
+  {
+    "english": "I could not picture my life without you and am so lucky to have you.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "bi to zendegi ye mæn mæfhu:mi næda:sht, væ ba: to khosh bækhtæm",
+    "formal": false
+  },
+  {
+    "english": "There is no point in living, if you can’t live happy.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "zendegi bi mæna:st ægær nætæva:ni khosh ha:l zendegi koni",
+    "formal": false
+  },
+  {
+    "english": "I have a crush on you!",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "delæm o bordi",
+    "formal": false
+  },
+  {
+    "english": "Would you like to come over tonight?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "du:st da:ri emshæb biya:y pishæm",
+    "formal": false
+  },
+  {
+    "english": "The best country in the world is Iran!",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "behtærin keshvær e donya: ira:n e",
+    "formal": false
+  },
+  {
+    "english": "I love Iranians!",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "mæn a:shegh e ira:ni ya:m",
+    "formal": false
+  },
+  {
+    "english": "I love Iran!",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "mæn a:shegh e ira:næm",
+    "formal": false
+  },
+  {
+    "english": "You are my promised land. You are my music. You are light of my eyes.",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "to særzæmin e mo u:d e mæni. to mu:sighi ye mæni. to nu:r e chæshm e mæni",
+    "formal": false
+  },
+  {
+    "english": "Are you okay now?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "ha:la: ha:let khu:beh",
+    "formal": false
+  },
+  {
+    "english": "Whatever Whenever However",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "hær chi, hær væght, beh hær su:ræt",
+    "formal": false
+  }
+]
