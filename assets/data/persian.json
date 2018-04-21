@@ -2,7 +2,7 @@
   {
     "english": "Good Morning",
     "german": "Guten Morgen",
-    "farsi": "",
+    "farsi": "صبح به خیر",
     "latin": "Sobh Bekheir",
     "formal": false
   },
@@ -12,6 +12,14 @@
     "farsi": "",
     "latin": "Shab beh kheir",
     "phonetic": "shæb beh kheir",
+    "formal": false
+  },
+  {
+    "english": "Good Afternoon",
+    "german": "",
+    "farsi": "بعدازظهر به خیر",
+    "latin": "Baød-az-zohr be kheyr",
+    "phonetic": "",
     "formal": false
   },
   {
@@ -44,10 +52,24 @@
     "formal": false
   },
   {
+    "english": "I'm fine",
+    "german": "",
+    "farsi": "خوب‌ام",
+    "latin": "Khub-am",
+    "formal": false
+  },
+  {
     "english": "I'm fine, thanks!",
     "german": "",
     "farsi": "",
     "latin": "Man khoobam, Mamnoon!",
+    "formal": false
+  },
+  {
+    "english": "So-So",
+    "german": "",
+    "farsi": "بد نیستم",
+    "latin": "Bad nistam",
     "formal": false
   },
   {
@@ -80,9 +102,9 @@
     "formal": false
   },
   {
-    "english": "What's New?",
+    "english": "What's up?",
     "german": "",
-    "farsi": "",
+    "farsi": "چه خبر؟",
     "latin": "Che khabar?",
     "formal": false
   },
@@ -525,6 +547,14 @@
     "farsi": "",
     "latin": "",
     "phonetic": "æz a:shna: i: tu:n khosh bækh tæm",
+    "formal": false
+  },
+  {
+    "english": "Nice to meet you",
+    "german": "",
+    "farsi": "خوشبخت‌ام",
+    "latin": "khoshbakht-am",
+    "phonetic": "",
     "formal": false
   },
   {
@@ -1154,7 +1184,7 @@
   {
     "english": "Good day",
     "german": "",
-    "farsi": "",
+    "farsi": "روز به خیر",
     "latin": "ruz bekheir",
     "phonetic": "ru:z beh kheir",
     "formal": false
@@ -1580,6 +1610,270 @@
     "german": "",
     "farsi": "اینو به من بده",
     "latin": "Ino be man bede!",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "My love",
+    "german": "",
+    "farsi": "عشقِ من",
+    "latin": "Eshghe man",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "My ...",
+    "german": "",
+    "farsi": "من",
+    "latin": "... man",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Have a good day",
+    "german": "",
+    "farsi": "روز خوبی داشته باشی",
+    "latin": "Ruz-e khub-i dâshte bâshid",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Have a good night",
+    "german": "",
+    "farsi": "شب خوبی داشته باشید",
+    "latin": "Shab-e khub-i dâshte bâshid",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "What have you been up to lately?",
+    "german": "",
+    "farsi": "",
+    "latin": "In chand ruze chi mikardi",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Always smile",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "hæmisheh læbkhænd bezæn",
+    "formal": false
+  },
+  {
+    "english": "I hope you feel better",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "omidva:ræm keh ha:læt behtær shodeh ba:shæd",
+    "formal": false
+  },
+  {
+    "english": "I missed you",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "delæm bæra:t tæng shod",
+    "formal": false
+  },
+  {
+    "english": "Where are you now?",
+    "german": "",
+    "farsi": "alan kojaee",
+    "latin": "",
+    "phonetic": "æla:n koja: i:",
+    "formal": false
+  },
+  {
+    "english": "What are you thinking?",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "beh chi fekr mikoni",
+    "formal": false
+  },
+  {
+    "english": "You are the best",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "to behtærini",
+    "formal": false
+  },
+  {
+    "english": "You mean so much to me!",
+    "german": "",
+    "farsi": "",
+    "latin": "",
+    "phonetic": "to bæra:m kheili æzizi",
+    "formal": false
+  },
+  {
+    "english": "Yes",
+    "german": "",
+    "farsi": "h",
+    "latin": "Baleh",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "I'm a vegetarian",
+    "german": "",
+    "farsi": "",
+    "latin": "Man giâhkhoram",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "It's delicios",
+    "german": "",
+    "farsi": "",
+    "latin": "Kheyli khosh mazas",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "I'm full",
+    "german": "",
+    "farsi": "",
+    "latin": "Seer shodam",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "One non-alcoholic beer",
+    "german": "",
+    "farsi": "",
+    "latin": "Ye delester lotfan",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Nice to meet you",
+    "german": "",
+    "farsi": "",
+    "latin": "Khosh bakhtam",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Where is the bathroom?",
+    "german": "",
+    "farsi": "",
+    "latin": "Servees behdâshti kojâs",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Please speak more slowly",
+    "german": "",
+    "farsi": "ميشه آهسته تر صحبت کنيد؟",
+    "latin": "Mishe ahesteh tar sohbat konid",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "I have forgotten",
+    "german": "",
+    "farsi": "فراموش کرده‌ام",
+    "latin": "farâmush kardeam",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "I can't speak Persian [well]",
+    "german": "",
+    "farsi": "نمی‌توانم [خوب] فارسی حرف بزنم",
+    "latin": "nemitavânam [khub] Fârsi harf bezanam",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Can you speak English?",
+    "german": "",
+    "farsi": "می‌توانید انگلیسی حرف بزنید؟",
+    "latin": "mitavânid Engelisi harf bezanid?",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Is there someone here who speaks English?",
+    "german": "",
+    "farsi": "اینجا کسی انگلیسی می‌داند؟",
+    "latin": "injâ kas-i Engelisi midânad?",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Look out!",
+    "german": "",
+    "farsi": "مواظب باش!",
+    "latin": "movâzeb bâsh!",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Stop! thief!",
+    "german": "",
+    "farsi": "آهای دزد",
+    "latin": "âhây dozd!",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "I lost my bag",
+    "german": "",
+    "farsi": "ساک‌ام را گم کرده‌ام",
+    "latin": "sâk-am râ gom kardeam",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "I lost my wallet/purse",
+    "german": "",
+    "farsi": "کیف‌ام را گم کرده‌ام",
+    "latin": "kif-am râ gom kardeam",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "I'm sick",
+    "german": "",
+    "farsi": "حال‌ام بد است",
+    "latin": "hâl-am bad ast",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "I've been injured",
+    "german": "",
+    "farsi": "زخمی شده‌ام",
+    "latin": "zakhmi shodeam",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "I need a doctor",
+    "german": "",
+    "farsi": "به دکتر احتیاج دارم",
+    "latin": "be doktor ehtiyâj dâram",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "Can I use your phone?",
+    "german": "",
+    "farsi": "می‌شود از تلفن‌تان استفاده کنم؟",
+    "latin": "mishavad az telefon-etân estefâde konam?",
+    "phonetic": "",
+    "formal": false
+  },
+  {
+    "english": "",
+    "german": "",
+    "farsi": "",
+    "latin": "",
     "phonetic": "",
     "formal": false
   }
