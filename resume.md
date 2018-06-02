@@ -11,6 +11,18 @@ sitemap:
 
 For latest projects, kindly refer to my <a href="#independent-work">independent work</a>
 
+### SEDVentures Middle East, <location>Tehran, Iran</location>
+<date>Summer 2018</date>
+<position>Co-Founder</position>
+
+- Negotiate investor funding for our HQ in Ireland (SEDVentures Europe Limited)
+- Establish internal processes for all common operations such as hiring, reporting
+- Source, and interview candidates for marketing, development and sales
+- Research market conditions, evaluate individual ventures based on preset factors
+- Negotiate with suppliers on products and parts for individual ventures
+- Establish supply-chain for export to Europe: source, ship, pack, distribution
+- *Start-up fever: Everybody, everything.*
+
 ### Sky-Hype AG, <location>Schifflange, Luxembourg</location>
 <date>2016-2018</date>
 <position>Full-Stack Developer, Marketing</position>
