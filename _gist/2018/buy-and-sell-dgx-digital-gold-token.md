@@ -36,18 +36,21 @@ DGX is available trough the [Digix Marketplace](https://digix.global/app/#/marke
 
 ![Digix Marketplace Statistics](/assets/content/2018/buy-and-sell-dgx-digital-gold-token-01.png)
 
-The only exchange that supports DGX as DGX/ETH trading pair is [EtherDelta](https://etherdelta.com/#0x4f3afec4e5a3f2a6a1a411def7d7dfe50ee057bf-ETH), a decentralized Ethereum & Ethereum token exchange. Unfortunately there's virtually no liquidity.
+~~The only exchange that supports DGX as DGX/ETH trading pair is [EtherDelta](https://etherdelta.com/#0x4f3afec4e5a3f2a6a1a411def7d7dfe50ee057bf-ETH), a decentralized Ethereum & Ethereum token exchange. Unfortunately there's virtually no liquidity.~~
 
 ## How do I sell DGX?
 
-There are essentially 3 options to sell your DGX:
+- Have the piece of gold shipped to you (100+ DGX)
+- [EtherDelta](https://etherdelta.com/#0x4f3afec4e5a3f2a6a1a411def7d7dfe50ee057bf-ETH)
 
-- If you want to exchange 100 DGX, you can have the piece of gold shipped to you
-- You can place a sell-order on [EtherDelta](https://etherdelta.com/#0x4f3afec4e5a3f2a6a1a411def7d7dfe50ee057bf-ETH), but I doubt you'll get a good deal
-- You can use a escrow service
+<hr>
 
-## DGX Escrow
+**Update: 2018-06-08**
 
-Using an escrow service, you can exchange your DGX with virtually anybody, without having to trust them.
+A number of new services support DGX:
 
-[Start new DGX Escrow Transaction](/dgx-escrow/)
+- [Kyber Network](https://kyber.network/)
+- [Radar Relay](https://app.radarrelay.com/DGX/WETH)
+- [AirSwap](https://www.airswap.io/trade)
+- [TokenLon](https://tokenlon.token.im)
+- [OlympusLabs](https://olympuslabs.io/web)
