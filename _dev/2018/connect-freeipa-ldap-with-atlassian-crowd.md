@@ -3,8 +3,7 @@ title: "How-To connect FreeIPA LDAP with Atlassian Crowd"
 layout: post
 date: 2018-06-17 00:00:00 +0200
 category:
-  - dev
-  - sync
+  - ldap
 tags:
   - sso
   - confluence
@@ -12,7 +11,8 @@ tags:
   - crowd
   - atlassian
   - ldap
-  - debian
+  - freeipa
+  - centos
 ---
 
 ## Instructions
@@ -92,9 +92,10 @@ In order to use the newly added directory for authentication, here's what you do
 
 That's in. FreeIPA LDAP - Crowd - Jira / Confluence - Happiness
 
-## What's next? (Future Posts)
+## What's next?
 
-1. Configure FreeIPA LDAP with Matrix
-2. Configure FreeIPA with GitLab LDAP
-3. Jira 1-click installation script (MYSQL, HTTPS, NGINX reverse)
-4. Confluence 1-click installation script (MYSQL, HTTPS, NGINX reverse)
+1. [Connect FreeIPA LDAP with Atlassian Crowd](/dev/connect-freeipa-ldap-with-atlassian-crowd/) *- You are here*
+2. Configure FreeIPA LDAP with Matrix
+3. [Configure FreeIPA with GitLab LDAP](/dev/connect-freeipa-ldap-with-gitlab/)
+4. Jira 1-click installation script (MYSQL, HTTPS, NGINX reverse)
+5. Confluence 1-click installation script (MYSQL, HTTPS, NGINX reverse)
