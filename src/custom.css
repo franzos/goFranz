@@ -652,9 +652,21 @@ label {
   display: block;
 }
 
-ul.projects {
+ul.projects, ul.tiny {
   list-style: none;
   padding: 0px;
+}
+
+ul.tiny li a {
+  color: #fff;
+  background-color: #451668;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  margin-bottom: 4px;
+  padding-left: 8px;
 }
 
 ul.projects li {
@@ -681,9 +693,13 @@ ul.projects li a.last {
   margin-bottom: 0px;
 }
 
-ul.projects li a:hover {
+ul.projects li a:hover, ul.tiny li a:hover {
   color: #000;
   background-color: #000;
+}
+
+ul.tiny li a:hover {
+  color: #fff;
 }
 
 ul.projects li a country {
@@ -1056,6 +1072,10 @@ ul.pagination li a {
 
 .comments-wrapper.black .form-control:focus {
   border-left: 1px line #fff;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 @media (min-width: 750px) {

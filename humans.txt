@@ -9,6 +9,6 @@ Location: Don't track, ask.
 
 /* SITE */
 Last update: {{ site.time }}
-Language: English / German
+Language: English
 Doctype: HTML5
-IDE: Atom, Photoshop
+IDE: Atom

@@ -167,7 +167,7 @@ var map = L.mapbox.map('map')
             }
         },
         {% endfor %}
-        {% for client in site.clients %}{
+        {% for client in site.clients %}{% if client.city != "Tehran" %}{
             type: 'Feature',
             properties: {
                 title: 'Client in {{ client.city }}, {{ client.country }}',
@@ -180,7 +180,7 @@ var map = L.mapbox.map('map')
                 type: 'Point',
                 coordinates: [{{ client.map }}]
             }
-        }{% if forloop.last %}{% else %},{% endif %}
+        }{% endif %}{% if forloop.last %}{% else %},{% endif %}
         {% endfor %}
       ]
     };

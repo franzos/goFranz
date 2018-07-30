@@ -5,11 +5,11 @@ bg: pattern_029
 permalink: /about/
 ---
 
-<u>My Name is Franz Geffke</u> - I was born and raised in Germany but today my home is anywhere between Europe, the Middle-East and Southeast-Asia. New experiences and culture draw me to travel to, and to live in different countries all around the world - With stronger foreign ties come a different, new perspective on all aspects of life and business which I continue to embrace.
+<u>My Name is Franz Geffke</u> - I was born and raised in East Germany but today my home is anywhere between Europe, the Middle-East and Southeast-Asia. New experiences and culture draw me to travel to, and live in different countries all around the world - With stronger foreign ties come a different, new perspective on all aspects of life and business which I continue to embrace.
 
 <div id="map" data-slideout-ignore></div>
 
-Aside from my travels, I'm a big privacy advocate and strong supporter of technologies and ideas that help promote personal freedom, decentralize certain aspects of power, and are easily accessible to everyone - now or in the near future.
+Aside from my travels, I'm a privacy advocate and supporter of technologies and ideas that help promote personal freedom, decentralize certain aspects of power, and are easily accessible to everyone - now or in the near future.
 
 Whenever I'm not working, I like to disconnect and return a different era - with crackling vinyls, glowing amplifiers and a glass of scotch - no ice.
 
@@ -23,14 +23,15 @@ My work covers a variety of aspects but to summarize, __I help organizations inc
 - Lingel Windows, Germany
 - FiltaFry, Germany
 - Fit-A-Seal, Germany
-- Sky-Hype, Switzerland
+- Sky-Hype, Luxembourg
 - Malaysian-German Society, Malaysia
-- Q-Windows, Malaysia
-- Panther MPC, USA
+- Q-Windows, Malaysia & Singapore
+- Panther MPC, Ireland
 - AEE, Germany
 - On Air, Canada
 - DKKMA, UK
 - The Running Awards, UK
+- NEX Inotec, Thailand
 
 > Franz helped shape messaging and design engaging visual content for Global Entrepreneurship Week in the UK, a campaign that includes more than 3,000 events and 300,000 participants. Franz was great to work with, keen to test new ideas and push the work into new and exciting areas. The content he produced was central to a social campaign that was really innovative and effective in generating engagement from diverse audiences across multiple platforms. - Ewan Gaffney, GEW UK
 
@@ -66,8 +67,12 @@ Check out my [portfolio](/portfolio/) or review my featured work below.
 
 #### DevOps
 
-- Debian, Centos, Ubuntu (sored by preference)
+- Debian, Centos, Ubuntu (sorted by preference)
 - Nagios, New Relic
 - Docker
 - Nginx, Apache, HAProxy
-- AWS, Heroku (only node.js), Digitalocean, Firebase
+- AWS, Heroku (only node.js), Firebase
+
+<hr>
+
+[Have a project you'd like to discuss with me?](/contact/)

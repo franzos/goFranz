@@ -29,11 +29,12 @@ The online manual features numerous video tutorials and adapts to the size of yo
 
 ### Features
 
-- CRM (incl. acquisition pipeline)
+- Open Source CRM (incl. acquisition pipeline)
 - Quotes, Sales Orders, Invoice (incl. custom calculation, signature)
 - Warehousing, order processes
 - Detailed permission, Franchisee companies, central article registrar
 - Reporting on all process
+- GDPR compliant
 
 ### Website technology
 

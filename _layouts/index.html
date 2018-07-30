@@ -6,10 +6,55 @@ layout: layout
   {% include nav.html %}
 </div>
 
-<img class="franz" alt="Franz" src=/assets/images/franz.svg>
+<div class="container content-wrapper">
 
-<div class="container text-centered">
-  <p>What I'm working on these days ...</p>
+  <div class="row">
+    <div class="col-sm-5">
+      <h4 class="text-uppercase">Hey there</h4>
+      <p>There's nothing to see here but me. If you're still curious, read more <a href="/about/">about me</a>, or checkout one of the <a href="/work/erasmusoxygen/">projects</a> I'm currently working on.</p>
+
+    </div>
+    <div class="col-sm-3 col-sm-offset-1">
+      <h4 class="text-uppercase">Gist</h4>
+      <ul class="tiny">
+      {% assign gist = site.gist | sort: 'date' | reverse %}
+      {% for gist in gist limit:6 %}
+        <li><a href="{{ gist.url }}">{{ gist.title | truncate: 40 }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="col-sm-3">
+      <h4 class="text-uppercase">Dev</h4>
+      <ul class="tiny">
+      {% assign dev = site.dev | sort: 'date' | reverse %}
+      {% for dev in dev limit:6 %}
+        <li><a href="{{ dev.url }}">{{ dev.title | truncate: 40 }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <h4 class="text-uppercase">Latest work</h4>
+  <div class="row">
+  {% assign work = site.work | sort: 'date' | reverse %}
+  {% for work in work limit:4 %}
+    <div class="col-sm-3">
+      <a href="{{ work.url }}" class="wrapper">
+        <img class="img-responsive" src="/assets/images/projects/preview/{{ work.cover }}">
+        <p class="info"><b>{{ work.title }}</b>
+        <br><small>{{ work.introduction }}</small></p>
+      </a>
+    </div>
+  {% endfor %}
+  </div>
+
 </div>
 
-<!-- <img class="franz" alt="Franz" src=/assets/images/franz.svg> -->
+<!--
+<img class="franz" alt="Franz" src=/assets/images/franz.svg>
+<div class="container text-centered">
+  <p>
+    What I'm working on these days: <a href="/work/erasmusoxygen/">Erasmus Student Network in Istanbul</a>
+  </p>
+</div>
+-->

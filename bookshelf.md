@@ -1,5 +1,5 @@
 ---
-title: Bookshelf 2017
+title: Bookshelf
 layout: page
 bg: pattern_029
 permalink: /bookshelf/

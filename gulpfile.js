@@ -4,6 +4,9 @@ var cleanCss = require('gulp-clean-css');
 var image = require('gulp-image');
 var uglify = require('gulp-uglify-es').default;
 var watch = require('gulp-watch');
+var imageResize = require('gulp-image-resize');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 var pump = require('pump');
 
 gulp.task('css', function () {
@@ -151,6 +154,20 @@ gulp.task('files', function () {
         .pipe(gulp.dest('assets/js'));
 		gulp.src('src/comments.css')
         .pipe(gulp.dest('assets/css'));
+});
+
+gulp.task('thumbnail', function () {
+  gulp.src('assets/images/projects/*.{jpg,png}')
+    .pipe(imageResize({
+      width : 640,
+      height : 360,
+      crop : true
+    }))
+    .pipe(imagemin({
+      progressive: true,
+      use: [pngquant()]
+    }))
+    .pipe(gulp.dest('assets/images/projects/preview'));
 });
 
 gulp.task('watch', function() {

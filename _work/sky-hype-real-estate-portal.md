@@ -3,7 +3,7 @@ layout: page
 title:  "Sky-Hype AG Real Estate Portal"
 date:   2016-01-02 00:00:00 +0200
 client: "skyhype"
-cover: sky-hype-05.jpg
+cover: sky-hype-01.jpg
 bg: switzerland
 tags: "web development"
 introduction: Powerful, ExpressionEngine 3 based, worldwide real estate portal.
@@ -14,9 +14,7 @@ featured: true
 
 Sky-Hype AG approached me with the vision to plan, design, develop and maintain the largest, free property portal in the world. With a powerful metasearch engine and over 100 planned source portals, a huge project!
 
-{% include project-image.html caption="January 2017, Homepage" image="sky-hype-01.jpg" %}
-
-{% include project-image.html caption="September 2017, Homepage" image="sky-hype-05.jpg" %}
+{% include project-image.html image="sky-hype-01.jpg" %}
 
 ## What I did
 
