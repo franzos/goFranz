@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Sky-Hype AG Real Estate Portal"
-date:   2016-01-02 00:00:00 +0200
+title: "Sky-Hype AG Real Estate Portal"
+date: 2016-01-02 00:00:00 +0200
 client: "skyhype"
 cover: sky-hype-01.jpg
 bg: switzerland

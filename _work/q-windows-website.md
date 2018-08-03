@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Q-Windows Website"
-date:   2017-01-02 00:00:00 +0200
+title: "Q-Windows Website"
+date: 2017-01-02 00:00:00 +0200
 client: "qwindows"
 cover: q-windows-08.jpg
 bg: malaysia

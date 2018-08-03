@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Vue.js Ethereum Address Inspector"
-date:   2017-10-01 00:00:00 +0200
+title: "Vue.js Ethereum Address Inspector"
+date: 2017-10-01 00:00:00 +0200
 client: "independent"
 cover: ethereum-address-inspector-01.jpg
 bg: switzerland

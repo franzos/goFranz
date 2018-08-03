@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Panther Alpha Website"
-date:   2016-07-01 00:00:00 +0200
+title: "Panther Alpha Website"
+date: 2016-07-01 00:00:00 +0200
 client: "panther"
 bg: california
 cover: panther-mpc-01.jpg

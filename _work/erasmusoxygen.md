@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "ErasmusOxygen Website"
-date:   2018-07-25 00:00:00 +0200
+title: "Erasmus Oxygen Website"
+date: 2018-07-25 00:00:00 +0200
 client: "independent"
 cover: erasmusoxygen-01.jpg
 bg: switzerland

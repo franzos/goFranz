@@ -1141,12 +1141,11 @@ ul.pagination li a {
   #menu.bg-home {
     background-color: #fff;
   }
-  #panel.bg.index {
-  }
   ul.projects li a {
     font-size: 1em;
     padding: 20px;
     margin-bottom: 20px;
+    min-height: 92px;
   }
   ul.projects li a country {
     margin-left: 8px;

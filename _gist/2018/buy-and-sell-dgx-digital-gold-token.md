@@ -4,7 +4,7 @@ layout: post
 source:
 date: 2018-04-10 22:00:00 +0350
 category:
-  - Cryptocurrency
+  - crypto
 tags:
   - dgx
   - privacy

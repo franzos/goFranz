@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Fit-A-Seal ERP"
-date:   2017-01-02 00:00:00 +0200
+title: "Fit-A-Seal ERP"
+date: 2017-01-02 00:00:00 +0200
 client: "fitaseal"
 cover: fitaseal-08.jpg
 bg: roman-kraft

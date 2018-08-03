@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "FixMyScreen Website"
-date:   2018-05-25 00:00:00 +0200
+title: "FixMyScreen Website"
+date: 2018-05-25 00:00:00 +0200
 client: "independent"
 cover: fixmyscreen-01.jpg
 bg: switzerland

@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Sharething Website"
-date:   2018-03-05 00:00:00 +0200
+title: "Sharething Website"
+date: 2018-03-05 00:00:00 +0200
 client: "independent"
 cover: sharething-website-01.jpg
 bg: switzerland

@@ -4,7 +4,7 @@ layout: post
 source:
 date: 2017-04-19 08:00:00 +0200
 category:
-  - Cryptocurrency
+  - crypto
 tags:
   - crypto
   - mining

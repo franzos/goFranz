@@ -9,7 +9,7 @@ permalink: /about/
 
 <div id="map" data-slideout-ignore></div>
 
-Aside from my travels, I'm a privacy advocate and supporter of technologies and ideas that help promote personal freedom, decentralize certain aspects of power, and are easily accessible to everyone - now or in the near future.
+Apart from my travels, I'm a privacy advocate and supporter of technologies and ideas that help promote personal freedom, decentralize certain aspects of power, and are easily accessible to everyone - now or in the near future.
 
 Whenever I'm not working, I like to disconnect and return a different era - with crackling vinyls, glowing amplifiers and a glass of scotch - no ice.
 

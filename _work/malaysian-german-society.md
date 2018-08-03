@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Malaysian German Society Website"
-date:   2016-02-01 00:00:00 +0200
+title: "Malaysian German Society Website"
+date: 2016-02-01 00:00:00 +0200
 client: "mgs"
 cover: mgs-01.jpg
 bg: malaysia

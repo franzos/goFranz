@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Voice Prompt Order Form"
-date:   2018-02-28 00:00:00 +0200
+title: "Voice Prompt Order Form"
+date: 2018-02-28 00:00:00 +0200
 client: "independent"
 cover: voice-prompt-order-form-01.jpg
 bg: switzerland

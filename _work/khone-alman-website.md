@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "Khone Alman Website"
-date:   2017-12-20 00:00:00 +0200
+title: "Khone Alman Website"
+date: 2017-12-20 00:00:00 +0200
 client: "independent"
 cover: khone-alman-website-02.jpg
 bg: switzerland

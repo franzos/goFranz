@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  "On Air Website & Backend"
-date:   2016-07-01 00:00:00 +0200
+title: "On Air Website & Backend"
+date: 2016-07-01 00:00:00 +0200
 client: "onair"
 cover: onair-01.jpg
 bg: california

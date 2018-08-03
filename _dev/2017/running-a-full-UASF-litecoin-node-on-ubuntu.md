@@ -6,7 +6,7 @@ os:
 date: 2017-04-10 00:00:00 +0200
 category:
   - dev
-  - cryptocurrency
+  - crypto
 tags:
   - litecoin
   - development
