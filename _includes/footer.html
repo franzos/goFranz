@@ -144,6 +144,7 @@ $(window).load(function () {
     width:100%;
   }
 </style>
+<!--  in {{ place.year }} -->
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2oyN2h2M2VnMDA1bTJxbzY4dGhhc2V4NCJ9.Hb-yaLByaOY9LR7SF7JxmA';
 var map = L.mapbox.map('map')
@@ -155,7 +156,7 @@ var map = L.mapbox.map('map')
         features: [{% for place in site.data.places %}{
             type: 'Feature',
             properties: {
-                title: 'Life in {{ place.city }}, {{ place.country }} in {{ place.year }}',
+                title: 'Life in {{ place.city }}, {{ place.country }}',
                 'marker-color': '#451668',
                 'marker-size': 'small',
                 'marker-symbol': 'building',
