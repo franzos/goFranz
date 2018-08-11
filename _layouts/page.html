@@ -6,11 +6,12 @@ layout: ly_page
 <img class="img-responsive visible-xs" src="/assets/images/bg.jpg" style="margin-bottom:30px;">
 {% endif %}
 
+{% include welcome_referral.html %}
+
 <div class="container-fluid content-wrapper">
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
       <div class="content">
-        {% include welcome_referral.html %}
         {{ content }}
         {% if page.url contains "work"%}
           {% for client in site.clients %}
