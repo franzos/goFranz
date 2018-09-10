@@ -92,7 +92,7 @@ $(window).load(function () {
     location: '{{ page.location }}',
     unit: 'c',
     success: function(weather) {
-      html = ', '+weather.text+' and '+weather.temp+'&deg;'+weather.units.temp+' outside.';
+      html = ' with '+weather.temp+'&deg;'+weather.units.temp+' outside.';
       $("#weather").html(html);
     },
     error: function(error) {}
