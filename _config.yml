@@ -6,7 +6,6 @@ bitcoin: 1MfbsSexrSb74ZDQPqMrKGzZhRubHZBkCB
 
 # Build settings
 markdown: kramdown
-theme: minima
 
 kramdown:
   input: GFM
@@ -22,15 +21,20 @@ gems:
   - jekyll-assets
   - jekyll-paginate-v2
 
+# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - gulpfile.js
-  - package-lock.json
-  - package.json
   - yarn.lock
+  - package.json
+  - .gitignore
+  - node_modules
+  - vendor
+  - s3_website.yml
+  - .gitlab-ci.yml
+  - gulpfile.js
   - src
+  - README.md
 
 collections:
 - gist
