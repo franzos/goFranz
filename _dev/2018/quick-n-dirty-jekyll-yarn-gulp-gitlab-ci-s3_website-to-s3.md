@@ -16,6 +16,8 @@ tags:
 
 This guide assumes that you have configured [GitLab](https://about.gitlab.com/installation/) and [GitLab Runner](https://docs.gitlab.com/runner/install/) with docker and are already using gulp to build you assets, and the `s3_website` gem for deployment to S3 / CloudFront.
 
+![GitLab Add and secure environment values](/assets/content/2018/quick-n-dirty-jekyll-yarn-gulp-gitlab-ci-s3_website-to-s3_ci.png)
+
 This GitLab CI automation will do the following:
 
 1. `bundle install`
@@ -28,9 +30,9 @@ If you workflow differs, adjust the `.gitlab-ci.yml` config example below.
 
 ### Set-up
 
-1. Add and secure environment values
-2. Prepare your repo
-3. Add `.gitlab-ci.yml` and push
+1. [Add and secure environment values](#1-add-and-secure-environment-values)
+2. [Prepare your repo](#2-prepare-your-repo)
+3. [Add `.gitlab-ci.yml` and push](#3-add-configuration)
 
 #### 1) Add and secure environment values
 
@@ -38,6 +40,8 @@ Open your repository and go to `settings/ci_cd` > **Variables**
 
 - `AWS_ACCESS_KEY_ID`, add your ID, select protected
 - `AWS_SECRET_ACCESS_KEY`, add your Key, select protected
+
+![GitLab Add and secure environment values](/assets/content/2018/quick-n-dirty-jekyll-yarn-gulp-gitlab-ci-s3_website-to-s3_environment-values.png)
 
 ... and hide the variables.
 
@@ -71,7 +75,7 @@ Next go to `settings/ci_cd` > **General pipelines** and uncheck **Public pipelin
       - src
       - README.md
 
-#### 2) Add configuration
+#### 3) Add configuration
 
 Create the `.gitlab-ci.yml` and add the following values.
 
