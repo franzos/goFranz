@@ -23,11 +23,11 @@ gems:
 
 # Exclude from processing
 exclude:
+  - .gitignore
   - Gemfile
   - Gemfile.lock
   - yarn.lock
   - package.json
-  - .gitignore
   - node_modules
   - vendor
   - s3_website.yml
