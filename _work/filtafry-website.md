@@ -1,10 +1,12 @@
 ---
 layout: page
-title: "Filtafry Website"
+title: "FiltaFry Website"
 date: 2016-06-01 00:00:00 +0200
 client: "filtafry"
 cover: filtafry-01.jpg
 bg: roman-kraft
+introduction: Speaks German, Spanish and English, is super-fast and powered by Jekyll - of course.
+featured: true
 ---
 
 {% include project-image.html image="filtafry-01.jpg" %}
@@ -21,3 +23,10 @@ This website is powered by Jekyll, a static site generator that compiles raw ass
 - Mobile-first design
 - Hosted on AWS S3, AWS CloudFront CDN (99.9% SLA)
 - Secured by SSL Certificate
+
+### Multi-Lingual by design
+
+- Germany: [www.filtafry.de](https://www.filtafry.de/)
+- Austria: [www.filtafry.at](https://www.filtafry.at/)
+- Spain: [www.filtafry.es](https://www.filtafry.es/)
+- Europe: [www.filtafry.eu](https://www.filtafry.eu/)

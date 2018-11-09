@@ -33,3 +33,6 @@ ignore_on_server:
 
 cloudfront_distribution_id: E3R5W4W4XMOPGW
 cloudfront_invalidate_root: true
+
+redirects:
+  /client/filtafry-deutschland/: /client/filta-group-europe/

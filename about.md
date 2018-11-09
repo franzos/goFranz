@@ -53,14 +53,14 @@ Check out my [portfolio](/portfolio/) or review my featured work below.
 
 #### Front-end
 
-- Vanilla JS, Vue.js, jQuery
+- Vanilla JS, Vue, Buefy
 - Bulma, Bootstrap (Sass, Less)
 - gulp, Grunt
 - npm, Yarn
 
 #### Back-end
 
-- Node.js, Python, PHP
+- Node.js, Python (Flask, Eve), PHP
 - nuxt.js, ExpressionEngine, Jekyll (why not...), Bolt.cm, Strapi
 - npm, composer, pip
 - MongoDB, MySQL, Memcached, Redis, Firebase
@@ -72,6 +72,7 @@ Check out my [portfolio](/portfolio/) or review my featured work below.
 - Docker
 - Nginx, Apache, HAProxy
 - AWS, Heroku (only node.js), Firebase
+- GitLab, CI
 
 <hr>
 
