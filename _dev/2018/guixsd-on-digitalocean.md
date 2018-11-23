@@ -85,15 +85,29 @@ cat <<EOF >system-config.scm
                    %base-services)))
 EOF
 guix system build system-config.scm
-mv /etc /old-etc
-mkdir /etc
-cp -r /old-etc/{passwd,group,shadow,gshadow,mtab,guix} /etc/
-guix system reconfigure system-config.scm
 ```
 
 Now make it executable `chmod u+x install.sh` and run it `./install.sh`.
 
-Once this completes, simply `reboot` and SSH into your Droplet again. You should be greeted with a bash command line. At this point, GuixSD is running and you may clean-up the remaining Debian pieces.
+---
+
+Once this completes, we rebuild the system with:
+
+```
+$ guix system reconfigure digitalocean-config.scm
+```
+
+This will fail after a couple of minutes due to `guix system: error: symlink: File exists: "/etc/ssl"`.
+Now it's time to move `/etc` out of the way, and run the rebuild again.
+
+```
+$ mv /etc /old-etc
+$ mkdir /etc
+$ cp -r /old-etc/{passwd,group,shadow,gshadow,mtab,guix} /etc/
+$ guix system reconfigure digitalocean-config.scm
+```
+
+If this completes successfully, you should get a `Installation finished. No error reported.`. Now, simply `reboot` and SSH into your Droplet again. You should be greeted with a bash command line. At this point, GuixSD is running and you may clean-up the remaining Debian pieces.
 
 Finally, reference Guix in your profile again:
 
