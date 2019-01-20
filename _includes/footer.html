@@ -14,7 +14,7 @@
 
 <script src="/assets/js/nprogress.min.js"></script>
 <script>
-NProgress.start();
+  NProgress.start();
 </script>
 <script src="/assets/js/main.min.js"></script>
 <script>
@@ -87,17 +87,15 @@ $(window).load(function () {
 });
 </script>
 <script>
-$(window).load(function () {
-  $.simpleWeather({
-    location: '{{ page.location }}',
-    unit: 'c',
-    success: function(weather) {
-      html = ' and '+weather.temp+'&deg;'+weather.units.temp+' outside.';
-      $("#weather").html(html);
-    },
-    error: function(error) {}
-  });
-});
+	const Http = new XMLHttpRequest();
+	Http.open("GET", 'https://api.openweathermap.org/data/2.5/weather?q=Tehran&APPID=c3f4b205f8cacdb34188102e9f4c6ca5');
+	Http.send();
+	Http.onreadystatechange=(e)=>{
+		let data = JSON.parse(Http.responseText);
+		let temperature = parseFloat(data.main.temp - 273.15).toFixed(2);
+		html = ' and '+temperature+'&deg;'+'C'+' outside.';
+		$("#weather").html(html);
+	};
 </script>
 <script async src="/assets/js/mapbox-gl.min.js"></script>
 <script>
@@ -268,19 +266,19 @@ var app = new Vue({
     var self = this;
     axios.get('https://cache.f-a.nz/cryptowat/markets/kraken/xrpeur/price')
     .then(function (res) {
-      console.log(res.data.result.price)
-      res = res.data.result.price
-      self.amountXRP = (getQueryString('a') / 10) / res
-      console.log(self.amountXRP)
+      console.log(res.data.result.price);
+      res = res.data.result.price;
+      self.amountXRP = (getQueryString('a') / 10) / res;
+      console.log(self.amountXRP);
       self.xrpeur = res
     });
     axios.get('https://cache.f-a.nz/cryptowat/markets/kraken/etheur/price')
     .then(function (res) {
-      console.log(res.data.result.price)
-      res = res.data.result.price
-      self.amountETH = (getQueryString('a') / 10) / res
-      console.log(self.amountETH)
-      self.etheur = res
+      console.log(res.data.result.price);
+      res = res.data.result.price;
+      self.amountETH = (getQueryString('a') / 10) / res;
+      console.log(self.amountETH);
+      self.etheur = res;
       if (self.etheur > 0) {
         document.getElementById('loading').classList.add('hidden');
       }
@@ -288,13 +286,13 @@ var app = new Vue({
   },
   filters: {
     formatCrypto: function (value) {
-      if (!value) return ''
-      value = accounting.formatMoney(value, '', 4)
+      if (!value) return '';
+      value = accounting.formatMoney(value, '', 4);
       return value
     },
     formatFiat: function (value) {
-      if (!value) return ''
-      value = accounting.formatMoney(value, '', 2)
+      if (!value) return '';
+      value = accounting.formatMoney(value, '', 2);
       return value
     }
   }
@@ -336,7 +334,7 @@ window.addEventListener('popstate', function() {
 <script>
 var request = new XMLHttpRequest();
    request.open("GET", "/assets/data/persian.json", false);
-   request.send(null)
+   request.send(null);
    var json = JSON.parse(request.responseText);
 
 var app = new Vue({

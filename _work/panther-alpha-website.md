@@ -4,16 +4,15 @@ title: "Panther Alpha Website"
 date: 2016-07-01 00:00:00 +0200
 client: "panther"
 bg: california
-cover: panther-mpc-01.jpg
+cover: panther-mpc-01-01.jpg
 tags: "web development"
 introduction: Jekyll powered, static website for Panther Alpha MicroPC.
 featured: true
 ---
 
-{% include project-image.html caption="Homepage" image="panther-mpc-01.jpg" %}
-{% include project-image.html image="panther-mpc-02.jpg" %}
-{% include project-image.html image="panther-mpc-03.jpg" %}
-{% include project-image.html image="panther-mpc-05.jpg" %}
+{% include project-image.html caption="Homepage" image="panther-mpc-01-01.jpg" %}
+{% include project-image.html image="panther-mpc-02-01.jpg" %}
+{% include project-image.html image="panther-mpc-05-01.jpg" %}
 
 ### Website technology
 

@@ -69,7 +69,7 @@ Check out my [portfolio](/portfolio/) or review my featured work below.
 
 - Debian, Centos, Ubuntu (sorted by preference)
 - Nagios, New Relic
-- Docker
+- Docker, Vagrant, Guix
 - Nginx, Apache, HAProxy
 - AWS, Heroku (only node.js), Firebase
 - GitLab, CI

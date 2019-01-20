@@ -12,4 +12,8 @@ featured: true
 
 {% include project-image.html caption="Kickstarter" image="panther-mpc-06.jpg" %}
 
-A Kickstarter campaign in November 2016 had raised a total of $43,858 before we've decided to cancel and postpone it indefinitely.
+A Kickstarter campaign in November 2016 had raised a total of $43,858 before we've decided to cancel and postpone it ~~indefinitely~~.
+
+**Update: 2019-01-20**
+
+Panther Alpha is back on track and will be better than ever planned. With dedicated hardware and a specifically developed OS **PantherX**, we're going above and beyond what we've planned. To find out more, and subscribe to updates, visit the PantherX website at [pantherx.org](https://www.pantherx.org/).

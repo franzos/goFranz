@@ -94,7 +94,6 @@ gulp.task('js-bundle', function (cb) {
           'node_modules/swipebox/src/js/jquery.swipebox.js',
           'node_modules/moment/min/moment.min.js',
           'node_modules/moment-timezone/builds/moment-timezone.min.js',
-          'node_modules/simpleweather/jquery.simpleWeather.js',
           'node_modules/exlink/jquery.exLink.js'
         ]),
         concat('bundle.min.js'),
@@ -178,4 +177,4 @@ gulp.task('watch-persian', function() {
     gulp.watch('src/*.js', ['js-persian'])
 });
 
-gulp.task('default', ['css', 'js', 'js-bundle', 'js-progress', 'js-particles', 'js-mapbox', 'js-mapbox-gl', 'js-chart', 'files']);
+gulp.task('default', ['css', 'js', 'js-bundle', 'js-progress', 'js-particles', 'js-mapbox', 'js-mapbox-gl', 'js-chart', 'files', 'thumbnail']);
