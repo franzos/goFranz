@@ -1,7 +1,7 @@
 ---
 layout: page_sidebar
-title:  "Independent"
-date:   2017-01-01 00:00:00 +0200
+title: "Independent"
+date: 2017-01-01 00:00:00 +0200
 client: "independent"
 introduction: "Projects I work on independently from clients, either to learn, or just for the fun of it. Enjoy!"
 city: Tehran

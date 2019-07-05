@@ -1,7 +1,7 @@
 ---
 layout: page_sidebar
-title:  "Filta Group Europe"
-date:   2016-06-01 00:00:00 +0200
+title: "Filta Group Europe"
+date: 2016-06-01 00:00:00 +0200
 client: "filtafry"
 introduction: "FiltaFry is an innovative, new franchise specializing in cooking oil and micro-filtration service for restaurants and other food establishments all around Europe."
 city: Ulft

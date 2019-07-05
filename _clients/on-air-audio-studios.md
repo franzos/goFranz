@@ -1,7 +1,7 @@
 ---
 layout: page_sidebar
-title:  "On Air Audio Studios Inc."
-date:   2016-01-01 00:00:00 +0200
+title: "On Air Audio Studios Inc."
+date: 2016-01-01 00:00:00 +0200
 client: "onair"
 introduction: "On Air is one of the premier voice recording studios in North America."
 city: Calgary

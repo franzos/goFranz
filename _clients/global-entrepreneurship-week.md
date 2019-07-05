@@ -1,7 +1,7 @@
 ---
 layout: page_sidebar
-title:  "GEW UK"
-date:   2014-06-01 00:00:00 +0200
+title: "GEW UK"
+date: 2014-06-01 00:00:00 +0200
 client: "gewuk"
 introduction: "GEW is run as an independent charity in the UK, for the shared benefit of our communal ecosystem."
 city: London

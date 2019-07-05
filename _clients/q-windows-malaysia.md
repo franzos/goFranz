@@ -1,7 +1,7 @@
 ---
 layout: page_sidebar
-title:  "Q-Windows Malaysia"
-date:   2017-01-01 00:00:00 +0200
+title: "Q-Windows Malaysia"
+date:  2017-01-01 00:00:00 +0200
 client: "qwindows"
 introduction: "Q-Windows Malaysia is the only manufacturer for German Soundproof, High-Security Windows in Malaysia and Singapore."
 city: Kuala Lumpur

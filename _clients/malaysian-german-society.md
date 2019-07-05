@@ -1,7 +1,7 @@
 ---
 layout: page_sidebar
-title:  "Malaysian German Society"
-date:   2016-02-01 00:00:00 +0200
+title: "Malaysian German Society"
+date: 2016-02-01 00:00:00 +0200
 client: "mgs"
 introduction: "The Malaysian-German Society Penang was established in 1962 by a handful of dedicated and far-sighted Malaysians and Germans residing in Penang. Over the years it has gained the respect and support of the State Government of Penang. Through its activities the Society has built up good Malaysian-German relations."
 city: Penang

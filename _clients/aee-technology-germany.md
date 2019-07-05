@@ -1,7 +1,7 @@
 ---
 layout: page_sidebar
-title:  "AEE Germany"
-date:   2015-06-01 00:00:00 +0200
+title: "AEE Germany"
+date: 2015-06-01 00:00:00 +0200
 client: "aee"
 introduction: "AEE is one of the worldwide leading drone and action camera manufacturers."
 city: München

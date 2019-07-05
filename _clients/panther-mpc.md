@@ -1,7 +1,7 @@
 ---
 layout: page_sidebar
-title:  "Panther MPC, Inc."
-date:   2016-08-01 00:00:00 +0200
+title: "Panther MPC, Inc."
+date: 2016-08-01 00:00:00 +0200
 client: "panther"
 introduction: "Panther Alpha is the wallet sized computer designed to help protect yourself from internet surveillance, censoring, malware and spying corporations without compromising usability. Our open source operating system Panther OS is reliable, easy to use and backdoor free."
 city: Dublin
