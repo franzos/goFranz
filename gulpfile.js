@@ -9,7 +9,10 @@ var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var pump = require('pump');
 
-gulp.task('css', function () {
+const { series } = require('gulp');
+const { src, dest } = require('gulp');
+
+function css() {
 	return gulp.src
     ([
       'src/bootstrap/css/bootstrap.css',
@@ -24,9 +27,9 @@ gulp.task('css', function () {
     .pipe(concat('main.min.css'))
     .pipe(cleanCss())
     .pipe(gulp.dest('assets/css'));
-});
+}
 
-gulp.task('js', function (cb) {
+function js(cb) {
   pump([
         gulp.src
         ([
@@ -39,23 +42,9 @@ gulp.task('js', function (cb) {
     ],
     cb
   );
-});
+}
 
-gulp.task('js-particles', function (cb) {
-  pump([
-        gulp.src
-        ([
-          'src/particles.js'
-        ]),
-        concat('particles.min.js'),
-        uglify(),
-        gulp.dest('assets/js')
-    ],
-    cb
-  );
-});
-
-gulp.task('js-pay', function (cb) {
+function jsPay(cb) {
   pump([
         gulp.src
         ([
@@ -69,9 +58,9 @@ gulp.task('js-pay', function (cb) {
     ],
     cb
   );
-});
+}
 
-gulp.task('js-persian', function (cb) {
+function jsPersian(cb) {
   pump([
         gulp.src
         ([
@@ -84,9 +73,9 @@ gulp.task('js-persian', function (cb) {
     ],
     cb
   );
-});
+}
 
-gulp.task('js-bundle', function (cb) {
+function jsBundle(cb) {
   pump([
         gulp.src
         ([
@@ -102,9 +91,9 @@ gulp.task('js-bundle', function (cb) {
     ],
     cb
   );
-});
+}
 
-gulp.task('js-progress', function () {
+function jsProgress() {
   return gulp.src
     ([
       'node_modules/nprogress/nprogress.js'
@@ -112,9 +101,9 @@ gulp.task('js-progress', function () {
 		.pipe(concat('nprogress.min.js'))
     .pipe(uglify())
 		.pipe(gulp.dest('assets/js'));
-});
+}
 
-gulp.task('js-mapbox', function () {
+function jsMapbox() {
   return gulp.src
     ([
       'src/mapbox.js'
@@ -122,9 +111,9 @@ gulp.task('js-mapbox', function () {
 		.pipe(concat('mapbox.min.js'))
     .pipe(uglify())
 		.pipe(gulp.dest('assets/js'));
-});
+}
 
-gulp.task('js-mapbox-gl', function () {
+function jsMapboxGl() {
   return gulp.src
     ([
       'node_modules/mapbox-gl/dist/mapbox-gl.js'
@@ -132,9 +121,9 @@ gulp.task('js-mapbox-gl', function () {
 		.pipe(concat('mapbox-gl.min.js'))
     .pipe(uglify())
 		.pipe(gulp.dest('assets/js'));
-});
+}
 
-gulp.task('js-chart', function () {
+function jsChart() {
   return gulp.src
     ([
       'node_modules/chart.js/dist/Chart.bundle.js'
@@ -142,21 +131,30 @@ gulp.task('js-chart', function () {
 		.pipe(concat('chart.bundle.min.js'))
     .pipe(uglify())
 		.pipe(gulp.dest('assets/js'));
-});
+}
 
-gulp.task('files', function () {
-    gulp.src('node_modules/swipebox/src/img/*')
+function filesSwipebox() {
+    return gulp.src('node_modules/swipebox/src/img/*')
         .pipe(gulp.dest('assets/img/'));
-		gulp.src('node_modules/cryptocoins-icons/webfont/*')
-        .pipe(gulp.dest('assets/fonts/'));
-		gulp.src('src/highlight.min.js')
-        .pipe(gulp.dest('assets/js'));
-		gulp.src('src/comments.css')
-        .pipe(gulp.dest('assets/css'));
-});
+}
 
-gulp.task('thumbnail', function () {
-  gulp.src('assets/images/projects/*.{jpg,png}')
+function filesWebfont() {
+    return gulp.src('node_modules/cryptocoins-icons/webfont/*')
+        .pipe(gulp.dest('assets/fonts/'));
+}
+
+function filesHighlight() {
+    return gulp.src('src/highlight.min.js')
+        .pipe(gulp.dest('assets/js'));
+}
+
+function filesComments() {
+    return gulp.src('src/comments.css')
+        .pipe(gulp.dest('assets/css'));
+}
+
+function thumbnail() {
+  return gulp.src('assets/images/projects/*.{jpg,png}')
     .pipe(imageResize({
       width : 640,
       height : 360,
@@ -167,14 +165,14 @@ gulp.task('thumbnail', function () {
       use: [pngquant()]
     }))
     .pipe(gulp.dest('assets/images/projects/preview'));
-});
+}
 
-gulp.task('watch', function() {
+function watch() {
     gulp.watch('src/*.css', ['css'])
-});
+}
 
-gulp.task('watch-persian', function() {
+function watchPersian() {
     gulp.watch('src/*.js', ['js-persian'])
-});
+}
 
-gulp.task('default', ['css', 'js', 'js-bundle', 'js-progress', 'js-particles', 'js-mapbox', 'js-mapbox-gl', 'js-chart', 'files', 'thumbnail']);
+exports.default = series(css, js, jsBundle, jsProgress, jsMapbox, jsMapboxGl, jsChart, filesSwipebox, filesWebfont, filesHighlight, filesComments, thumbnail)

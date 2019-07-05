@@ -12,7 +12,7 @@
     "chart.js": "^2.7.2",
     "cryptocoins-icons": "^2.8.0",
     "exlink": "^2.3.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4",
     "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
     "gulp-image": "^4.3.0",
