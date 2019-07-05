@@ -6,7 +6,7 @@ client: "lingel"
 introduction: "Established in 1959 in Germany, Karl Lingel Fensterbau Gmbh & Co. KG is today one of the leading manufacturers of high quality doors and windows in Europe."
 city: Lichtenstein
 country: Germany
-map: "12.6001357,50.7526628"
+map: "12.6001357, 50.7526628"
 web: www.lingelwindows.com
 categories: digital
 since: 2014

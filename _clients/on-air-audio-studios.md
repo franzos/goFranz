@@ -6,7 +6,7 @@ client: "onair"
 introduction: "On Air is one of the premier voice recording studios in North America."
 city: Calgary
 country: Canada
-map: "-114.081929,51.038174"
+map: "-114.081929, 51.038174"
 web: onairrecordings.com
 categories: digital
 since: 2014

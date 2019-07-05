@@ -6,7 +6,7 @@ client: "filtafry"
 introduction: "FiltaFry is an innovative, new franchise specializing in cooking oil and micro-filtration service for restaurants and other food establishments all around Europe."
 city: Ulft
 country: Netherlands
-map: "6.3759608,51.8931315"
+map: "6.3759608, 51.8931315"
 web: filtafry.eu
 categories: digital
 since: 2016

@@ -6,7 +6,7 @@ client: "skyhype"
 introduction: "Sky-Hype.com is the first, free international property portal with a powerful metasearch engine that already connects you to over 200 million properties and agents around the world."
 city: Schifflange
 country: Luxembourg
-map: "6.0142920,49.5057480"
+map: "6.0142920, 49.5057480"
 web: sky-hype.com
 categories: digital
 since: 2014

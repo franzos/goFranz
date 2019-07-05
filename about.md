@@ -20,6 +20,7 @@ Here's what I'm reading: [Bookshelf](/bookshelf/)
 My work covers a variety of aspects but to summarize, __I help organizations increase their reach and revenue by optimizing their product, online presence and backend-end processes__. I have clients ranging from startup and small business to international powerhouses and charities.
 
 - GEW, UK
+- GAT Investment Group, Dubai
 - Lingel Windows, Germany
 - FiltaFry, Germany
 - Fit-A-Seal, Germany
@@ -53,21 +54,21 @@ Check out my [portfolio](/portfolio/) or review my featured work below.
 
 #### Front-end
 
-- Vanilla JS, Vue, Buefy
+- Vanilla JS, Typescript, Vue, Buefy
 - Bulma, Bootstrap (Sass, Less)
 - gulp, Grunt
 - npm, Yarn
 
 #### Back-end
 
-- Node.js, Python (Flask, Eve), PHP
-- nuxt.js, ExpressionEngine, Jekyll (why not...), Bolt.cm, Strapi
+- Node.js, Python (Pyramid, Flask, Eve), PHP
+- nuxt.js, nest.js, ExpressionEngine, Jekyll (why not...), Bolt.cm, Strapi
 - npm, composer, pip
-- MongoDB, MySQL, Memcached, Redis, Firebase
+- MongoDB, PostgreSQL, MySQL, Memcached, Redis, Firebase
 
 #### DevOps
 
-- Debian, Centos, Ubuntu (sorted by preference)
+- PantherX, Guix, Debian, Centos, Ubuntu (sorted by preference)
 - Nagios, New Relic
 - Docker, Vagrant, Guix
 - Nginx, Apache, HAProxy

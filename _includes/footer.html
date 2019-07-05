@@ -179,7 +179,7 @@ var map = L.mapbox.map('map')
                 type: 'Point',
                 coordinates: [{{ client.map }}]
             }
-        }{% endif %}{% if forloop.last %}{% else %},{% endif %}
+        }{% if forloop.last %}{% else %},{% endif %}{% endif %}
         {% endfor %}
       ]
     };

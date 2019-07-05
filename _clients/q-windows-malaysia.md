@@ -6,7 +6,7 @@ client: "qwindows"
 introduction: "Q-Windows Malaysia is the only manufacturer for German Soundproof, High-Security Windows in Malaysia and Singapore."
 city: Kuala Lumpur
 country: Malaysia
-map: "101.611438,3.164855"
+map: "101.611438, 3.164855"
 web: q-windows.com.my
 categories: digital
 since: 2012

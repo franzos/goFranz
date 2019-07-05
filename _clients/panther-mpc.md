@@ -6,7 +6,7 @@ client: "panther"
 introduction: "Panther Alpha is the wallet sized computer designed to help protect yourself from internet surveillance, censoring, malware and spying corporations without compromising usability. Our open source operating system Panther OS is reliable, easy to use and backdoor free."
 city: Dublin
 country: Ireland
-map: "-6.2603100,53.3498050"
+map: "-6.2603100, 53.3498050"
 web: www.panther-mpc.com
 categories: digital
 since: 2016

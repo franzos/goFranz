@@ -6,7 +6,7 @@ client: "fitaseal"
 introduction: "Fit-A-Seal is a new franchise, specializing in on-the-spot replacement service for commercial fridge and freezer door seals - a first in Germany."
 city: Emsbüren
 country: Germany
-map: "7.1794796,52.4083766"
+map: "7.1794796, 52.4083766"
 web: fitaseal.de
 categories: digital
 since: 2016
