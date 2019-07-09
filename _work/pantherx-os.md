@@ -16,4 +16,13 @@ PantherX is a modern, Unix-like computer operating system, designed to enable ev
 
 With it's own, light-weight desktop environment, a set of highly polished, homegrown applications , and access to thousands more trough Software, PantherX is set to become your next, and last (Desktop) OS. 
 
+## The challenge
+
+- Lightweight, secure, modern OS
+- Innovative yet stable technologies like Cap'n Proto
+- Fast, easy to use Desktop environment
+- Roll-back & system time travel
+
+_I'm the founder of PantherX. We're a team of 6 and work on this full-time._
+
 Find out more at [pantherx.org](https://www.pantherx.org/)

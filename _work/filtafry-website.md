@@ -5,7 +5,8 @@ date: 2016-06-01 00:00:00 +0200
 client: "filtafry"
 cover: filtafry-01.jpg
 bg: roman-kraft
-introduction: Speaks German, Spanish and English, is super-fast and powered by Jekyll - of course.
+tags: "web development"
+introduction: Speaks German, Spanish, Finish, .. and English, is super-fast and runs without server - of course.
 featured: true
 ---
 
@@ -29,4 +30,6 @@ This website is powered by Jekyll, a static site generator that compiles raw ass
 - Germany: [www.filtafry.de](https://www.filtafry.de/)
 - Austria: [www.filtafry.at](https://www.filtafry.at/)
 - Spain: [www.filtafry.es](https://www.filtafry.es/)
+- Finland: [www.filta.fi](https://www.filta.fi)
+- Sweden [www.filtafry.se](https://www.filtafry.se/)
 - Europe: [www.filtafry.eu](https://www.filtafry.eu/)

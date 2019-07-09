@@ -14,6 +14,8 @@ featured: true
 
 Karl Lingel Fensterbau Gmbh & Co. KG, today one of the leading manufacturers of high quality doors and windows in Europe, is looking to expand to the Middle-East.
 
+<img src="/assets/images/projects/lingel-01.jpg">
+
 ## What I'm working on
 
 **This is an ongoing project, still under development**
@@ -22,5 +24,3 @@ Karl Lingel Fensterbau Gmbh & Co. KG, today one of the leading manufacturers of 
 - Set-up of social media & trading accounts
 - Outreach to UAE audience to establish brand, generate initial orders
 - Relationship-building
-
-<img src="/assets/images/projects/lingel-01.jpg">

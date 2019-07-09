@@ -14,7 +14,7 @@ featured: true
 
 Develop an effective, modern, one-page voice prompt order form for voice recording studios all over the world.
 
-[Preview](https://franzos.github.io/voipy-form/) / [Source code](https://github.com/franzos/voipy-form)
+[Source code](https://git.sr.ht/~franz/voipy-form)
 
 {% include project-image.html image="voice-prompt-order-form-01.jpg" %}
 
@@ -26,3 +26,5 @@ Develop an effective, modern, one-page voice prompt order form for voice recordi
 - Multi-currency enabled (manually updated rates)
 - Used Bulma framework for layout and styling
 - 100% plain HTML (no server required)
+
+This form is now in use on the [On Air Website](/work/onair-website/).

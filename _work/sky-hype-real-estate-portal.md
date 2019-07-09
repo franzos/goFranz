@@ -6,7 +6,7 @@ client: "skyhype"
 cover: sky-hype-01.jpg
 bg: switzerland
 tags: "web development"
-introduction: Powerful, ExpressionEngine 3 based, worldwide real estate portal.
+introduction: Powerful, multi-lingual, worldwide real estate portal.
 featured: true
 ---
 
@@ -47,12 +47,13 @@ The site's translation is centrally managed and allows for unlimited flexibility
 - Italian
 - Russian
 - Turkish
+- Japanese
 
 {% include project-image.html image="sky-hype-07.jpg" %}
 
 #### Metasearch engine
 
-The custom, PHP based metasearch engine already connects to 8 sources with over 100 more planned.
+The custom, Python based metasearch engine already connects to 8 sources with over 100 more planned.
 
 - Germany; immobilienscout24.de
 - Spain; idealista.com
@@ -65,12 +66,11 @@ The custom, PHP based metasearch engine already connects to 8 sources with over 
 
 ### Website technology
 
-Initially developed on EE 2, Sky-Hype is now powered by EllisLab ExpressionEngine 3.
+Initially developed on ExpressionEngine 2, then 3, Sky-Hype is now powered by [Nest.js](https://nestjs.com/).
 
-- ExpressionEngine 3
-- Running on PHP/Apache trough a NGINX Proxy
-- Dynamic, Javascript based translation
-- Unlimited image storage on Amazon AWS S3 in Ireland
-- Custom PHP metasearch engine with over 8 sources
-- Responsive design
-- Secured by SSL Certificate
+- Nest.js backend (100% Typescript)
+- Nuxt.js frontend; responsive design
+- image storage on Amazon S3
+- Custom, Python based metasearch engine with over 8 sources
+
+Check it out at [www.sky-hype.com](https://www.sky-hype.com/).

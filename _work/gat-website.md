@@ -5,7 +5,8 @@ date: 2019-07-04 00:00:00 +0200
 client: "gat"
 cover: gat-01.jpg
 bg: roman-kraft
-introduction: Super-fast and powered by Jekyll - of course.
+tags: "web development"
+introduction: Website for Dubai & Luxembourg based investment company.
 featured: true
 ---
 

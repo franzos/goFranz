@@ -20,13 +20,6 @@ layout: ly_page
     <div class="col-sm-10 col-sm-offset-1">
       <div class="content">
         <div class="inline-section">
-          <h2 id="comments" class="block">Leave a comment</h2>
-
-            <p class="light">I respect your privacy: Unless you're using Facebook to sign in, no data is exchanged with 3rd party providers. Either way, it'll only take a sec.</p>
-            <div class="talk-comments" id="coral_talk_stream"></div>
-
-        </div>
-        <div class="inline-section">
           {% include related.html %}
         </div>
         <div class="inline-section">
@@ -42,6 +35,13 @@ layout: ly_page
             </div>
             <p>Published on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %B %Y"}}</time></p>
         </div>
+      </div>
+      <div class="inline-section">
+        <h2 id="comments" class="block">Leave a comment</h2>
+
+        <p class="light">I respect your privacy: Unless you're using Facebook to sign in, no data is exchanged with 3rd party providers. Either way, it'll only take a sec.</p>
+        <div class="talk-comments" id="coral_talk_stream"></div>
+
       </div>
     </div>
   </div>

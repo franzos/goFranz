@@ -7,7 +7,7 @@ bg: california
 cover: panther-mpc-01-01.jpg
 tags: "web development"
 introduction: Jekyll powered, static website for Panther Alpha MicroPC.
-featured: true
+featured: false
 ---
 
 {% include project-image.html caption="Homepage" image="panther-mpc-01-01.jpg" %}

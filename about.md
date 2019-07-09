@@ -52,17 +52,23 @@ Check out my [portfolio](/portfolio/) or review my featured work below.
 
 ### Tech Stack
 
+I have over 10 years of experience working with ExpressionEngine but most recent production-grade sites, are based on a more appropriate & modern set of tools:
+
+- **Static sites**: Bulma CSS framework; Jekyll static site generator
+- **Dynamic sites**: Bulma, Nuxt.js (Vue.js); Nest.js back-end with PostgreSQL
+- **Processing**: Usually a Flask-based API
+
 #### Front-end
 
 - Vanilla JS, Typescript, Vue, Buefy
-- Bulma, Bootstrap (Sass, Less)
+- Nuxt.js, Bulma, Bootstrap (Sass, Less)
 - gulp, Grunt
 - npm, Yarn
 
 #### Back-end
 
 - Node.js, Python (Pyramid, Flask, Eve), PHP
-- nuxt.js, nest.js, ExpressionEngine, Jekyll (why not...), Bolt.cm, Strapi
+- Nest.js, ExpressionEngine, Jekyll (why not...), Bolt.cm, Strapi
 - npm, composer, pip
 - MongoDB, PostgreSQL, MySQL, Memcached, Redis, Firebase
 

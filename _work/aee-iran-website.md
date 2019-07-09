@@ -14,8 +14,6 @@ featured: true
 
 A completely static website to promote AEE action cameras and drones in Iran.
 
-[Preview on AWS S3](http://www.aeecamera.ir.s3-website-eu-west-1.amazonaws.com/)
-
 <img src="/assets/images/projects/aee-08.jpg" class="image-wrapper">
 <img src="/assets/images/projects/aee-09.jpg" class="image-wrapper">
 <img src="/assets/images/projects/aee-10.jpg" class="image-wrapper">
@@ -28,3 +26,5 @@ This website is powered by Jekyll, a static site generator that compiles raw ass
 - Mobile-first design
 - Hosted on AWS S3
 - Integrated Shop
+
+Have a look: [Preview](http://www.aeecamera.ir.s3-website-eu-west-1.amazonaws.com/)
