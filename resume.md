@@ -12,17 +12,20 @@ sitemap:
 For latest projects, kindly refer to my <a href="#independent-work">independent work</a>
 
 ### Panther Computer, <location>Tehran, Iran</location>
-<date>2018</date>
+<date>2018-2019</date>
 <position>Founder</position>
+
 - Develop system architecture of PantherX OS
 - Source, interview and hire highly qualified C,C++,Python developers to join the team
 - Establish internal development workflow based around GitLab Ultimate
 - Set development goals, manage individual milestones and keep developers on track
 - Set-up and maintain required infrastructure
+- Raise funds to sustain operation
 
 ### SEDVentures Middle East, <location>Tehran, Iran</location>
-<date>2018</date>
+<date>2018-2019</date>
 <position>Co-Founder, Director</position>
+
 - Negotiate investor funding
 - Establish internal processes for all common operations such as hiring, reporting
 - Research market conditions, evaluate individual ventures based on preset factors
@@ -31,13 +34,13 @@ For latest projects, kindly refer to my <a href="#independent-work">independent 
 - Oversee development of PantherX OS and Panther Alpha
 
 ### Sky-Hype AG, <location>Schifflange, Luxembourg</location>
-<date>2016-2018</date>
-<position>Full-Stack Developer, Marketing</position>
+<date>2016-2019</date>
+<position>Full-Stack Developer, CTO</position>
 
-- Designed and developed front-end code using Bootstrap 4, AJAX, jQuery, Vue.js
+- Designed and developed front-end code using Vue.js, Bulma CSS framework
 - Implemented i18next based translation with over 10 language pairs
-- Developed backend using ExpressionEngine 3, PHP, MYSQL
-- Build 3rd party API integration for metasearch
+- Developed backend using Nest.js and Typeorm
+- Build 3rd party API integration for metasearch based on Flask
 - Implemented and worked with Intercom CRM, Mailtrain for email marketing (SES)
 - Grown international Facebook group with 100,000+ Users
 - Overseen outbound sales to Europe, Middle-East and South-East Asia
@@ -66,7 +69,7 @@ For latest projects, kindly refer to my <a href="#independent-work">independent 
 
 ### DKKMA Agency, <location>London, United Kingdom</location>
 <date>2014-2016</date>
-<position>Front-End Developer</position>
+<position>Full-Stack Developer</position>
 
 - Designed and developed countless of client sites using Bootstrap 3
 - Developed with Wordpress, Bolt CMS, ExpressionEngine, Jekyll
@@ -81,7 +84,7 @@ For latest projects, kindly refer to my <a href="#independent-work">independent 
 - Managed relationship with key clients
 - Developed new strategies for lead generation (Inbound Marketing)
 - Optimized workflow and internal processes
-- Approved design mockups for development
+- Approved design mock-ups for development
 
 ### Q-Windows, <location>Bangkok, Thailand</location>
 <date>2011-2013</date>
