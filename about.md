@@ -20,6 +20,8 @@ Here's what I'm reading: [Bookshelf](/bookshelf/)
 My work covers a variety of aspects but to summarize, __I help organizations increase their reach and revenue by optimizing their product, online presence and backend-end processes__. I have clients ranging from startup and small business to international powerhouses and charities.
 
 - GEW, UK
+- DKKMA, UK
+- On Air, Canada
 - GAT Investment Group, Dubai
 - Lingel Windows, Germany
 - FiltaFry, Germany
@@ -28,9 +30,8 @@ My work covers a variety of aspects but to summarize, __I help organizations inc
 - Malaysian-German Society, Malaysia
 - Q-Windows, Malaysia & Singapore
 - Panther MPC, Ireland
+- Aswar Perfumes, Dubai
 - AEE, Germany
-- On Air, Canada
-- DKKMA, UK
 - The Running Awards, UK
 - NEX Inotec, Thailand
 

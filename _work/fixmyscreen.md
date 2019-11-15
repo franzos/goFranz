@@ -14,6 +14,12 @@ featured: true
 
 Website for iPhone Pick-Up & Repair Service with pay.ir integration
 
+- Easy order with device and color selection
+- Payment with popular, local gateway for direct debit
+- Pushes new order to backend for automated processing
+
+[Preview](http://fixmyscreen.ir.s3-website.eu-central-1.amazonaws.com/) / [Source code](https://git.sr.ht/~franz/fixmyscreen.ir)
+
 {% include project-image.html image="fixmyscreen-01.jpg" %}
 {% include project-image.html image="fixmyscreen-02.jpg" %}
 {% include project-image.html image="fixmyscreen-03.jpg" %}

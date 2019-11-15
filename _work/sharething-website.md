@@ -18,7 +18,7 @@ Develop an effective, modern, multilingual page to introduce Sharething services
 - Responsive, modern design
 - Logo design
 
-[Preview](http://sharething.ir/)
+[Preview](http://sharething.ir.s3-website.eu-central-1.amazonaws.com/)
 
 {% include project-image.html image="sharething-website-01.jpg" %}
 {% include project-image.html image="sharething-website-02.jpg" %}

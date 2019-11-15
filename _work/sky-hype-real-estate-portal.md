@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "Sky-Hype AG Real Estate Portal"
+title: "Sky-Hype Real Estate Portal"
 date: 2016-01-02 00:00:00 +0200
 client: "skyhype"
-cover: sky-hype-01.jpg
+cover: sky-hype-02.jpg
 bg: switzerland
 tags: "web development"
 introduction: Powerful, multi-lingual, worldwide real estate portal.
@@ -14,7 +14,11 @@ featured: true
 
 Sky-Hype AG approached me with the vision to plan, design, develop and maintain the largest, free property portal in the world. With a powerful metasearch engine and over 100 planned source portals, a huge project!
 
-{% include project-image.html image="sky-hype-01.jpg" %}
+### Evolution from 2016 - 2019
+
+{% include project-image.html caption="January 2016, Homepage" image="sky-hype-01.jpg" %}
+
+{% include project-image.html caption="January 2019, Homepage" image="sky-hype-02.jpg" %}
 
 ## What I did
 
@@ -22,9 +26,10 @@ Sky-Hype AG approached me with the vision to plan, design, develop and maintain 
 
 - Free real estate listings in over 100 countries
 - Private account area, user profiles, messaging system
-- Listings with up to 10 high-resolution images, drafts
+- Listings with up to 50 high-resolution images, drafts
 - Translated in 10 languages, 48 more planned
 - Metasearch engine with 8 sources, more planned
+- Import from OpenImmo and KyeroXML
 - Mobile ready
 
 {% include project-image.html image="sky-hype-06.jpg" %}
@@ -72,5 +77,6 @@ Initially developed on ExpressionEngine 2, then 3, Sky-Hype is now powered by [N
 - Nuxt.js frontend; responsive design
 - image storage on Amazon S3
 - Custom, Python based metasearch engine with over 8 sources
+- Custom, OpenImmo & KyeroXML Import tools written in Typescript
 
 Check it out at [www.sky-hype.com](https://www.sky-hype.com/).
