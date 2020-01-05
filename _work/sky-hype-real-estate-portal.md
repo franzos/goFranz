@@ -18,7 +18,7 @@ Sky-Hype AG approached me with the vision to plan, design, develop and maintain 
 
 {% include project-image.html caption="January 2016, Homepage" image="sky-hype-01.jpg" %}
 
-{% include project-image.html caption="January 2019, Homepage" image="sky-hype-02.jpg" %}
+{% include project-image.html caption="June 2019, Homepage" image="sky-hype-02.jpg" %}
 
 ## What I did
 

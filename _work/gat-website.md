@@ -7,7 +7,7 @@ cover: gat-01.jpg
 bg: roman-kraft
 tags: "web development"
 introduction: Website for Dubai & Luxembourg based investment company.
-featured: true
+featured: false
 ---
 
 {% include project-image.html image="gat-01.jpg" %}
