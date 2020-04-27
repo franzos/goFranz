@@ -2,9 +2,9 @@
 # the environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY or
 # ~/.aws/credentials.
 
-# profile: f-a
-s3_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
-s3_secret: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+profile: f-a
+# s3_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
+# s3_secret: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
 s3_bucket: f-a.nz
 
 site: public/

@@ -2,7 +2,7 @@ title: Franz Geffke
 description:
 baseurl: ""
 url: "https://f-a.nz"
-bitcoin: 1MfbsSexrSb74ZDQPqMrKGzZhRubHZBkCB
+destination: public/
 
 # Build settings
 markdown: kramdown

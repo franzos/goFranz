@@ -9,3 +9,4 @@ Gemfile.lock
 .asset-cache
 .idea
 vendor/
+public/
