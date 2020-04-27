@@ -12,7 +12,7 @@ sitemap:
 For latest projects, kindly refer to my <a href="#independent-work">independent work</a>
 
 ### Panther Computer, <location>Tehran, Iran</location>
-<date>2018-2019</date>
+<date>2018-2020</date>
 <position>Founder</position>
 
 - Develop system architecture of PantherX OS
@@ -23,7 +23,7 @@ For latest projects, kindly refer to my <a href="#independent-work">independent 
 - Raise funds to sustain operation
 
 ### SEDVentures Middle East, <location>Tehran, Iran</location>
-<date>2018-2019</date>
+<date>2018-2020</date>
 <position>Co-Founder, Director</position>
 
 - Negotiate investor funding
@@ -34,7 +34,7 @@ For latest projects, kindly refer to my <a href="#independent-work">independent 
 - Oversee development of PantherX OS and Panther Alpha
 
 ### Sky-Hype AG, <location>Schifflange, Luxembourg</location>
-<date>2016-2019</date>
+<date>2016-2020</date>
 <position>Full-Stack Developer, CTO</position>
 
 - Designed and developed front-end code using Vue.js, Bulma CSS framework

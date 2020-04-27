@@ -8,3 +8,4 @@ package-lock.json
 Gemfile.lock
 .asset-cache
 .idea
+vendor/

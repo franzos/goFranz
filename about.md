@@ -28,7 +28,7 @@ My work covers a variety of aspects but to summarize, __I help organizations inc
 - Fit-A-Seal, Germany
 - Sky-Hype, Luxembourg
 - Malaysian-German Society, Malaysia
-- Q-Windows, Malaysia & Singapore
+- Q-Windows, Malaysia
 - Panther MPC, Ireland
 - Aswar Perfumes, Dubai
 - AEE, Germany
