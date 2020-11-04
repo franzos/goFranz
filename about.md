@@ -22,6 +22,7 @@ My work covers a variety of aspects but to summarize, __I help organizations inc
 - GEW, UK
 - DKKMA, UK
 - On Air, Canada
+- Helexier, Germany
 - GAT Investment Group, Dubai
 - Lingel Windows, Germany
 - FiltaFry, Germany

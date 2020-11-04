@@ -6,7 +6,7 @@ client: "panther"
 bg: california
 cover: pantherx-01.jpg
 tags: "system-development"
-introduction: The first, free OS for end users with dedicated hardware.
+introduction: Private, yet totally integrated, next-generation operating system for everyone.
 featured: true
 ---
 

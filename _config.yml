@@ -36,6 +36,8 @@ exclude:
   - src
   - README.md
   - package-lock.json
+  - project.config
+  - run.sh
 
 collections:
 - gist

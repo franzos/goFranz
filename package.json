@@ -5,6 +5,10 @@
   "repository": "https://git.sedv.org/f-a.nz/website.git",
   "author": "Franz Geffke <m@f-a.nz>",
   "license": "MIT",
+  "scripts": {
+    "build": "node_modules/.bin/gulp; bundle exec jekyll build",
+    "deploy": "npm run build; rsync -rtvz --chmod=D2755,F644 --delete public/ franzs@rsync.keycdn.com:franz/"
+  },
   "dependencies": {
     "accounting": "^0.4.1",
     "axios": "^0.17.1",

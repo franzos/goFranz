@@ -11,4 +11,4 @@ Location: Don't track, ask.
 Last update: {{ site.time }}
 Language: English
 Doctype: HTML5
-IDE: Atom
+IDE: Sublime  Text

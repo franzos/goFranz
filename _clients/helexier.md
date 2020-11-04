@@ -1,0 +1,16 @@
+---
+layout: page_sidebar
+title: "Helexier GmbH"
+date: 2020-11-04 00:00:00 +0200
+client: "helexier"
+introduction: "The owner-managed company Helexier GmbH deals with the purchase and management of specialist hospitals and care facilities in Europe."
+city: Zweibrücken
+country: Germany
+map: "7.370876, 49.24485"
+web: helexier.de
+categories: digital
+since: 2019
+color: "#014271"
+cover: sky-hype-04.jpg
+bg: switzerland
+---

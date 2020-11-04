@@ -11,26 +11,9 @@ pagination:
 ---
 
 <ul class="projects clean">
-{% for gist in paginator.posts %}
-  <li class="project"><a href="{{ gist.url }}">
-    <span class="hidden-xs"><intro>Read gist</intro><br></span>
-    {{ gist.title | truncate: 50 }}<country>{{ gist.categories | join: " / " }}</country></a></li>
-{% endfor %}
+  {% for gist in site.gist reversed %}
+    <li class="project"><a href="{{ gist.url }}">
+      <span class="hidden-xs"><intro>Read gist</intro><br></span>
+      {{ gist.title | truncate: 50 }}<country>{{ gist.categories | join: " / " }}</country></a></li>
+  {% endfor %}
 </ul>
-
-{% if paginator.total_pages > 1 %}
-<nav aria-label="Page navigation">
-  <ul class="pagination">
-    {% if paginator.next_page %}
-    <li>
-      <a class="btn" href="{{ paginator.next_page_path | prepend: site.baseurl }}" aria-label="Next">Older</a>
-    </li>
-    {% endif %}
-    {% if paginator.previous_page %}
-    <li>
-      <a class="btn" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" aria-label="Previous">Newer</a>
-    </li>
-    {% endif %}
-  </ul>
-</nav>
-{% endif %}
