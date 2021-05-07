@@ -5,7 +5,7 @@ echo ""
 . ./project.config
 
 function RUN_CONTAINER_BASH {
-  docker build --tag ${CONTAINER} .
+  docker build --network host --tag ${CONTAINER} .
   # docker run --detach --name gi nexinnotech
   docker container run --rm -v ${PWD}:/usr/working \
   -e AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} \
@@ -17,6 +17,7 @@ function RUN_CONTAINER_BASH {
 }
 
 function BUILD_PROJECT {
+  bundle install
   node_modules/.bin/gulp
 }
 

@@ -35,6 +35,8 @@ My work covers a variety of aspects but to summarize, __I help organizations inc
 - AEE, Germany
 - The Running Awards, UK
 - NEX Inotec, Thailand
+- Paramount Student, Turkey
+- Softmax. Thailand
 
 > Franz helped shape messaging and design engaging visual content for Global Entrepreneurship Week in the UK, a campaign that includes more than 3,000 events and 300,000 participants. Franz was great to work with, keen to test new ideas and push the work into new and exciting areas. The content he produced was central to a social campaign that was really innovative and effective in generating engagement from diverse audiences across multiple platforms. - Ewan Gaffney, GEW UK
 
@@ -60,6 +62,10 @@ I have over 10 years of experience working with ExpressionEngine but most recent
 - **Dynamic sites**: Bulma, Nuxt.js (Vue.js); Nest.js back-end with PostgreSQL
 - **Processing**: Usually a Flask-based API
 
+<div style="margin-left:2.5rem" markdown="0">
+<figure><embed style="max-height:400px" src="https://wakatime.com/share/@franz/864f220d-d347-456d-a511-5e9380433514.svg"></figure>
+</div>
+
 #### Front-end
 
 - Vanilla JS, Typescript, Vue, Buefy
@@ -70,16 +76,16 @@ I have over 10 years of experience working with ExpressionEngine but most recent
 #### Back-end
 
 - Node.js, Python (Pyramid, Flask, Eve), PHP
-- Nest.js, ExpressionEngine, Jekyll (why not...), Bolt.cm, Strapi
+- Nest.js, ExpressionEngine, Jekyll, Bolt.cm, Strapi
 - npm, composer, pip
 - MongoDB, PostgreSQL, MySQL, Memcached, Redis, Firebase
 
 #### DevOps
 
-- PantherX, Guix, Debian, Centos, Ubuntu (sorted by preference)
+- PantherX, Guix, Debian, Centos
 - Nagios, New Relic
 - Docker, Vagrant, Guix
-- Nginx, Apache, HAProxy
+- Nginx, Apache, HAProxy, PfSense
 - AWS, Heroku (only node.js), Firebase
 - GitLab, CI
 

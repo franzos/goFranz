@@ -1,20 +1,20 @@
 ---
 layout: page
-title: "FiltaFry Website"
-date: 2016-06-01 00:00:00 +0200
+title: "FiltaFry Website Relaunch"
+date: 2021-05-01 00:00:00 +0200
 client: "filtafry"
-cover: filtafry-01.jpg
+cover: filtafry-relaunch-01.jpg
 bg: roman-kraft
 tags: "web development"
 introduction: Speaks German, Spanish, Finish, .. and English, is super-fast and runs without server - of course.
 featured: true
 ---
 
-{% include project-image.html image="filtafry-01.jpg" %}
-{% include project-image.html image="filtafry-02.jpg" %}
-{% include project-image.html image="filtafry-03.jpg" %}
-{% include project-image.html image="filtafry-04.jpg" %}
-{% include project-image.html image="filtafry-05.jpg" %}
+{% include project-image.html image="filtafry-relaunch-01.jpg" %}
+{% include project-image.html image="filtafry-relaunch-02.jpg" %}
+{% include project-image.html image="filtafry-relaunch-03.jpg" %}
+
+Check-out the previous website to see what's changed [here](/work/filtafry-website/).
 
 ### Website technology
 
@@ -27,7 +27,7 @@ This website is powered by Jekyll, a static site generator that compiles raw ass
 
 ### Multi-Lingual by design
 
-- Germany: [www.filtafry.de](https://www.filtafry.de/)
+- Germany: [www.filtafry.de](https://www.filtafry.de/) _- new design_
 - Austria: [www.filtafry.at](https://www.filtafry.at/)
 - Spain: [www.filtafry.es](https://www.filtafry.es/)
 - Finland: [www.filta.fi](https://www.filta.fi)

@@ -49,9 +49,3 @@ Opt-in, shared, worldwide real estate database that promotes faster sales and co
 
 {% include project-image.html image="wall-estate-09.jpg" %}
 {% include project-image.html image="wall-estate-10.jpg" %}
-
-<hr>
-
-**Update: 2018-07-30**
-
-I've started to put together a team, to work on Wall.Estate. If you're interested to work with us, or would like to contribute financially, please [reach out](/contact/).
