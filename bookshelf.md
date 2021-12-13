@@ -9,6 +9,8 @@ Bold denotes books I highly recommend.
 
 ## (Non)fiction*
 
+<small>Links open amazon.com.</small>
+
 <b>[Too Big to Fail](https://www.amazon.com/Too-Big-Fail-Inside-Battle-ebook/dp/B002VNFNZ6/) by Andrew Ross Sorkin</b>
 <br>[Never Split the Difference](https://www.amazon.com/Never-Split-Difference-Negotiating-Depended-ebook/dp/B014DUR7L2/) by Chris Voss
 <br>[A Man For All Markets](https://www.amazon.com/Man-All-Markets-Street-Dealer-ebook/dp/B00SEFEYCI/) by Edward O. Thorp
@@ -30,5 +32,10 @@ Noura Erakat
 <br><b>[Atlas Shrugged](https://www.amazon.com/Atlas-Shrugged-Ayn-Rand/dp/0451191145) by Ayn Rand</b>
 <br>[The Fountainhead](https://www.amazon.com/Fountainhead-Ayn-Rand/dp/0451191153) by Ayn Rand
 <br>[The Beginning of Infinity](https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359) by David Deutsch
+<br><b>[A Hunter-Gatherer's Guide to the 21st Century](https://www.amazon.com/Hunter-Gatherers-Guide-21st-Century-Challenges/dp/0593086880) by Heather Heying & Bret Weinstein</b>
+<br><b>[The Anarchist Handbook](https://www.amazon.com/Anarchist-Handbook-Michael-Malice/dp/B095DVF8FJ) by Michael Malice</b>
+<br>[Empire of the Summer Moon](https://www.amazon.com/Empire-Summer-Moon-Comanches-Powerful/dp/1416591060) by S. C. Gwynne
+<br>[A Renegade History of the United States](https://www.amazon.com/Renegade-History-United-States/dp/1416576134) by Thaddeus Russell
+<br>[1984](https://www.amazon.com/1984-Signet-Classics-George-Orwell/dp/0451524934) by George Orwell
 
 *Personal perception of the world is based entirely on highly subjective, prior stimulation of the brain. I do not read fiction but you may interpret some of these books as such.

@@ -15,4 +15,4 @@ cover: q-windows-01.jpg
 bg: malaysia
 ---
 
-German Windows Malaysia has been a client of mine for over 10 years. Since we've first started working together in 2011, Q-Windows has come a long way and has already won numerous awards and a recognition as regional leader.
+German Windows Malaysia has been a client of mine for over 10 years. Since we've first started working together in 2011, German Windows has come a long way and has already won numerous awards and a recognition as regional leader.
