@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Q-Windows Website"
+title: "German Windows Website"
 date: 2017-01-02 00:00:00 +0200
-client: "qwindows"
+client: "germanwindows"
 cover: q-windows-08.jpg
 bg: malaysia
 tags: "web development"
@@ -12,11 +12,11 @@ featured: true
 
 ## The challenge
 
-The Q-Windows Website has long been suffering under high exit rates, broken links and a imperfect mobile layout.
+The German Windows Website has long been suffering under high exit rates, broken links and a imperfect mobile layout.
 
 ## What I did
 
-The latest 2017 website refresh turned the Q-Windows website not only completely static but mobile-first. Unlike the already fast, previous site, the new website is no longer powered by a CMS (content management system) but just plain .html files.
+The latest 2017 website refresh turned the German Windows website not only completely static but mobile-first. Unlike the already fast, previous site, the new website is no longer powered by a CMS (content management system) but just plain .html files.
 
 {% include project-image.html caption="January 2017, Homepage" image="q-windows-01.jpg" %}
 
@@ -24,7 +24,7 @@ The latest 2017 website refresh turned the Q-Windows website not only completely
 
 {% include project-image.html image="q-windows-09.jpg" %}
 
-A modern, mobile-friendly audio player allows desktop visitors to compare the noise level of various Q-Windows glazing solutions under different environmental conditions.
+A modern, mobile-friendly audio player allows desktop visitors to compare the noise level of various German Windows glazing solutions under different environmental conditions.
 
 {% include project-image.html image="q-windows-10.jpg" %}
 
@@ -34,7 +34,7 @@ This section works like a technical catalog: All window and door types are liste
 {% include project-image.html image="q-windows-14.jpg" %}
 {% include project-image.html image="q-windows-12.jpg" %}
 
-The contact form connects directly to the Q-Windows insightly.com CRM account. All submissions automatically show up on their internal dashboard and a custom tracking plugin allows Q-Windows staff understand where leads came from and what pages they looked at.
+The contact form connects directly to the German Windows Pipedrive CRM account. All submissions automatically show up on their internal dashboard and a custom tracking plugin allows German Windows staff understand where leads came from and what pages they looked at.
 
 ## The effects
 

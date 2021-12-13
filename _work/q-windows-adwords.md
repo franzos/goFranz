@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Q-Windows Adwords"
+title: "Google Adwords Campaign"
 date: 2017-01-02 00:00:00 +0200
-client: "qwindows"
+client: "germanwindows"
 bg: malaysia
 cover: q-windows-13.jpg
 tags: "growth"

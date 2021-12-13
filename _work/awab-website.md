@@ -21,4 +21,4 @@ This website is powered by Jekyll, a static site generator that compiles raw ass
 - Hosted on AWS S3, AWS CloudFront CDN (99.9% SLA)
 - Secured by SSL Certificate
 
-See for yourself at [awab.group](https://www.awab.group/)
+See for yourself at [awab.group](http://www.awab.group.s3-website.eu-central-1.amazonaws.com/)

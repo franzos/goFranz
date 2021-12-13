@@ -6,7 +6,7 @@ client: "aswar"
 introduction: "Aswar Perfumes is a family run business that focuses on wellness products, with a particular focus on perfumes and creams."
 city: Dubai
 country: UAE
-map: "25.2216763, 55.2788595"
+map: "55.2788595, 25.2216763"
 web: no-limit-dubai.com
 categories: digital
 since: 2019

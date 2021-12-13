@@ -39,4 +39,5 @@ The following assets may be added in the near future:
 
 ## Consultation
 
-If you're interested in cryptocurrency and don't have the time to deal with hundreds of options, [reach out](/contact).
+You never know everything you don't know.
+<br>_This is for another life, maybe ... nice logo though?_

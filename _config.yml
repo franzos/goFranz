@@ -40,11 +40,11 @@ exclude:
   - run.sh
 
 collections:
-- gist
-- dev
-- projects
-- clients
-- testimonials
+  - gist
+  - dev
+  - projects
+  - clients
+  - testimonials
 
 collections:
   gist:
