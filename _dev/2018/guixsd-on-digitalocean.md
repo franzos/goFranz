@@ -126,3 +126,12 @@ GUIX_PROFILE="`echo ~root`/.guix-profile" ; source $GUIX_PROFILE/etc/profile
 ---
 
 This guide was inspired by Andy Wingo and the experience he shared on the [guix-devel](https://lists.gnu.org/archive/html/guix-devel/2017-04/msg00139.html) mailing list.
+
+**Update: 2022-04-09**
+
+We've published updated scripts on our Gitlab server:
+
+- [Guix on DigitalOcean](https://git.pantherx.org/development/applications/px-install/-/blob/master/guix-on-digitalocean.sh)
+- [Guix on Hetzner Cloud](https://git.pantherx.org/development/applications/px-install/-/blob/master/pantherx-on-hetzner-cloud.sh)
+
+These support both Ubuntu 21.04 and Debian 11, and usually finish the job within 5-10 minutes.

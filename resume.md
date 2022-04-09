@@ -11,8 +11,17 @@ sitemap:
 
 For latest projects, kindly refer to my <a href="#independent-work">independent work</a>
 
+
+### Panther Computer, <location>Lisbon, Portugal</location>
+<date>2021-ongoing</date>
+<position>Founder</position>
+
+- Develop server backend system and web-based admin tools for PantherX CM
+- Coordinate system and application development with team
+- Maintain relations with community and customers
+
 ### Panther Computer, <location>Tehran, Iran</location>
-<date>2018-2020</date>
+<date>2018-ongoing</date>
 <position>Founder</position>
 
 - Develop system architecture of PantherX OS

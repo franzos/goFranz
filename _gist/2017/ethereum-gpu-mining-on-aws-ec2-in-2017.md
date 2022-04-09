@@ -39,7 +39,7 @@ The hash rate of the EC2 server fluctuates between 23.3 MH/s and 47.7 MH/s. I su
 
 ![EC2 Hash Rate](/assets/content/ethereum-gpu-mining-on-aws-ec2-in-2017_02.png)
 
-Based on average hash rate of 28 MH/s, each EC server would generate around 0.0045 Ether ($0.05) in income per hour. That means, *over the course of a month you'd make $34.84 (3.25 Ether)*.
+Based on average hash rate of 28 MH/s, each EC server would generate around 0.0045 Ether ($0.05) in income per hour. That means, _over the course of a month you'd make $34.84 (3.25 Ether)_.
 
 ### Conclusion
 
@@ -53,8 +53,8 @@ After around a week of EC2 mining, I have now shut down all AWS server. The Spot
 
 ![EC2 Hash Rate](/assets/content/ethereum-gpu-mining-on-aws-ec2-in-2017_03.png)
 
-| Paid On                   | From Block | To Block | Duration [h] | Amount      |
-|---------------------------|------------|----------|--------------|-------------|
+| Paid On             | From Block | To Block | Duration [h] | Amount      |
+| ------------------- | ---------- | -------- | ------------ | ----------- |
 | 2017-02-13T18:08:44 | 3176203    | 3176833  | 2.6          | 0.09699 ETH |
 | 2017-02-13T15:33:08 | 3175670    | 3176197  | 2.2          | 0.09554 ETH |
 | 2017-02-13T13:18:20 | 3175075    | 3175662  | 2.2          | 0.09745 ETH |
@@ -92,17 +92,17 @@ As of today, Ethereum is valued at 1 ETH = 173.8 USD. However, due to enormous d
 
 Ethereum dual-mining profitability comparison (late June 2017). Keep in mind that as more miners join the network, and the Ethereum price fluctuates, so will your payout / return of investment.
 
-| Measured       | by Card | by Month | by Month DUAL | total DUAL    | % of Baseline |
-|----------------|---------|----------|---------------|---------------|---------------|
-| SIA            | 5,70    | 1,154    | 381 €         |               | 46.23%        |
-| ZEC            | 1,490.4 | 298.08   | 373 €         |               | 45.23%        |
-| ETH            | 112     | 22.4     | 601 €         |               | 73.02%        |
-| ETH (ZEC) Dual | 104     | 20.8     | 558 €         |               |               |   
-| ZEC (ETH) Dual | 20.2    | 4.04     | 5 €           | 564 €         | 68.41%        |
-| ETH (SIA) Dual | 103     | 20.6     | 553 €         |               |               |
-| SIA (ETH) Dual | 4,100   | 820      | 271 €         | 824 €         | 100.00%       |
-| ETH (DEC) Dual | 109     | 21.8     | 585 €         |               |               |
-| DEC (ETH) Dual | 3,274   | 654.8    | 164 €         | 749 €         | 90.93%        |
+| Measured       | by Card | by Month | by Month DUAL | total DUAL | % of Baseline |
+| -------------- | ------- | -------- | ------------- | ---------- | ------------- |
+| SIA            | 5,70    | 1,154    | 381 €         |            | 46.23%        |
+| ZEC            | 1,490.4 | 298.08   | 373 €         |            | 45.23%        |
+| ETH            | 112     | 22.4     | 601 €         |            | 73.02%        |
+| ETH (ZEC) Dual | 104     | 20.8     | 558 €         |            |               |
+| ZEC (ETH) Dual | 20.2    | 4.04     | 5 €           | 564 €      | 68.41%        |
+| ETH (SIA) Dual | 103     | 20.6     | 553 €         |            |               |
+| SIA (ETH) Dual | 4,100   | 820      | 271 €         | 824 €      | 100.00%       |
+| ETH (DEC) Dual | 109     | 21.8     | 585 €         |            |               |
+| DEC (ETH) Dual | 3,274   | 654.8    | 164 €         | 749 €      | 90.93%        |
 
 <hr>
 
@@ -123,6 +123,7 @@ Ethereum is valued at 1 ETH = 706 USD.
 Amazon's latest EC2 P3 generation features up to [8x Nvidia Tesla V100](https://aws.amazon.com/blogs/aws/new-amazon-ec2-instances-with-up-to-8-nvidia-tesla-v100-gpus-p3/) GPU's. The V100 (5,120 CUDA cores) is significantly more powerful than the previous generation NVIDIA GRID K520 (1,536 CUDA cores), however the high-end EC2 p3.16xlarge also costs significantly more.
 
 EC2 p3.16xlarge
+
 - 8x V100 with 5,120 CUDA core each
 - $24.48 per hour, $587.52 per day
 - Reported ETH hash rate of 90.58 MH/s per card (724.64 MH/s combined)
@@ -152,8 +153,3 @@ The Amazon [EC2 Elastic GPU services](https://aws.amazon.com/ec2/elastic-gpus/de
 > What is Dual-Mining? What is considered baseline, the AWS instance cost? - D.
 
 DUAL stands for dual-mining. That means, that you are concurrently mining 2 or more currencies. For example, you could be mining Ethereum (ETH) and Siacoin (SC) together, thus making a higher profit compared to only mining Ethereum. The baseline is ETH + SIA, so mining only ETH would generate around 27% less profit.
-
-<hr>
-
-Appreciate the time I spend on this? Send a thanks to (ETH):
-*0x031FE3346207DEF2EB9dDc4b19A621a85B554D9f*

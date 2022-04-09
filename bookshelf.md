@@ -37,5 +37,6 @@ Noura Erakat
 <br>[Empire of the Summer Moon](https://www.amazon.com/Empire-Summer-Moon-Comanches-Powerful/dp/1416591060) by S. C. Gwynne
 <br>[A Renegade History of the United States](https://www.amazon.com/Renegade-History-United-States/dp/1416576134) by Thaddeus Russell
 <br>[1984](https://www.amazon.com/1984-Signet-Classics-George-Orwell/dp/0451524934) by George Orwell
+<br><b>[The New Breed](https://www.amazon.com/New-Breed-History-Animals-Reveals/dp/1250296102) by Kate Darling</b>
 
 *Personal perception of the world is based entirely on highly subjective, prior stimulation of the brain. I do not read fiction but you may interpret some of these books as such.
