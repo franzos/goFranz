@@ -88,7 +88,7 @@ $(window).load(function () {
 </script>
 <script>
 	const Http = new XMLHttpRequest();
-	Http.open("GET", 'https://api.openweathermap.org/data/2.5/weather?q=Tehran&APPID=c3f4b205f8cacdb34188102e9f4c6ca5');
+	Http.open("GET", 'https://api.openweathermap.org/data/2.5/weather?q=Lisbon,PT&APPID=c3f4b205f8cacdb34188102e9f4c6ca5');
 	Http.send();
 	Http.onreadystatechange=(e)=>{
 		let data = JSON.parse(Http.responseText);
