@@ -42,7 +42,7 @@ While we’ve achieved our goal of porting Nheko to mobile, and integrating it w
 
 Most of what I’ve set out to achieve still resonates today and fundamentally, nothing has changed. There’s new MacOS, iOS, Android and Windows releases; probably 50 new Linux distribution based on Debian or Arch – and technically, exactly the same problems:
 
-- System configuration is still „JBOF“ – just a bunch of files
+- System configuration is still "JBF" – just a bunch of files
 - Even though our goals are identical (ex. Run Mastodon server), **configuration is not standardized**, is hard to replicate, and it’s virtually impossible for someone who provides a tutorial, to push “fixes” to users that consume the tutorial. A massive waste of time.
 - Working with deployment tools, that „massage“ the system until it works
 - Most users have **virtually no privacy**, with Apple famously uploading and scanning their pictures
