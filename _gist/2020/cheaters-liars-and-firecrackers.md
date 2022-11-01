@@ -4,11 +4,7 @@ layout: post
 source:
 date: 2020-04-16 22:00:00 +0350
 category:
-  - Privacy
-  - Tools
 tags:
-  - syncthing
-  - privacy
 bg: austin-neill
 bg-author: Austin Neill
 author: Franz Geffke

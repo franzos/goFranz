@@ -18,6 +18,7 @@ author: Franz Geffke
 DGX is an Ethereum based cryptocurrency backed by physical gold stored in Singapore. That means, 1 DGX = 1g (99.99 LBMA) gold which, at the time of writing, is valued at $43.24 USD or 0.1157 ETH.
 
 The advantages are huge:
+
 - Unlike other cryptocurrencies DGX is backed by a physical assets
 - Unlike USDT (backed by USD), DGX has no fractional reserves
 - DGX can be stored on virtually any Ethereum compatible wallet
@@ -54,3 +55,7 @@ A number of new services support DGX:
 - [AirSwap](https://www.airswap.io/trade)
 - [TokenLon](https://tokenlon.token.im)
 - [OlympusLabs](https://olympuslabs.io/web)
+
+**Update: 2022-09-21**
+
+Digix Holdings has withdrawn from the Payment Services Act licensing in Singapore as of 21 Sept 2022.
