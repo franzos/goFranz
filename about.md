@@ -11,7 +11,7 @@ permalink: /about/
 
 Apart from my travels, I'm a privacy advocate and supporter of technologies and ideas that help promote personal freedom, decentralize certain aspects of power, and are easily accessible to everyone - now or in the near future.
 
-Whenever I'm not working, I like to disconnect and return a different era - with crackling vinyls, glowing amplifiers and a glass of scotch - no ice.
+Whenever I'm not working, I like to disconnect and return a different era - with crackling vinyls and glowing amplifiers.
 
 Here's what I'm reading: [Bookshelf](/bookshelf/)
 
@@ -20,16 +20,13 @@ Here's what I'm reading: [Bookshelf](/bookshelf/)
 My work covers a variety of aspects but to summarize, __I help organizations increase their reach and revenue by optimizing their product, online presence and backend-end processes__. I have clients ranging from startup and small business to international powerhouses and charities.
 
 - GEW, UK
-- DKKMA, UK
 - On Air, Canada
-- Helexier, Germany
-- GAT Investment Group, Dubai
 - Lingel Windows, Germany
 - FiltaFry, Germany
 - Fit-A-Seal, Germany
 - Sky-Hype, Luxembourg
 - Malaysian-German Society, Malaysia
-- Q-Windows, Malaysia
+- German Windows, Malaysia
 - Panther MPC, Ireland
 - Aswar Perfumes, Dubai
 - AEE, Germany
@@ -37,6 +34,8 @@ My work covers a variety of aspects but to summarize, __I help organizations inc
 - NEX Inotec, Thailand
 - Paramount Student, Turkey
 - Softmax. Thailand
+- GAT Investment Group, Dubai
+- ...
 
 > Franz helped shape messaging and design engaging visual content for Global Entrepreneurship Week in the UK, a campaign that includes more than 3,000 events and 300,000 participants. Franz was great to work with, keen to test new ideas and push the work into new and exciting areas. The content he produced was central to a social campaign that was really innovative and effective in generating engagement from diverse audiences across multiple platforms. - Ewan Gaffney, GEW UK
 
@@ -68,22 +67,22 @@ I have over 10 years of experience working with ExpressionEngine but most recent
 
 #### Front-end
 
-- Vanilla JS, Typescript, Vue, Buefy
-- Nuxt.js, Bulma, Bootstrap (Sass, Less)
+- Vanilla JS, Typescript, Vue 2, Vue 3, Buefy, Naive Ui
+- Nuxt.js, Nuxt Framework, Bulma
 - gulp, Grunt
-- npm, Yarn
+- pnpm
 
 #### Back-end
 
-- Node.js, Python (Pyramid, Flask, Eve), PHP
-- Nest.js, ExpressionEngine, Jekyll, Bolt.cm, Strapi
-- npm, composer, pip
+- Typescript, Python (Pyramid, Flask, Eve), Go
+- Express, Fastify, Nest.js, Jekyll
+- pnpm, composer, pip, jest
 - MongoDB, PostgreSQL, MySQL, Memcached, Redis, Firebase
 
 #### DevOps
 
 - PantherX, Guix, Debian, Centos
-- Nagios, New Relic
+- Nagios, New Relic, rsyslog
 - Docker, Vagrant, Guix
 - Nginx, Apache, HAProxy, PfSense
 - AWS, Heroku (only node.js), Firebase

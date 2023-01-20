@@ -78,5 +78,3 @@ Initially developed on ExpressionEngine 2, then 3, Sky-Hype is now powered by [N
 - image storage on Amazon S3
 - Custom, Python based metasearch engine with over 8 sources
 - Custom, OpenImmo & KyeroXML Import tools written in Typescript
-
-Check it out at [www.sky-hype.com](https://www.sky-hype.com/).
