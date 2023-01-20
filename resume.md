@@ -11,6 +11,15 @@ sitemap:
 
 For latest projects, kindly refer to my <a href="#independent-work">independent work</a>
 
+### PantherX Dev, <location>Lisbon, Portugal</location>
+<date>2021-ongoing</date>
+<position>Founder</position>
+
+- Central authentication systems for QR/CIBA-OAuth2 with accompanying libraries in TS,Python,C++
+- Remote health monitoring solution with smart watch, IOT gateway and supervisor station
+- Work on Matrix incl. synapse auth plugin and 3rd party server integration
+- 3-tier KYC system with mobile clients and dedicated stations, facial recognition and ID scan
+- NFT Market place and crypto exchange with trading engine and deposit automation on private chain
 
 ### Panther Computer, <location>Lisbon, Portugal</location>
 <date>2021-ongoing</date>
