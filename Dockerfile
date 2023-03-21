@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     dh-autoreconf \
     openssl \
     awscli \
+    zlib1g \
     && aws configure set preview.cloudfront true
-RUN gem install bundler jekyll
 RUN bundle install
 EXPOSE 4000
