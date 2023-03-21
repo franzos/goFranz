@@ -790,6 +790,10 @@ code, kbd, pre, samp {
   font-family: 'Overpass Mono', monospace;
   color: #fff;
   padding: 2px;
+  /* background-color: #000; */
+}
+
+code.language-plaintext.highlighter-rouge {
   background-color: #000;
 }
 
@@ -913,14 +917,14 @@ blockquote footer {
   margin-top: 16px;
 }
 
-::-moz-selection {
+/* ::-moz-selection {
   color: #fff;
   background: #000;
 }
 ::selection {
   color: #fff;
   background: #000;
-}
+} */
 
 ul.pagination {
   list-style: none;

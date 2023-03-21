@@ -20,7 +20,7 @@ function css() {
       'node_modules/swipebox/src/css/swipebox.css',
       'node_modules/mapbox-gl/dist/mapbox-gl.css',
 			'node_modules/cryptocoins-icons/webfont/cryptocoins.css',
-			'node_modules/highlight.js/styles/monokai-sublime.css',
+			'node_modules/highlight.js/styles/dark.css',
       'src/print.css',
       'src/custom.css'
 		])
@@ -83,7 +83,7 @@ function jsBundle(cb) {
           'node_modules/swipebox/src/js/jquery.swipebox.js',
           'node_modules/moment/min/moment.min.js',
           'node_modules/moment-timezone/builds/moment-timezone.min.js',
-          'node_modules/exlink/jquery.exLink.js'
+          'node_modules/exlink/jquery.exLink.js',
         ]),
         concat('bundle.min.js'),
         uglify(),
