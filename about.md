@@ -33,7 +33,7 @@ My work covers a variety of aspects but to summarize, __I help organizations inc
 - The Running Awards, UK
 - NEX Inotec, Thailand
 - Paramount Student, Turkey
-- Softmax. Thailand
+- Softmax, Thailand
 - GAT Investment Group, Dubai
 - ...
 
@@ -55,11 +55,7 @@ Check out my [portfolio](/portfolio/) or review my featured work below.
 
 ### Tech Stack
 
-I have over 10 years of experience working with ExpressionEngine but most recent production-grade sites, are based on a more appropriate & modern set of tools:
-
-- **Static sites**: Bulma CSS framework; Jekyll static site generator
-- **Dynamic sites**: Bulma, Nuxt.js (Vue.js); Nest.js back-end with PostgreSQL
-- **Processing**: Usually a Flask-based API
+I have over 13 years experience; Here's what I've been working with, over the past year:
 
 <div style="margin-left:2.5rem" markdown="0">
 <figure><embed style="max-height:400px" src="https://wakatime.com/share/@franz/864f220d-d347-456d-a511-5e9380433514.svg"></figure>
@@ -67,17 +63,20 @@ I have over 10 years of experience working with ExpressionEngine but most recent
 
 #### Front-end
 
-- Vanilla JS, Typescript, Vue 2, Vue 3, Buefy, Naive Ui
-- Nuxt.js, Nuxt Framework, Bulma
+- Typescript
+- Vue 2, Vue 3, React
+- Bulma, Buefy, Naive UI
+- Nuxt.js, Nuxt Framework
 - gulp, Grunt
-- pnpm
 
 #### Back-end
 
-- Typescript, Python (Pyramid, Flask, Eve), Go
+- Typescript, Python, Go
 - Express, Fastify, Nest.js, Jekyll
-- pnpm, composer, pip, jest
+- pnpm, npm, composer, pip
+- jest, pytest
 - MongoDB, PostgreSQL, MySQL, Memcached, Redis, Firebase
+- IPFS, Blockchain (Ethereum, Bitcoin)
 
 #### DevOps
 
@@ -86,7 +85,6 @@ I have over 10 years of experience working with ExpressionEngine but most recent
 - Docker, Vagrant, Guix
 - Nginx, Apache, HAProxy, PfSense
 - AWS, Heroku (only node.js), Firebase
-- GitLab, CI
 
 <hr>
 

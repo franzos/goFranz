@@ -102,4 +102,12 @@ No address, no names, first blog post on 2017-03-28. There's a staging site (tes
 - [Dubai firm looks to raise $500 million via digital tokens for new payments system](http://www.reuters.com/article/us-onegram-blockchain-gold-idUSKBN17Z2JV)
 - [OneGram Links with Tabarak Investment Capital to Promote its Digital Currency](https://www.crowdfundinsider.com/2017/05/100148-onegram-links-tabarak-investment-capital-promote-digital-currency/)
 
-OneGram is an intriguing project but not the only to offer crypto backed by gold. There's been a lot of doubt about the authenticity so do your own research before you invest. I for one remain interested - let's see what the future brings.
+OneGram is an intriguing project but not the only to offer crypto backed by gold. There's been a lot of doubt about the authenticity so do your own research before you invest.
+
+**Update: 2023-03-21**
+
+Looks like this never took off:
+
+- Website stuck in 2018
+- Last commit on Github 2020: https://github.com/OneGramTech/onegram-core
+- Twitter is dead https://twitter.com/OneGramNews
