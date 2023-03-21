@@ -40,7 +40,7 @@ The accounting software is called Beancount and it's
 - should still work in 50 years (on virtually every OS)
 - will cost you as much, as you're willing to donate (money and time to improve it)
 
-Now that virtually everyone can be a "developer" (no, you still need me), it has suddenly become accessible to virtually every person in the world, that's willing to put in some time to talk to ChatGPT (or any other similar language model), to write neat little python scripts that help you automate the import from your bank accounts, cryptocurrency wallets, or wherever else you have transactions that you need to digest.
+Now that everyone can be a "developer" (no, you still need me), it has suddenly become accessible to every person in the world, that's willing to put in some time to talk to ChatGPT (or any other similar language model), to write neat little python scripts that help you automate the import from your bank accounts, cryptocurrency wallets, or wherever else you have transactions that you need to digest.
 
 ### Interface
 
