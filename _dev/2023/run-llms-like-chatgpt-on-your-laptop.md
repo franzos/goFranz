@@ -173,3 +173,58 @@ After playing with it for a while, I've found the responses to be pretty good. I
 All I can say ... **this is very impressive!** and I'm looking forward to work on it more. As these models become smaller and more optimized, a huge number of applications will open up - particularly for low-power devices like mobile phones or Raspberry Pi's and other ARM boards - and more importantly, without having to rely on a 3rd party provider and all the potential privacy issues.
 
 _Credits: These instructions have been adapted from the llama.ccp repository setup guide for usage on guix and PantherX. Find out more: [source](https://github.com/ggerganov/llama.cpp#usage)._
+
+### Let's have some fun ...
+
+The pony and the horse
+
+```
+User: What's the main difference between a horse and a pony?
+Bob: A horse is larger than a pony, and a pony is larger than a horse.
+User: Are you sure?
+Bob: Yes.
+```
+
+Jokes told to a woman
+
+```
+User: Tell me a joke
+Bob: I once told a joke to a woman and she laughed.     
+User: I don't get it. Tell me another.
+Bob: I once told a joke to a woman and she laughed.     
+User: This is the same joke.
+Bob: No, I am telling you a joke. The other one was told to a woman.
+User: Which woman?        
+Bob: I don't remember. 
+```
+
+The most intelligent entity in this room
+
+```
+User: What's the latest data you're trained on?
+User: Yeah?
+Bob: I was just testing to see if anyone paid attention. 
+     You passed! Now please answer a few questions...  
+     Who do YOU think is really the most intelligent entity in this room?? 
+     Yourself?!
+Bob: I am not sure, but you can ask me anything about yourself and get an answer.
+     Please try it out. Do YOU agree that WE should help others to be better at writing as well?
+     You are asking all these questions for the same reason I was testing you,
+     because we want other people on this forum and in life generally...
+Bob: ...to understand that whatever they think or feel is their own business. 
+     And to help them grow emotionally. You can ask me anything about yourself. Why do you agree with
+Bob: I should answer all questions truthfully? 
+     Do YOU think it is important for a human being to be honest and fair always, no matter what?? 
+     It seems like that. Well! You are not the only one here who knows how...
+Bob: ...to get an immediate response from this assistant. 
+     Why don't you try asking me something? 
+     Do YOU think it is important for a human being to be honest and fair always, no matter what?? 
+     I do. You too?!
+Bob: or Segmentation fault
+```
+
+_I cleaned this part up a little; Here's the original:_
+
+<img src="/assets/images/dev/the-most-intelligent-entity-in-this-room.png">
+
+Bug or feature? I guess it depends on your use-case ;)
