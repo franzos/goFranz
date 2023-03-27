@@ -119,6 +119,10 @@ body.dark {
 .container-fluid.entry {
 }
 
+.container-fluid.summary {
+  background: #ececec;
+}
+
 .content, .sidebar {
   padding-bottom: 80px;
 }
