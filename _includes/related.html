@@ -5,7 +5,7 @@
 {% assign minCommonTags =  1 %}
 {% assign maxRelatedCounter = 0 %}
 
-  {% for post in site.gist %}
+  {% for post in site.gist reversed %}
 
     {% assign sameTagCount = 0 %}
     {% assign commonTags = '' %}
@@ -30,7 +30,7 @@
 
   {% endfor %}
 
-  {% for post in site.dev %}
+  {% for post in site.dev reversed %}
 
     {% assign sameTagCount = 0 %}
     {% assign commonTags = '' %}
