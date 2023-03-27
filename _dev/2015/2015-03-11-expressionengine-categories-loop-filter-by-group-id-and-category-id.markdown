@@ -2,7 +2,7 @@
 layout: post
 title:  "ExpressionEngine categories loop: Filter by group_id and category_id"
 date:   2015-03-11 08:00:00
-excerpt: "Only show catgories in category_group 2 and exclude category with category_id 68"
+summary: "Only show catgories in category_group 2 and exclude category with category_id 68"
 categories: ExpressionEngine
 category:
   - dev

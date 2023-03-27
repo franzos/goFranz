@@ -1,5 +1,6 @@
 ---
 title: "Accounting for busy people (with AI)"
+summary: "Beancount is a text-based, secure, and donation-based double-entry accounting software that has become more accessible with the help of AI language models like ChatGPT. By using ChatGPT, users can create Python scripts to automate importing transactions from various sources, making the software more convenient and user-friendly for those without programming experience."
 layout: post
 source:
 date: 2023-03-21 0:00:00 +0000
@@ -10,6 +11,8 @@ tags:
   - crypto
   - privacy
   - review
+  - chatgpt
+  - llms
 bg: austin-neill
 bg-author: Austin Neill
 author: Franz Geffke

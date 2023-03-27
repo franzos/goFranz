@@ -2,7 +2,7 @@
 layout: post
 title:  "Bolt - Fatal Error: The database folder does not exist."
 date:   2015-04-19 08:00:00
-excerpt: "The database folder does not exist.  Make sure it's present and writable to the user that the webserver is using."
+summary: "The database folder does not exist.  Make sure it's present and writable to the user that the webserver is using."
 categories: PHP, "Bolt CMS"
 category:
   - dev

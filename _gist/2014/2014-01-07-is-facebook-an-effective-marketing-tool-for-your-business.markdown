@@ -8,7 +8,7 @@ tags:
   - 'social media'
   - 'inbound marketing'
   - twitter
-excerpt: "In a survey published in 2013, 73% of Retail / Wholesale / Consumer Goods companies responded that they have acquired a customer using a lead from Facebook."
+summary: "In a survey published in 2013, 73% of Retail / Wholesale / Consumer Goods companies responded that they have acquired a customer using a lead from Facebook."
 cover: is-facebook-an-effective-marketing-tool-for-your-business.jpg
 ---
 

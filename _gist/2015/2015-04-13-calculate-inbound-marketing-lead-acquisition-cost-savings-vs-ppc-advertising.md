@@ -10,7 +10,7 @@ category:
 tags:
   - 'inbound marketing'
   - 'ppc'
-excerpt: "Easily calculate and compare the cost to acquire a lead via inbound marketing compared to traditional channels such as PPC (pay per click)."
+summary: "Easily calculate and compare the cost to acquire a lead via inbound marketing compared to traditional channels such as PPC (pay per click)."
 cover: calculate-inbound-marketing-lead-acquisition-cost-savings-vs-ppc-advertising.jpg
 newsletter: true
 author: Franz Geffke

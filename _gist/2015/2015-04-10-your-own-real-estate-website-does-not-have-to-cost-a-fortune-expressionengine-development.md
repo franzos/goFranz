@@ -9,7 +9,7 @@ tags:
   - development
   - 'expression engine'
   - 'real estate'
-excerpt: "If you are in the real estate business, you know how important it is to get your properties noticed. With the help of ExpressionEngine, we can built your dream real estate website within your budget."
+summary: "If you are in the real estate business, you know how important it is to get your properties noticed. With the help of ExpressionEngine, we can built your dream real estate website within your budget."
 cover: your-own-real-estate-website-does-not-have-to-cost-a-fortune-expressionengine-development.jpg
 newsletter: false
 author: Franz Geffke

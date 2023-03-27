@@ -2,7 +2,7 @@
 layout: post
 title:  "Wordpress MYSQL import fails with Unknown collation: 'utf8mb4_unicode_ci'"
 date:   2015-04-19 08:00:00
-excerpt: "MYSQL import fails with ERROR: Unknown collation: 'utf8mb4_unicode_ci'"
+summary: "MYSQL import fails with ERROR: Unknown collation: 'utf8mb4_unicode_ci'"
 categories: PHP, Wordpress
 category:
   - dev

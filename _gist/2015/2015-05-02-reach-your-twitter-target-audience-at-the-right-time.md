@@ -8,7 +8,7 @@ category:
 tags:
   - 'social media'
   - 'inbound marketing'
-excerpt: "Here's how you make sure that your tweets are seen and reach the maximum number of people."
+summary: "Here's how you make sure that your tweets are seen and reach the maximum number of people."
 cover: reach-your-twitter-target-audience-at-the-right-time.jpg
 newsletter: true
 author: Franz Geffke

@@ -7,7 +7,7 @@ category:
 tags:
   - 'social media'
   - 'inbound marketing'
-excerpt: "If you are a busy person, and I’m sure you are, this how-to will help you get started with Inbound Marketing without spending too much of your valuable time AND money."
+summary: "If you are a busy person, and I’m sure you are, this how-to will help you get started with Inbound Marketing without spending too much of your valuable time AND money."
 cover: inbound-marketing-how-to-get-started-in-5-minutes.jpg
 author: Franz Geffke
 ---
