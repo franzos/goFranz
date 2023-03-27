@@ -2,7 +2,7 @@
 title:  "Bruce Crews"
 date:   2016-06-01 00:00:00 +0200
 client: "onair"
-excerpt: the patience and knowledge to turn our vision into reality
+summary: the patience and knowledge to turn our vision into reality
 position: OnAir Team
 headshot: bruce
 ---

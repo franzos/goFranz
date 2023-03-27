@@ -2,7 +2,7 @@
 title:  "Ewan Gaffney"
 date:   2016-06-01 00:00:00 +0200
 client: "gewuk"
-excerpt: a campaign that includes more than 3,000 events and 300,000 participants
+summary: a campaign that includes more than 3,000 events and 300,000 participants
 position: Project Management
 headshot: ewan
 ---

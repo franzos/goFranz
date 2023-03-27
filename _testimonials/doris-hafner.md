@@ -2,7 +2,7 @@
 title:  "Dr. Doris Hafner "
 date:   2016-06-01 00:00:00 +0200
 client: "mgs"
-excerpt: It turns out that it was a fun-project
+summary: It turns out that it was a fun-project
 position: Director
 headshot: doris
 ---
