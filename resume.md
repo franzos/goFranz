@@ -9,38 +9,47 @@ sitemap:
 
 ## Work Experience
 
+I have over 13 years experience; Here's what I've been working with, over the past year:
+
+<div style="margin-left:2.5rem" markdown="0">
+<figure><embed style="max-height:400px" src="https://wakatime.com/share/@franz/864f220d-d347-456d-a511-5e9380433514.svg"></figure>
+</div>
+
 For latest projects, kindly refer to my <a href="#independent-work">independent work</a>
+
+<hr>
 
 ### PantherX Dev, <location>Lisbon, Portugal</location>
 <date>2021-ongoing</date>
-<position>Founder</position>
+<position>Founder, Project Manager, Developer</position>
 
-- Central authentication systems for QR/CIBA-OAuth2 with accompanying libraries in TS,Python,C++
+- QR/CIBA-OAuth2 IdP with accompanying libraries in TS,Python,C++
 - Remote health monitoring solution with smart watch, IOT gateway and supervisor station
 - Work on Matrix incl. synapse auth plugin and 3rd party server integration
-- 3-tier KYC system with mobile clients and dedicated stations, facial recognition and ID scan
-- NFT Market place and crypto exchange with trading engine and deposit automation on private chain
+- 3-tier KYC system with mobile clients; facial recognition and govt. ID scan
+- NFT Market place and crypto exchange with trading engine on ETH private chain
+- Customer relations; project planning and execution
 
 ### Panther Computer, <location>Lisbon, Portugal</location>
 <date>2021-ongoing</date>
-<position>Founder</position>
+<position>Founder, Project Manager, Developer</position>
 
 - Develop server backend system and web-based admin tools for PantherX CM
 - Coordinate system and application development with team
-- Maintain relations with community and customers
+- Maintain distribution and support infrastructure
 
 ### Panther Computer, <location>Tehran, Iran</location>
-<date>2018-ongoing</date>
+<date>2018-2022</date>
 <position>Founder</position>
 
 - Develop system architecture of PantherX OS
-- Source, interview and hire highly qualified C,C++,Python developers to join the team
+- Source, interview and hire qualified C, C++, Python developers to join the team
 - Establish internal development workflow based around GitLab Ultimate
 - Set development goals, manage individual milestones and keep developers on track
 - Set-up and maintain required infrastructure
 - Raise funds to sustain operation
 
-### SEDVentures Middle East, <location>Tehran, Iran</location>
+<!-- ### SEDVentures Middle East, <location>Tehran, Iran</location>
 <date>2018-2020</date>
 <position>Co-Founder, Director</position>
 
@@ -49,7 +58,7 @@ For latest projects, kindly refer to my <a href="#independent-work">independent 
 - Research market conditions, evaluate individual ventures based on preset factors
 - Negotiate with suppliers on products and parts for individual ventures
 - Establish supply-chain for export to Europe: source, ship, pack, distribution
-- Oversee development of PantherX OS and Panther Alpha
+- Oversee development of PantherX OS and Panther Alpha -->
 
 ### Sky-Hype AG, <location>Schifflange, Luxembourg</location>
 <date>2016-2020</date>
