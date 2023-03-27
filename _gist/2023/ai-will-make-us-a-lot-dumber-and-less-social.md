@@ -42,6 +42,12 @@ It may still be a while till general intelligence, or even super-intelligence is
 
 However, everyone that has played with ChatGPT or similar models like Facebook's LLama, is probably aware just how much it already does.
 
+A recent paper titled 'GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models came to a similiar conclusion':
+
+> Our analysis indicates that approximately 19% of jobs have at least 50% of their tasks exposed to LLMs when considering both current model capabilities and anticipated LLM-powered software.
+
+<small>Source: <https://arxiv.org/abs/2303.10130></small>
+
 In fact, I would argue that right now, it's interface to the world (and us), is it's greatest limitation. Let me share two recent examples:
 
 ### Talking to a (fake) friend
