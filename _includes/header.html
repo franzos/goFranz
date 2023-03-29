@@ -12,6 +12,9 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:site_name" content="{{ site.title | escape }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
+
   {% if page.cover %}
   <meta property="og:image" content="{{ page.cover }}">
   <meta name="twitter:card" content="{{ page.cover }}">
