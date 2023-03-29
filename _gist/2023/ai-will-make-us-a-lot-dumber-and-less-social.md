@@ -1,5 +1,5 @@
 ---
-title: "AI will make us a lot dumber an less social"
+title: "AI will make us a lot dumber and less social"
 summary: As access to information has become easier and cheaper, AI and chatbots are now changing how we communicate and learn. It's crucial to be aware of the potential consequences and ensure AI is used responsibly and ethically to avoid negative impacts on our lives.
 layout: post
 source:

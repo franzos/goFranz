@@ -1,5 +1,6 @@
 ---
 title: "All at once: I made a huge mistake"
+summary: "I ventured into developing PantherX OS, a cutting-edge open-source operating system, aiming to tackle the issues found in Windows and MacOS. Throughout the process, I encountered numerous obstacles and gained valuable insights from the experience."
 layout: post
 source:
 date: 2022-10-01 18:00:00 +0100
