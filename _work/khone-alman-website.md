@@ -36,6 +36,7 @@ Allow customers to easily order online. This includes individual wishes such as 
 This website is powered by Jekyll, a static site generator that compiles raw assets such as Markdown files into a deployment ready website that allows for secure, efficient hosting without PHP, MYSQL or downtime.
 
 - Completely static
-- Mobile-first design
+- Vue 2 frontend with Vuex state management
+- Mobile-first, responsive design
 - Hosted on AWS S3, AWS CloudFront CDN (99.9% SLA)
 - Secured by SSL Certificate

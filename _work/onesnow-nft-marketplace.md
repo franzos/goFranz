@@ -18,7 +18,7 @@ featured: true
 
 OnesMarket is a handcrafted NFT marketplace that enables users to mint, buy and sell NFTs to (initially) users in Thailand and China. The market is integrated with the ONES ecosystem, and all KYC-verified ONES users can take advantage of SSO-login. The market backend is written in Typescript and integrates a private Ethereum-based blockchain for issuance, and IPFS for NFT asset storage.
 
-- Vue 3 frontend
+- Vue 3 frontend with Pinia state management
 - NestJS backend (Express + Typescript)
 - Integrates Ethereum blockchain
 - Relies on IPFS for NFT assets

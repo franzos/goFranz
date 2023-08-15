@@ -33,6 +33,7 @@ Check-out a preview [here](https://staging.onairrecordings.com/).
 
 The new On Air website is handcrafted from scratch:
 
-- Vue 2 frontend powered by Nuxt.JS
-- NestJS backend; written entirely in Typescript
-- AWS Amazon S3 asset storage
+- Vue 2 frontend with Vuex state management
+- NestJS backend; written in Typescript
+- Stripe API integration for payment processing
+- AWS S3 asset storage

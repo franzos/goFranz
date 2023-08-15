@@ -74,7 +74,8 @@ The custom, Python based metasearch engine already connects to 8 sources with ov
 Initially developed on ExpressionEngine 2, then 3, Sky-Hype is now powered by [Nest.js](https://nestjs.com/).
 
 - Nest.js backend (100% Typescript)
-- Nuxt.js frontend; responsive design
-- image storage on Amazon S3
+- Vue 2 / Nuxt.js frontend with Vuex state management
+- Responsive design
+- Image storage on Amazon S3
 - Custom, Python based metasearch engine with over 8 sources
 - Custom, OpenImmo & KyeroXML Import tools written in Typescript

@@ -17,30 +17,104 @@ I have over 13 years experience; Here's what I've been working with, over the pa
 
 For latest projects, kindly refer to my <a href="#independent-work">independent work</a>
 
+### By Technology
+
+Things I have in working memory:
+
+- Javascript from 2011
+- Typescript
+  - Vue 2, Vue 3, NuxtJS, Vuex, Pinia: from 2016
+  - NestJS, Express, TypeORM, Casbin: from 2017
+  - React, React Native, Zustand, Redux: from 2021
+  - Espruino (BLE): from 2021 (not recently)
+- Python
+  - Falcon and Flask: from 2017
+  - TPM2-TSS: from 2021
+- Misc
+  - MySQL, MongoDB, Firebase (Push), PostgreSQL, Redis: from 2011
+  - Blockchain (Bitcoin, Ethereum), IPFS: from 2016
+  - AWS (EC2, Route53, Cloudfront, SES), Heroku, DO, Hetzner (Dedicated): from 2017
+  - Docker (Docker Compose), Guix from 2018
+
+I also work with Go frequently, but above is what I interface with on a daily basis.
+
 <hr>
 
-### PantherX Dev, <location>Lisbon, Portugal</location>
+### Independent <location>Lisbon, Portugal</location>
 <date>2021-ongoing</date>
-<position>Founder, Project Manager, Developer</position>
+<position>Project Manager, Developer</position>
 
-- QR/CIBA-OAuth2 IdP with accompanying libraries in TS,Python,C++
-- Remote health monitoring solution with smart watch, IOT gateway and supervisor station
-- Work on Matrix incl. synapse auth plugin and 3rd party server integration
-- 3-tier KYC system with mobile clients; facial recognition and govt. ID scan
-- NFT Market place and crypto exchange with trading engine on ETH private chain
-- Customer relations; project planning and execution
+_Work for a client._
+
+- QR/CIBA-OAuth2 IdP with accompanying libraries (TS,Python)
+  - High performance backend for central user, device and application authentication, digital signatures (request, respond; multi-party) with push notifications and infrastructure monitoring (logins, device up-time and network, backups)
+   <br/><small>NestJS with TypeORM (PostgreSQL), Casbin, Redis cache and AWS S3; Jest and esbuild</small>
+  - Responsive admin panel with SSO login and live data monitoring
+   <br/><small>Vue 2, Vuex State, Buefy components and SCSS</small>
+  - iOS / Android authenticator with CIBA and QR-Login, DSR and push notifications
+   <br/><small>React Native, Zustand State, RN Camera, RN QRCode Scanner</small>
+  - Android mobile KYC's: One with govt. ID OCR scan and facial recognition, one with USB-powered govt. ID scanner (ACR39U)
+   <br/><small>React Native, RN Camera</small>
+- Remote health monitoring with smart watch, IOT gateway and supervisor (JS,TS,Python)
+  - Application on smart watch for heart rate, temperature and pressure monitoring and transmission (BLE) as well hidden admin menu
+    <br/><small>Custom javascript application (Espruino)</small>
+  - Bluetooth terminal (SEEED reTerminal) with embedded Linux and automation for BLE data forwarding and VOIP calls via built-in screen
+    <br/><small>Embedded Linux Image (X11/Openbox) for ARM, Python for device auth</small>
+  - Prescription issuance and distribution with DSR signing-proof
+  - Express backend for data storage and retrieval; OIDC auth for users and devices
+    <br/><small>NestJS with TypeORM (PostgreSQL), Redis cache</small>
+- Decentralized chat and VOIP system with CIBA authentication (Python)
+  - Matrix synapse server with custom SSO auth plugin for CIBA
+  - Registration automation via CIBA authentication against IdP
+- Crypto exchange with trading engine on ETH private chains (TS)
+  - Private Ethereum blockchain API with crawler to track transactions, deposit and withdrawals of both coins and ownership of NFT's
+  - Exchange API with trading engine and support for limit and market orders
+  - Cold-storage solution, with separate wallet server
+    <br/><small>All above: NestJS with TypeORM (PostgreSQL) and IPFS for NFT media upload and discovery</small>
+  - Admin panel and market front-end with charts, trading mask (Limit/Market), order book, trade history, deposit and withdrawal
+    <br/><small>Vue 3, Pinia State, Naive UI components</small>
+- NFT market place (TS)
+  - Backend API to handle ERC-1155 token creation, buying and selling (multi-currency support for payments, incl. coins and credit cards), deposit and withdrawal
+    <br/><small>NestJS with TypeORM (PostgreSQL) and IPFS for file discovery</small>
+  - Admin panel and market front-end to create, buy and sell NFT's
+    <br/><small>Vue 3, Pinia State, Naive UI components</small>
+
+In addition, I planned and supervised the development of applications and services, that integrate with above infrastructure to facilitate KYC sign-up, remote patient monitoring and voice/video calls:
+
+- Desktop KYC application with facial recognition and govt. ID scan (C++, Qt)
+- Desktop application for remote patient monitoring and VOIP (C++, Qt, GStreamer)
+- Matrix mobile (Android, iOS) client with CIBA authentication and VOIP support (C++, Qt, GStreamer)
+
+I also maintain related infrastructure, including 30 different servers on AWS EC2 (DB, web-server, BC Nodes & Signer) and a couple of dedicated Docker hosts on Hetzner; Most of which run PantherX OS or Debian, and are managed with a combination of python and go scripts.
 
 ### Panther Computer, <location>Lisbon, Portugal</location>
-<date>2021-ongoing</date>
+<date>2021-2023</date>
 <position>Founder, Project Manager, Developer</position>
 
-- Develop server backend system and web-based admin tools for PantherX CM
-- Coordinate system and application development with team
-- Maintain distribution and support infrastructure
+_Work on my own project._
+
+- PantherX Central Management for Business (TS)
+  - Backend API like IdP for user authentication, monitoring, project management (time tracking, tasks, ...) and desktop integration (sync accounts, secrets, etc.)
+    <br/><small>NestJS with TypeORM (PostgreSQL), Casbin, S3</small>
+  - Admin panel and user front-end with SSO login, PM, time tracking and so on
+    <br/><small>Vue 2, Vuex State, Buefy components and SCSS</small>
+- Hub plugin system for integration with Gitlab, GitHub, Email, etc.
+  <br/><small>NestJS with TypeORM (PostgreSQL) and IPFS for file discovery</small>
+- User (QR and CIBA login) and device identity services (registration and authentication with TPM support) and user application usage tracking by the second
+  <br/><small>Custom python applications, tpm2-tss, Activitywatch with crawler</small>
+- PantherX System Installer with support for scheme-based config file generation, partitioning (w/wo encryption) and fully automated installation from enterprise config
+
+In addition, I planned and supervised:
+
+- Desktop accounts and secrets service for PantherX (C++, Qt)
+- Guix-based package management application for install, update and remove (C++, Qt)
+- 100+ other developments for PantherX OS, including desktop applications, system services and libraries (C, C++, Python, Go, Rust, ...)
 
 ### Panther Computer, <location>Tehran, Iran</location>
 <date>2018-2022</date>
 <position>Founder</position>
+
+_Work on my own project._
 
 - Develop system architecture of PantherX OS
 - Source, interview and hire qualified C, C++, Python developers to join the team

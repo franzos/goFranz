@@ -65,8 +65,8 @@ I have over 13 years experience; Here's what I've been working with, over the pa
 
 - Typescript
 - Vue 2, Vue 3, React
-- Bulma, Buefy, Naive UI
-- Nuxt.js, Nuxt Framework
+- Bulma, Buefy, Naive UI, Chakra
+- Nuxt.js, Nuxt Framework, Next.js
 - gulp, Grunt
 
 #### Back-end
@@ -78,13 +78,17 @@ I have over 13 years experience; Here's what I've been working with, over the pa
 - MongoDB, PostgreSQL, MySQL, Memcached, Redis, Firebase
 - IPFS, Blockchain (Ethereum, Bitcoin)
 
+#### Mobile
+
+- React Native
+
 #### DevOps
 
 - PantherX, Guix, Debian, Centos
 - Nagios, New Relic, rsyslog
 - Docker, Vagrant, Guix
 - Nginx, Apache, HAProxy, PfSense
-- AWS, Heroku (only node.js), Firebase
+- AWS EC2, Heroku (only node.js), Hetzner
 
 <hr>
 
