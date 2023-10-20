@@ -22,3 +22,5 @@ This website is powered by Jekyll, a static site generator that compiles raw ass
 - Mobile-first design
 - Hosted on AWS S3, AWS CloudFront CDN (99.9% SLA)
 - Secured by SSL Certificate
+
+[Preview](http://www.panther-mpc.com.s3-website-eu-west-1.amazonaws.com)
