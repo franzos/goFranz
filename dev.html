@@ -6,9 +6,11 @@ permalink: /dev/
 ---
 
 <ul class="projects clean">
-{% for dev in site.dev reversed %}
-  <li class="project"><a href="{{ dev.url }}">
-    <span class="hidden-xs"><intro>Read entry</intro><br></span>
-    {{ dev.title | truncate: 50 }}<country>{{ dev.category | join: " / " }}</country></a></li>
-{% endfor %}
+	{% for dev in site.dev reversed limit: 100 %}
+	<li class="project"><a href="{{ dev.url }}">
+			<span class="hidden-xs">
+				<intro>Read entry</intro><br>
+			</span>
+			{{ dev.title | truncate: 50 }}<country>{{ dev.category | join: " / " }}</country></a></li>
+	{% endfor %}
 </ul>

@@ -1,6 +1,6 @@
 ---
 title: "Hello Nostr"
-summary: The Nostr protocol offers a decentralized way to build services and platforms like social networks, crowd-funding sites, or Uber alternatives. It uses a single key for identity across all services, ensuring more control over your account and data. However, it comes with challenges like irreversible account loss if you lose your key and some client-side performance issues. 
+summary: The Nostr protocol offers a decentralized way to build services and platforms like social networks, crowd-funding sites, or Uber alternatives. It uses a single key for identity across all services, ensuring more control over your account and data. However, it comes with challenges like irreversible account loss if you lose your key and some client-side performance issues.
 layout: post
 source:
 date: 2023-08-28 0:00:00 +0000
@@ -30,7 +30,7 @@ As it turns out, Nostr does most of what I set out to do, so the decision to aba
 Let me illustrate the difference:
 
 |                              | Nostr         | Mastodon    | Matrix      | Twitter, Twitch, Amazon...    |
-|------------------------------|---------------|-------------|-------------|-------------------------------|
+| ---------------------------- | ------------- | ----------- | ----------- | ----------------------------- |
 | Control over your account    | Yes           | Partial     | Partial     | No                            |
 | Control over your data       | Partial (1)   | Partial (1) | Partial (1) | Partial                       |
 | Publish your data (provider) | Any, Multiple | Any         | Any         | Same provider                 |
@@ -44,7 +44,7 @@ A couple of points:
 - Control over your account: The problem with Twitter is obvious - you're at the mercy of Twitter - even if you're the president of the United States. However, Mastodon or Matrix is not much better. While you can run your own Mastodon server, most people will rely on someone else to do it, and so we're back at the Twitter problem, and even though Mastodon is open source, it doesn't change the fact that your handle is tied to a specific server (for ex. `@franz:pantherx.social`) and virtually impossible to "move". To be fair, you can set a redirect on both Mastodon and Matrix (account moved) - but that means you rely on the server and can only hope that your redirect stays up in case of disagreement or otherwise.
 - Control over your data: Nostr, Mastodon, Matrix and Twitter aren't too different in this aspect; Once your data is online, it's online. Sure there's a delete button on Twitter, but if you think Twitter is deleting all that valuable data about you, you're out of luck. Theoretically, this is handled better on Nostr, Mastodon and Matrix, but what actually happens is up to the server provider.
 - Publish your data (provider): In theory you can always publish to multiple networks, or servers in case of Mastodon. The difference on Nostr is, that the message you post to multiple provider, is the same message with the same ID and signature so it's still unique, but redundant.
-- Can be private (on LAN): Nostr, Mastodon and Matrix can all be run on a local / private network. This is nice for groups of people (a family / fanclub / community / .. server), and important for companies (data ownership). 
+- Can be private (on LAN): Nostr, Mastodon and Matrix can all be run on a local / private network. This is nice for groups of people (a family / fanclub / community / .. server), and important for companies (data ownership).
 
 (1) On a private server (and network), you retain 100% control over your data.
 
@@ -75,4 +75,12 @@ In many ways, 2 is a strength of Nostr but developing and using the available cl
 
 I've spend the past month implementing the Nostr protocol, and developing a client based on it. Granted, I'm late to the party and there's already other libraries and clients but I felt this would be the best approach for me to better understand how it works, and what impact it has on server and client side.
 
-Try Nostr yourself, here: [https://franzos.github.io/nostr-ts/](https://franzos.github.io/nostr-ts/) ([code](https://github.com/franzos/nostr-ts)).
+Try Nostr using my own client, here: [nostrop.com](https://nostrop.com/) ([code](https://github.com/franzos/nostr-ts)).
+
+Or checkout other clients here: [nostr.com/clients](https://nostr.com/clients)
+
+**Update: 2023-11-15**
+
+I haven't logged-in to Nostr for a few weeks; This was kind of predictable as I don't really care to use social media, except for the occasional link that lands me on Twitter or Reddit. I just don't understand how people have time for this - there's so many better things to do; So this is not really Nostr's fault - rather it's my fault ... or luck?
+
+But if you do social media, do some Nostr too.

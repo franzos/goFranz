@@ -37,12 +37,12 @@ exclude:
   - project.config
   - run.sh
 
-collections:
-  - gist
-  - dev
-  - projects
-  - clients
-  - testimonials
+# collections:
+#   - gist
+#   - dev
+#   - projects
+#   - clients
+#   - testimonials
 
 collections:
   gist:
