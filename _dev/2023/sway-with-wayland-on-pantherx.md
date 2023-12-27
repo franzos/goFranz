@@ -7,11 +7,10 @@ date: 2023-11-15 0:00:00 +0000
 category:
   - Tools
 tags:
-  - debian
-  - bluetooth
-  - raspberrypi
+  - pantherx
+  - sway
+  - wayland
   - linux
-  - arm
 bg: austin-neill
 bg-author: Austin Neill
 author: Franz Geffke
