@@ -30,7 +30,29 @@ This is based on PantherX OS but you can easily replicate this on guix.
 
 #### Packages
 
+Start with a standard desktop config, then:
+
+1. Modify `%px-desktop-core-services` -> `%custom-desktop-services`
+2. Add packages you want; extending ` %px-desktop-core-packages`
+3. Add services you want; extending our new `%custom-desktop-services`
+
 ```scheme
+(define %custom-desktop-services
+  (modify-services %px-desktop-core-services
+    ;;(delete sddm-service-type)
+    (delete login-service-type)
+    (delete mingetty-service-type)
+
+    (sysctl-service-type config =>
+                         (sysctl-configuration 
+                          (inherit config)
+                          (settings (append '(("fs.inotify.max_user_watches>
+                                             %default-sysctl-settings))))))
+
+  ;;
+  ;; OTHER STUFF like kernel, fs, ...;;
+  ;;
+  
   (packages
    (cons*
     emacs
@@ -175,13 +197,9 @@ This is based on PantherX OS but you can easily replicate this on guix.
 
 #### Sway
 
-Here's the related config.
+Here's the related config, for use at `~/.config/sway/config`
 
 ```
-# Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
 # Read `man 5 sway` for a complete reference.
 
 ### Variables
@@ -194,35 +212,33 @@ set $down j
 set $up k
 set $right l
 
-# Your preferred terminal emulator
+# Terminal
 set $term foot
 
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
-# set $menu dmenu_path | bemenu | xargs swaymsg exec --
+# App launcher
 set $menu dmenu_path | j4-dmenu-desktop --dmenu="bemenu --ignorecase" | xargs swaymsg exec --
 
-### Display management
+# Display management
+# .config/kanshi/config
 exec kanshi
 
-### Clipboard
+# Clipboard
 # exec wl-paste -t text --watch clipman store --no-persist
 exec wl-paste --watch clipman store --no-persist
 
-### Notifications
+# Notifications
 exec dunst
 
-### Disk mounting
+# Disk mounting
 exec udiskie
 
-### 
+#  
 exec xsettingsd
-
 
 # Wallpaper
 output "*" bg ~/Desktop/Wallpaper/sebastian-staines-Jk4b7zztsek-unsplash.jpg fill
 
+# Theme for Gnome-apps
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Yaru'
@@ -450,13 +466,15 @@ I had issues running nmtui; Here's how to fix it:
 TERM=foot nmtui
 ```
 
-#### nano
+#### Foot: Unknown Terminal
 
-When you use `sudo` or `ssh` to another host, you might get an error about unknown terminal.
+When you use `sudo` or `ssh` to another host with foot, you might get an error about unknown terminal. This fixes it temporarily:
 
-```
+```bash
 TERM=xterm nano
 ```
+
+You could also use `alacritty` and others instead of `foot` for now.
 
 #### Scaling: Blurry Applications
 
@@ -468,9 +486,47 @@ TERM=xterm nano
 ##### VScode & Code
 
 ```bash
-codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland
-code <same>
+cp /home/franz/.guix-profile/share/applications/vscode.desktop ~/.local/share/applications
+cp /home/franz/.guix-profile/share/applications/vscodium.desktop ~/.local/share/applications
 ```
+
+Modify entry from (example):
+
+```
+[Desktop Entry]
+Name=Visual Studio Code
+Comment=Code Editing. Redefined.
+GenericName=Text Editor
+Exec=/gnu/store/3m7yfw3v9adlhysa36w5vfl2v6swfgvl-vscode-1.84.2/opt/vscode/bin/code
+Icon=vscode
+Type=Application
+StartupNotify=true
+StartupWMClass=Code
+Categories=TextEditor;Development;IDE;
+Actions=new-empty-window;
+Keywords=vscode;
+```
+
+to
+
+```
+[Desktop Entry]
+Name=Visual Studio Code WAYLAND
+Comment=Code Editing. Redefined.
+GenericName=Text Editor
+Exec=/gnu/store/3m7yfw3v9adlhysa36w5vfl2v6swfgvl-vscode-1.84.2/opt/vscode/bin/code --enable-feat>
+Icon=vscode
+Type=Application
+StartupNotify=true
+StartupWMClass=Code
+Categories=TextEditor;Development;IDE;
+Actions=new-empty-window;
+Keywords=vscode;
+```
+
+The `WAYLAND` is entirely optional; Important are the additional arguments.
+Of course you'll have to update these, with every related update; I tried using `~/.guix-profile` path but it crashes right away.
+
 
 If `code` crashes, start without args, change setting `window.titleBarStyle` from `native` to `custom`, then try again. To be honest, this is much nicer anyway ;)
 
@@ -664,6 +720,25 @@ It looks for the key in `~/.ssh/your_ssh_key_name`, and when you open a new term
  * Found existing ssh-agent: 14412
  * Known ssh key: /home/franz/.ssh/your_ssh_key_name
 ```
+
+#### Suspend
+
+For quick suspend via bemenu, I created a desktop file `.local/share/applications/suspend.desktop`:
+
+```
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=loginctl suspend
+Name=Suspend
+Comment=Suspend PC
+Icon=application-exit
+NoDisplay=false
+Categories=Utilities;System
+```
+
+Of course you can do this for other things like lock, shutdown, ...
 
 #### File Manager
 
