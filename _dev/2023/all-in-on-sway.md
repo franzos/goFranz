@@ -514,7 +514,7 @@ to
 Name=Visual Studio Code WAYLAND
 Comment=Code Editing. Redefined.
 GenericName=Text Editor
-Exec=/gnu/store/3m7yfw3v9adlhysa36w5vfl2v6swfgvl-vscode-1.84.2/opt/vscode/bin/code --enable-feat>
+Exec=/gnu/store/3m7yfw3v9adlhysa36w5vfl2v6swfgvl-vscode-1.84.2/opt/vscode/bin/code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland
 Icon=vscode
 Type=Application
 StartupNotify=true
@@ -528,7 +528,9 @@ The `WAYLAND` is entirely optional; Important are the additional arguments.
 Of course you'll have to update these, with every related update; I tried using `~/.guix-profile` path but it crashes right away.
 
 
-If `code` crashes, start without args, change setting `window.titleBarStyle` from `native` to `custom`, then try again. To be honest, this is much nicer anyway ;)
+If `code` crashes:
+- start without args, change setting `window.titleBarStyle` from `native` to `custom`, then try again (crashes with 2x or more windows)
+- OR change startup args to only --enable-features=WaylandWindowDecorations
 
 ##### Electron in general
 

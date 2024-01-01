@@ -21,22 +21,19 @@ For latest projects, kindly refer to my <a href="#independent-work">independent 
 
 Things I have in working memory:
 
-- Javascript from 2011
-- Typescript
-  - Vue 2, Vue 3, NuxtJS, Vuex, Pinia: from 2016
-  - NestJS, Express, TypeORM, Casbin: from 2017
-  - React, React Native, Zustand, Redux: from 2021
-  - Espruino (BLE): from 2021 (not recently)
-- Python
-  - Falcon and Flask: from 2017
-  - TPM2-TSS: from 2021
-- Misc
-  - MySQL, MongoDB, Firebase (Push), PostgreSQL, Redis: from 2011
-  - Blockchain (Bitcoin, Ethereum), IPFS: from 2016
-  - AWS (EC2, Route53, Cloudfront, SES), Heroku, DO, Hetzner (Dedicated): from 2017
-  - Docker (Docker Compose), Guix from 2018
+- JS/TS: Vue2,3; Nuxt; Vuex; Pinia; NestJS (Express); React Native; Espruino
+- Python: Falcon; Flask; Mostly worked with TPM2-TSS and Bluez (BLE)
+- Go, Rust, Scheme, C++ here and there 
 
-I also work with Go frequently, but above is what I interface with on a daily basis.
+Tech I work with daily:
+
+- MySQL, Mongo, Firebase, PostgreSQL, Redis
+- Blockchain; Mostly ETH (+IPFS) and Bitcoin
+- AWS (EC2, Route53, Cloudfront, SES), Heroku, DO, Hetzner
+- Docker, Guix, Ansible, Vagrant
+
+I'm a recovering Mac addict, on Linux.
+Guix with a minimal swayfx wayland desktop.
 
 <hr>
 
