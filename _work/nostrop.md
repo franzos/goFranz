@@ -2,7 +2,7 @@
 layout: page
 title: "Nostrop: Nostr Client"
 date: 2024-01-01 00:00:00 +0100
-client: "independent"
+client: "independent_lisbon"
 cover: nostrop-client-01.jpg
 bg: switzerland
 tags: "web development"
