@@ -42,8 +42,12 @@ While Syncthing is free to use, I'd suggest you to donate on their [website](htt
 
 <hr>
 
-**Update: 2018-07-30**
+**Update: 2024-07-07**
 
-It's been over 4 months since we've started using Syncthing at [SEDVentures](https://sedv.org/). We've got a central server, that basically manages all shares, so we don't have to rely on individual clients to be online, for their files and changes to sync to other employees.
+I've recently started using Syncthing to handle Backup on GrapheneOS:
 
-The setup is rock-solid, and we retain 100% control over our data. On top of that, we save money and have some great file-retention features.
+1. Setup Backup as usual, and use "Internal Storage" location
+2. Run a backup; This should create a `~/.SeedVauldAndroidBackup` folder on your device
+3. Point Syncthing at this folder, and have it transferred to wherever
+
+Works great, is free and the encrypted backup never get's stored anywhere, except devices I control.
