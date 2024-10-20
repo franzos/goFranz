@@ -75,7 +75,7 @@ In many ways, 2 is a strength of Nostr but developing and using the available cl
 
 I've spend the past month implementing the Nostr protocol, and developing a client based on it. Granted, I'm late to the party and there's already other libraries and clients but I felt this would be the best approach for me to better understand how it works, and what impact it has on server and client side.
 
-Try Nostr using my own client, here: [nostrop.com](https://nostrop.com/) ([code](https://github.com/franzos/nostr-ts)).
+Try Nostr using my own client, here: [nostrop.com](https://d2okqj4v2u9fts.cloudfront.net/) ([code](https://github.com/franzos/nostr-ts)).
 
 Or checkout other clients here: [nostr.com/clients](https://nostr.com/clients)
 

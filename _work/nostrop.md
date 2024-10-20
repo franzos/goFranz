@@ -16,7 +16,7 @@ Nostr is a protocol that enables a censorship-resistant, global social network.
 
 To learn the Nostr protocol, to implement a Nostr Typescript library, on top of which to develop a Nostr web client, with the ultimate goal to have some fun and learn more browser tech.
 
-You can preview the current release here: [nostrop.com](https://nostrop.com/).
+You can preview the current release here: [nostrop.com](https://d2okqj4v2u9fts.cloudfront.net/).
 
 All code, including:
 - Common, Node and Web library
