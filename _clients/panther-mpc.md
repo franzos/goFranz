@@ -7,7 +7,7 @@ introduction: "Panther Alpha is the wallet sized computer designed to help prote
 city: Dublin
 country: Ireland
 map: "-6.2603100, 53.3498050"
-web: www.panther-mpc.com.s3-website-eu-west-1.amazonaws.com
+web: https://d2c99c3fg4b42e.cloudfront.net
 categories: digital
 since: 2016
 color: "#0097ca"

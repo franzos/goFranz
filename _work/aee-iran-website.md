@@ -27,4 +27,4 @@ This website is powered by Jekyll, a static site generator that compiles raw ass
 - Hosted on AWS S3
 - Integrated Shop
 
-Have a look: [Preview](http://www.aeecamera.ir.s3-website-eu-west-1.amazonaws.com/)
+Have a look: [Preview](https://d3r5ndybmif445.cloudfront.net)

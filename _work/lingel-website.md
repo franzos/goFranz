@@ -20,7 +20,7 @@ Karl Lingel Fensterbau Gmbh & Co. KG, today one of the leading manufacturers of 
 
 **This is an ongoing project, still under development**
 
-- Development of the UAE website ([Prototype](http://www.lingel-germany.com.s3-website-eu-west-1.amazonaws.com/))
+- Development of the UAE website ([Prototype](https://dtseqryd5i3c0.cloudfront.net))
 - Set-up of social media & trading accounts
 - Outreach to UAE audience to establish brand, generate initial orders
 - Relationship-building

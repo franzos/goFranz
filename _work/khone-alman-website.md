@@ -26,7 +26,7 @@ This website came with a number of challenges:
 
 Allow customers to easily order online. This includes individual wishes such as different sides, sauces and even the style of cooking (rare, medium, well-done).
 
-[Preview](http://khone-alman.ir.s3-website.eu-central-1.amazonaws.com/en/) / [Source code](https://git.sr.ht/~franz/khone-alman.com)
+[Preview](https://d9l2otvnbef5b.cloudfront.net/en/) / [Source code](https://git.sr.ht/~franz/khone-alman.com)
 
 {% include project-image.html image="khone-alman-website-02.jpg" %}
 {% include project-image.html image="khone-alman-website-01.jpg" %}

@@ -22,4 +22,4 @@ This website is powered by Jekyll, a static site generator that compiles raw ass
 - Hosted on AWS S3, AWS CloudFront CDN (99.9% SLA)
 - Secured by SSL Certificate
 
-See for yourself at [no-limit-dubai.com](https://www.no-limit-dubai.com/)
+Have a look: [Preview](https://d2020ke6kgm7zr.cloudfront.net)
