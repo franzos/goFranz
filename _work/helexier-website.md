@@ -1,12 +1,13 @@
 ---
 layout: page
 title: "Helexier Website"
-date: 2020-11-04 00:00:00 +0200
+date: 2022-11-04 00:00:00 +0200
 client: "helexier"
 cover: helexier-01.jpg
 bg: roman-kraft
 tags: "web development"
 introduction: Patient portal for specialist research and medical center in Germany.
+featured: true
 ---
 
 {% include project-image.html image="helexier-01.jpg" %}
@@ -26,5 +27,4 @@ This website is powered by Jekyll, a static site generator that compiles raw ass
 - Hosted on AWS S3, AWS CloudFront CDN (99.9% SLA)
 - Secured by SSL Certificate
 
-See for yourself at [himmelsberg-fachklinik.de](https://www.himmelsberg-fachklinik.de/) for _german_
-<br />or [himmelsberg-fachklinik.de/en/](https://www.himmelsberg-fachklinik.de/en/) for _english_
+See for yourself at [himmelsberg-fachklinik.de](https://https://dgji1b335sply.cloudfront.net)
