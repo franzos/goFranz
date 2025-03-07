@@ -64,9 +64,11 @@ curl https://api.mullvad.net/wg/ -d account=YOURMULLVADACCOUNTNUMBER --data-urle
 
 To get the VPN server (peer) public key and IP, refer to Mullvad [servers](https://mullvad.net/en/servers).
 
-### Setup Wireguard VPN
+## Setup Wireguard VPN
 
-#### Firmware older than ~07.05
+_If you have a newer firmware than 07.05+, refer to the section below._
+
+### Firmware older than ~07.05
 
 - Copy the private key from the generated config (or command line)
 - Copy the public key from the Mullvad web interface (or command line)
@@ -86,12 +88,12 @@ Make sure to configue the zones (/network/firewall/zones) properly (ignore openv
 
 #### DNS
 
-The DNS (`10.64.0.1`) needs to be added in 4 places:
+The DNS (`10.64.0.1`) should be set in four places:
 
 1. `/network/dns` (DNS forwardings)
 2. `/network/interfaces/general` -> WAN (Use custom DNS servers)
 3. `/network/interfaces/general` -> LAN (Use custom DNS servers)
-4. `/services/vpn/wireguard` -> Wireguard Interface (DNS servers); previous step
+4. `/services/vpn/wireguard` -> Wireguard Interface (DNS servers)
 
 I'd suggest to double-check everything again and restart the router.
 
@@ -107,7 +109,7 @@ chromium --proxy-server="socks5://10.64.0.1:1080"
 
 EDIT: Selecting another Wireguard server did wonders; All you need to do is update the peer public key and IP address.
 
-#### Firmware 07.05+
+### Firmware 07.05+
 
 As of roughly `RUTX_R_00.07.05.4` this seems to do the trick:
 
@@ -129,7 +131,14 @@ Make sure to configue the zones (/network/firewall/zones) properly (ignore openv
 
 #### DNS
 
-There's no need to add the DNS anywhere else.
+The DNS (`10.64.0.1`) is set in two places:
+
+1. `/network/wan#id=wan` -> WAN (Use custom DNS servers)
+2. `/services/vpn/wireguard` -> Wireguard Interface (DNS servers)
+
+As of roughly `RUTX_R_00.07.13.1`, you can confirm which DNS dnsmasq is using on `/network/dns/general`:
+
+<img src="/assets/images/gist/mullvad-wireguard-vpn-on-rutx11-dns.png">
 
 Do check that you're not leaking: https://mullvad.net/en/check or https://browserleaks.com/ip
 
@@ -183,3 +192,7 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 8*.1**.1**.0    0.0.0.0         255.255.255.0   U     1      0        0 eth1
 193.32.127.69   8*.1**.1**.1    255.255.255.255 UGH   1      0        0 eth1
 ```
+
+**Update: 2025-03-07**
+
+Updated the guide to reflect the changes in the latest firmware.
