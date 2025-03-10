@@ -28,21 +28,110 @@ Refer to [Sway with Wayland on PantherX OS](/dev/sway-with-wayland-on-pantherx/)
 
 This is based on PantherX OS but you can easily replicate this on guix.
 
-#### Packages
+#### System
 
-Start with a standard desktop config, then:
+```scheme
+;; PantherX OS Server Configuration with SWAY Desktop Environment
 
-1. Modify `%px-desktop-core-services` -> `%custom-desktop-services`
-2. Add packages you want; extending ` %px-desktop-core-packages`
-3. Add services you want; extending our new `%custom-desktop-services`
+(use-modules (gnu)
+             (gnu system)
+             (px system panther)
+       
+             ;; swaylock-effects
+             (gnu packages wm))
 
-[file on GitHub](https://raw.githubusercontent.com/franzos/dotfiles/979c9f0862c8cbee845ad13c887d9fe6e06c4475/system.scm)
+(use-service-modules xorg)
+
+(operating-system
+ (inherit %panther-os)
+ (host-name "px-base")
+ (timezone "Europe/Berlin")
+ (locale "en_US.utf8")
+ 
+ (bootloader 
+  (bootloader-configuration
+   (bootloader grub-efi-bootloader)
+   (targets '("/boot/efi"))))
+  
+ (mapped-devices
+  (list (mapped-device
+         (source (uuid
+                  "bf66bcde-3847-452b-a5e2-1906e5b9766d"))
+         (target "cryptroot")
+         (type luks-device-mapping))))
+  
+ (file-systems
+  (append
+   (list (file-system
+          (device "/dev/mapper/cryptroot")
+          (mount-point "/")
+          (type "ext4")
+          (dependencies mapped-devices))
+         (file-system
+          (device (uuid "14C5-1711"
+                        'fat32))
+          (mount-point "/boot/efi")
+          (type "vfat")))
+   %base-file-systems))
+ 
+ (users
+  (cons
+   (user-account
+    (name "panther")
+    (comment "panther's account")
+    (group "users")
+    ;; Set the default password to 'pantherx'
+    ;; Important: Change with 'passwd panther' after first login
+    (password (crypt "pantherx" "$6$abc"))
+    (supplementary-groups '("wheel" "audio" "video"))
+    (home-directory "/home/panther"))
+   %base-user-accounts))
+ 
+ (services
+  (cons*
+   (service screen-locker-service-type
+            (screen-locker-configuration
+             (name "swaylock")
+             (program (file-append
+                       swaylock-effects
+                       "/bin/swaylock"))
+             (using-pam? #t)
+             (using-setuid? #f)))
+   
+   (service greetd-service-type
+            (greetd-configuration
+             (greeter-supplementary-groups
+              (list "video" "input" "users"))
+             (terminals
+              (list
+               (greetd-terminal-configuration
+                (terminal-vt "1")
+                (terminal-switch #t)
+                (default-session-command
+                  (greetd-wlgreet-sway-session)))
+               (greetd-terminal-configuration
+                (terminal-vt "2"))
+               (greetd-terminal-configuration
+                (terminal-vt "3"))
+               (greetd-terminal-configuration
+                (terminal-vt "4"))
+               (greetd-terminal-configuration
+                (terminal-vt "5"))
+               (greetd-terminal-configuration
+                (terminal-vt "6"))))))
+   
+   %panther-desktop-services-minimal))
+
+ (packages 
+  (cons* sway
+  %panther-desktop-packages)))
+```
+
+If you want to see a more complete example, here's my current [system configuration](https://github.com/franzos/dotfiles/blob/master/system.scm).
 
 #### Sway
 
-Here's the related config, for use at `~/.config/sway/config`
-
-[file on GitHub](https://raw.githubusercontent.com/franzos/dotfiles/979c9f0862c8cbee845ad13c887d9fe6e06c4475/sway)
+Here's the related [sway config](https://github.com/franzos/dotfiles/blob/master/sway), for use at `~/.config/sway/config`
 
 ### Manual Fixes
 
@@ -344,5 +433,11 @@ I finally replaced ALSA and Pulseaudio with pipewire; Thanks to guix home this i
 
 This is hardly final, or perfect. Good luck :)
 
-Edits:
-- 01.06.2024: Linked to files on GitHub; added notes on pipewrite
+
+**Update: 2024-06-01**
+
+Linked to files on GitHub; added notes on pipewire.
+
+**Update: 2025-03-10**
+
+Updated system configuration example, point links to newer versions.
