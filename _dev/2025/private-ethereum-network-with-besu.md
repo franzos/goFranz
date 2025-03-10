@@ -297,7 +297,7 @@ Repeat this for the second account, and make a transfer between them; It should 
 2025-03-09 10:34:21.019+00:00 | BftProcessorExecutor-QBFT-0 | INFO  | QbftBesuControllerBuilder | Imported empty block #571 / 0 tx / 1 pending / 0 (0.0%) gas / (0xcde78d11808b554e55d83f843f3a160b0f413f2ad382ee6a5c9730956bacde88)
 ```
 
-## Indexing with TrueBlocks
+### Indexing with TrueBlocks
 
 Do this in a seperate directory [ref](https://trueblocks.io/docs/install/install-core/):
 
@@ -333,7 +333,74 @@ $ nvim ~/.config/trueBlocks.toml
 2. Set `chainId = "1337"`
 2. Set `rpcProvider = "http://localhost:8546"`
 
-**Currently fails with a panic**: [issue](https://github.com/TrueBlocks/trueblocks-core/issues/3973).
+#### Usage
+
+Note: The `TB_NO_PROVIDER_CHECK=true` is necessary, because of a failing check. I discuss this in the issue [here](https://github.com/TrueBlocks/trueblocks-core/issues/3973).
+
+Query a block:
+
+```bash
+$ TB_NO_PROVIDER_CHECK=true chifra blocks 23021
+INFO[10-03|15:00:33.965] Skipping rpcProvider check
+WARN[10-03|15:00:33.973] the --calldata value provided (manifestHashMap(0x0, "mainnet-ts")) was not found: abi not found for manifestHashMap(0x0, "mainnet-ts"): abi not found
+{
+  "data": [
+    {
+      "baseFeePerGas": 0,
+      "blockNumber": 23021,
+      "date": "2025-03-10 11:47:03 UTC",
+      "difficulty": 1,
+      "gasLimit": 4700000,
+      "gasUsed": 25009,
+      "hash": "0x8daeb989f85f23faf4dd605cfb50fcb1adb7e569074713f0b3c2a3e6945796fb",
+      "miner": "0xf7b6f5857b179f705277bb489164d0921b94eb7e",
+      "parentHash": "0x7a79fda98accab9876ebfd424b5603f6933b57944a9a32bc086e3605c50a6899",
+      "timestamp": 1741607223,
+      "transactions": [
+        {
+          "blockHash": "0x8daeb989f85f23faf4dd605cfb50fcb1adb7e569074713f0b3c2a3e6945796fb",
+          "blockNumber": 23021,
+          "date": "2025-03-10 11:47:03 UTC",
+          "ether": "0",
+          "from": "0xf17f52151ebef6c7334fad080c5704d77216b732",
+          "gas": 25096,
+          "gasCost": 30010800,
+          "gasPrice": 1200,
+          "gasUsed": 25009,
+          "hash": "0xf5bb5c29a62e39f09911f81eb7e93097f5ac8d304c995908736e4b17777bd8c7",
+          "input": "0x60fe47b10000000000000000000000000000000000000000000000000000000000000064",
+          "nonce": 3,
+          "receipt": {
+            "contractAddress": "0x0",
+            "effectiveGasPrice": 1200,
+            "gasUsed": 25009,
+            "logs": [
+              {
+                "address": "0x4d2d24899c0b115a1fce8637fca610fe02f1909e",
+                "data": "0x000000000000000000000000f17f52151ebef6c7334fad080c5704d77216b7320000000000000000000000000000000000000000000000000000000000000064",
+                "date": "2025-03-10 11:47:03 UTC",
+                "logIndex": 0,
+                "timestamp": 1741607223,
+                "topics": [
+                  "0xc9db20adedc6cf2b5d25252b101ab03e124902a73fcb12b753f3d1aaa2d8f9f5"
+                ]
+              }
+            ],
+            "status": null
+          },
+          "timestamp": 1741607223,
+          "to": "0x4d2d24899c0b115a1fce8637fca610fe02f1909e",
+          "traces": [],
+          "transactionIndex": 0,
+          "value": "0"
+        }
+      ],
+      "uncles": [],
+      "withdrawals": []
+    }
+  ]
+}
+```
 
 ### Indexing with Chainlens
 
