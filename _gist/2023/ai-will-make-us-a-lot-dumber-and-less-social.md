@@ -20,7 +20,7 @@ Over the last couple of thousand years, access to knowledge, information and pro
 
 The printing press was arguably the first, real accelerator in this regard. Next came phones, the radio and television, which have been important drivers in terms of availability and variety of information.
 
-<img src="/assets/images/gist/european-output-of-books_500–1800.png">
+<img src="/assets/images/gist/european-output-of-books.png">
 
 <small>Tentotwo, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons</small>
 
