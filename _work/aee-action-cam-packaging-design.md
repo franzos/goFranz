@@ -7,7 +7,7 @@ cover: aee-05.jpg
 bg: roman-kraft
 tags: "design"
 introduction: Packaging design for AEE S60, S71T+, S80+ action camera series.
-featured: true
+featured: false
 ---
 
 ## AEE S60

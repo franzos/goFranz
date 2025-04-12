@@ -7,7 +7,7 @@ bg: malaysia
 cover: q-windows-13.jpg
 tags: "growth"
 introduction: "Growth optimization: cost down by 60%, enquiries up by 200%."
-featured: true
+featured: false
 ---
 
 ## The challenge

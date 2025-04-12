@@ -17,10 +17,10 @@ layout:
     {% for gist in all_items_sorted limit:10 %}
       <item>
         <title>{{ gist.title | xml_escape }}</title>
-        <description>{{ gist.summary | xml_escape }}</description>
+        <description>{{ gist.raw_content | plain_markdown | xml_escape }}</description>
         <pubDate>{{ gist.date | date_to_rfc822 }}</pubDate>
         <link>{{ gist.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <guid isPermaLink="true">{{ gist.url | prepend: site.baseurl | prepend: site.url }}</guid>
         {% for tag in gist.tags %}
         <category>{{ tag | xml_escape }}</category>
         {% endfor %}

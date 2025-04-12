@@ -19,9 +19,8 @@ If you don't even want me to know that you're visiting, you can opt-out below:
 
 This website also connects to three, external API's. To retrieve comments, to get the latest weather and to download the required set of maps to make this site look as good as it does.
 
-1. Comments: [franz-comments.herokuapp.com](https://franz-comments.herokuapp.com)
-2. Weather [query.yahooapis.com](https://query.yahooapis.com)
-3. Maps: [api.mapbox.com](https://api.mapbox.com)
+1. Weather [query.yahooapis.com](https://query.yahooapis.com)
+2. Maps: [api.mapbox.com](https://api.mapbox.com)
 
 ## Your Data
 

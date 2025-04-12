@@ -1,5 +1,4 @@
 {% if page.url contains "/client/" %}
-
   {% if page.client == "independent" %}
   <p class="title">Independent</p>
   <p>
@@ -10,18 +9,12 @@
   {% endif %}
   <br><a href="http://{{ page.web }}" target="_blank">{{ page.web }}</a>
   <br>{{ page.city }}, {{ page.country }}</p>
-  <div id="map" data-slideout-ignore></div>
+
+  <div class="map-static">
+    <img class="img-responsive" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ page.map }},6,0/200x100@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw&logo=false">
+  </div>
+
   <p>{{ page.introduction }}</p>
-  <!--
-    <div class="sidebar-nav">
-      <p class="title second">Related</p>
-      <ul>
-      {% for project in site.projects reversed | sort: 'date' %}
-        <li><a href="{{ project.url }}">{{ project.client }}</a></li>
-      {% endfor %}
-      </ul>
-    </div>
-  -->
 {% elsif page.url contains "/contact/" %}
   <p class="title">My Details</p>
   <p>
@@ -31,16 +24,18 @@
   <p>
     It's <time id="time"></time><weather id="weather"></weather>
   </p>
-  <div id="map" data-slideout-ignore></div>
+
+  <div class="map-static">
+    <img class="img-responsive" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ page.map }},6,0/200x100@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw&logo=false">
+  </div>
 
   <div class="sidebar-nav">
     <p class="title second">Notes & Links</p>
     <ul>
       <li><a href="/gpg/">My Public key (GPG)</a></li>
       <li><a href="/privacy/">Privacy Policy</a></li>
-      <li><a href="/dev/">Development</a></li>
-      <!-- <li><strike><a href="https://github.com/franzos/">GitHub</a></strike></li>
-      <li><a href="https://git.sr.ht/~franz">git</a></li> -->
+      <li><a href="https://github.com/franzos/">GitHub</a></li>
+      <!-- <li><a href="https://git.sr.ht/~franz">git</a></li> -->
     </ul>
     <p>
       Find me on Mastodon

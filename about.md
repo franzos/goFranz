@@ -17,7 +17,18 @@ Here's what I'm reading: [Bookshelf](/bookshelf/)
 
 ## Work
 
-My work covers a variety of aspects but to summarize, __I help organizations increase their reach and revenue by optimizing their product, online presence and backend-end processes__. I have clients ranging from startup and small business to international powerhouses and charities.
+I'm a full-stack engineer with over 12 years of experience building secure, scalable systems across multiple industries. Having lived and worked across Asia, Europe, and the Middle East, I bring a unique perspective to technical challenges and understand diverse market needs.
+
+My expertise spans:
+
+- **Authentication & Security Systems**: Building OAuth2/CIBA platforms, mobile authenticators, and secure identity services
+- **Blockchain Applications**: Developing crypto exchanges, NFT marketplaces, and smart contract implementations
+- **IoT Solutions**: Creating remote health monitoring systems and IoT gateways with real-time data processing
+- **Full-Stack Development**: Crafting responsive web applications and mobile apps with modern frameworks
+
+What sets me apart is my ability to bridge technical expertise with real-world business requirements. I don't just build technology—I deliver solutions that solve specific problems and create measurable value for organizations of all sizes.
+
+I've worked with clients ranging from startups and small businesses to international enterprises across multiple continents:
 
 - GEW, UK
 - On Air, Canada
@@ -39,13 +50,14 @@ My work covers a variety of aspects but to summarize, __I help organizations inc
 
 > Franz helped shape messaging and design engaging visual content for Global Entrepreneurship Week in the UK, a campaign that includes more than 3,000 events and 300,000 participants. Franz was great to work with, keen to test new ideas and push the work into new and exciting areas. The content he produced was central to a social campaign that was really innovative and effective in generating engagement from diverse audiences across multiple platforms. - Ewan Gaffney, GEW UK
 
-__Here's some of what I do:__
+__Here's how I can help your organization:__
 
-- Execute complex development projects from start to finish
-- Optimize backend processes to reduce staff hours and error rate
-- Increase product awareness, conversion rate, customer base
-- Marketing Automation, ERP and CRM implementation for SME
-- Investor pitch, seed funding advice, product placement
+- Architect and implement complex technical systems from concept to deployment
+- Develop secure authentication and identity management solutions
+- Create blockchain applications and smart contract implementations
+- Build IoT systems with real-time monitoring and data processing
+- Optimize backend processes to reduce costs and improve efficiency
+- Lead technical teams and manage development workflows
 
 Check out my [portfolio](/portfolio/) or review my featured work below.
 
@@ -55,7 +67,7 @@ Check out my [portfolio](/portfolio/) or review my featured work below.
 
 ### Tech Stack
 
-I have over 13 years experience; Here's what I've been working with, over the past year:
+I have over 12+ years experience; Here's what I've been working with, over the past year:
 
 <div style="margin-left:2.5rem" markdown="0">
 <figure><embed style="max-height:400px" src="https://wakatime.com/share/@franz/864f220d-d347-456d-a511-5e9380433514.svg"></figure>

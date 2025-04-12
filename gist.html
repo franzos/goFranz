@@ -1,5 +1,5 @@
 ---
-title: Gist
+title: Blog
 layout: page_clean
 bg: pattern_018
 permalink: /gist/
@@ -10,10 +10,24 @@ pagination:
   sort_field: 'date'
 ---
 
+{% assign all_items = site.dev | concat: site.gist %}
+{% assign all_items_sorted = all_items | sort: 'date' | reverse %}
+
 <ul class="projects clean">
-  {% for gist in site.gist reversed %}
-    <li class="project"><a href="{{ gist.url }}">
-      <span class="hidden-xs"><intro>Read gist</intro><br></span>
-      {{ gist.title | truncate: 50 }}<country>{{ gist.categories | join: " / " }}</country></a></li>
+  {% for post in all_items_sorted %}
+    <li class="project"><a href="{{ post.url }}">
+      <span class="hidden-xs">
+        {% if post.collection == 'gist' %}
+          <intro>Read gist</intro>
+        {% else %}
+          <intro>Read entry</intro>
+        {% endif %}
+        <br>
+      </span>
+      {{ post.title | truncate: 50 }}
+      <country>
+        {{ post.tags | join: " / " }}
+      </country>
+    </a></li>
   {% endfor %}
 </ul>

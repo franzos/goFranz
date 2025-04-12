@@ -7,7 +7,7 @@ cover: aee-04.jpg
 bg: roman-kraft
 tags: "design"
 introduction: Packaging design for worldwide sales for AEE's powerful Toruk drone.
-featured: true
+featured: false
 ---
 
 ## AEE Toruk AP9

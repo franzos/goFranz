@@ -7,7 +7,7 @@ cover: fitaseal-08.jpg
 bg: roman-kraft
 tags: "business intelligence"
 introduction: Powerful, mobile-ready ERP system with email integration.
-featured: true
+featured: false
 ---
 
 ## The challenge
