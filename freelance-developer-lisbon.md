@@ -10,7 +10,7 @@ Hi there!
 It looks like you're in need of a developer, 
 <br/>or someone to plan, hire for, and execute your project.
 
-- I'm a developer with over half a life-time experience
+- I'm a full-stack developer with over 12 years of experience
 - I've planned, hired for, and implemented large scale projects
 - I work with a lot of clients 1:1; I'm good at translating ideas to spec
 
