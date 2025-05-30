@@ -17,22 +17,9 @@ contains "/portfolio/" %}
 </div>
 {% endif %}
 
-<script src="/assets/js/nprogress.min.js"></script>
-<script>
-  NProgress.start();
-</script>
 <script src="/assets/js/main.min.js"></script>
-<script>
-  NProgress.set(0.2);
-</script>
 <script src="/assets/js/bundle.min.js" async></script>
-<script>
-  NProgress.set(0.4);
-</script>
 <script src="/assets/js/highlight.min.js"></script>
-<script>
-  NProgress.set(0.5);
-</script>
 
 <script>
   hljs.highlightAll();
@@ -71,9 +58,6 @@ contains "/portfolio/" %}
   });
 </script>
 {% endif %}
-<script>
-  NProgress.set(0.6);
-</script>
 <script type="text/javascript">
   var url = window.location.href;
   var msg = document.getElementById('welcome_referral');
@@ -153,10 +137,6 @@ contains "/portfolio/" %}
       myLayer.setGeoJSON(geojson);
 </script>
 {% endif %}
-<script>
-  NProgress.set(0.8);
-</script>
-
 {% if page.url == "/persian/dictionary/" %}
 <script src="/assets/js/persian.min.js"></script>
 <script>
@@ -213,9 +193,3 @@ contains "/portfolio/" %}
       alt=""
     /></p
 ></noscript>
-
-<script>
-  $(window).on("load", function () {
-    NProgress.done();
-  });
-</script>

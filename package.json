@@ -10,11 +10,9 @@
     "deploy": "npm run build; rsync -rtvz --chmod=D2755,F644 --delete public/ franzs@rsync.keycdn.com:franz/"
   },
   "dependencies": {
-    "accounting": "^0.4.1",
     "axios": "^0.21.0",
     "bootstrap": "^3.3.7",
     "chart.js": "^2.7.2",
-    "cryptocoins-icons": "^2.8.0",
     "exlink": "^2.3.0",
     "gulp": "^4",
     "gulp-clean-css": "^4.3.0",
@@ -27,11 +25,7 @@
     "highlight.js": "^11.7.0",
     "imagemin-pngquant": "^9.0.1",
     "jquery": "1.12.4",
-    "mapbox-gl": "^0.44.2",
     "mapbox.js": "^3.1.1",
-    "moment": "^2.22.2",
-    "moment-timezone": "^0.5.21",
-    "nprogress": "^0.2.0",
     "pump": "^3.0.0",
     "slideout": "^1.0.1",
     "swipebox": "^1.4.6",
