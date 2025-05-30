@@ -83,12 +83,6 @@ body {
   background-attachment: fixed;
 }
 
-.cc, .cc::before {
-  font-size: 1em;
-  margin: 2px;
-  color: #d8d8d8;
-}
-
 .meta {
   font-family: 'Overpass Mono';
 }
@@ -553,15 +547,6 @@ label {
 
 #panel.bg-home .content {
   color: #fff;
-}
-
-#nprogress .spinner-icon {
-  border-top-color: #451668;
-  border-left-color: #451668;
-}
-
-#nprogress .bar {
-  background: #451668;
 }
 
 .slideout-open #menu {
@@ -1106,11 +1091,11 @@ ul.pagination li a {
   #panel.index .wrapper {
     background-color: transparent;
   }
-  #panel.bg.index {
+  /* #panel.bg.index {
     background-image: url(/assets/images/bg.jpg);
     background-size: cover;
     background-position: center;
-  }
+  } */
   .resume .page {
     padding: 40px;
     border: 1px solid #bbb;
