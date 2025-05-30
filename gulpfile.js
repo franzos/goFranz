@@ -113,66 +113,57 @@ function jsMapbox() {
 		.pipe(gulp.dest('assets/js'));
 }
 
-function jsMapboxGl() {
-  return gulp.src
-    ([
-      'node_modules/mapbox-gl/dist/mapbox-gl.js'
-    ])
-		.pipe(concat('mapbox-gl.min.js'))
-    .pipe(uglify())
-		.pipe(gulp.dest('assets/js'));
-}
-
-function jsChart() {
-  return gulp.src
-    ([
-      'node_modules/chart.js/dist/Chart.bundle.js'
-    ])
-		.pipe(concat('chart.bundle.min.js'))
-    .pipe(uglify())
-		.pipe(gulp.dest('assets/js'));
-}
-
 function filesSwipebox() {
-    return gulp.src('node_modules/swipebox/src/img/*')
-        .pipe(gulp.dest('assets/img/'));
+  return gulp
+    .src("node_modules/swipebox/src/img/*")
+    .pipe(gulp.dest("assets/img/"));
 }
 
 function filesWebfont() {
-    return gulp.src('node_modules/cryptocoins-icons/webfont/*')
-        .pipe(gulp.dest('assets/fonts/'));
+  return gulp
+    .src("node_modules/cryptocoins-icons/webfont/*")
+    .pipe(gulp.dest("assets/fonts/"));
 }
 
 function filesHighlight() {
-    return gulp.src('src/highlight.min.js')
-        .pipe(gulp.dest('assets/js'));
-}
-
-function filesComments() {
-    return gulp.src('src/comments.css')
-        .pipe(gulp.dest('assets/css'));
+  return gulp.src("src/highlight.min.js").pipe(gulp.dest("assets/js"));
 }
 
 function thumbnail() {
-  return gulp.src('assets/images/projects/*.{jpg,png}')
-    .pipe(imageResize({
-      width : 640,
-      height : 360,
-      crop : true
-    }))
-    .pipe(imagemin({
-      progressive: true,
-      use: [pngquant()]
-    }))
-    .pipe(gulp.dest('assets/images/projects/preview'));
+  return gulp
+    .src("assets/images/projects/*.{jpg,png}")
+    .pipe(
+      imageResize({
+        width: 640,
+        height: 360,
+        crop: true,
+      })
+    )
+    .pipe(
+      imagemin({
+        progressive: true,
+        use: [pngquant()],
+      })
+    )
+    .pipe(gulp.dest("assets/images/projects/preview"));
 }
 
 function watch() {
-    gulp.watch('src/*.css', ['css'])
+  gulp.watch("src/*.css", ["css"]);
 }
 
 function watchPersian() {
-    gulp.watch('src/*.js', ['js-persian'])
+  gulp.watch("src/*.js", ["js-persian"]);
 }
 
-exports.default = series(css, js, jsBundle, jsProgress, jsMapbox, jsMapboxGl, jsChart, filesSwipebox, filesWebfont, filesHighlight, filesComments, thumbnail)
+exports.default = series(
+  css,
+  js,
+  jsBundle,
+  jsProgress,
+  jsMapbox,
+  filesSwipebox,
+  filesWebfont,
+  filesHighlight,
+  thumbnail
+);
