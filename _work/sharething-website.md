@@ -7,7 +7,7 @@ cover: sharething-website-01.jpg
 bg: switzerland
 tags: "web development"
 introduction: Sharething product website, powered by Vue.js
-featured: true
+featured: false
 ---
 
 ## The challenge

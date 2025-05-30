@@ -7,7 +7,7 @@ cover: erasmusoxygen-01.jpg
 bg: switzerland
 tags: "web development"
 introduction: Multilingual community portal for (Erasmus) students in Istanbul.
-featured: true
+featured: false
 ---
 
 ## The challenge
@@ -18,8 +18,6 @@ A multi-lingual community portal for (Erasmus) students in Istanbul.
 - Popular restaurants, places and sights
 - Info about various immigration matters
 - Multilingual: English, Turkish, French, German, Spanish
-
-[Source code](https://git.sedv.org/erasmusoxygen/website)
 
 {% include project-image.html image="erasmusoxygen-01.jpg" %}
 {% include project-image.html image="erasmusoxygen-02.jpg" %}

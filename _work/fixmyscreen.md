@@ -7,7 +7,7 @@ cover: fixmyscreen-01.jpg
 bg: switzerland
 tags: "web development"
 introduction: Website for iPhone Pick-Up & Repair Service with pay.ir integration
-featured: true
+featured: false
 ---
 
 ## The challenge

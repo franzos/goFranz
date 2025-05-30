@@ -7,7 +7,7 @@ cover: wall-estate-01.jpg
 bg: switzerland
 tags: "web development"
 introduction: Powerful real estate crm.
-featured: true
+featured: false
 ---
 
 ## The challenge

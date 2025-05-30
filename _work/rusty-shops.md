@@ -6,7 +6,7 @@ client: "independent_lisbon"
 cover: rusty-shops-01.jpg
 bg: switzerland
 tags: "web development"
-introduction: "Rusty Shops: Shopping with Rust"
+introduction: "Rusty Shops: Shop platform with Rust"
 featured: true
 ---
 

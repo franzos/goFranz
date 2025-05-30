@@ -7,7 +7,7 @@ cover: aee-08.jpg
 bg: roman-kraft
 tags: "web development"
 introduction: Jekyll powered, static website for AEE Action Camera Iran.
-featured: true
+featured: false
 ---
 
 ## The challenge

@@ -7,7 +7,7 @@ bg: california
 cover: pantherx-01.jpg
 tags: "system-development"
 introduction: Private, yet totally integrated, next-generation operating system for everyone.
-featured: true
+featured: false
 ---
 
 {% include project-image.html image="pantherx-01.jpg" %}

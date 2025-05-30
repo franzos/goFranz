@@ -7,7 +7,7 @@ cover: khone-alman-website-02.jpg
 bg: switzerland
 tags: "web development"
 introduction: Multilingual German restaurant website and order form, powered by Vue.js
-featured: true
+featured: false
 ---
 
 ## Introduction

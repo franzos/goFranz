@@ -7,7 +7,7 @@ cover: voice-prompt-order-form-01.jpg
 bg: switzerland
 tags: "web development"
 introduction: Responsive voice prompt order form powered by Vue.js.
-featured: true
+featured: false
 ---
 
 ## The challenge
