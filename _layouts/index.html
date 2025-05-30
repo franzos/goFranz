@@ -2,52 +2,62 @@
 layout: layout
 ---
 
-<div class="wrapper nav">
-  {% include nav.html %}
-</div>
+<div class="wrapper nav">{% include nav.html %}</div>
 
 <div class="container content-wrapper">
-
   <div class="row">
     <div class="col-sm-5">
       <h4 class="text-uppercase">Hey there</h4>
       <p>
-        I bridge technical expertise with business insight to create solutions that matter: developing secure, scalable systems that transform how organizations operate and connect with their users. Read more <a href="/about/">about me</a>, or explore what I'm working on in my free time: <a href="https://rusty-forms.com/">Rusty Forms</a>, <a href="https://rusty-shops.com/">Rusty Shops</a>.
+        I bridge technical expertise with business insight to create solutions
+        that matter: developing secure, scalable systems that transform how
+        organizations operate and connect with their users. Read more
+        <a href="/about/">about me</a>, or explore what I'm working on in my
+        free time: <a href="https://rusty-forms.com/">Rusty Forms</a>,
+        <a href="https://rusty-shops.com/">Rusty Shops</a>.
       </p>
 
       <p>
         <small>
-          Timestamp: {{ site.time | date_to_string }}; <a href="https://github.com/franzos/f-a.nz">Source</a>
+          Timestamp: {{ site.time | date_to_string }};
+          <a href="https://github.com/franzos/f-a.nz">Source</a>
         </small>
       </p>
-
     </div>
-    <div class="col-sm-3 col-sm-offset-1">
+    <div class="col-sm-7">
       <h4 class="text-uppercase">Blog</h4>
       <ul class="tiny">
-      {% assign all_items = site.dev | concat: site.gist %}
-      {% assign all_items_sorted = all_items | sort: 'date' | reverse %}
-      {% for post in all_items_sorted limit:6 %}
-        <li><a href="{{ post.url }}">{{ post.title | truncate: 40 }}</a></li>
-      {% endfor %}
+        {% assign all_items = site.dev | concat: site.gist %} 
+        {% assign all_items_sorted = all_items | sort: 'date' | reverse %}
+        {% for post in all_items_sorted limit:6 %}
+        <li>
+          <a href="{{ post.url }}">
+            {{ post.title | truncate: 60 }}
+            <br/><small>{{ post.summary | truncate: 120 }}</small>
+          </a>
+        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
 
   <h4 class="text-uppercase">Latest work</h4>
   <div class="row">
-  {% assign work = site.work | where:"featured",true | sort: 'date' | reverse %}
-  {% for work in work limit:4 %}
+    {% assign work = site.work | where:"featured",true | sort: 'date' | reverse
+    %} {% for work in work limit:4 %}
     <div class="col-sm-3">
       <a href="{{ work.url }}" class="wrapper">
-        <img class="img-responsive" src="/assets/images/projects/preview/{{ work.cover }}">
-        <p class="info"><b>{{ work.title }}</b>
-        <br><small>{{ work.introduction }}</small></p>
+        <img
+          class="img-responsive"
+          src="/assets/images/projects/preview/{{ work.cover }}"
+        />
+        <p class="info">
+          <b>{{ work.title }}</b> <br /><small>{{ work.introduction }}</small>
+        </p>
       </a>
     </div>
-  {% endfor %}
+    {% endfor %}
   </div>
 
   <a rel="me" href="https://social.tchncs.de/@franzs" hidden>Mastodon</a>
-
 </div>

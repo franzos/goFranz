@@ -3,6 +3,7 @@ description:
 baseurl: ""
 url: "https://f-a.nz"
 destination: public/
+mapbox_token: "pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw"
 
 # Build settings
 markdown: kramdown

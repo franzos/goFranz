@@ -2,7 +2,7 @@
   "name": "f-a.nz",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://git.sedv.org/f-a.nz/website.git",
+  "repository": "https://github.com/franzos/f-a.nz",
   "author": "Franz Geffke <m@f-a.nz>",
   "license": "MIT",
   "scripts": {

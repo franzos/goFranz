@@ -11,7 +11,7 @@
   <br>{{ page.city }}, {{ page.country }}</p>
 
   <div class="map-static">
-    <img class="img-responsive" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ page.map }},6,0/200x100@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw&logo=false">
+    <img class="img-responsive" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ page.map }},6,0/200x100@2x?access_token={{ site.mapbox_token }}&logo=false">
   </div>
 
   <p>{{ page.introduction }}</p>
@@ -21,12 +21,9 @@
     <b>Franz Geffke</b>
     <br><a href="mailto:m@f-a.nz?subject=What's on your mind?">m@f-a.nz</a>
   </p>
-  <p>
-    It's <time id="time"></time><weather id="weather"></weather>
-  </p>
 
   <div class="map-static">
-    <img class="img-responsive" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ page.map }},6,0/200x100@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw&logo=false">
+    <img class="img-responsive" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ page.map }},6,0/200x100@2x?access_token={{ site.mapbox_token }}&logo=false">
   </div>
 
   <div class="sidebar-nav">

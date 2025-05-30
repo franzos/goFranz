@@ -15,19 +15,22 @@ pagination:
 
 <ul class="projects clean">
   {% for post in all_items_sorted %}
-    <li class="project"><a href="{{ post.url }}">
-      <span class="hidden-xs">
-        {% if post.collection == 'gist' %}
-          <intro>Read gist</intro>
-        {% else %}
-          <intro>Read entry</intro>
-        {% endif %}
-        <br>
-      </span>
-      {{ post.title | truncate: 50 }}
-      <country>
-        {{ post.tags | join: " / " }}
-      </country>
-    </a></li>
+    <li class="project">
+      <a href="{{ post.url }}">
+        <country>
+          {{ post.tags | join: " / " }}
+        </country>
+        <span class="hidden-xs">
+          {% if post.collection == 'gist' %}
+            <intro>Read gist</intro>
+          {% else %}
+            <intro>Read entry</intro>
+          {% endif %}
+          <br>
+        </span>
+        {{ post.title | truncate: 50 }}
+        <br/><small>{{ post.summary }}</small>
+      </a>
+    </li>
   {% endfor %}
 </ul>

@@ -46,7 +46,7 @@ permalink: /clients/
           {% unless client.client == "independent" %}<br>{{ client.city }}, {{ client.country }}{% endunless %}</p>
 	  
           <div class="map-static">
-            <img class="img-responsive" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ client.map }},6,0/200x100@2x?access_token=pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw&logo=false">
+            <img class="img-responsive" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ client.map }},6,0/200x100@2x?access_token={{ site.mapbox_token }}&logo=false">
           </div>
 
           <p>{{ client.introduction }}</p>

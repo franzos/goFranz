@@ -1,14 +1,19 @@
-{% if page.url contains "/client/" or page.url contains "/work/" or page.url contains "/portfolio/" %}
+{% if page.url contains "/client/" or page.url contains "/work/" or page.url
+contains "/portfolio/" %}
 <div class="footer hidden-print">
-    <div class="call-out-contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <p><a href="/contact/?internal_referral">Have a project you'd like to discuss with me?</a></p>
-          </div>
+  <div class="call-out-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>
+            <a href="/contact/?internal_referral"
+              >Have a project you'd like to discuss with me?</a
+            >
+          </p>
         </div>
       </div>
     </div>
+  </div>
 </div>
 {% endif %}
 
@@ -29,67 +34,41 @@
   NProgress.set(0.5);
 </script>
 
-<script>hljs.highlightAll();</script>
+<script>
+  hljs.highlightAll();
+</script>
 
 <script>
   var slideout = new Slideout({
-    'panel': document.getElementById('panel'),
-    'menu': document.getElementById('menu'),
-    'padding': 256,
-    'tolerance': 70
+    panel: document.getElementById("panel"),
+    menu: document.getElementById("menu"),
+    padding: 256,
+    tolerance: 70,
   });
-  document.querySelector('.toggle-button').addEventListener('click', function() {
-    slideout.toggle();
-  });
+  document
+    .querySelector(".toggle-button")
+    .addEventListener("click", function () {
+      slideout.toggle();
+    });
 </script>
 <script>
-$(window).load(function () {
-  exLink.init({
-    protocols: ['http', 'https'],
-    filetypes: ['pdf', 'xls', 'docx', 'doc', 'ppt', 'pptx'],
-    noFollow: true,
-    linkWarning: false,
-    gaTrackLabel: 'External Links'
+  $(window).load(function () {
+    exLink.init({
+      protocols: ["http", "https"],
+      filetypes: ["pdf", "xls", "docx", "doc", "ppt", "pptx"],
+      noFollow: true,
+      linkWarning: false,
+      gaTrackLabel: "External Links",
+    });
   });
-});
 </script>
-{% if page.url contains "/work/" %}
+{% if page.url contains "/work/" or page.url contains "/gist/" %}
 <script type="text/javascript">
-$(window).load(function () {
-  ;( function( $ ) {
-    $( '.swipebox' ).swipebox();
-  } )( jQuery );
-});
-</script>
-{% elsif page.url contains "/gist/" %}
-<script type="text/javascript">
-$(window).load(function () {
-  ;( function( $ ) {
-    $( '.swipebox' ).swipebox();
-  } )( jQuery );
-});
-</script>
-{% elsif page.url contains "/contact/" %}
-<script>
-$(window).load(function () {
-  (function()
-  {
-    var NowMoment = moment.utc().add({{ page.offset }}, 'hours').format('LT');
-    var eDisplayMoment = document.getElementById('time');
-    eDisplayMoment.innerHTML = NowMoment;
-  })();
-});
-</script>
-<script>
-	const Http = new XMLHttpRequest();
-	Http.open("GET", 'https://api.openweathermap.org/data/2.5/weather?q=Lisbon,PT&APPID=c3f4b205f8cacdb34188102e9f4c6ca5');
-	Http.send();
-	Http.onreadystatechange=(e)=>{
-		let data = JSON.parse(Http.responseText);
-		let temperature = parseFloat(data.main.temp - 273.15).toFixed(2);
-		html = ' and '+temperature+'&deg;'+'C'+' outside.';
-		$("#weather").html(html);
-	};
+  $(window).load(function () {
+    (function ($) {
+      $(".swipebox").swipebox();
+    })(jQuery);
+  });
 </script>
 {% endif %}
 <script>
@@ -113,145 +92,130 @@ $(window).load(function () {
   {% endif %}
 </script>
 {% if page.url == "/about/" %}
-<script src='/assets/js/mapbox.min.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css' rel='stylesheet' />
+<script src="/assets/js/mapbox.min.js"></script>
+<link
+  href="https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css"
+  rel="stylesheet"
+/>
 <style>
-  .navbar.navbar-default, .quick-contact, .innovative-product-award.loaded {
+  .navbar.navbar-default,
+  .quick-contact,
+  .innovative-product-award.loaded {
     z-index: 1000;
   }
   #map {
-    height:360px;
-    width:100%;
+    height: 360px;
+    width: 100%;
   }
 </style>
 <!--  in {{ place.year }} -->
 <script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2oyN2h2M2VnMDA1bTJxbzY4dGhhc2V4NCJ9.Hb-yaLByaOY9LR7SF7JxmA';
-var map = L.mapbox.map('map')
-    .setView([27.2741606,3.2739257], 2);
-    var myLayer = L.mapbox.featureLayer().addTo(map);
-    var styleLayer = L.mapbox.styleLayer('mapbox://styles/dkkma/cj27hvld100112smweocii6o3').addTo(map);
-    var geojson = {
-        type: 'FeatureCollection',
-        features: [{% for place in site.data.places %}{
-            type: 'Feature',
-            properties: {
-                title: 'Life in {{ place.city }}, {{ place.country }}',
-                'marker-color': '#451668',
-                'marker-size': 'small',
-                'marker-symbol': 'building',
-                'description': '{{ place.introduction }}'
-            },
-            geometry: {
-                type: 'Point',
-                coordinates: [{{ place.longitude }}, {{ place.latitude }}]
-            }
-        },
-        {% endfor %}
-        {% for client in site.clients %}{% if client.city != "Tehran" %}{
-            type: 'Feature',
-            properties: {
-                title: 'Client in {{ client.city }}, {{ client.country }}',
-                'marker-color': '#451668',
-                'marker-size': 'small',
-                'marker-symbol': 'suitcase',
-                'description': '{{ client.introduction }}'
-            },
-            geometry: {
-                type: 'Point',
-                coordinates: [{{ client.map }}]
-            }
-        }{% if forloop.last %}{% else %},{% endif %}{% endif %}
-        {% endfor %}
-      ]
-    };
-    map.scrollWheelZoom.disable();
-    myLayer.setGeoJSON(geojson);
+  L.mapbox.accessToken = 'pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2oyN2h2M2VnMDA1bTJxbzY4dGhhc2V4NCJ9.Hb-yaLByaOY9LR7SF7JxmA';
+  var map = L.mapbox.map('map')
+      .setView([27.2741606,3.2739257], 2);
+      var myLayer = L.mapbox.featureLayer().addTo(map);
+      var styleLayer = L.mapbox.styleLayer('mapbox://styles/dkkma/cj27hvld100112smweocii6o3').addTo(map);
+      var geojson = {
+          type: 'FeatureCollection',
+          features: [{% for place in site.data.places %}{
+              type: 'Feature',
+              properties: {
+                  title: 'Life in {{ place.city }}, {{ place.country }}',
+                  'marker-color': '#451668',
+                  'marker-size': 'small',
+                  'marker-symbol': 'building',
+                  'description': '{{ place.introduction }}'
+              },
+              geometry: {
+                  type: 'Point',
+                  coordinates: [{{ place.longitude }}, {{ place.latitude }}]
+              }
+          },
+          {% endfor %}
+          {% for client in site.clients %}{% if client.city != "Tehran" %}{
+              type: 'Feature',
+              properties: {
+                  title: 'Client in {{ client.city }}, {{ client.country }}',
+                  'marker-color': '#451668',
+                  'marker-size': 'small',
+                  'marker-symbol': 'suitcase',
+                  'description': '{{ client.introduction }}'
+              },
+              geometry: {
+                  type: 'Point',
+                  coordinates: [{{ client.map }}]
+              }
+          }{% if forloop.last %}{% else %},{% endif %}{% endif %}
+          {% endfor %}
+        ]
+      };
+      map.scrollWheelZoom.disable();
+      myLayer.setGeoJSON(geojson);
 </script>
 {% endif %}
 <script>
   NProgress.set(0.8);
 </script>
 
-{% if page.url contains "/mutual-investment-fund/" %}
-<script src='/assets/js/chart.bundle.min.js'></script>
-<script>
-var ctx = document.getElementById("myChart");
-var myLineChart = Chart.Line(ctx, {
-  data: {
-    labels: [{% for entry in site.data.mutual-investment-fund %}"{{ entry.date }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
-    datasets: [
-      {
-        label: 'Net asset value (NAV) in Euro',
-        fill: true,
-        lineTension: 0,
-        backgroundColor: "#451668",
-        borderColor: "#451668",
-        borderCapStyle: 'butt',
-        borderDash: [],
-        borderDashOffset: 0.0,
-        borderJoinStyle: 'miter',
-        pointBorderColor: "#451668",
-        pointBackgroundColor: "#fff",
-        pointBorderWidth: 2,
-        pointHoverRadius: 5,
-        pointHoverBackgroundColor: "#fff",
-        pointHoverBorderColor: "#451668",
-        pointHoverBorderWidth: 3,
-        pointRadius: 5,
-        pointHitRadius: 10,
-        data: [{% for entry in site.data.mutual-investment-fund %}{{ entry.rate }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
-        spanGaps: false,
-      }
-    ]
-  }
-});
-</script>
-{% endif %}
-
 {% if page.url == "/persian/dictionary/" %}
 <script src="/assets/js/persian.min.js"></script>
 <script>
-var request = new XMLHttpRequest();
-   request.open("GET", "/assets/data/persian.json", false);
-   request.send(null);
-   var json = JSON.parse(request.responseText);
+  var request = new XMLHttpRequest();
+  request.open("GET", "/assets/data/persian.json", false);
+  request.send(null);
+  var json = JSON.parse(request.responseText);
 
-var app = new Vue({
-  delimiters:['<%', '%>'],
-  el: '#dictionary',
-  data: {
-    search: '',
-    dictionary: json
-  },
-  computed: {
-    filteredItems() {
-      return this.dictionary.filter(item => {
-         return String(item.english.toLowerCase()).indexOf(this.search.toLowerCase()) !== -1
-      })
-    }
-  }
-})
-
+  var app = new Vue({
+    delimiters: ["<%", "%>"],
+    el: "#dictionary",
+    data: {
+      search: "",
+      dictionary: json,
+    },
+    computed: {
+      filteredItems() {
+        return this.dictionary.filter((item) => {
+          return (
+            String(item.english.toLowerCase()).indexOf(
+              this.search.toLowerCase()
+            ) !== -1
+          );
+        });
+      },
+    },
+  });
 </script>
 {% endif %}
 
 <script type="text/javascript">
   var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://stats.dkkma.com/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '8']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function () {
+    var u = "https://stats.dkkma.com/";
+    _paq.push(["setTrackerUrl", u + "piwik.php"]);
+    _paq.push(["setSiteId", "8"]);
+    var d = document,
+      g = d.createElement("script"),
+      s = d.getElementsByTagName("script")[0];
+    g.type = "text/javascript";
+    g.async = true;
+    g.defer = true;
+    g.src = u + "piwik.js";
+    s.parentNode.insertBefore(g, s);
   })();
 </script>
-<noscript><p><img src="https://stats.dkkma.com/piwik.php?idsite=8&rec=1" style="border:0;" alt="" /></p></noscript>
+<noscript
+  ><p>
+    <img
+      src="https://stats.dkkma.com/piwik.php?idsite=8&rec=1"
+      style="border: 0"
+      alt=""
+    /></p
+></noscript>
 
 <script>
-  $(window).on("load", function() {
+  $(window).on("load", function () {
     NProgress.done();
   });
 </script>

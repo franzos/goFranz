@@ -656,6 +656,10 @@ label {
   display: block;
 }
 
+ul.tiny li {
+  line-height: 1.7rem;
+}
+
 ul.projects, ul.tiny {
   list-style: none;
   padding: 0px;
@@ -663,7 +667,7 @@ ul.projects, ul.tiny {
 
 ul.tiny li a {
   color: #fff;
-  background-color: #451668;
+  background-color: #2b2b2b;
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -683,7 +687,7 @@ ul.projects li.project.last {
 
 ul.projects li a {
   color: #fff;
-  background-color: #451668;
+  background-color: #2b2b2b;
   font-size:1.2em;
   font-weight: 700;
   text-transform: uppercase;
@@ -708,7 +712,7 @@ ul.tiny li a:hover {
 
 ul.projects li a country {
   float: right;
-  color: #5e2986;
+  color: #4f4f4f;
 }
 
 .projects.clean {
@@ -716,11 +720,11 @@ ul.projects li a country {
 }
 
 ul.projects.clean li a intro {
-  color: #451668;
+  color: #2b2b2b;
 }
 
 ul.projects li a:hover country {
-  color: #451668;
+  color: #2b2b2b;
 }
 
 ul.projects li a:hover intro {
@@ -1171,7 +1175,7 @@ ul.pagination li a {
     padding: 3em;
   }
   ul.projects li a:hover {
-    color: #451668;
+    color: #353535;
   }
   .slideout-panel {
     background-color: #fff;
@@ -1183,7 +1187,7 @@ ul.pagination li a {
     margin: 10px 10px 10px 10px;
   }
   ul.projects li a {
-    padding: 60px 20px 20px 96px;
+    padding: 10px 10px 10px 20px;
   }
   ul.projects.small li a {
     padding: 60px 20px 20px 20px;
