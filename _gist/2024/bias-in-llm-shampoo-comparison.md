@@ -1,6 +1,6 @@
 ---
 title: "Bias in LLM (AI-) shampoo comparison"
-summary: The article explores using Claude 3.5 Sonnet to compare different shampoo brands by analyzing their ingredients, with prices ranging from €5 to €30 per bottle. When brand names were included in the analysis, expensive "professional" brands like Kerastase ranked highest, but when ingredients were analyzed blindly without brand names, more affordable (or less popular) options ranked better, suggesting potential bias in the LLM's initial assessment. The experiment highlights how LLMs might be influenced by brand recognition and marketing, rather than purely evaluating product ingredients and effectiveness.
+summary: Using Claude 3.5 Sonnet to compare different shampoo brands by analyzing their ingredients, with prices ranging from €5 to €30 per bottle. When brand names were included in the analysis, expensive "professional" brands like Kerastase ranked highest, but when ingredients were analyzed blindly without brand names, more affordable (or less popular) options ranked better, suggesting potential bias in the LLM's initial assessment. The experiment highlights how LLMs might be influenced by brand recognition and marketing, rather than purely evaluating product ingredients and effectiveness.
 layout: post
 source:
 date: 2024-12-24 0:00:00 +0000

@@ -1,6 +1,6 @@
 ---
 title: "Backup and decrypt WhatsApp Android"
-summary: Notes on how-to create a backup of WhatsApp, that you can decrypt and open on your computer, without rooting Android.
+summary: How to create a backup of WhatsApp, that you can decrypt and open on your computer, without rooting Android.
 layout: post
 source:
 date: 2024-01-09 0:00:00 +0000

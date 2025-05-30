@@ -1,6 +1,6 @@
 ---
 title: "Thunderbird, Guix and GPG"
-summary: Notes on how-to get Thunderbird to recognize a Yubikey GPG key on Guix
+summary: How to get Thunderbird to recognize a Yubikey GPG key on Guix
 layout: post
 source:
 date: 2024-07-07 0:00:00 +0000

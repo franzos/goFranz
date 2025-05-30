@@ -1,6 +1,6 @@
 ---
 title: "Tame a Framework Laptop with Guix"
-summary: "This post describes how to make a Framework laptop run quieter on Guix."
+summary: "How to make a Framework laptop run quieter on Guix."
 layout: post
 source:
 date: 2025-4-8 0:00:00 +0000

@@ -1,6 +1,6 @@
 ---
 title: "Jekyll: Publish Globally at Near-Zero Cost"
-summary: "This post describes how to use Jekyll to publish content globally, in multiple languages, with virtually no maintenance or vendor lock-in and at near zero-cost."
+summary: "How to use Jekyll to publish content globally, in multiple languages, with virtually no maintenance or vendor lock-in and at near zero-cost."
 layout: post
 source:
 date: 2025-5-30 0:00:00 +0000
