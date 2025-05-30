@@ -17,7 +17,7 @@ pagination:
   {% for post in all_items_sorted %}
     <li class="project">
       <a href="{{ post.url }}">
-        <country>
+        <country class="hidden-xs">
           {{ post.tags | join: " / " }}
         </country>
         <span class="hidden-xs">
@@ -29,7 +29,9 @@ pagination:
           <br>
         </span>
         {{ post.title | truncate: 50 }}
-        <br/><small>{{ post.summary }}</small>
+        {% if post.summary %}
+          <br/><small>{{ post.summary }}</small>
+        {% endif %}
       </a>
     </li>
   {% endfor %}
