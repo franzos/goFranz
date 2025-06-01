@@ -9,20 +9,29 @@ layout: layout
     <div class="col-sm-5">
       <h4 class="text-uppercase">Hey there</h4>
       <p>
-        I bridge technical expertise with business insight to create solutions
-        that matter: developing secure, scalable systems that transform how
-        organizations operate and connect with their users. Read more
-        <a href="/about/">about me</a>, or explore what I'm working on in my
-        free time: <a href="https://rusty-forms.com/">Rusty Forms</a>,
-        <a href="https://rusty-shops.com/">Rusty Shops</a>.
+        I build secure, scalable systems that solve real problems and create value for organizations and their users. Learn more <a href="/about/">about me</a>, or check out my own projects:.
       </p>
 
-      <p>
-        <small>
-          Timestamp: {{ site.time | date_to_string }};
-          <a href="https://github.com/franzos/f-a.nz">Source</a>
-        </small>
-      </p>
+      <ul class="tiny">
+        <li>
+          <a href="https://rusty-forms.com">
+            Rusty Forms
+            <br/>
+            <small>
+              Embed and process forms from your website; Pay as you go or self-host from €590/year.
+            </small>
+          </a>
+        </li>
+        <li>
+          <a href="https://rusty-shops.com">
+            Rusty Shops
+            <br/>
+            <small>
+              E-Commerce platform for SMEs and individuals; Pay as you go or self-host from €790/year.
+            </small>
+          </a>
+        </li>
+      </ul>
     </div>
     <div class="col-sm-7">
       <h4 class="text-uppercase">Blog</h4>
@@ -58,6 +67,13 @@ layout: layout
     </div>
     {% endfor %}
   </div>
+
+  <p>
+    <small>
+      Timestamp: {{ site.time | date_to_string }};
+      <a href="https://github.com/franzos/f-a.nz">Source</a>
+    </small>
+  </p>
 
   <a rel="me" href="https://social.tchncs.de/@franzs" hidden>Mastodon</a>
 </div>

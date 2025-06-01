@@ -650,15 +650,22 @@ ul.projects, ul.tiny {
   padding: 0px;
 }
 
-ul.tiny li a {
-  color: #fff;
-  background-color: #2b2b2b;
-  font-size: 1.1rem;
+ul.tiny li a, ul.projects li a {
+
+  color: #070707;
+  background-color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: 700;
   display: block;
   width: 100%;
-  margin-bottom: 4px;
+}
+
+ul.tiny li a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 12px;
   padding-left: 8px;
 }
 
@@ -671,15 +678,15 @@ ul.projects li.project.last {
 }
 
 ul.projects li a {
-  color: #fff;
-  background-color: #2b2b2b;
   font-size:1.2em;
-  font-weight: 700;
   text-transform: uppercase;
-  display: block;
-  width: 100%;
   margin:0px;
   margin-bottom: 40px;
+}
+
+ul.tiny li a small, ul.projects li a small {
+  color: #4f4f4f;
+  font-size: 60%;
 }
 
 ul.projects li a.last {
@@ -687,9 +694,14 @@ ul.projects li a.last {
 }
 
 ul.projects li a:hover, ul.tiny li a:hover {
-  color: #000;
+  color: #fff;
   background-color: #000;
 }
+
+ul.projects li a:hover small, ul.tiny li a:hover small {
+  color: #fff;
+}
+
 
 ul.tiny li a:hover {
   color: #fff;
@@ -700,16 +712,16 @@ ul.projects li a country {
   color: #4f4f4f;
 }
 
+ul.projects li a:hover country {
+  color: #000;
+}
+
 .projects.clean {
   margin: 0px;
 }
 
 ul.projects.clean li a intro {
-  color: #2b2b2b;
-}
-
-ul.projects li a:hover country {
-  color: #2b2b2b;
+  color: #fff;
 }
 
 ul.projects li a:hover intro {
