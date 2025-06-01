@@ -5,27 +5,27 @@ bg: mark-asthoff_02
 permalink: /freelance-developer-lisbon-portugal/
 ---
 
-Hi there!
+### Looking for a Freelance Developer in Lisbon?
 
-It looks like you're in need of a developer, 
-<br/>or someone to plan, hire for, and execute your project.
+I’m Franz—a full-stack developer with 12+ years of experience building and leading projects for clients worldwide. I can help you at any stage: from scoping your project and assembling a team, to delivering production-ready code.
 
-- I'm a full-stack developer with over 12 years of experience
-- I've planned, hired for, and implemented large scale projects
-- I work with a lot of clients 1:1; I'm good at translating ideas to spec
+**What I offer:**
 
-These days I work mostly with Typescript, Go and Python.
-Other languages I play with, include Scheme, C/C++ and Rust.
+- End-to-end development (planning, architecture, implementation)
+- Translating business needs or ideas into technical solutions
+- Experience working 1:1 and with teams, both remote and on-site
 
-Some of my recent projects include:
+**Languages & frameworks:**  
+Mainly TypeScript, Go, and Python. Also experienced with Rust, Scheme, and C/C++.
 
-- [Nostr Social Media Client in React](https://f-a.nz/work/nostrop/)
-- [OpenID Connect Mobile Authenticator in React Native](https://f-a.nz/work/mobile-authenticator/)
-- [Ethereum NFT Marketplace, Vue.js front, Nest.js back](https://f-a.nz/work/onesnow-nft-marketplace/)
+**Recent Projects:**
+- [Nostr Social Media Client (React)](https://f-a.nz/work/nostrop/)
+- [OpenID Connect Mobile Authenticator (React Native)](https://f-a.nz/work/mobile-authenticator/)
+- [Ethereum NFT Marketplace (Vue.js/Nest.js)](https://f-a.nz/work/onesnow-nft-marketplace/)
 
-I push to GitHub occasionally: [github.com/franzos](https://github.com/franzos).
-<br/>And here's my [resume](https://f-a.nz/resume/).
+Find more on [GitHub](https://github.com/franzos) or see my [resume](https://f-a.nz/resume/).
 
-Drop me a mail at, [hire@f-a.nz](mailto:hire@f-a.nz) to get started.
+Interested in working together?  
+Email me at [hire@f-a.nz](mailto:hire@f-a.nz).
 
-PS: If you're in Portugal, let's meet.
+*If you’re based in Portugal, happy to meet in person!*
