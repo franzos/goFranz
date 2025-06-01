@@ -7,7 +7,7 @@ cover: lingel-01.jpg
 bg: malaysia
 tags: "web development"
 introduction: Modern, responsive product portal for German window manufacturer.
-featured: true
+featured: false
 ---
 
 ## The challenge

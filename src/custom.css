@@ -77,7 +77,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Overpass', sans-serif;
   color: #000;
-  background-size: 320px;
+  /* background-size: 320px; */
   background-position: top right;
   background-repeat: no-repeat;
   background-attachment: fixed;

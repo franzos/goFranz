@@ -27,4 +27,4 @@ This website is powered by Jekyll, a static site generator that compiles raw ass
 - Hosted on AWS S3, AWS CloudFront CDN (99.9% SLA)
 - Secured by SSL Certificate
 
-See for yourself at [himmelsberg-fachklinik.de](https://https://dgji1b335sply.cloudfront.net)
+See for yourself at [himmelsberg-fachklinik.de](https://dgji1b335sply.cloudfront.net)

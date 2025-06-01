@@ -25,6 +25,8 @@ This website is powered by Jekyll, a static site generator that compiles raw ass
 - Hosted on AWS S3, AWS CloudFront CDN (99.9% SLA)
 - Secured by SSL Certificate
 
+Read more about it here: [Jekyll: Publish Globally at Near-Zero Cost](/dev/jekyll-publish-globally-at-near-zero-cost/)
+
 ### Multi-Lingual by design
 
 - Germany: [www.filtafry.de](https://www.filtafry.de/) _- new design_
