@@ -17,61 +17,36 @@ Here's what I'm reading: [Bookshelf](/bookshelf/)
 
 ## Work
 
-I'm a full-stack engineer with over 12 years of experience building secure, scalable systems across multiple industries. Having lived and worked across Asia, Europe, and the Middle East, I bring a unique perspective to technical challenges and understand diverse market needs.
+I’m a full-stack engineer with 12+ years of experience delivering secure, scalable systems across industries and continents.
 
-My expertise spans:
+My technical expertise includes:
 
-- **Authentication & Security Systems**: Building OAuth2/CIBA platforms, mobile authenticators, and secure identity services
-- **Blockchain Applications**: Developing crypto exchanges, NFT marketplaces, and smart contract implementations
-- **IoT Solutions**: Creating remote health monitoring systems and IoT gateways with real-time data processing
-- **Full-Stack Development**: Crafting responsive web applications and mobile apps with modern frameworks
+- **Authentication & Security:** OAuth2/CIBA identity services, and mobile ID
+- **Blockchain:** Crypto exchanges, NFT marketplaces, and smart contract systems
+- **IoT:** Health monitoring platforms, real-time gateways, and device integration
+- **Web & Mobile:** Responsive applications using modern frameworks
 
-What sets me apart is my ability to bridge technical expertise with real-world business requirements. I don't just build technology—I deliver solutions that solve specific problems and create measurable value for organizations of all sizes.
-
-I've worked with clients ranging from startups and small businesses to international enterprises across multiple continents:
-
-- GEW, UK
-- On Air, Canada
-- Lingel Windows, Germany
-- FiltaFry, Germany
-- Fit-A-Seal, Germany
-- Sky-Hype, Luxembourg
-- Malaysian-German Society, Malaysia
-- German Windows, Malaysia
-- Panther MPC, Ireland
-- Aswar Perfumes, Dubai
-- AEE, Germany
-- The Running Awards, UK
-- NEX Inotec, Thailand
-- Paramount Student, Turkey
-- Softmax, Thailand
-- GAT Investment Group, Dubai
-- ...
-
-> Franz helped shape messaging and design engaging visual content for Global Entrepreneurship Week in the UK, a campaign that includes more than 3,000 events and 300,000 participants. Franz was great to work with, keen to test new ideas and push the work into new and exciting areas. The content he produced was central to a social campaign that was really innovative and effective in generating engagement from diverse audiences across multiple platforms. - Ewan Gaffney, GEW UK
+I focus on solutions that solve concrete problems and create lasting value—using technology as a tool, not an end in itself. My background spans everything from hands-on coding to leading development teams for clients from early-stage startups to international organizations.
 
 __Here's how I can help your organization:__
 
-- Architect and implement complex technical systems from concept to deployment
-- Develop secure authentication and identity management solutions
-- Create blockchain applications and smart contract implementations
-- Build IoT systems with real-time monitoring and data processing
-- Optimize backend processes to reduce costs and improve efficiency
-- Lead technical teams and manage development workflows
+- Architect and deploy secure, production-scale systems
+- Build authentication and identity solutions
+- Create blockchain and smart contract applications
+- Design IoT systems with real-time monitoring
+- Optimize infrastructure for cost and performance
+- Lead technical teams and project delivery
 
-Check out my [portfolio](/portfolio/) or review my featured work below.
+Checkout my [resume](/resume/) for more details on my work experience and skills.
 
-### Featured work
-
-{% include about_featured.html %}
-
-### Tech Stack
-
-I have over 12+ years experience; Here's what I've been working with, over the past year:
 
 <div style="margin-left:2.5rem" markdown="0">
 <figure><embed style="max-height:400px" src="https://wakatime.com/share/@franz/864f220d-d347-456d-a511-5e9380433514.svg"></figure>
 </div>
+
+### Recent Projects
+
+{% include about_featured.html %}
 
 <hr>
 
