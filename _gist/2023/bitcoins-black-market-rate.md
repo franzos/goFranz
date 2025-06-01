@@ -8,7 +8,6 @@ category:
   - Tools
 tags:
   - privacy
-  - development
   - social-media
 bg: austin-neill
 bg-author: Austin Neill
