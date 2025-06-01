@@ -41,18 +41,6 @@ function js(cb) {
   );
 }
 
-function jsPersian(cb) {
-  pump(
-    [
-      gulp.src(["node_modules/vue/dist/vue.js", "src/persian.js"]),
-      concat("persian.min.js"),
-      uglify(),
-      gulp.dest("assets/js"),
-    ],
-    cb
-  );
-}
-
 function jsBundle(cb) {
   pump(
     [
@@ -108,10 +96,6 @@ function thumbnail() {
 
 function watch() {
   gulp.watch("src/*.css", ["css"]);
-}
-
-function watchPersian() {
-  gulp.watch("src/*.js", ["js-persian"]);
 }
 
 exports.default = series(
