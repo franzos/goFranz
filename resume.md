@@ -15,29 +15,29 @@ Senior full-stack engineer with 12+ years of experience building secure authenti
 
 ## Technical Skills
 
-**Languages:**  
+**Languages:**
 TypeScript, JavaScript, Python, Rust, C++, Go, Scheme
 
-**Frameworks & Tooling:**  
+**Frameworks & Tooling:**
 Vue, React Native, Nuxt, NestJS, Express, Actix Web
 
-**Databases:**  
+**Databases:**
 PostgreSQL, MySQL, MongoDB, Firebase, Redis, ClickHouse
 
-**Cloud & Infrastructure:**  
+**Cloud & Infrastructure:**
 AWS, Docker, Ansible, Guix, Vagrant, Heroku, DigitalOcean, Hetzner
 
-**Other:**  
+**Other:**
 OAuth2 / CIBA, eSignature, KYC, TPM2-TSS, Bluez/BLE, Espruino, Ethereum / IPFS, Bitcoin protocols
 
-**Environment:**  
+**Environment:**
 Linux (Guix), sway/wayland
 
 ---
 
 ## Work Experience
 
-### Full-Stack Engineer, Softmax Co., Ltd.  
+### Full-Stack Engineer, Softmax Co., Ltd.
 Portugal & Thailand · 2021–Present
 
 - Designed and built secure OAuth2/CIBA authentication for web/mobile with 10,000+ daily logins; integrated multi-level government ID verification (KYC) cutting onboarding time by 60%
@@ -46,14 +46,14 @@ Portugal & Thailand · 2021–Present
 - Built crypto exchange and NFT platform (ERC-1155), handling multi-currency transactions and secure digital asset management
 - Delivered AI-powered data collection forms and multi-warehouse e-commerce systems (inventory, order, and shipping automation)
 
-### CTO / Full-Stack Developer, Sky-Hype AG  
+### CTO / Full-Stack Developer, Sky-Hype AG
 Switzerland & Luxembourg & Dubai · 2016–2020
 
 - Led engineering for a global social/search platform (~50,000 daily users); built Vue.js frontend (multi-language) and Nest.js/Flask backend
 - Integrated a meta-search API, increasing content breadth by 200%
 - Drove international sales and partnership expansion; supported scaling to 100,000+ community users
 
-### Full-Stack Developer, DKKMA  
+### Full-Stack Developer, DKKMA
 United Kingdom · 2013–2016
 
 - Delivered 20+ custom web projects (Bootstrap, CMS integrations) for diverse clients
@@ -69,10 +69,10 @@ United Kingdom · 2013–2016
 
 ## Education
 
-**Taylor's University College**  
-Kuala Lumpur, Malaysia · 2008–2010  
+**Taylor's University College**
+Kuala Lumpur, Malaysia · 2008–2010
 International Business
 
-**German European School**  
-Singapore · 2006–2008  
+**German European School**
+Singapore · 2006–2008
 High School
