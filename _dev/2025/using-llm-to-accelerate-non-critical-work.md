@@ -84,3 +84,15 @@ One of the main challenges with LLMs is not the technology itself, but how users
 LLMs will keep getting better, and maybe one day I’ll trust them with more important work. For now, though, anything critical should still be written and reviewed by humans—even if an LLM is in the loop to suggest tweaks or alternatives. Most importantly, we still need solid frameworks that give us a baseline we can actually trust and verify.
 
 To get the most out of LLMs, use them for rapid prototyping and idea generation, but always review their output carefully—especially for critical tasks.
+
+---
+
+If you want to read more about this topic, I've found these to be interesting:
+
+> If you’re making requests on a ChatGPT page and then pasting the resulting (broken) code into your editor, you’re not doing what the AI boosters are doing. No wonder you’re talking past each other.
+
+[My AI Skeptic Friends Are All Nuts · The Fly Blog](https://fly.io/blog/youre-all-nuts/)
+
+> This library (including the schema documentation) was largely written with the help of Claude, the AI model by Anthropic. Claude's output was thoroughly reviewed by Cloudflare engineers with careful attention paid to security and compliance with standards. 
+
+[OAuth provider library for Cloudflare Workers](https://github.com/cloudflare/workers-oauth-provider) (a little techy)
