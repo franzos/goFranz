@@ -7,9 +7,8 @@ date: 2025-5-30 0:00:00 +0000
 category:
   - Tools
 tags:
-  - guix
-  - framework
-  - linux
+  - jekyll
+  - aws
 bg: austin-neill
 bg-author: Austin Neill
 author: Franz Geffke
@@ -384,7 +383,7 @@ The deployment automatically invalidates the CloudFront cache, so that the chang
 
 For the hosting, we've chosen AWS S3 with CloudFront. The domains, buckets and distributions are configured manually, since they don't change often; This is all pretty standard stuff, so I won't go into details here. The cost for individual countries amounts to a few cents per month, depending on traffic.
 
-Forms are handled via [Rusty Forms](/work/rusty-forms/).
+Forms are handled via [Formshive](/work/rusty-forms/).
 
 ### Summary
 

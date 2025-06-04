@@ -8,7 +8,6 @@ category:
   - Tools
 tags:
   - development
-  - chatgpt
   - llms
 bg: austin-neill
 bg-author: Austin Neill

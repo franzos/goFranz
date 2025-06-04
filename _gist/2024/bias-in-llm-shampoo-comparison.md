@@ -7,8 +7,6 @@ date: 2024-12-24 0:00:00 +0000
 category:
   - Tools
 tags:
-  - privacy
-  - development
   - chatgpt
   - llms
 bg: austin-neill

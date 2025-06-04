@@ -7,7 +7,6 @@ date: 2025-3-10 0:00:00 +0000
 category:
   - Tools
 tags:
-  - development
   - blockchain
   - guix
 bg: austin-neill
