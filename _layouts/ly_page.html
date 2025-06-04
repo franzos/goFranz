@@ -7,7 +7,7 @@ layout: layout
   <div class="container-fluid hidden-print">
     <div class="row">
       <div class="col-sm-11 col-sm-offset-1">
-        {% if page.url contains "work/"%}
+        {% if page.url contains "/work/"%}
         {% for client in site.clients %}
         {% if page.client == client.client %}
         <h1 style="margin-bottom: 1rem;">{{ page.title }}</h1>
