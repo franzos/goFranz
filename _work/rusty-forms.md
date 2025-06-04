@@ -1,16 +1,16 @@
 ---
 layout: page
-title: "Rusty Forms"
+title: "Formshive"
 date: 2024-06-16 00:00:00 +0100
 client: "independent_lisbon"
 cover: rusty-forms-01.jpg
 bg: switzerland
 tags: "web development"
-introduction: "Rusty Forms: Form handling in Rust"
+introduction: "Formshive: Form handling in Rust"
 featured: true
 ---
 
-Rusty Forms is a (form-) data processing platform, written in Rust.
+Formshive (foremerly Rusty Forms) is a (form-) data processing platform, written in Rust.
 
 ## The challenge
 
@@ -42,6 +42,6 @@ I considered doing the front-end in plain html, but a little react interactivity
 
 ## Thoughts
 
-Rusty Forms is already live: [rusty-forms.com](https://rusty-forms.com/).
+Formshive is already live: [formshive.com](https://formshive.com/).
 
 With a sufficiently large data set, the spam check turns out to be the most ressource intensive part of the system. At the moment the server can handle approx. 27k messages, with spam check (millions without). Once load increases, I'll probably split the spam check into a separate service.
