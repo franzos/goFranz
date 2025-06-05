@@ -37,8 +37,9 @@ It's all fairly simple, which was the goal:
 
 I considered doing the front-end in plain html, but a little react interactivity is nice and saves some time.
 
-{% include project-image.html image="rusty-forms-01.png" %}
+{% include project-image.html image="rusty-forms-01.jpg" %}
 {% include project-image.html image="rusty-forms-02.png" %}
+{% include project-image.html image="rusty-forms-03.png" %}
 
 ## Thoughts
 

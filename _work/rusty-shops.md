@@ -1,16 +1,16 @@
 ---
 layout: page
-title: "Rusty Shops"
+title: "Checkoutbay"
 date: 2024-06-16 00:00:00 +0100
 client: "independent_lisbon"
 cover: rusty-shops-01.jpg
 bg: switzerland
 tags: "web development"
-introduction: "Rusty Shops: Shop platform with Rust"
+introduction: "Your Store. Your Way. Checkoutbay."
 featured: true
 ---
 
-Rusty Shops is a shop- platform, written in Rust.
+Checkoutbay is a shop- platform, written in Rust.
 
 ## The challenge
 
@@ -39,11 +39,13 @@ I considered doing the front-end in plain html, but a little react interactivity
 {% include project-image.html image="rusty-shops-02.png" %}
 {% include project-image.html image="rusty-shops-03.png" %}
 {% include project-image.html image="rusty-shops-04.png" %}
-Frontend written with Vue and NaiveUI: Cart calculation is handled by API
 
 {% include project-image.html image="rusty-shops-05.png" %}
+Frontend written with Vue and NaiveUI: Cart calculation is handled by API
+
+{% include project-image.html image="rusty-shops-06.png" %}
 Frontend written in React: Cart calculation happens in web worker
 
 ## Thoughts
 
-Rusty Shops is already live: [rusty-shops.com](https://rusty-shops.com/).
+Rusty Shops is already live: [checkoutbay.com](https://checkoutbay.com/).
