@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/franzos/f-a.nz",
-  "author": "Franz Geffke <m@f-a.nz>",
+  "author": "Franz Geffke <mail@gofranz.com>",
   "license": "MIT",
   "scripts": {
     "build": "node_modules/.bin/gulp; bundle exec jekyll build",

@@ -1,5 +1,5 @@
 ---
-title: f-a.nz - Full-Stack Developer, Open Source Enthusiast, ½ Machine
+title: "Franz Geffke – Full-Stack Developer, AI Orchestrator, ½ Machine"
 layout: index
 bg: home_7
 ---

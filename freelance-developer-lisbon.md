@@ -19,13 +19,13 @@ I’m Franz—a full-stack developer with 12+ years of experience building and l
 Mainly TypeScript, Go, and Python. Also experienced with Rust, Scheme, and C/C++.
 
 **Recent Projects:**
-- [Nostr Social Media Client (React)](https://f-a.nz/work/nostrop/)
-- [OpenID Connect Mobile Authenticator (React Native)](https://f-a.nz/work/mobile-authenticator/)
-- [Ethereum NFT Marketplace (Vue.js/Nest.js)](https://f-a.nz/work/onesnow-nft-marketplace/)
+- [Nostr Social Media Client (React)](/work/nostrop/)
+- [OpenID Connect Mobile Authenticator (React Native)](/work/mobile-authenticator/)
+- [Ethereum NFT Marketplace (Vue.js/Nest.js)](/work/onesnow-nft-marketplace/)
 
-Find more on [GitHub](https://github.com/franzos) or see my [resume](https://f-a.nz/resume/).
+Find more on [GitHub](https://github.com/franzos) or see my [resume](/resume/).
 
 Interested in working together?  
-Email me at [hire@f-a.nz](mailto:hire@f-a.nz).
+Email me at [mail@gofranz.com](mailto:mail@gofranz.com).
 
 *If you’re based in Portugal, happy to meet in person!*
