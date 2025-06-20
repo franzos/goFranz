@@ -121,8 +121,22 @@ body.dark {
   padding-bottom: 80px;
 }
 
-.content p, .content a, .content h1, .content h2, .content h3, .content h4, .content table, .content ul, .content ol, .content code, .content .highlighter-rouge, .talk-comments {
+.content p,
+.content a,
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content table,
+.content ul > li,
+.content ol > li {
   max-width:600px;
+}
+
+/* override highlighter-rouge inside list items */
+.content ul > li:has(div.highlighter-rouge),
+.content ol > li:has(div.highlighter-rouge) {
+  max-width: none !important;
 }
 
 h1, h2, h3, h4, h5 {
