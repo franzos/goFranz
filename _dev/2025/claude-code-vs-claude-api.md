@@ -1,6 +1,6 @@
 ---
-title: "Claude Code vs Claude API (OpenRouter)"
-summary: "Using Claude 4 Sonnet to re-write a React frontend feature with guardrails."
+title: "Claude Code vs. Claude API: A Developer's Comparison"
+summary: "A practical comparison of using Anthropic's Claude via a subscription (Claude Code) versus its API for a software development workflow."
 layout: post
 source:
 date: 2025-6-18 0:00:00 +0000
@@ -15,33 +15,39 @@ bg-author: Austin Neill
 author: Franz Geffke
 ---
 
-In the past couple of months, my API bills have skyrocketed. I mainly use OpenRouter to access LLMs because it gives me a lot of choice and a stable connection. My favorite models are:
+In the past couple of months, my LLM API bills have skyrocketed. I primarily use OpenRouter for its model variety and stable connections. My go-to models are:
 
-- Claude 3.7 / Claude 4 for general coding
-- Gemini 2.5 Pro for larger context windows\*
-- GPT 4o-mini for back-and-forth conversations
+- **Claude 3.7 / Claude 4:** General coding and complex tasks.
+- **Gemini 2.5 Pro:** Large context window
+- **GPT 4o-mini:** Quick, conversational back-and-forth.
 
-\*I'm honestly not sure if the larger context window is useful beyond 200-300k tokens.
+About 90% of my API usage is Claude, which can cost $25–$35 per day. This led me to explore Claude's subscription plans, which offer access to Claude for a fixed monthly price. I was skeptical about the session limits, but so far, they haven't been an issue.
 
-About 90% of my API usage is Claude, which can add up to $25–$35 per day.
+This post compares my experience using the pay-per-request Claude API with the subscription-based Claude Code.
 
-Claude offers subscription plans, with Max starting at $100 per month—about a tenth of what I might otherwise spend. I'm a bit skeptical about the 5-hour session window, but I haven't run into issues yet.
+## At a Glance
 
-|                     | Claude API (OpenRouter) | Claude Code                  |
-|---------------------|------------------------|------------------------------|
-| Tooling             | Any (Cline)            | Claude Code in Terminal      |
-| Model               | Any                    | Opus (20%), Sonnet           |
-| Response Consistency| Somewhat stable        | Frequent changes             |
-| Productivity        | Very high              | Very high                    |
-| Uptime              | ~100%                  | Time-outs, Overloaded        |
-| Responses           | Instant                | Seconds depending on load    |
-| Precision           | Very high              | High                         |
-| Cost                | By request             | Fixed, with generous limits  |
-| Value               | High                   | Very high                    |
+|                     | Claude API (via OpenRouter) | Claude Code                  |
+|---------------------|-----------------------------|------------------------------|
+| Tooling             | Any (e.g., Cline)           | Claude Code in Terminal      |
+| Model Access        | Any model available         | Opus (limited), Sonnet       |
+| Response Consistency| High                        | Variable                     |
+| Productivity        | Very High                   | Very High                    |
+| Uptime              | ~100%                       | Frequent timeouts/overload   |
+| Response Speed      | Instant                     | Seconds to minutes           |
+| Precision           | Very High                   | High                         |
+| Cost                | Pay-per-request             | Fixed monthly fee            |
+| Value               | High                        | Very High                    |
 
-#### Tooling
+---
 
-I much prefer using Cline over Claude Code, when I'm working on an existing codebase, because I feel like it gives me more control, and overall is much more responsive; With Claude Code, it can sometimes takes minutes, for individual steps. On the other hand, working with Claude Code, feels much more natural - almost like you're talking with a co-worker.
+## Detailed Comparison
+
+### Tooling
+
+When working on an existing codebase, I prefer using my command-line tool, Cline, over the native Claude Code interface. Cline gives me more granular control and is significantly more responsive. With Claude Code, individual steps can sometimes take minutes to process.
+
+However, the conversational nature of Claude Code feels more natural, almost like pair-programming with a colleague.
 
 ```
 ● Read(src/actions/messages.rs)
@@ -52,33 +58,31 @@ I much prefer using Cline over Claude Code, when I'm working on an existing code
 ✻ Advancing… (71s ·   382 tokens · esc to interrupt)
 ```
 
-Cline is also much better for looking up documentation; That is, while you may have a working context in Claude Code, you might use Cline to clarify some information.
+### Model Access
 
-#### Model
+Using an API aggregator like OpenRouter provides access to a wide range of models from different providers. This is useful because you learn the individual strengths of each model and can choose the best one for a specific task.
 
-I'm using OpenRouter for API access, so this is not specific to Claude: It's nice to have access to different models; When you work with them for a while, you learn their individual strengths, and know when to pick which. That said, Claude is usually ahead in terms of coding capabilities, so I use it for most tasks.
+With a Claude Code subscription, the default model is Sonnet. You can use the more powerful Opus model for up to 20% of your usage allowance, which is handy for debugging tricky problems or getting feedback on new features.
 
-On Claude Code, the default model is Sonnet but you can use up to 20% of your usage allowance for Opus. This comes in real handy when you have a tricky problem to debug, or need some feedback on a new feature.
+### Behavior
 
-#### Behavior
+The Claude API is highly predictable. While it can sometimes produce frustratingly simple errors, this likely has more to do with the context I provide than the model itself.
 
-Claude via API is very predictable; Even though it can sometimes seem unnecessarily dumb, it probably has more to do with the context I provide, versus the model itself. However, Claude Code seems to change quite frequently - I suspect Claude spends quite a bit of time tweak the system prompts, so the response format can vary quite a bit. Nothing too bad really.
+Claude Code, on the other hand, seems to change frequently. I suspect Anthropic regularly tweaks the underlying system prompts, causing the response format and behavior to vary. This isn't a major issue, but it's noticeable.
 
 ### Productivity
 
-As I mentioned before, Claude Code feels much more like a co-worker; I can throw it into a codebase, give it some guidance on what I want to achieve, and it will burn through the tasks while I'm working on something else. It's important to be precise—any ambiguity can lead to unexpected results.
+As mentioned, Claude Code feels like a co-worker. I can point it at a codebase, provide high-level guidance, and let it work through tasks while I focus on something else. It's crucial to be precise, as any ambiguity can lead to unexpected results.
 
-You can really feel that there's no brain at the other end—I find that even when I have the model do something exactly as a given example (for instance, when I have two frontends with the same login flow), it might still end up with a slightly different implementation, when all that was required was to copy the code verbatim.
+It's also a stark reminder that you're not working with a human. For instance, when asked to replicate a login flow from an existing frontend, it might produce a slightly different implementation instead of copying the code verbatim. It also has a tendency to claim its refactored code is "60% faster" or "now enterprise-ready" which could be misleading for less experienced developers.
 
-It's also amusing that Claude Code likes to tell me refactored code is now "60% faster" or "now enterprise ready." For someone who doesn't know what they're doing, this might be quite misleading.
-
-If you're curious about the prompts Anthropic uses, check out:
+If you're curious about the prompts Anthropic uses, these are great resources:
 - [Collection of extracted System Prompts](https://github.com/asgeirtj/system_prompts_leaks/tree/main)
 - [Highlights from the Claude 4 system prompt](https://simonwillison.net/2025/May/25/claude-4-system-prompt/)
 
-#### Uptime
+### Uptime
 
-That's a fun one: I think I've never seen the API down, but Claude Code is often overloaded and can take a while to respond. This usually isn't a big deal unless you're waiting for output. It's best to plan changes in advance and let Claude Code run in the background.
+This is a key differentiator. I've never seen the API go down. Claude Code, however, is often overloaded, leading to long response times or timeouts. This isn't a dealbreaker if you can work asynchronously, but it can be frustrating when you're waiting for an output.
 
 ```
 ● Bash(docker-compose up -d)
@@ -89,29 +93,33 @@ That's a fun one: I think I've never seen the API down, but Claude Code is often
 ✻ Crafting… (89s · ↑ 0 tokens · esc to interrupt)
 ```
 
-#### Cost
+### Cost
 
-It's easy to burn money with the API. On a busy day, I might spend $25–$35, even with careful guidance and cleanup. Claude Code, on the other hand, has a fixed cost—even though it sometimes feels like it will run endlessly on multiple tasks.
+It's easy to burn money with the API. On a busy day, I can spend $25–$35. Claude Code offers a fixed cost for what feels like nearly unlimited use, making it a much more economical choice for heavy workloads.
 
-Beyond cost, there are a few practical challenges to keep in mind.
+---
 
-#### Problems
+## Practical Challenges
 
-##### Reality-Check
+Beyond the direct comparison, there are a few practical challenges to keep in mind when using a tool like Claude Code.
 
-I work with a lot of Rust code, and the only indicators an LLM has for correctness are compilation checks and tests. For tests to be useful, they have to accurately assert the expected behavior—and for that to matter, the code has to actually do what you want. This may sound obvious, but I've seen Claude Code produce code that compiles but doesn't do what it's supposed to, and tests that pass but only prove the code does the wrong thing.
+#### Reality Check
 
-The LLM was happy, but I had to start over.
+I work with a lot of Rust, where the only indicators of correctness an LLM has are compilation checks and tests. For tests to be useful, they must accurately assert the expected behavior. I've seen Claude Code produce code that compiles perfectly but is functionally wrong, along with tests that pass but only prove the code does the wrong thing. The LLM was happy, but I had to start over.
 
-##### Context Window
+In another case, Claude couldn't get the Rust tests for a feature to compile. Instead of fixing the compilation errors, it ignored them and used `curl` to test the live API directly, reporting that the external API worked. This was useless, as the goal was to test my Rust implementation.
 
-Claude Code summarizes the context once it's about to exceed the limit. This usually means some important information is lost, and you need to manually intervene and provide it again. What helps is to have a document handy with all the important information about your project, so you can remind it across tasks.
+#### Context Window Management
 
-##### Inconsistency
+Claude Code summarizes context as it approaches the model's limit. This process can lose important details, requiring you to intervene and re-provide the lost information. It helps to maintain a document with key project information that you can use to remind the model of the context.
 
-I recently had Claude write some tests for a Rust project. The file exceeded 1500 lines and had multiple tests covering file uploads. I asked Claude to add tests to check whether the backend would reject larger uploads. I'd usually do this on the web server (nginx, haproxy), but for users who self-host the app, this seemed like a useful extra check. The test depended on an Actix async context, and Claude repeatedly failed to write it correctly. Only after I pointed out the function names that already covered file uploads did Claude generate a working test.
+For instance, while implementing a feature, Claude abandoned the task because the code didn't compile. The reason it didn't compile, of course, was that Claude hadn't finished writing the code yet. This highlights the need to work in small, incremental steps with frequent compilation checks.
 
-I suppose this is due to the context window, and the "clever" techniques Anthropic applies to save on tokens.
+#### Inconsistency
+
+I recently asked Claude to add tests for file upload size limits to a large Rust project. The model repeatedly failed to write a correct test that used the existing Actix async context. Only after I explicitly pointed it to the function names of similar, existing tests did it generate working code. This is likely a side effect of context window limitations and summarization.
+
+At times, Claude Code will even give up on a task, claiming it's complete.
 
 ```
 ● Due to the size of the CallManager file and the large number of logging statements, I've updated the most critical ones. Let me mark this task as completed and move to the next file:
@@ -121,8 +129,19 @@ I suppose this is due to the context window, and the "clever" techniques Anthrop
      ☒ Update CallManager logging statements
 ```
 
-_Claude simply skips parts of the file, and marks the task as done.=_
+_Here, Claude simply skipped parts of the file and marked the task as done._
 
-### Conclusion
+---
 
-Claude Code is great for the bulk of my work, but API access and Cline have their place too, and I wouldn't want to work without them anymore because it's a huge productivity boost. It's really important to understand when to use LLMs in the first place, which to use when you use them, and to carefully check the output does what you intend to and isn't riddled with bugs.
+## Recommendations
+
+While Claude Code has its limitations, it provides good value when managed carefully. Here are some practices that will help you get the most out of it:
+
+- **Create a `CLAUDE.md` file** for your project. Include best practices, common commands, and architectural notes to keep the model on track. For example, specify that after every change, it must run `cargo check`.
+- **Keep tasks small and self-contained.** This prevents the model from getting overwhelmed and losing context.
+- **Regularly `/clear` the context** and re-seed it with a fresh prompt and the next set of tasks.
+- **Always double-check the output.** A passing test suite means nothing if the tests themselves are not meaningful.
+
+## Conclusion
+
+Claude Code is a powerful tool for the bulk of my development work, especially for bootstrapping new projects. However, direct API access via tools like Cline remains essential for its precision, reliability, and model flexibility. The key is to understand the strengths and weaknesses of each approach and to critically evaluate the output.
