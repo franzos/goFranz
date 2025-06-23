@@ -9,7 +9,7 @@ sitemap:
 
 ## Summary
 
-Senior full-stack engineer with 12+ years of experience building secure authentication systems, blockchain solutions, and large-scale IoT platforms. Hands-on technical lead with global project experience across Asia, Europe, and the Middle East. Skilled in TypeScript, Python, Rust, and modern cloud infrastructure. Known for architecting reliable systems, shipping production code, and mentoring engineers.
+Senior full-stack engineer with 12+ years of experience building secure authentication systems, blockchain solutions, and large-scale IoT platforms. Hands-on technical lead with global project experience across Asia, Europe, and the Middle East. Skilled in TypeScript, Python, Rust, and modern cloud infrastructure.
 
 ---
 
