@@ -1,8 +1,8 @@
 title: Franz Geffke
 description:
 baseurl: ""
-url: "https://f-a.nz"
-destination: public/
+url: "https://gofranz.com"
+destination: _site/
 mapbox_token: "pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw"
 
 # Build settings
@@ -15,10 +15,13 @@ kramdown:
 pagination:
   enabled: true
   per_page: 10
-  permalink: '/page/:num/'
+  permalink: '/blog/page/:num/'
 
 plugins:
   - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing
 exclude:
@@ -29,29 +32,16 @@ exclude:
   - package.json
   - node_modules
   - vendor
-  - s3_website.yml
   - .gitlab-ci.yml
   - gulpfile.js
   - src
   - README.md
   - package-lock.json
-  - project.config
-  - run.sh
-
-# collections:
-#   - gist
-#   - dev
-#   - projects
-#   - clients
-#   - testimonials
 
 collections:
-  gist:
+  posts:
     output: true
-    permalink: /gist/:title/
-  dev:
-    output: true
-    permalink: /dev/:title/
+    permalink: /blog/:title/
   work:
     output: true
     permalink: /work/:title/
@@ -60,3 +50,6 @@ collections:
     permalink: /client/:title/
   testimonials:
     output: false
+  til:
+    output: true
+    permalink: /til/:title/

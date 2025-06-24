@@ -1,9 +1,7 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var cleanCss = require('gulp-clean-css');
-var image = require('gulp-image');
 var uglify = require('gulp-uglify-es').default;
-var watch = require('gulp-watch');
 var imageResize = require('gulp-image-resize');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
@@ -39,6 +37,12 @@ function js(cb) {
     ],
     cb
   );
+}
+
+function jsMermaid() {
+  return gulp
+    .src("node_modules/mermaid/dist/mermaid.min.js")
+    .pipe(gulp.dest("assets/js"));
 }
 
 function jsBundle(cb) {
@@ -86,24 +90,27 @@ function thumbnail() {
       })
     )
     .pipe(
-      imagemin({
-        progressive: true,
-        use: [pngquant()],
-      })
+      imagemin([
+        pngquant()
+      ])
     )
     .pipe(gulp.dest("assets/images/projects/preview"));
 }
 
-function watch() {
-  gulp.watch("src/*.css", ["css"]);
+function watchFiles() {
+  gulp.watch("src/*.css", css);
+  gulp.watch("src/*.js", series(js, jsBundle, jsMapbox));
 }
 
 exports.default = series(
   css,
   js,
+  jsMermaid,
   jsBundle,
   jsMapbox,
   filesSwipebox,
   filesHighlight,
   thumbnail
 );
+
+exports.watch = watchFiles;

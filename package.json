@@ -6,7 +6,9 @@
   "author": "Franz Geffke <mail@gofranz.com>",
   "license": "MIT",
   "scripts": {
-    "build": "node_modules/.bin/gulp; bundle exec jekyll build",
+    "build": "gulp; bundle exec jekyll build",
+    "build:assets": "gulp",
+    "watch": "gulp watch",
     "deploy": "npm run build; rsync -rtvz --chmod=D2755,F644 --delete public/ franzs@rsync.keycdn.com:franz/"
   },
   "dependencies": {
@@ -26,6 +28,7 @@
     "imagemin-pngquant": "^9.0.1",
     "jquery": "1.12.4",
     "mapbox.js": "^3.1.1",
+    "mermaid": "^11.7.0",
     "pump": "^3.0.0",
     "slideout": "^1.0.1",
     "swipebox": "^1.4.6",

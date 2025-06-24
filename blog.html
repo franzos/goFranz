@@ -1,0 +1,59 @@
+---
+title: Blog
+layout: page_clean
+bg: pattern_018
+permalink: /blog/
+pagination:
+  enabled: true
+  collection: posts
+  sort_reverse: true
+  sort_field: 'date'
+  permalink: '/page/:num/'
+---
+
+<ul class="projects clean">
+  {% for post in paginator.posts %}
+    <li class="project">
+      <a href="{{ post.url }}">
+        <country class="hidden-xs">
+          {{ post.tags | join: " / " }}
+        </country>
+        <span class="hidden-xs">
+          {% if post.collection == 'gist' %}
+            <intro>Read gist</intro>
+          {% else %}
+            <intro>Read entry</intro>
+          {% endif %}
+          <br>
+        </span>
+        {{ post.title | truncate: 60 }}
+        {% if post.summary %}
+          <br/><small>{{ post.summary }}</small>
+        {% endif %}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- Pagination -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">Previous</a>
+  {% endif %}
+  
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="/blog/">{{ page }}</a>
+    {% else %}
+      <a href="/blog/page/{{ page }}/">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+  
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next</a>
+  {% endif %}
+</div>
+{% endif %}

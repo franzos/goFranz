@@ -2,32 +2,37 @@
 
 <div class="related">
 {% assign maxRelated = 8 %}
-{% assign minCommonTags =  1 %}
+{% assign minCommonTags = 1 %}
 {% assign maxRelatedCounter = 0 %}
+{% assign relatedPosts = '' | split: ',' %}
 
-  {% assign all_posts = site.dev | concat: site.gist %}
-  {% for post in all_posts reversed %}
-
+{% comment %} Build array of related posts with their tag counts {% endcomment %}
+{% for post in site.posts %}
+  {% unless post.url == page.url %}
     {% assign sameTagCount = 0 %}
-    {% assign commonTags = '' %}
-
+    
     {% for tag in post.tags %}
-      {% if post.url != page.url %}
-        {% if page.tags contains tag %}
-          {% assign sameTagCount = sameTagCount | plus: 1 %}
-          {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
-          {% assign commonTags = commonTags | append: tagmarkup %}
-        {% endif %}
+      {% if page.tags contains tag %}
+        {% assign sameTagCount = sameTagCount | plus: 1 %}
       {% endif %}
     {% endfor %}
-
+    
     {% if sameTagCount >= minCommonTags %}
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-      {% if maxRelatedCounter >= maxRelated %}
-        {% break %}
-      {% endif %}
+      {% assign postWithScore = sameTagCount | append: '|' | append: post.url | append: '|' | append: post.title %}
+      {% assign relatedPosts = relatedPosts | push: postWithScore %}
     {% endif %}
+  {% endunless %}
+{% endfor %}
 
-  {% endfor %}
+{% comment %} Sort by tag count (descending) and display {% endcomment %}
+{% assign sortedRelated = relatedPosts | sort | reverse %}
+
+{% for relatedPost in sortedRelated limit: maxRelated %}
+  {% assign postData = relatedPost | split: '|' %}
+  {% assign postUrl = postData[1] %}
+  {% assign postTitle = postData[2] %}
+  
+  <h4><a href="{{ site.baseurl }}{{ postUrl }}">{{ postTitle }}</a></h4>
+{% endfor %}
+
 </div>

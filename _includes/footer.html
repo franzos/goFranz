@@ -20,9 +20,14 @@ contains "/portfolio/" %}
 <script src="/assets/js/main.min.js"></script>
 <script src="/assets/js/bundle.min.js" async></script>
 <script src="/assets/js/highlight.min.js"></script>
+<script src="/assets/js/mermaid.min.js"></script>
 
 <script>
   hljs.highlightAll();
+</script>
+
+<script>
+  mermaid.initialize({ startOnLoad: true });
 </script>
 
 <script>
@@ -49,7 +54,7 @@ contains "/portfolio/" %}
     });
   });
 </script>
-{% if page.url contains "/work/" or page.url contains "/gist/" %}
+{% if page.url contains "/work/" or page.url contains "/blog/" %}
 <script type="text/javascript">
   $(window).load(function () {
     (function ($) {

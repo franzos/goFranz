@@ -32,5 +32,5 @@ can be found at [github.com/franzos/nostr-ts](https://github.com/franzos/nostr-t
 
 I'm not big on social media, so I hardly ever use Nostr, but this has been a great experience nevertheless; It's amazing what the browser can handle, if you know how-to offload stuff.
 
-If you want to know more, I've written about Nostr here: [Hello Nostr](/gist/hello-nostr/). You might also want to checkout the "official" Nostr [Website](https://nostr.com/) - there you'll also find loads more clients, for every platform under the sun.
+If you want to know more, I've written about Nostr here: [Hello Nostr](/blog/hello-nostr/). You might also want to checkout the "official" Nostr [Website](https://nostr.com/) - there you'll also find loads more clients, for every platform under the sun.
 
