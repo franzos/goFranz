@@ -11,7 +11,7 @@ permalink: /about/
 
 Apart from my travels, I'm a privacy advocate and supporter of technologies and ideas that help promote personal freedom, decentralize certain aspects of power, and are easily accessible to everyone - now or in the near future.
 
-Whenever I'm not working, I like to disconnect and return a different era - with crackling vinyls and glowing amplifiers.
+Whenever I'm not working, I like to disconnect and return a different era - with crackling vinyls, glowing amplifiers and tennis.
 
 Here's what I'm reading: [Bookshelf](/bookshelf/)
 

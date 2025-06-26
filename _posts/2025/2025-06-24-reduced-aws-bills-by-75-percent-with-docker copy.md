@@ -7,8 +7,8 @@ date: 2025-6-24 0:00:00 +0000
 category:
   - Tools
 tags:
-  - blockchain
-  - guix
+  - docker
+  - aws
 bg: austin-neill
 bg-author: Austin Neill
 author: Franz Geffke
