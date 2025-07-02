@@ -7,7 +7,7 @@ cover: helexier-01.jpg
 bg: roman-kraft
 tags: "web development"
 introduction: Patient portal for specialist research and medical center in Germany.
-featured: true
+featured: false
 ---
 
 {% include project-image.html image="helexier-01.jpg" %}

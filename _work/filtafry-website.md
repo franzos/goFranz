@@ -7,7 +7,7 @@ cover: filtafry-01.jpg
 bg: roman-kraft
 tags: "web development"
 introduction: Speaks German, Spanish, Finish, .. and English, is super-fast and runs without server - of course.
-featured: true
+featured: false
 ---
 
 {% include project-image.html image="filtafry-01.jpg" %}
