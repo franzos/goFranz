@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+    html {
+        padding: 0 2rem;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1em;
+        line-height: 1.5;
+        max-width: 960px;
+        margin: 2rem auto;
+    }
+    @media print {
+        html {
+            padding: 0;
+        }
+        body {
+            margin: 0;
+            font-size: 0.8125em;
+        }
+    }
+    h1, h2, h3 {
+        margin: 0;
+    }
+    h2 {
+        margin-top: 1.5rem;
+    }
+    h3 {
+        margin-top: 1rem;
+    }
+    .mt-1 {
+        margin-top: 1rem;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .item-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    p {
+        margin-block-start: 0.5rem;
+        margin-block-end: 0.5rem;
+    }
 
-  {% include header.html %}
+    .logo {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+    }
+  </style>
 
   <body>
     <div class="container-fluid">
       <div class="content">
         <div class="contact">
-            <h2>Franz Geffke</h2>
-              <p>Full-Stack Developer / System Architect
-              <br>Remote (GMT +1)
-              <br><a href="mailto:mail@gofranz.com?subject=Let's work together">mail@gofranz.com</a>
-              <br><a href="https://gofranz.com">gofranz.com</a></p>
-          </div>
-          {{ content }}
-        <a class="print" onclick="window.print();">Print this page</a>
+          <h2>Franz Geffke</h2>
+          <p>
+            Remote, Lisbon (GMT +1)
+            <br><a href="mailto:mail@gofranz.com?subject=Let's work together">mail@gofranz.com</a> &bull; <a href="https://gofranz.com">gofranz.com</a> &bull; <a href="https://github.com/franzos">GitHub</a>
+          </p>
+        </div>
+        {{ content }}
       </div>
     </div>
-
+  </body>
 </html>
