@@ -1,7 +1,7 @@
 ---
 title: "Claude Sonnet 4 on the Frontend with Guardrails"
 summary: "Using Claude 4 Sonnet to re-write a React frontend feature with guardrails."
-layout: post
+layout: blog
 source:
 date: 2025-6-04 0:00:00 +0000
 category:

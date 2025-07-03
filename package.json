@@ -6,35 +6,27 @@
   "author": "Franz Geffke <mail@gofranz.com>",
   "license": "MIT",
   "scripts": {
-    "build": "gulp; bundle exec jekyll build",
-    "build:assets": "gulp",
-    "watch": "gulp watch",
-    "deploy": "npm run build; rsync -rtvz --chmod=D2755,F644 --delete public/ franzs@rsync.keycdn.com:franz/"
+    "build": "node esbuild.config.js && bundle exec jekyll build",
+    "build:assets": "node esbuild.config.js",
+    "dev": "node esbuild.config.js --watch",
+    "watch": "node esbuild.config.js --watch",
+    "sass": "sass src/scss/main.scss:assets/css/main.min.css --style=compressed"
   },
   "dependencies": {
     "axios": "^0.21.0",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^5.3.0",
     "chart.js": "^2.7.2",
     "exlink": "^2.3.0",
-    "gulp": "^4",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-image": "^6.2.1",
-    "gulp-image-resize": "^0.13.0",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-uglify": "^3.0.1",
-    "gulp-uglify-es": "^2.0.0",
     "highlight.js": "^11.7.0",
-    "imagemin-pngquant": "^9.0.1",
     "jquery": "1.12.4",
     "mapbox.js": "^3.1.1",
     "mermaid": "^11.7.0",
-    "pump": "^3.0.0",
-    "slideout": "^1.0.1",
     "swipebox": "^1.4.6",
     "vue": "^2.5.16"
   },
   "devDependencies": {
-    "gulp-watch": "^5.0.1"
+    "esbuild": "^0.19.0",
+    "esbuild-plugin-copy": "^2.1.1",
+    "sass": "^1.70.0"
   }
 }

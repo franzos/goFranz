@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Filtafry Franchisee Website"
 date: 2016-06-01 00:00:00 +0200
 client: "filtafry"

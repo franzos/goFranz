@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Helexier Website"
 date: 2022-11-04 00:00:00 +0200
 client: "helexier"

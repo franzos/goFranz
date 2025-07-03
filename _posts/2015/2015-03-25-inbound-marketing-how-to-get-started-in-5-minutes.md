@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "Inbound Marketing How-To: Getting Started in 5 Minutes"
 date:   2015-03-25 08:00:00
 category:

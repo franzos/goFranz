@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Lingel UAE Website"
 date: 2017-07-31 00:00:00 +0200
 client: "lingel"

@@ -1,6 +1,6 @@
 ---
 title: "... is damaged and can’t be opened. You should move it to the Trash."
-layout: post
+layout: blog
 version: macOS 10.12 Sierra
 os:
   - macOS

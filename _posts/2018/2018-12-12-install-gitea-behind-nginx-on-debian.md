@@ -1,7 +1,7 @@
 ---
 title: "Gitea behind nginx on Debian"
 summary: "Quick setup guide for Gitea 1.6.1 running with supervisor on Debian 9.x, using nginx reverse proxy and LetsEncrypt SSL."
-layout: post
+layout: blog
 date: 2018-12-12 00:00:00 +0200
 category:
   - dev

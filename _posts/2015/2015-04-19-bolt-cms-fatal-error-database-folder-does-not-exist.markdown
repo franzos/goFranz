@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "Bolt - Fatal Error: The database folder does not exist."
 date:   2015-04-19 08:00:00
 summary: "The database folder does not exist.  Make sure it's present and writable to the user that the webserver is using."

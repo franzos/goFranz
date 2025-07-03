@@ -1,7 +1,7 @@
 ---
 title: "Jekyll: Publish Globally at Near-Zero Cost"
 summary: "How to use Jekyll to publish content globally, in multiple languages, with virtually no maintenance or vendor lock-in and at near zero-cost."
-layout: post
+layout: blog
 source:
 date: 2025-5-30 0:00:00 +0000
 category:
@@ -232,7 +232,7 @@ Pages are totally flexible in what they contain; Most are markdown formatted, ot
 
 ```markdown
 ---
-layout: page
+layout: blog
 title: Kontakt
 cover: 'kontakt.jpg'
 enquiryForm: false
@@ -255,7 +255,7 @@ and a tank you page:
 
 ```markdown
 ---
-layout: page_md
+layout: blog
 title: "Vielen Dank"
 cover: 'kontakt.jpg'
 enquiryForm: false

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "NEX Innotech Website"
 date: 2020-11-04 00:00:00 +0200
 client: "nexinnotech"

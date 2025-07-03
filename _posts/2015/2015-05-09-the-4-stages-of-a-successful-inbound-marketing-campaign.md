@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "The 4 Stages of a Successful Inbound Marketing Campaign"
 date:   2015-05-09 08:00:00
 category:

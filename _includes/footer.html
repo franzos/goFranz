@@ -1,6 +1,5 @@
-{% if page.url contains "/client/" or page.url contains "/work/" or page.url
-contains "/portfolio/" %}
-<div class="footer hidden-print">
+{% if page.url contains "/client/" or page.url contains "/work/" or page.url contains "/portfolio/" %}
+<div class="footer d-print-none">
   <div class="call-out-contact">
     <div class="container">
       <div class="row">
@@ -18,51 +17,12 @@ contains "/portfolio/" %}
 {% endif %}
 
 <script src="/assets/js/main.min.js"></script>
-<script src="/assets/js/bundle.min.js" async></script>
-<script src="/assets/js/highlight.min.js"></script>
+
+{% if page.url contains "/blog/" %}
 <script src="/assets/js/mermaid.min.js"></script>
-
-<script>
-  hljs.highlightAll();
-</script>
-
-<script>
-  mermaid.initialize({ startOnLoad: true });
-</script>
-
-<script>
-  var slideout = new Slideout({
-    panel: document.getElementById("panel"),
-    menu: document.getElementById("menu"),
-    padding: 256,
-    tolerance: 70,
-  });
-  document
-    .querySelector(".toggle-button")
-    .addEventListener("click", function () {
-      slideout.toggle();
-    });
-</script>
-<script>
-  $(window).load(function () {
-    exLink.init({
-      protocols: ["http", "https"],
-      filetypes: ["pdf", "xls", "docx", "doc", "ppt", "pptx"],
-      noFollow: true,
-      linkWarning: false,
-      gaTrackLabel: "External Links",
-    });
-  });
-</script>
-{% if page.url contains "/work/" or page.url contains "/blog/" %}
-<script type="text/javascript">
-  $(window).load(function () {
-    (function ($) {
-      $(".swipebox").swipebox();
-    })(jQuery);
-  });
-</script>
 {% endif %}
+
+<!-- Bootstrap offcanvas and jQuery initialization handled in main.js -->
 <script type="text/javascript">
   var url = window.location.href;
   var msg = document.getElementById('welcome_referral');
@@ -82,12 +42,8 @@ contains "/portfolio/" %}
 </script>
 {% if page.url == "/about/" %}
 <script src="/assets/js/mapbox.min.js"></script>
-<link
-  href="https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css"
-  rel="stylesheet"
-/>
 <style>
-  .navbar.navbar-default,
+  .navbar,
   .quick-contact,
   .innovative-product-award.loaded {
     z-index: 1000;
@@ -140,35 +96,6 @@ contains "/portfolio/" %}
       };
       map.scrollWheelZoom.disable();
       myLayer.setGeoJSON(geojson);
-</script>
-{% endif %}
-{% if page.url == "/persian/dictionary/" %}
-<script src="/assets/js/persian.min.js"></script>
-<script>
-  var request = new XMLHttpRequest();
-  request.open("GET", "/assets/data/persian.json", false);
-  request.send(null);
-  var json = JSON.parse(request.responseText);
-
-  var app = new Vue({
-    delimiters: ["<%", "%>"],
-    el: "#dictionary",
-    data: {
-      search: "",
-      dictionary: json,
-    },
-    computed: {
-      filteredItems() {
-        return this.dictionary.filter((item) => {
-          return (
-            String(item.english.toLowerCase()).indexOf(
-              this.search.toLowerCase()
-            ) !== -1
-          );
-        });
-      },
-    },
-  });
 </script>
 {% endif %}
 

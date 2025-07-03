@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "AEE Iran Website"
 date: 2015-06-01 00:00:00 +0200
 client: "aee"

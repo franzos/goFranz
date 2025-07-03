@@ -1,7 +1,7 @@
 ---
 title: "Thunderbird with Dovecot on Guix/PantherX"
 summary: Configure Thunderbird with Dovecot and a Self-Signed Certificate on Guix
-layout: post
+layout: blog
 source:
 date: 2023-10-19 0:00:00 +0000
 category:

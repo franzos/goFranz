@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "Is Facebook an effective marketing tool for your business?"
 date:   2014-01-07 08:00:00
 category:

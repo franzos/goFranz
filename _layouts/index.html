@@ -2,7 +2,7 @@
 layout: layout
 ---
 
-<div class="wrapper nav">{% include nav.html %}</div>
+{% include nav.html %}
 
 <div class="container content-wrapper">
   <div class="row">
@@ -53,16 +53,8 @@ layout: layout
   <div class="row">
     {% assign work = site.work | where:"featured",true | sort: 'date' | reverse
     %} {% for work in work limit:4 %}
-    <div class="col-sm-3">
-      <a href="{{ work.url }}" class="wrapper">
-        <img
-          class="img-responsive"
-          src="/assets/images/projects/preview/{{ work.cover }}"
-        />
-        <p class="info">
-          <b>{{ work.title }}</b> <br /><small>{{ work.introduction }}</small>
-        </p>
-      </a>
+    <div class="col-sm-6 col-lg-3 mb-4">
+      {% include project-item.html work=work card_height="h-100" %}
     </div>
     {% endfor %}
   </div>

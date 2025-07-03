@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Erasmus Oxygen Website"
 date: 2018-07-25 00:00:00 +0200
 client: "independent"

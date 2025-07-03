@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "GAT Website"
 date: 2019-07-04 00:00:00 +0200
 client: "gat"

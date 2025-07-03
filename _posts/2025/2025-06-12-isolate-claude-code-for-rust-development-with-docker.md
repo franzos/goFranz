@@ -1,7 +1,7 @@
 ---
 title: "Isolate Claude Code for Rust Development with Docker"
 summary: "A simple setup to use Claude Code in a Docker container for Rust development with VSCode."
-layout: post
+layout: blog
 source:
 date: 2025-6-12 0:00:00 +0000
 category:

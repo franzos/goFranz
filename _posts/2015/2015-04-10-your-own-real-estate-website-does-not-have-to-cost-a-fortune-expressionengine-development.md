@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "Here's Why Your Own Real Estate Website Doesn't Have To cost a Fortune"
 date:   2015-04-10 08:00:00
 category:

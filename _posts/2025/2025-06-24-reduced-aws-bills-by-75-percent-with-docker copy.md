@@ -1,7 +1,7 @@
 ---
 title: "Reduced AWS Bills by 75% with Docker"
 summary: "How I cut AWS costs by consolidating services with Docker and HAProxy."
-layout: post
+layout: blog
 source:
 date: 2025-6-24 0:00:00 +0000
 category:

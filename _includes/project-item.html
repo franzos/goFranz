@@ -1,0 +1,42 @@
+{% comment %}
+  Project item component using Bootstrap 5 Card
+  
+  Parameters:
+  - work: work object
+  - show_intro: whether to show introduction text (default: true)
+  - truncate_title: number of characters to truncate title (optional)
+  - truncate_intro: number of characters to truncate introduction (optional)
+  - card_height: optional height class (e.g., "h-100" for equal height cards)
+{% endcomment %}
+
+{% assign show_intro = include.show_intro | default: true %}
+{% assign card_height = include.card_height | default: "" %}
+
+<a  href="{{ include.work.url }}" class="card text-decoration-none">
+  <img
+    src="/assets/images/projects/preview/{{ include.work.cover }}"
+    class="img-fluid m-0"
+    style="object-fit: cover;"
+    alt="{{ include.work.title }}"
+  />
+  <div class="card-body mt-2">
+    <h5 class="card-title mb-0 fs-6">
+      {% if include.truncate_title %}
+        {{ include.work.title | truncate: include.truncate_title }}
+      {% else %}
+        {{ include.work.title }}
+      {% endif %}
+    </h5>
+    {% if show_intro and include.work.introduction %}
+      <p class="card-text text-muted">
+        <small>
+          {% if include.truncate_intro %}
+          {{ include.work.introduction | truncate: include.truncate_intro }}
+          {% else %}
+            {{ include.work.introduction }}
+          {% endif %}
+        </small>
+      </p>
+    {% endif %}
+  </div>
+</a>

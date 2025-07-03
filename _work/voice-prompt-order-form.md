@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Voice Prompt Order Form"
 date: 2018-02-28 00:00:00 +0200
 client: "independent"

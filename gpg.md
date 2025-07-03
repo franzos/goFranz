@@ -1,6 +1,6 @@
 ---
 title: My GPG public key
-layout: page
+layout: base
 bg: mark-asthoff_02
 permalink: /gpg/
 ---

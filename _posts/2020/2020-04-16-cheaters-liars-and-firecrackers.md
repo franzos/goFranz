@@ -1,7 +1,7 @@
 ---
 title: "Cheaters, liars, and firecrackers"
 summary: "Story about running a Kickstarter campaign for an open source Linux project, hiring a PR firm that created fake websites and articles instead of legitimate promotion."
-layout: post
+layout: blog
 source:
 date: 2020-04-16 22:00:00 +0350
 category:

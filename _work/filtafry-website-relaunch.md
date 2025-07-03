@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "FiltaFry Website Relaunch"
 date: 2021-05-01 00:00:00 +0200
 client: "filtafry"

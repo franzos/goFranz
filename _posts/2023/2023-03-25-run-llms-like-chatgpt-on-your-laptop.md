@@ -1,7 +1,7 @@
 ---
 title: "Run llms like ChatGPT on your laptop's CPU"
 summary: "This post explains how to run large language models like ChatGPT on your laptop."
-layout: post
+layout: blog
 source:
 date: 2023-03-25 0:00:00 +0000
 category:

@@ -1,7 +1,7 @@
 ---
 title: "Ethereum GPU mining on AWS EC2 in 2017"
 summary: "Testing cryptocurrency mining on AWS EC2 to turn idle computing resources into passive income, though it requires powerful hardware and cheap electricity."
-layout: post
+layout: blog
 source:
 date: 2017-02-03 08:00:00 +0200
 category:

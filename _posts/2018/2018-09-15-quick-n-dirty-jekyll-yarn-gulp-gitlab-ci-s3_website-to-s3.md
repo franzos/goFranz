@@ -1,7 +1,7 @@
 ---
 title: "Quick n' Dirty: Jekyll via Gitlab CI to S3 & CloudFront"
 summary: "Fast setup guide for deploying Jekyll sites automatically to AWS S3 and CloudFront using GitLab CI/CD pipelines."
-layout: post
+layout: blog
 date: 2018-09-15 00:00:00 +0200
 category:
   - dev

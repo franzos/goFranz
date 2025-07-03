@@ -1,10 +1,38 @@
-<nav id="menu"{% if page.bg %} class="bg-{{ page.bg }}{% if page.layout == "index" %} index{% endif %}"{% endif %}>
-  <header>
-    <ul>
-      <li class="logo"><a href="/"><img alt="Franz" src=/assets/images/gofranz.svg></a></li>
-      <li class="{% if page.url == "/about/" %} active{% endif %}"><a href="/about/">about</a></li>
-      <li class="{% if page.url contains "/blog/" %} active{% endif %}"><a href="/blog/">blog</a></li>
-      <li class="{% if page.url == "/contact/" %} active{% endif %}"><a href="/contact/">contact</a></li>
-    </ul>
-  </header>
-</nav>
+<!-- Bootstrap Offcanvas Mobile Navigation -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="mobileNavLabel">
+      <a href="/">
+        <img alt="Franz" src="/assets/images/gofranz.svg" class="logo-light" height="30">
+        <img alt="Franz" src="/assets/images/gofranz_white.svg" class="logo-dark" height="30">
+      </a>
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <nav>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == "/" %} active{% endif %}" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == "/about/" %} active{% endif %}" href="/about/">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url contains "/blog/" %} active{% endif %}" href="/blog/">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == "/contact/" %} active{% endif %}" href="/contact/">Contact</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link theme-toggle nav-link" type="button" aria-label="Toggle theme" id="bd-theme-mobile">
+            <span class="theme-icon-active">
+              <i class="theme-icon" aria-hidden="true"></i>
+            </span>
+            <span class="ms-2">Toggle Theme</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

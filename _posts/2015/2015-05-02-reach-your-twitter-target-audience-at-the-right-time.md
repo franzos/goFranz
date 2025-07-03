@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "3 Steps: How To Reach Your Twitter Target Audience At The Right Time"
 date:   2015-05-02 08:00:00
 category:

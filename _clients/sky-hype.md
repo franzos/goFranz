@@ -1,5 +1,5 @@
 ---
-layout: page_sidebar
+layout: page
 title: "Sky-Hype FZCO"
 date: 2016-01-01 00:00:00 +0200
 client: "skyhype"

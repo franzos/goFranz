@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "The 20 Largest ExpressionEngine Sites"
 date:   2015-03-18 08:00:00
 category:

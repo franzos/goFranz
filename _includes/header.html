@@ -3,8 +3,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Prevent dark mode flicker by setting theme before render -->
+  <script>
+    (function() {
+      function getStoredTheme() { return localStorage.getItem('theme') }
+      function getPreferredTheme() {
+        const storedTheme = getStoredTheme()
+        if (storedTheme) {
+          return storedTheme
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      }
+      function setTheme(theme) {
+        if (theme === 'auto') {
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', theme)
+        }
+      }
+      setTheme(getPreferredTheme())
+    })()
+  </script>
+
   {% seo %}
   {% feed_meta %}
+  
+  <!-- Structured Data -->
+  {% include schema-person.html %}
+  {% include schema-organization.html %}
+  {% include schema-article.html %}
 
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/icon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/icon/apple-icon-60x60.png">
@@ -25,33 +52,44 @@
   <meta name="theme-color" content="#ffffff">
 
   <style>
-  #menu {display: none;}
+  /* Base background color for all pages */
+    body.bg {
+      background-color: #f8f8f8;
+    }
+    [data-bs-theme="dark"] body.bg {
+      background-color: #212529 !important;
+    }
   </style>
 
   {% if page.layout == "index" %}
-    <style>
+  <style>
     body {
       overflow: hidden;
-    }
-    body.bg {
-      background-color: #f8f8f8
     }
     #particles {
       position: absolute;
       margin-top: -150px;
     }
-    .wrapper.nav, .franz {
+    .wrapper.page, .franz {
       z-index: 100000;
     }
-    /*
-    @media (min-width: 750px) {}
-    @media (max-width: 920px) {#panel {background-image: url(/assets/bg/{{ page.bg | remove: "bg-"}}.jpg);background-size: cover;}} */
-    </style>
+    /* Hide background image on index page in dark mode */
+    [data-bs-theme="dark"] body.bg::before {
+      display: none !important;
+    }
+  </style>
   {% else %}
-    <style>
-    @media (min-width: 750px) {body.bg {background-image: url(/assets/bg/pattern_004.jpg);}}
-    {% unless page.layout == "index" %}@media (max-width: 920px) {#menu {background-image: url(/assets/bg/pattern_005.jpg);}}{% endunless %}
-    </style>
+  <style>
+    @media (min-width: 750px) {
+      body.bg {
+        background-image: url(/assets/bg/pattern_004.jpg);
+        background-size: auto 100vh;
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    }
+  </style>
   {% endif %}
   <link href="/assets/css/main.min.css" rel="stylesheet">
 </head>

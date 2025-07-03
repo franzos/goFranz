@@ -1,15 +1,9 @@
 <div class="row">
 {% for work in site.work reversed %}
-  {% if work.featured %}
-  {% if work.tags contains "development"%}
-  <div class="col-sm-4">
-    <a href="{{ work.url }}" class="wrapper">
-      <img class="img-responsive" src="/assets/images/projects/preview/{{ work.cover }}">
-      <p class="info"><b>{{ work.title }}</b>
-      <br><small>{{ work.introduction }}</small></p>
-    </a>
+  {% if work.featured and work.tags contains "development" %}
+  <div class="col-md-6 col-lg-4 mb-4">
+    {% include project-item.html work=work card_height="h-100" %}
   </div>
-  {% endif %}
   {% endif %}
 {% endfor %}
 </div>

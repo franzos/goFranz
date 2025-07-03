@@ -1,6 +1,6 @@
 ---
 title: Freelance Developer
-layout: page
+layout: base
 bg: mark-asthoff_02
 permalink: /freelance-developer-lisbon-portugal/
 ---

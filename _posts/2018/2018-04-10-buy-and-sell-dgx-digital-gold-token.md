@@ -1,7 +1,7 @@
 ---
 title: "Buy and sell digital gold - DGX"
 summary: "Guide to buying and selling DGX digital gold tokens through the Digix Marketplace using Ethereum."
-layout: post
+layout: blog
 source:
 date: 2018-04-10 22:00:00 +0350
 category:

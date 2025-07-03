@@ -1,6 +1,6 @@
 ---
 title: "Cloudfront Supports Functions"
-layout: post
+layout: base
 source:
 date: 2025-6-24 0:00:00 +0000
 category:

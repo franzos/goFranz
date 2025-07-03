@@ -1,6 +1,6 @@
 ---
 title: Blog
-layout: page_clean
+layout: page_wide
 bg: pattern_018
 permalink: /blog/
 pagination:
@@ -15,17 +15,6 @@ pagination:
   {% for post in paginator.posts %}
     <li class="project">
       <a href="{{ post.url }}">
-        <country class="hidden-xs">
-          {{ post.tags | join: " / " }}
-        </country>
-        <span class="hidden-xs">
-          {% if post.collection == 'gist' %}
-            <intro>Read gist</intro>
-          {% else %}
-            <intro>Read entry</intro>
-          {% endif %}
-          <br>
-        </span>
         {{ post.title | truncate: 60 }}
         {% if post.summary %}
           <br/><small>{{ post.summary }}</small>
@@ -35,25 +24,52 @@ pagination:
   {% endfor %}
 </ul>
 
-<!-- Pagination -->
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">Previous</a>
-  {% endif %}
-  
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="/blog/">{{ page }}</a>
+<nav aria-label="Blog pagination">
+  <ul class="pagination justify-content-center">
+    {% if paginator.previous_page %}
+      <li class="page-item">
+        <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
     {% else %}
-      <a href="/blog/page/{{ page }}/">{{ page }}</a>
+      <li class="page-item disabled">
+        <span class="page-link" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </span>
+      </li>
     {% endif %}
-  {% endfor %}
-  
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next</a>
-  {% endif %}
-</div>
+    
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <li class="page-item active" aria-current="page">
+          <span class="page-link">{{ page }}</span>
+        </li>
+      {% elsif page == 1 %}
+        <li class="page-item">
+          <a class="page-link" href="/blog/">{{ page }}</a>
+        </li>
+      {% else %}
+        <li class="page-item">
+          <a class="page-link" href="/blog/page/{{ page }}/">{{ page }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+    
+    {% if paginator.next_page %}
+      <li class="page-item">
+        <a class="page-link" href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    {% else %}
+      <li class="page-item disabled">
+        <span class="page-link" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </span>
+      </li>
+    {% endif %}
+  </ul>
+</nav>
 {% endif %}

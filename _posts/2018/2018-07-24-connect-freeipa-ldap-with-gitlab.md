@@ -1,7 +1,7 @@
 ---
 title: "How-To connect FreeIPA LDAP with GitLab"
 summary: "Instructions for connecting FreeIPA LDAP authentication with GitLab Omni for single sign-on integration."
-layout: post
+layout: blog
 date: 2018-07-24 00:00:00 +0200
 category:
   - ldap

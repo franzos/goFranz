@@ -1,7 +1,7 @@
 ---
 title: "How-To ready your Litecoin node for SegWit on Ubuntu"
 summary: "Guide to prepare your Litecoin node for SegWit activation on Ubuntu Linux systems with minimum 2GB RAM requirements."
-layout: post
+layout: blog
 os:
   - Linux
 date: 2017-05-04 00:00:00 +0200

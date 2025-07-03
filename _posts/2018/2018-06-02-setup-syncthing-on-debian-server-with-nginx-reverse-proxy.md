@@ -1,7 +1,7 @@
 ---
 title: "How-To set-up syncthing on Debian 9 with NGINX reverse proxy"
 summary: "Guide to installing and configuring Syncthing on Debian 9/Ubuntu 16.04+ with NGINX reverse proxy, requiring 512MB RAM minimum."
-layout: post
+layout: blog
 date: 2018-06-02 00:00:00 +0200
 category:
   - dev

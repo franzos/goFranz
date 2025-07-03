@@ -1,5 +1,5 @@
 ---
-layout: page_sidebar
+layout: page
 title: "Filta Group Europe"
 date: 2016-06-01 00:00:00 +0200
 client: "filtafry"

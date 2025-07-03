@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Khone Alman Website"
 date: 2017-12-20 00:00:00 +0200
 client: "independent"

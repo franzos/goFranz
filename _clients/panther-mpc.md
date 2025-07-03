@@ -1,5 +1,5 @@
 ---
-layout: page_sidebar
+layout: page
 title: "Panther MPC, Inc."
 date: 2016-08-01 00:00:00 +0200
 client: "panther"

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Sky-Hype Real Estate Portal"
 date: 2016-01-02 00:00:00 +0200
 client: "skyhype"

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "Bolt CMS: Filter entries by category"
 date:   2015-04-11 08:00:00
 summary: "Bolt CMS makes it easy to filter entries by category."

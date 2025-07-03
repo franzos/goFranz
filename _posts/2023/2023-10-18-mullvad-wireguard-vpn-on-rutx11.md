@@ -1,7 +1,7 @@
 ---
 title: "Mullvad Wireguard VPN on RUTX11"
 summary: Configure Mullvad Wireguard VPN on Teltoinka RUTX11 (OpenWRT-like)
-layout: post
+layout: blog
 source:
 date: 2023-10-18 0:00:00 +0000
 category:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "ExpressionEngine PHP Error: Non-static method should not be called statically"
 date:   2015-04-09 08:00:00
 summary: "Message: Non-static method Mx_calc::usage() should not be called statically, assuming $this from incompatible context"

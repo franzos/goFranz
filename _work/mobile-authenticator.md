@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Mobile Authenticator"
 date: 2023-04-21 00:00:00 +0200
 client: "onesnow"

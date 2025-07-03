@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Panther Alpha Kickstarter"
 date: 2016-07-01 00:00:00 +0200
 client: "panther"

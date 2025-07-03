@@ -1,5 +1,5 @@
 ---
-layout: page_sidebar
+layout: page
 title: "German Windows Malaysia"
 date:  2017-01-01 00:00:00 +0200
 client: "germanwindows"

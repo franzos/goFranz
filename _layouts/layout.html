@@ -8,6 +8,17 @@
     <main id="panel" class="bg{% if page.layout == "index" %} index{% endif %}">
       {{ content }}
     </main>
+    
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center position-relative">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <img id="modalImage" src="" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 
   {% include footer.html %}

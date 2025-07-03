@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Checkoutbay"
 date: 2024-06-16 00:00:00 +0100
 client: "independent_lisbon"

@@ -1,25 +1,15 @@
 ---
 title: Portfolio
-layout: ly_flex
+layout: base
 bg: pattern_071
 permalink: /portfolio/
 welcome:
 ---
 
-<div class="wrapper entry">
-  <div class="container-fluid entry">
-    <div class="row">
-    {% for work in site.work reversed %}
-      {% if work.featured %}
-      <div class="col-sm-4">
-        <a href="{{ work.url }}" class="wrapper">
-          <img class="img-responsive" src="/assets/images/projects/preview/{{ work.cover }}">
-          <p class="info"><b>{{ work.title }}</b>
-          <br><small>{{ work.introduction }}</small></p>
-        </a>
-      </div>
-      {% endif %}
-    {% endfor %}
+<div class="row">
+  {% for work in site.work reversed %}
+    <div class="col-md-6 col-lg-4 mb-4">
+      {% include project-item.html work=work %}
     </div>
-  </div>
+  {% endfor %}
 </div>

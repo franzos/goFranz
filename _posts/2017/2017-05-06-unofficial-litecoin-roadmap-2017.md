@@ -1,7 +1,7 @@
 ---
 title: "Unofficial Litecoin Roadmap"
 summary: "Compiled roadmap for Litecoin 2017/2018 from various internet sources, before the official roadmap was published on litecoincore.org."
-layout: post
+layout: blog
 source:
 date: 2017-05-06 08:00:00 +0200
 category:

@@ -1,23 +1,21 @@
----
-layout: ly_page
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container-fluid content-wrapper resume">
-  <div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
+  {% include header.html %}
+
+  <body>
+    <div class="container-fluid">
       <div class="content">
-        {% include welcome_referral.html %}
-        <div class="page">
-          <div class="contact">
+        <div class="contact">
             <h2>Franz Geffke</h2>
               <p>Full-Stack Developer / System Architect
               <br>Remote (GMT +1)
-              <br><a href="mailto:mail@gofranz.com?subject=Let's work together">mail@gofranz.com</a></p>
+              <br><a href="mailto:mail@gofranz.com?subject=Let's work together">mail@gofranz.com</a>
+              <br><a href="https://gofranz.com">gofranz.com</a></p>
           </div>
           {{ content }}
-        </div>
         <a class="print" onclick="window.print();">Print this page</a>
       </div>
     </div>
-  </div>
-</div>
+
+</html>

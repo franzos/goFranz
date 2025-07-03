@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "NFT Marketplace"
 date: 2023-03-21 00:00:00 +0200
 client: "onesnow"

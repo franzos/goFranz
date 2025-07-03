@@ -1,3 +1,10 @@
 <div class="image-wrapper narrow">
-  <a href="/assets/images/blog/{{ include.image }}" class="swipebox thumbnail" style="background-image:url(/assets/images/blog/{{ include.image }});" title="">{% if include.caption %}<p class="caption">{{ include.caption }}</p>{% endif %}</a>
+  <a href="#" class="thumbnail" style="background-image:url(/assets/images/blog/{{ include.image }});" 
+     data-bs-toggle="modal" 
+     data-bs-target="#imageModal" 
+     data-image="/assets/images/blog/{{ include.image }}"
+     data-caption="{% if include.caption %}{{ include.caption }}{% else %}{{ include.image }}{% endif %}"
+     title="Click to view larger image">
+    {% if include.caption %}<p class="caption">{{ include.caption }}</p>{% endif %}
+  </a>
 </div>

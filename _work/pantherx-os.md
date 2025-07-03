@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "PantherX OS"
 date: 2019-01-16 00:00:00 +0200
 client: "panther"

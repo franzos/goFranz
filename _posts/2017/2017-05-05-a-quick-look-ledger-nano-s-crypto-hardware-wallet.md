@@ -1,7 +1,7 @@
 ---
 title: "A Quick Look at the Ledger Nano S Crypto Hardware Wallet"
 summary: "Review of the Ledger Nano S hardware wallet: big, heavy, and ugly compared to the Bitcoin-only Nano, but supports multiple cryptocurrencies including Ethereum and Litecoin."
-layout: post
+layout: blog
 source:
 date: 2017-05-05 08:00:00 +0200
 category:

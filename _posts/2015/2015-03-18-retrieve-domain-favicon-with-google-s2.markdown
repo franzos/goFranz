@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "Retrieve a domain's favicon with Google S2"
 date:   2015-03-18 08:00:00
 summary: "It's easy and free to retrieve a favicon with Google S2"

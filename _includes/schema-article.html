@@ -1,0 +1,36 @@
+{% if page.layout == "blog" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.summary | default: page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "Franz Geffke",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Franz Geffke",
+    "url": "{{ site.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/images/gofranz.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  {% if page.bg %}
+  "image": "{{ site.url }}/assets/bg/{{ page.bg }}.jpg",
+  {% endif %}
+  "articleSection": "{{ page.category | first | default: 'Blog' }}",
+  "keywords": "{{ page.tags | join: ', ' }}"
+}
+</script>
+{% endif %}

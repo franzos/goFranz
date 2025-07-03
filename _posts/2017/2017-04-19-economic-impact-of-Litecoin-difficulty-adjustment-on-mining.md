@@ -1,7 +1,7 @@
 ---
 title: "Economic impact of 31% Litecoin difficulty adjustment on mining"
 summary: "Analysis of the economic impact when Litecoin network difficulty increases by 31%, meaning miners will earn roughly 31% less."
-layout: post
+layout: blog
 source:
 date: 2017-04-19 08:00:00 +0200
 category:

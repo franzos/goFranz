@@ -1,5 +1,5 @@
 ---
-layout: page_sidebar
+layout: page
 title: "Lingel Windows"
 date: 2017-07-31 00:00:00 +0200
 client: "lingel"

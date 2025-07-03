@@ -1,5 +1,5 @@
 title: Franz Geffke
-description:
+description: "Full-Stack Developer, AI Orchestrator, ½ Machine - Personal website and blog covering web development, AI integration, system architecture, and technology insights"
 baseurl: ""
 url: "https://gofranz.com"
 destination: _site/
@@ -30,13 +30,19 @@ exclude:
   - Gemfile.lock
   - yarn.lock
   - package.json
+  - package-lock.json
+  - pnpm-lock.yaml
   - node_modules
   - vendor
   - .gitlab-ci.yml
-  - gulpfile.js
   - src
   - README.md
-  - package-lock.json
+  - CLAUDE.md
+  - deploy.sh
+  - Dockerfile
+  - esbuild.config.js
+  - TRAIL.md
+  - TODO.md
 
 collections:
   posts:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "Calculate Inbound Marketing Lead Acquisition Cost Savings vs. PPC Advertising"
 date:   2015-04-13 08:00:00
 category:

@@ -1,6 +1,6 @@
 ---
 title: About Me
-layout: page
+layout: base
 bg: pattern_029
 permalink: /about/
 ---

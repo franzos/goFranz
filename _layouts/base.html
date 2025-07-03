@@ -1,0 +1,55 @@
+---
+layout: layout
+---
+
+{% include nav.html %}
+
+<div class="wrapper page">
+  {% if page.title and page.layout != "index" %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-11 offset-sm-1">
+      {% if page.url contains "/work/" %}
+        {% for client in site.clients %}
+          {% if page.client == client.client %}
+            <h1 style="margin-bottom: 1rem;">{{ page.title }}</h1>
+            for <a href="{{ client.url }}">{{ client.title }}</a>
+            <br>{{ client.city }}, {{ client.country }}
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <h1>{{ page.title }}</h1>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% include welcome_referral.html %}
+
+<div class="container-fluid content-wrapper">
+  <div class="row">
+    <div class="col-sm-10 offset-sm-1">
+      <div class="content">
+        {{ content }}
+        
+        {% if page.url contains "work" %}
+          {% for client in site.clients %}
+            {% if page.client == client.client %}
+              <!--<a href="{{ client.url }}"><intro><- return to client profile</a>-->
+            {% endif %}
+          {% endfor %}
+          <h2 class="block">Other Projects</h2>
+          <div class="row">
+            {% for project in site.work reversed %}
+              <div class="col-sm-4">
+                <a href="{{ project.url }}">{{ project.title }}</a>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+</div>

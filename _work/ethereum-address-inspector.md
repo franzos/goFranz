@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Vue.js Ethereum Address Inspector"
 date: 2017-10-01 00:00:00 +0200
 client: "independent"

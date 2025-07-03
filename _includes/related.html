@@ -27,12 +27,14 @@
 {% comment %} Sort by tag count (descending) and display {% endcomment %}
 {% assign sortedRelated = relatedPosts | sort | reverse %}
 
+<ul class="list-unstyled" style="padding-left: 0;">
 {% for relatedPost in sortedRelated limit: maxRelated %}
   {% assign postData = relatedPost | split: '|' %}
   {% assign postUrl = postData[1] %}
   {% assign postTitle = postData[2] %}
   
-  <h4><a href="{{ site.baseurl }}{{ postUrl }}">{{ postTitle }}</a></h4>
+  <li><a class="mb-2" href="{{ site.baseurl }}{{ postUrl }}">{{ postTitle }}</a></li>
 {% endfor %}
+</ul>
 
 </div>

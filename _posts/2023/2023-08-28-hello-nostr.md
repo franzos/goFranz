@@ -1,7 +1,7 @@
 ---
 title: "Hello Nostr"
 summary: The Nostr protocol offers a decentralized way to build services and platforms like social networks, crowd-funding sites, or Uber alternatives. It uses a single key for identity across all services, ensuring more control over your account and data. However, it comes with challenges like irreversible account loss if you lose your key and some client-side performance issues.
-layout: post
+layout: blog
 source:
 date: 2023-08-28 0:00:00 +0000
 category:

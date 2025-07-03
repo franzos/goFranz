@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "On Air Website & Backend Relaunch"
 date: 2023-03-20 00:00:00 +0200
 client: "onair"

@@ -1,7 +1,7 @@
 ---
 title: "Start using a VPN (with IPv6 support)"
 summary: "VPN connections help access region-restricted content, circumvent censorship, and increase online security and privacy, but most providers are slow and track your activity."
-layout: post
+layout: blog
 source:
 date: 2017-01-01 08:00:00 +0200
 category:

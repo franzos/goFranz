@@ -1,7 +1,7 @@
 ---
 title: "Update MacOS Sierra rsync with Homebrew"
 summary: "macOS Sierra ships with 10-year-old rsync software from 2006, but you can easily update it yourself using Homebrew."
-layout: post
+layout: blog
 version: macOS 10.12.2 Sierra
 os:
   - macOS

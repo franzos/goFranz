@@ -1,7 +1,7 @@
 ---
 title: "A closer look at Ripple XRP"
 summary: "Ripple XRP saw a 20x surge in market cap over a few weeks, driven by new banking partnerships and renewed investor interest."
-layout: post
+layout: blog
 source:
 date: 2017-05-07 08:00:00 +0200
 category:

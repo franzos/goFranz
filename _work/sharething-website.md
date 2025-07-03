@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Sharething Website"
 date: 2018-03-05 00:00:00 +0200
 client: "independent"

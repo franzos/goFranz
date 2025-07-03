@@ -1,7 +1,7 @@
 ---
 title: "Develop your own LLM like ChatGPT with Tensorflow and Keras"
 summary: "In this post, I will show you how to develop your own LLM like ChatGPT with Tensorflow and Keras."
-layout: post
+layout: blog
 source:
 date: 2023-04-05 0:00:00 +0000
 category:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "Malaysian German Society Website"
 date: 2016-02-01 00:00:00 +0200
 client: "mgs"

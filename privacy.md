@@ -1,6 +1,6 @@
 ---
 title: Privacy
-layout: page
+layout: base
 bg: mark-asthoff_02
 permalink: /privacy/
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "FixMyScreen Website"
 date: 2018-05-25 00:00:00 +0200
 client: "independent"

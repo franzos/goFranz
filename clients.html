@@ -1,6 +1,6 @@
 ---
 title: Clients
-layout: ly_flex
+layout: page_wide
 bg: pattern_015
 permalink: /clients/
 ---
@@ -9,7 +9,7 @@ permalink: /clients/
 <div class="wrapper entry">
   <div class="container-fluid entry">
     <div class="row">
-      <div class="col-sm-7 col-sm-offset-1 content-wrapper">
+      <div class="col-sm-7 offset-sm-1 content-wrapper">
         <div class="content">
 
           <h2 class="block">{{ client.title }}</h2>
@@ -35,7 +35,7 @@ permalink: /clients/
 
         </div>
       </div>
-      <div class="col-sm-3 col-sm-offset-1 sidebar">
+      <div class="col-sm-3 offset-sm-1 sidebar">
 
           <p class="title clean">{% unless client.client == "independent" %}Client{% endunless %}</p>
 
@@ -46,7 +46,7 @@ permalink: /clients/
           {% unless client.client == "independent" %}<br>{{ client.city }}, {{ client.country }}{% endunless %}</p>
 	  
           <div class="map-static">
-            <img class="img-responsive" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ client.map }},6,0/200x100@2x?access_token={{ site.mapbox_token }}&logo=false">
+            <img class="img-fluid" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ client.map }},6,0/200x100@2x?access_token={{ site.mapbox_token }}&logo=false">
           </div>
 
           <p>{{ client.introduction }}</p>
