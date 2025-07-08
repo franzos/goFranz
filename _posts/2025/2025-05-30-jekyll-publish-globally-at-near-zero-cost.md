@@ -16,6 +16,32 @@ author: Franz Geffke
 
 Static site generators like Jekyll are great tools for companies to publish content globally, in multiple languages, with virtually no maintenance or vendor lock-in and at near zero-cost. In this post, I hope to share some ideas that are easy to replicate across various platforms, and needs.
 
+<div class="mermaid">
+graph LR
+    A[IDE/Editor] --> B[Repository]
+    B --> C[CI/CD Pipeline]
+    C --> E[AWS S3 + CloudFront]
+    E --> F[".de (Germany)"]
+    E --> G[".at (Austria)"]
+    E --> H[".es (Spain)"]
+    E --> I[".fr (France)"]
+    E --> J[".eu (Europe)"]
+    E --> K[".ee (Estonia)"]
+    E --> L[".fi (Finland)"]
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#fff3e0
+    style E fill:#fff8e1
+    style F fill:#ffebee
+    style G fill:#ffebee
+    style H fill:#ffebee
+    style I fill:#ffebee
+    style J fill:#ffebee
+    style K fill:#ffebee
+    style L fill:#ffebee
+</div>
+
 Ingredients:
 1. A static site generator
 2. A code editor
@@ -381,7 +407,7 @@ The deployment automatically invalidates the CloudFront cache, so that the chang
 
 ### 4. Hosting Platform
 
-For the hosting, we've chosen AWS S3 with CloudFront. The domains, buckets and distributions are configured manually, since they don't change often; This is all pretty standard stuff, so I won't go into details here. The cost for individual countries amounts to a few cents per month, depending on traffic.
+For the hosting, I have chosen AWS S3 with CloudFront. The domains, buckets and distributions are configured manually, since they don't change often; This is all pretty standard stuff, so I won't go into details here. The cost for individual countries amounts to a few cents per month, depending on traffic.
 
 Forms are handled via [Formshive](/work/rusty-forms/).
 

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "ONES"
+title: "Softmax"
 date: 2015-06-01 00:00:00 +0200
 client: "onesnow"
-introduction: "ONES is a leading company in innovative technologies based in South East Asia, constantly pushing the boundaries of advancements and redefining the industry standards."
+introduction: "Softmax is a leading company in innovative technologies based in South East Asia, constantly pushing the boundaries of advancements and redefining the industry standards."
 city: Bangkok
 country: Thailand
 map: "100.5615673, 13.8179723"
