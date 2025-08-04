@@ -7,17 +7,17 @@ sitemap:
   exclude: 'yes'
 ---
 
-As a product-focused Senior Engineer and technical leader, I build simple, effective solutions for complex challenges. Known for a direct, hands-on approach, I bridge the gap between high-level business strategy and the practical details of shipping robust code. My expertise spans from pitching investors and architecting foundational platforms (Auth, IoT, Blockchain) to accelerating development with modern tools like AI. I thrive on solving real-world problems and building products people love and value.
+As a product-focused Software Engineer, I build simple, effective solutions for complex challenges. Known for a direct, hands-on approach, I bridge the gap between high-level business strategy and the practical details of shipping robust code. My expertise spans from pitching investors and architecting foundational platforms (Auth, IoT, Blockchain) to accelerating development with modern tools like Cline and Claude Code. I thrive on solving real-world problems and building products people love and value.
 
 ## TECHNICAL SKILLS
 
 * **Primary Languages & Frameworks:**
-    * **TypeScript / JavaScript:** NestJS, Express, Vue, Nuxt, React, React Native
-    * **Rust:** Actix Web, Cross-platform Libraries
+    * **TypeScript / JavaScript:** NestJS, Express, Vue, Nuxt, React, React Native, Jest
+    * **Rust:** Actix Web, Diesel, Tokio
     * **Python:** General scripting, Data processing
-* **AI-Assisted Development:** Proficient in using LLMs & tools (Claude, Copilot) to accelerate development
+* **AI-Assisted Development:** Proficient in using LLMs & tools (Claude, Cline) to accelerate development
 * **Databases:** PostgreSQL, ClickHouse, MongoDB, Redis, MySQL, Firebase
-* **Cloud & DevOps:** AWS, Docker, Ansible, CI/CD, Guix, Heroku, DigitalOcean
+* **Cloud & DevOps:** AWS, Docker, Ansible, CI/CD on Gitlab / GitHub, Guix, Heroku, DigitalOcean
 * **Environment:** Linux (proficient user and administrator)
 
 ## WORK EXPERIENCE
@@ -69,7 +69,7 @@ As a product-focused Senior Engineer and technical leader, I build simple, effec
 * Seeded platform growth by developing automated systems to curate and post relevant content, successfully accelerating organic user adoption.
 
 <div class="item-header">
-    <h3>Software Engineer at DKKMA</h3>
+    <h3>Software Engineer at DKKMA Ltd.</h3>
     <h3>2013 - 2016</h3>
 </div>
 
