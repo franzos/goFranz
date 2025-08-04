@@ -3,7 +3,7 @@
 Asset compilation:
 
 ```bash
-guix shell node pnpm imagemagick graphicsmagick -- pnpm dlx gulp
+guix shell node pnpm imagemagick graphicsmagick ruby@3.1 make gcc-toolchain -- pnpm run build
 ```
 
 
