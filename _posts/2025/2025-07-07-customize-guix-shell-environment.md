@@ -54,6 +54,7 @@ After some attempts, I came up with this:
              (guix search-paths)
              (gnu packages rust)
              (gnu packages rust-apps)
+             (gnu packages commencement)
              (gnu packages tls))
 
 ;; Create a custom OpenSSL package that exports OPENSSL_DIR pointing to itself

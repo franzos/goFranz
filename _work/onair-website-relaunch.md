@@ -27,7 +27,7 @@ The new On Air website inherits many of the features of the old site, with a fre
 {% include project-image.html image="onair-relaunch-02.png" %}
 {% include project-image.html image="onair-relaunch-03.png" %}
 
-Check-out a preview [here](https://staging.onairrecordings.com/).
+Check-out it out: [onairrecordings.com](https://onairrecordings.com/).
 
 ### Technology
 
