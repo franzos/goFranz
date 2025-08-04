@@ -103,6 +103,11 @@ function setTheme(theme) {
   } else {
     document.documentElement.setAttribute('data-bs-theme', theme)
   }
+  
+  // Emit theme change event for dynamic components
+  document.dispatchEvent(new CustomEvent('themeChanged', { 
+    detail: { theme: document.documentElement.getAttribute('data-bs-theme') }
+  }))
 }
 
 function showActiveTheme(theme, focus = false) {

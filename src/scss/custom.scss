@@ -1884,148 +1884,53 @@ code.hljs {
   margin-bottom: 2rem;
 }
 
-/* Mermaid flowchart styling - force transparent backgrounds but visible nodes */
-.mermaid,
-.mermaid svg,
-div.mermaid,
-svg[id^="mermaid"],
-pre.mermaid {
+/* Mermaid with native theme support and enhanced dark mode */
+.mermaid svg {
   background: transparent !important;
-  background-color: transparent !important;
 }
 
-/* Hide the main chart background but keep node backgrounds */
-.mermaid svg > rect:first-child {
-  fill: transparent !important;
-  opacity: 0 !important;
-}
-
-/* Style flowchart nodes to be visible - light theme */
-.mermaid .node rect,
-.mermaid .nodes rect,
-.mermaid g.node rect {
-  fill: #ffffff !important;
-  stroke: #451668 !important;
-  stroke-width: 2px !important;
-}
-
-.mermaid .node text,
-.mermaid .nodes text,
-.mermaid g.node text {
-  fill: #000000 !important;
-}
-
-/* Style edges/arrows - target all possible selectors */
-.mermaid .edgePath path,
-.mermaid .edge path,
-.mermaid .flowchart-link,
-.mermaid path.arrowMarkerPath {
-  stroke: #451668 !important;
-  stroke-width: 2px !important;
-  fill: none !important;
-}
-
-.mermaid .arrowheadPath,
-.mermaid .arrowhead,
-.mermaid .marker path {
-  fill: #451668 !important;
-  stroke: #451668 !important;
-}
-
-/* Override transparent/white arrows */
-.mermaid path[stroke="rgba(255, 255, 255, 0)"],
-.mermaid .marker[fill="rgba(255, 255, 255, 0)"] {
-  stroke: #451668 !important;
-  fill: #451668 !important;
-}
-
-/* Dark theme overrides - target all possible rect elements */
-[data-bs-theme="dark"] .mermaid rect,
-[data-bs-theme="dark"] .mermaid svg rect,
-[data-bs-theme="dark"] .mermaid g rect,
-[data-bs-theme="dark"] .mermaid svg g rect,
-[data-bs-theme="dark"] .mermaid .node rect,
-[data-bs-theme="dark"] .mermaid .nodes rect,
-[data-bs-theme="dark"] .mermaid g.node rect {
-  fill: #343a40 !important;
-  stroke: var(--bs-primary) !important;
-  stroke-width: 2px !important;
-}
-
-/* More aggressive targeting - override any white/light backgrounds in dark mode */
-[data-bs-theme="dark"] .mermaid rect[fill="#ffffff"],
-[data-bs-theme="dark"] .mermaid rect[fill="white"],
-[data-bs-theme="dark"] .mermaid rect[fill="#f9f9f9"],
-[data-bs-theme="dark"] .mermaid rect[fill="rgb(255, 255, 255)"] {
-  fill: #343a40 !important;
-}
-
-/* Dark theme text - target all possible text elements with maximum specificity */
+/* Enhanced dark theme support for all Mermaid elements */
 [data-bs-theme="dark"] .mermaid text,
-[data-bs-theme="dark"] .mermaid svg text,
-[data-bs-theme="dark"] .mermaid g text,
-[data-bs-theme="dark"] .mermaid svg g text,
-[data-bs-theme="dark"] .mermaid .node text,
-[data-bs-theme="dark"] .mermaid .nodes text,
-[data-bs-theme="dark"] .mermaid g.node text,
-[data-bs-theme="dark"] .mermaid .label text,
-[data-bs-theme="dark"] .mermaid .nodeLabel,
-[data-bs-theme="dark"] .mermaid span.nodeLabel,
-[data-bs-theme="dark"] .mermaid .nodeLabel p,
-[data-bs-theme="dark"] .mermaid span,
-[data-bs-theme="dark"] .mermaid p {
-  fill: #dee2e6 !important;
-  color: #dee2e6 !important;
+[data-bs-theme="dark"] .mermaid tspan {
+  fill: #ffffff !important;
 }
 
-/* Override any dark text in dark mode - target specific fill values */
-[data-bs-theme="dark"] .mermaid text[fill="#000000"],
-[data-bs-theme="dark"] .mermaid text[fill="black"],
-[data-bs-theme="dark"] .mermaid text[fill="rgb(0, 0, 0)"],
-[data-bs-theme="dark"] .mermaid text[fill="#333"],
-[data-bs-theme="dark"] .mermaid text[fill="rgb(51, 51, 51)"] {
-  fill: #dee2e6 !important;
+/* Subgraph styling for dark theme */
+[data-bs-theme="dark"] .mermaid .cluster rect {
+  fill: #374151 !important;
+  stroke: #6b7280 !important;
 }
 
-/* Target the specific Mermaid light backgrounds in dark mode */
-[data-bs-theme="dark"] .mermaid rect[fill="#fff4dd"],
-[data-bs-theme="dark"] .mermaid rect[fill="rgb(255, 244, 221)"] {
-  fill: #343a40 !important;
+/* Subgraph labels in dark theme */
+[data-bs-theme="dark"] .mermaid .cluster text {
+  fill: #ffffff !important;
 }
 
-[data-bs-theme="dark"] .mermaid .edgePath path,
-[data-bs-theme="dark"] .mermaid .edge path,
-[data-bs-theme="dark"] .mermaid .flowchart-link,
-[data-bs-theme="dark"] .mermaid path.arrowMarkerPath {
-  stroke: var(--bs-primary) !important;
-  stroke-width: 2px !important;
-  fill: none !important;
+/* Edge labels background in dark theme */
+[data-bs-theme="dark"] .mermaid .edgeLabel rect {
+  fill: #374151 !important;
 }
 
-[data-bs-theme="dark"] .mermaid .arrowheadPath,
-[data-bs-theme="dark"] .mermaid .arrowhead,
-[data-bs-theme="dark"] .mermaid .marker path {
-  fill: var(--bs-primary) !important;
-  stroke: var(--bs-primary) !important;
+/* Ensure edge labels text is visible */
+[data-bs-theme="dark"] .mermaid .edgeLabel text {
+  fill: #ffffff !important;
 }
 
-/* Override transparent arrows in dark mode */
-[data-bs-theme="dark"] .mermaid path[stroke="rgba(255, 255, 255, 0)"],
-[data-bs-theme="dark"] .mermaid .marker[fill="rgba(255, 255, 255, 0)"] {
-  stroke: var(--bs-primary) !important;
-  fill: var(--bs-primary) !important;
+/* Node borders for better definition in dark theme */
+[data-bs-theme="dark"] .mermaid .node rect,
+[data-bs-theme="dark"] .mermaid .node circle,
+[data-bs-theme="dark"] .mermaid .node polygon {
+  stroke: #6b7280 !important;
+  stroke-width: 1px !important;
 }
 
-/* Fix edge label backgrounds and text in dark mode */
-[data-bs-theme="dark"] .mermaid .edgeLabel,
-[data-bs-theme="dark"] .mermaid .labelBkg,
-[data-bs-theme="dark"] .mermaid .edgeLabel div {
-  background-color: #343a40 !important;
-  color: #dee2e6 !important;
+/* Ensure arrows and paths are visible in dark theme */
+[data-bs-theme="dark"] .mermaid .edgePath path {
+  stroke: #9ca3af !important;
+  stroke-width: 1.5px !important;
 }
 
-[data-bs-theme="dark"] .mermaid .edgeLabel p,
-[data-bs-theme="dark"] .mermaid .edgeLabel span {
-  background-color: #343a40 !important;
-  color: #dee2e6 !important;
+[data-bs-theme="dark"] .mermaid .arrowheadPath {
+  fill: #9ca3af !important;
+  stroke: #9ca3af !important;
 }
