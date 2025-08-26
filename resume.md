@@ -62,6 +62,7 @@ I'm a battle-tested engineer who ships. With 12+ years building products from co
 
 * **Launched Checkoutbay.com**, an API-first e-commerce system addressing client demand for flexible, multi-warehouse inventory management, prioritizing rapid iteration through early user onboarding.
 * **Developed Formshive.com**, a privacy-focused form backend service offering advanced spam recognition and a developer-friendly alternative to existing solutions.
+* **Built GPTMuse.com**, a privacy-first AI platform providing unified access to ChatGPT, Claude, Gemini, Grok and others with pay-per-use pricing, zero conversation logging, and character-based interactions.
 * **Authored and maintaining nostr-ts**, an open-source TypeScript SDK for the decentralized Nostr protocol, contributing to community growth and developer tooling
 
 <div class="item-header">
