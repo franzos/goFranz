@@ -189,18 +189,31 @@ Notably, Grok packs everything into a single domain: `grok.com/monitoring`, `gro
 
 Positive: You can trial the application without login. In fact, in terms of usability, Grok is doing quite well.
 
+### Lumo
+
+lumo.proton.me/
+
+- lumo.proton.me: Main domain for Lumo, a Proton service
+- reports.proton.me: Proton's reporting and analytics service
+
+~ 23 requests and 6.74 MB / 2.48 MB transferred
+
+Positive: You can trial the application without login.
+
 ## Conclusion
 
 OpenRouter and Grok tie as the least invasive vendors, with Grok requiring minimal tracking and allowing trials without login despite minor technical issues. Venice AI remains the most invasive due to its extensive tracker integrations. NanoGPT and OpenAI balance accessibility with higher tracking risks, while Claude.ai sits mid-tier.
 
 | Rank | Vendor      | Invasiveness Level | Trial Without Login | Notes                                                  |
 |------|-------------|--------------------|----------------------|--------------------------------------------------------|
-| 1    | Grok        | Least              | Yes                  | Cloudflare analytics/captcha; no obvious trackers      |
-| 2    | OpenRouter  | Least              | No                   | Minimal tracking; Clerk auth & Cloudflare insights     |
-| 3    | NanoGPT     | Low                | Yes                  | Ad/analytics pixels; minor tracking                    |
-| 4    | Claude.ai   | Medium             | No                   | Facebook/Intercom; login required                      |
-| 5    | OpenAI      | High               | Yes                  | Heavy Datadog monitoring; JS/Captcha issues            |
-| 6    | Venice AI   | Most               | Yes                  | Extensive trackers (Facebook, TikTok, ads, etc.)       |
+| 1    | Lumo (new)  | Least              | Yes                  | No obvious trackers                                    |
+| 2    | GPTMuse     | Least              | Yes                  | Self-hosted Sentry error tracking                      |
+| 2    | Grok        | Least              | Yes                  | Cloudflare analytics/captcha; no obvious trackers      |
+| 3    | OpenRouter  | Least              | No                   | Minimal tracking; Clerk auth & Cloudflare insights     |
+| 4    | NanoGPT     | Low                | Yes                  | Ad/analytics pixels; minor tracking                    |
+| 5    | Claude.ai   | Medium             | No                   | Facebook/Intercom; login required                      |
+| 6    | OpenAI      | High               | Yes                  | Heavy Datadog monitoring; JS/Captcha issues            |
+| 7    | Venice AI   | Most               | Yes                  | Extensive trackers (Facebook, TikTok, ads, etc.)       |
 
 Do take these with a grain of salt; There's nothing preventing OpenRouter, Grok or any other vendor, from submitting your data to third-parties once it hits their API's. What did surprise me, is how bad Venice AI did - I'm not familiar with them, but for being crypto-first, one would expect them to be more privacy-conscious.
 
@@ -217,3 +230,20 @@ _Admittably, I still think that's too much, and I could probably cut it in half.
 **Update: 2025-08-05**
 
 Added Grok (which does surprisingly well!).
+
+**Update: 2025-08-27**
+
+Launched my own MVP LLM gateway, similar to NanoGPT, Venice AI and others: [GPTMuse](https://gpt-muse.com).
+
+**Update: 2025-09-03**
+
+Added lumo (lumo.proton.me)
+
+I have to give it to Proton:
+
+1. As far as I can see, they don't rely on third-party models; Venice AI also offers their own models, but I have more faith in Proton's ability to deliver on their promises.
+2. 12.99 EUR / month gives you seemingly unlimited usage (though I suppose some fair use policy applies)
+3. They claim, that they don't use your data for training
+4. No logging.
+
+As always, it's tough to verify 3 and 4.
