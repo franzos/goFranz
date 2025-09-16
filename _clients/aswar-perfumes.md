@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: client
 title: "Aswar Perfumes Co."
 date: 2019-11-14 00:00:00 +0200
 client: "aswar"

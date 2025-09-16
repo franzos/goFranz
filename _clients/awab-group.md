@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: client
 title: "AWAB Group LLC"
 date: 2019-11-14 00:00:00 +0200
 client: "awab"

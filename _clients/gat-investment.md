@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: client
 title: "GAT Investment Group LLC"
 date: 2019-07-04 00:00:00 +0200
 client: "gat"

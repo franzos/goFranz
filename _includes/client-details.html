@@ -1,0 +1,47 @@
+<div class="container-fluid entry">
+  <div class="row">
+    <div class="col-md-7 offset-md-1 col-12 content-wrapper">
+      <div class="content">
+
+        <h2 class="block">{{ include.client.title }}</h2>
+
+        <ul class="projects small clean">
+        {% for work in site.work reversed %}
+        {% if include.client.client == work.client %}
+          <li class="project"><a href="{{ work.url }}"><intro>Open project</intro>
+          <br>{{ work.title }}<country>{{ work.client }}</country></a></li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+
+        {% for testimonial in site.testimonials reversed %}
+        {% if include.client.client == testimonial.client %}
+          <h3>Testimonial</h3>
+          <blockquote>
+          <span>{{ testimonial.content }}</span>
+          <footer>- {{ testimonial.title }} <cite title="Source Title">{{ testimonial.position }}</cite></footer>
+          </blockquote>
+        {% endif %}
+        {% endfor %}
+
+      </div>
+    </div>
+    <div class="col-md-3 offset-md-1 col-12 mt-3 mt-md-0 sidebar">
+
+        <p class="title clean">{% unless include.client.client == "independent" %}Client{% endunless %}</p>
+
+        {% unless include.client.client == "independent" or include.client.client == "independent_lisbon" %}<img class="grayscale client-logo" src="/assets/images/clients/{{ include.client.client }}.png">{% endunless %}
+
+        <p><b>{{ include.client.title }}</b>
+        <br><a href="{{ include.client.web }}" target="_blank">{{ include.client.web }}</a>
+        {% unless include.client.client == "independent" %}<br>{{ include.client.city }}, {{ include.client.country }}{% endunless %}</p>
+	  
+        <div class="map-static">
+          <img class="img-fluid" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ include.client.map }},6,0/200x100@2x?access_token={{ site.mapbox_token }}&logo=false">
+        </div>
+
+        <p>{{ include.client.introduction }}</p>
+
+    </div>
+  </div>
+</div>

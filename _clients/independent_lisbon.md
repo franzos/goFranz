@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: client
 title: "Independent"
 date: 2021-01-01 00:00:00 +0200
 client: "independent_lisbon"
