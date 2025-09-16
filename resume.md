@@ -4,93 +4,91 @@ layout: resume
 bg: pattern_029
 permalink: /resume/
 sitemap:
-  exclude: 'yes'
+ exclude: 'yes'
 ---
 
-I'm a battle-tested engineer who ships. With 12+ years building products from concept to scale, my non-traditional path through international business and self-directed learning has made me stronger: I understand users, markets, and the business impact of technical decisions. I design and build secure, scalable platforms end to end—translating ambiguous business goals into simple, reliable systems. I thrive in high-ownership, fast-moving environments because this is more than a job to me.
+I'm a systems architect and technical leader who ships. With 12+ years building products from concept to scale, my non-traditional path through international business and self-directed learning—including 15+ years living and working across Asia, Middle East and Europe (Singapore, Thailand, Malaysia, China, Iran, UAE, Turkey, Portugal)—has made me stronger: I understand users, markets, and the business impact of technical decisions. I excel at translating complex specifications into working systems—whether implementing WebRTC from RFCs or OIDC/CIBA from standards documents—while building and guiding teams to deliver. I design and build secure, scalable platforms end to end—translating ambiguous business goals into simple, reliable systems. I thrive in high-ownership, fast-moving environments because this is more than a job to me.
 
 ## CORE COMPETENCIES
 
+* **Technical Leadership:** Drive architecture decisions, lead engineering teams, enable third-party integrations
+* **Specification Implementation:** Translate complex standards into production systems and SDKs
 * **End-to-End Ownership:** Architecture → implementation → deployment → scale
-* **Strategic Problem-Solving:** Research-driven, experience-based, and test-oriented approach to identifying and implementing optimal technical solutions for complex challenges.
-* **System Design & Reliability:** Pragmatic approach to performance, observability, and data modeling
-* **Security & Standards:** OIDC/CIBA, PKCE, JWS/JWT, KYC flows, digital signatures, reproducible builds (Guix)
-* **Product Engineering:** Translate requirements, validate with users, iterate rapidly
-* **Team Leadership:** Hire and direct developers, code reviews, delivery accountability
-* **AI-Augmented Development:** Leverage LLMs (Claude) and tools (Cline) to boost productivity
+* **Business Impact:** Bridge technical and business needs from startup to enterprise
+* **Global Perspective:** 15+ years across Asia, Middle East, Europe - proven remote collaboration
 
 ## TECHNOLOGY STACK
 
 * **Languages:** TypeScript/JavaScript, Rust, Python
-* **Backend:** NestJS, Express, Actix Web, Diesel, Tokio
-* **Frontend:** Vue/Nuxt, React/React Native, BLE/IoT applications
-* **Data & Infrastructure:** PostgreSQL, ClickHouse, MongoDB, Redis, Docker, AWS
-* **DevOps & Testing:** CI/CD (GitHub/GitLab), Ansible, Guix, Jest, Linux administration
-* **Protocols:** REST, WebSockets, OIDC/CIBA, PKCE, JWS, JWT
+* **Platforms:** Node.js (NestJS, Express), Rust (Actix Web, Diesel), React, Vue, React Native
+* **Infrastructure:** PostgreSQL, ClickHouse, Redis, Docker, AWS, Guix (reproducible builds)
+* **Protocols & Standards:** OIDC/CIBA, OAuth 2.0, WebRTC, JWS/JWT, WebSockets, Nostr
+* **Approach:** Read specifications, leverage proven libraries, focus on production reliability over algorithmic complexity
 
 ## WORK EXPERIENCE
 
 <div class="item-header">
-    <h3>Software Engineer at Softmax Co., Ltd</h3>
+    <h3>Principal Engineer / Technical Lead at Softmax Co., Ltd</h3>
     <h3>2021 - Present</h3>
 </div>
 
 *Brought in to architect a new foundational platform from concept to execution, defining government-level security specifications and leading the hands-on implementation.*
 
-* **Architected a Foundational Digital Identity Platform:**
-    * Architected and developed a core Digital Identity Platform, leveraging **OIDC/CIBA**, to enable secure, multi-level KYC (mobile, in-person) across all company and partner products, significantly enhancing user onboarding and trust.
+* **Architected Foundational Digital Identity Platform:**
+    * Enabled secure KYC across 10+ partner products by building government-compliant identity platform leveraging **OIDC/CIBA**.
     * Engineered backend services in **TypeScript (NestJS) and Rust (Actix Web)**, creating a robust and reusable ecosystem for authentication, digital signatures, and notifications.
+    * Accelerated partner adoption by developing comprehensive SDK libraries across **TypeScript, Rust, C++, PHP, and Python** for auth flows, digital signatures, and push notifications.
+    * Led engineering team and served as primary technical liaison for third-party integrations, ensuring successful platform adoption across partner organizations.
 
-* **Led the Build of a Full-Stack IoT Healthcare Solution:**
-    * Developed a custom **BLE application for Bangle.js** open-source watch to capture real-time patient vitals.
-    * Engineered the patient gateway terminal and clinical monitoring dashboards, processing incoming data via a REST API and displaying it through a WebSocket-powered frontend.
+* **Delivered Full-Stack IoT Healthcare Solution:**
+    * Enabled real-time patient monitoring by developing custom **BLE application for Bangle.js** smartwatch and clinical dashboards.
+    * Built patient gateway terminal processing vital signs via REST API and WebSocket-powered monitoring interface.
 
-* **Launched a Crypto Exchange & NFT Marketplace:**
-    * Developed a complete **ERC-1155 platform** for minting and trading NFTs, leveraging the core platform's **pre-KYC'd identities** to ensure compliant, secure transactions.
-    * Integrated a multi-currency crypto exchange, handling secure wallet management and order book logic.
+* **Launched Compliant Crypto Exchange & NFT Marketplace:**
+   * Developed **ERC-1155 NFT platform** with integrated KYC, ensuring regulatory compliance for digital asset trading.
+   * Implemented multi-currency exchange with secure wallet management and order book logic.
 
-* **Ensured Platform Stability and Scalability:**
-    * Implemented fully reproducible build and deployment pipelines using **Guix**, ensuring deterministic environments from development to production and eliminating configuration drift.
-    * Engineered and managed a containerized deployment pipeline (Docker, custom scripts) for all 30+ microservices, achieving **99.9% uptime** through robust monitoring.
+* **Achieved 99.9% Platform Uptime (24 months):**
+    * Implemented fully reproducible build and deployment pipelines using **Guix**, eliminating configuration drift.
+    * Engineered containerized deployment pipeline (Docker, custom scripts) for 30+ microservices with comprehensive monitoring.
 
 <div class="item-header">
-    <h3>Software Engineer at goFranz (Independent)</h3>
-    <h3>2021 - Present</h3>
+    <h3>Founder at goFranz</h3>
+    <h3>2019 - Present</h3>
 </div>
 
-*Established and operated goFranz as an independent venture, focused on designing and delivering validated, client-driven software solutions to address unmet market needs.*
+*Operating as solo technical founder, validating market needs through rapid prototyping and direct user feedback.*
 
-* **Launched Checkoutbay.com**, an API-first e-commerce system addressing client demand for flexible, multi-warehouse inventory management, prioritizing rapid iteration through early user onboarding.
-* **Developed Formshive.com**, a privacy-focused form backend service offering advanced spam recognition and a developer-friendly alternative to existing solutions.
-* **Built GPTMuse.com**, a privacy-first AI platform providing unified access to ChatGPT, Claude, Gemini, Grok and others with pay-per-use pricing, zero conversation logging, and character-based interactions.
-* **Authored and maintaining nostr-ts**, an open-source TypeScript SDK for the decentralized Nostr protocol, contributing to community growth and developer tooling
+* **Checkoutbay.com** - API-first e-commerce addressing demand for flexible, multi-warehouse inventory management.
+* **Formshive.com** - Privacy-focused form backend service with advanced spam recognition for developers.
+* **GPTMuse.com** - Privacy-first AI platform providing unified access to ChatGPT, Claude, Gemini with pay-per-use pricing.
+* **PantherX.org** - Lightweight Linux distribution built on GNU Guix, enabling declarative system configuration.
+* **nostr-ts** - Open-source TypeScript SDK for the decentralized Nostr protocol, supporting community growth.
 
 <div class="item-header">
-    <h3>CTO / Software Engineer at Sky-Hype AG</h3>
+    <h3>CTO / Software Engineer at Sky-Hype AG (Global real estate social platform)</h3>
     <h3>2016 - 2020</h3>
 </div>
 
-*As a founding technical partner and CTO, I translated deep real estate market insights into a global technology platform, defining and executing the entire technical vision and roadmap.*
+*As founding technical partner and CTO, translated deep real estate market insights into a global technology platform.*
 
-* **Pitched to investors, co-developed financial models, and defined the technical roadmap** as a key member of the founding team, directly contributing to partnership and sales expansion.
-* Scoped and **architected the global social/search platform from the ground up**, building the Vue.js frontend and Nest.js/Flask backend for a user base growing to ~50,000 daily active users.
-* **Led a freelance engineering team** to develop complex web crawlers and data integration pipelines for real estate software (XML, ZIP), ensuring efficient data exchange.
-* Seeded platform growth by developing automated systems to curate and post relevant content, successfully accelerating organic user adoption.
+* **Scaled platform to 50,000 daily active users** by architecting the social/search platform from ground up using Vue.js frontend and NestJS/Flask backend.
+* **Secured seed funding and partnerships** by pitching to investors, co-developing financial models, and defining technical roadmap.
+* **Drove realtor adoption** by building and leading cross-functional teams (engineering, sales), personally conducting technical integrations.
+* **Accelerated organic growth** through automated content curation systems and strategic feature development.
 
 <div class="item-header">
     <h3>Software Engineer at DKKMA Ltd.</h3>
     <h3>2013 - 2016</h3>
 </div>
 
-* Delivered 20+ custom web projects (Bootstrap, CMS integrations) for diverse clients.
-* Developed analytics dashboards (Metabase, Google Analytics, MySQL).
-* Managed client relationships and project delivery from scoping to launch.
+* Delivered 20+ custom web projects for diverse clients using Bootstrap, CMS integrations, and custom development.
+* Built analytics dashboards (Metabase, Google Analytics, MySQL) for data-driven decision making.
+* Managed complete project lifecycle from client scoping to production deployment.
 
 <div class="item-header">
-    <h3>Earlier Roles</h3>
-    <h3>2010 - 2013</h3>
+   <h3>Earlier Experience</h3>
+   <h3>2010 - 2013</h3>
 </div>
 
-* **Q-Windows Thailand:** Integrated Salesforce CRM, improving lead tracking by 45%.
-* **MJM Networks Singapore:** Built RAID storage for VMWare vSphere, managed Zimbra for 1,200+ users.
-* **VBH Hardware China:** Designed marketing materials for China market.
+Infrastructure and integration roles at Q-Windows Thailand, MJM Networks Singapore, and VBH Hardware China.

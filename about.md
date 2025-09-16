@@ -17,7 +17,7 @@ Here's what I'm reading: [Bookshelf](/bookshelf/)
 
 ## Work
 
-I’m a full-stack engineer with 12+ years of experience delivering secure, scalable systems across industries and continents.
+I’m a principal engineer with 12+ years of experience delivering secure, scalable systems across industries and continents.
 
 My technical expertise includes:
 
