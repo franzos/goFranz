@@ -5,7 +5,7 @@ date: 2025-08-25 00:00:00 +0100
 client: "independent_lisbon"
 cover: gpt-muse-01.jpg
 bg: switzerland
-tags: "ai platform"
+tags: "development"
 introduction: "Privacy-first AI platform"
 featured: true
 ---
