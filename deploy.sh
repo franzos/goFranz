@@ -10,7 +10,7 @@ CLOUDFRONT_ID="E39BB7KBN2R6LQ"
 guix shell node pnpm imagemagick graphicsmagick -- pnpm run build:assets || exit 1
 
 # Site
-guix shell ruby@3.1 make gcc-toolchain -- sh -c "export BUNDLE_PATH=.bundle && bundle install && bundle exec jekyll build -d $FOLDER_NAME" || exit 1
+guix shell ruby@3 make gcc-toolchain -- sh -c "export BUNDLE_PATH=.bundle && bundle install && bundle exec jekyll build -d $FOLDER_NAME" || exit 1
 
 echo "Using AWS profile: $PROFILE_NAME"
 echo "Uploading folder: $FOLDER_NAME"

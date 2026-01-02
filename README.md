@@ -3,7 +3,7 @@
 Asset compilation:
 
 ```bash
-guix shell node pnpm imagemagick graphicsmagick ruby@3.1 make gcc-toolchain -- pnpm run build
+guix shell node pnpm imagemagick graphicsmagick ruby@3 make gcc-toolchain -- pnpm run build
 ```
 
 
@@ -18,7 +18,7 @@ BUNDLE_PATH=.bundle bundle exec jekyll serve
 Quick-preview:
 
 ```bash
-guix shell ruby@3.1 make gcc-toolchain -- sh -c "export BUNDLE_PATH=.bundle && bundle install && bundle exec jekyll serve"
+guix shell ruby@3 make gcc-toolchain -- sh -c "export BUNDLE_PATH=.bundle && bundle install && bundle exec jekyll serve"
 ```
 
 Build

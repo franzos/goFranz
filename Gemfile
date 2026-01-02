@@ -8,6 +8,9 @@ gem "jekyll-feed", "~> 0.15"
 gem "webrick"
 gem "kramdown-parser-gfm"
 gem "jekyll-paginate-v2"
+gem "csv"
+gem "base64"
+gem "bigdecimal"
 
 
 
