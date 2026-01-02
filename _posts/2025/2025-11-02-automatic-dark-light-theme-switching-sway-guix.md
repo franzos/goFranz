@@ -49,19 +49,38 @@ Darkman executes scripts from two directories:
 - `~/.local/share/dark-mode.d/` - runs when switching to dark mode
 - `~/.local/share/light-mode.d/` - runs when switching to light mode
 
-For GTK apps, scripts update gsettings and swap configuration files:
+For GTK apps, two separate mechanisms are needed - not all applications respect both:
+
+### 1. Portal/D-Bus (for modern apps)
 
 ```bash
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+```
 
-# Copy dark theme template to active config
+The `color-scheme` setting broadcasts via D-Bus to the [FreeDesktop portal](https://flatpak.github.io/xdg-desktop-portal/) (`org.freedesktop.appearance.color-scheme`). Modern applications - Firefox, Chrome, VSCode, Electron apps - listen to this portal and switch automatically.
+
+The `gtk-theme` setting tells GTK applications which theme to use (e.g., `Yaru-dark` vs `Yaru`). For light mode, use `prefer-light` and remove the `-dark` suffix from the theme name.
+
+### 2. GTK-3 settings.ini (for legacy apps)
+
+Some applications like Thunar read `~/.config/gtk-3.0/settings.ini` directly instead of using D-Bus:
+
+```ini
+[Settings]
+gtk-theme-name = Yaru-dark
+gtk-application-prefer-dark-theme = 1
+```
+
+The darkman script copies a template to this location:
+
+```bash
 TEMPLATE="$HOME/.local/share/gtk-themes/settings-dark.ini"
 GTK3_CONFIG="$HOME/.config/gtk-3.0/settings.ini"
 cp "$TEMPLATE" "$GTK3_CONFIG"
 ```
 
-The gsettings commands communicate via dbus, broadcasting the color-scheme preference (`org.freedesktop.appearance.color-scheme`). This updates the GTK apps shown above, but also notifies any modern application listening to this portal - browsers like Firefox and Chrome, VSCode, and others all switch automatically without needing darkman scripts.
+For light mode, set `gtk-theme-name = Yaru` and `gtk-application-prefer-dark-theme = 0`.
 
 For the Foot terminal I run `foot --server` and connect with `footclient`. This lets me use signals for instant theme switching - one signal updates the server and all connected terminals without restart:
 

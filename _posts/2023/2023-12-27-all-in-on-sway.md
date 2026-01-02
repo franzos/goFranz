@@ -441,3 +441,7 @@ Linked to files on GitHub; added notes on pipewire.
 **Update: 2025-03-10**
 
 Updated system configuration example, point links to newer versions.
+
+**Update: 2026-01-02**
+
+I've since switched to [Niri](https://github.com/YaLTeR/niri) as my primary compositor. The last working Sway configuration can be found [here](https://github.com/franzos/dotfiles/tree/36c032d4b73cb67980898aa94295dd786862c3fe).
