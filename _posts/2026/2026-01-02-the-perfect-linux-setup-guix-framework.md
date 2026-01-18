@@ -136,6 +136,8 @@ bluez_monitor.properties = {
 }
 ```
 
+After initial pairing, my Nothing Ear (2024) Bluetooth headphones connect automatically, and the audio codec changes depending on whether I'm on a call, or listening to music.
+
 ## Power Management
 
 The Framework AMD runs the Power Profiles Daemon with aggressive power saving:
