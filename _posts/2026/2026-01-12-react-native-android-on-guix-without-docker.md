@@ -1,5 +1,5 @@
 ---
-title: "Build React Native Android Packages on Guix in 5 Minutes"
+title: "Build React Native Android Apps on Guix in 5 Minutes"
 summary: "No Docker, no Android Studio. Just Guix and a few commands."
 layout: blog
 source:
@@ -58,6 +58,54 @@ guix shell --container --emulate-fhs --network --pure \
 Output: `android/app/build/outputs/apk/release/app-release.apk`
 
 For an AAB (Play Store), use `bundleRelease` instead of `assembleRelease`.
+
+## Run on Device
+
+For live development with hot reload, you need three things: ADB server on the host, Metro bundler, and the app running on your device.
+
+First, download platform-tools and start the ADB server on your host:
+
+```bash
+guix shell sdkmanager -- sh -c "
+  export ANDROID_HOME='$ANDROID_HOME'
+  sdkmanager 'platform-tools'
+"
+
+$ANDROID_HOME/platform-tools/adb start-server
+$ANDROID_HOME/platform-tools/adb devices  # verify device is connected
+```
+
+Start Metro bundler in one terminal:
+
+```bash
+guix shell node pnpm -- npx react-native start
+```
+
+Run on device in another terminal:
+
+```bash
+guix shell --container --emulate-fhs --network --pure \
+  --share="$HOME/.gradle"="$HOME/.gradle" \
+  --share="$ANDROID_HOME"="$ANDROID_HOME" \
+  --share="$PWD"="$PWD" \
+  --share=/tmp=/tmp \
+  openjdk@17:jdk node pnpm coreutils bash grep sed \
+  glibc gcc-toolchain zlib which findutils diffutils \
+  -- sh -c "
+    cd '$PWD'
+    export ANDROID_HOME='$ANDROID_HOME'
+    export JAVA_HOME=\$(dirname \$(dirname \$(readlink -f \$(which java))))
+    export ADB_SERVER_SOCKET=tcp:localhost:5037
+    unset C_INCLUDE_PATH CPLUS_INCLUDE_PATH CPATH
+    npx react-native run-android
+"
+```
+
+The key additions here:
+- `--share=/tmp=/tmp` shares the tmp directory where ADB stores socket info
+- `ADB_SERVER_SOCKET=tcp:localhost:5037` tells ADB inside the container to connect to the host's running server instead of starting its own
+
+The app will build, install to your device, and connect to Metro for live reload.
 
 ## What's happening?
 
