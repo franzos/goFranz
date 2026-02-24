@@ -27,6 +27,28 @@ I'm a systems architect and technical leader who ships. With 12+ years building 
 
 ## WORK EXPERIENCE
 
+
+<div class="item-header">
+    <h3>Digital Identity Engineer at TWIN (IOTA)</h3>
+    <h3>2025 - Present</h3>
+</div>
+
+*Building digital identity infrastructure for global trade—connecting diverse trust sources (GLEIF/vLEI, EU eID, country-specific KYC) with decentralized identity on IOTA.*
+
+* **Built GLEIF vLEI–IOTA DID Linkage PoC:**
+    * Designed and implemented a system that cryptographically links **GLEIF vLEI credentials (KERI/ACDC)** to **IOTA DIDs**, enabling bidirectional identity verification for legal entities.
+    * Built full-stack application (**TypeScript, React 19, Express**) with browser-side KERI signing via signify-ts and on-chain attestation NFTs in **Move**.
+    * Integrated GLEIF trust chain (Root → QVI → Legal Entity) with Sally verifier webhooks and IPEX credential exchange.
+
+* **Architected Identity Management Platform:**
+    * Developed enterprise-grade onboarding, authentication, and credential management system on the **TWIN framework** (**TypeScript, Node.js**).
+    * Implemented secure auth with **argon2id** hashing, entropy-based password validation, and extensible **KYC provider framework**.
+    * Built credential request/approval workflows, organization management with role-based access, and comprehensive audit logging.
+
+* **Designed OID4VP Integration Architecture:**
+    * Researched and architected **OpenID for Verifiable Presentations (OID4VP)** integration for credential-based SSO, replacing password auth with wallet-based login using **SD-JWT VCs**.
+    * Evaluated library landscape and designed OIDC bridge pattern enabling downstream services to remain unchanged.
+
 <div class="item-header">
     <h3>Principal Engineer / Technical Lead at Softmax Co., Ltd</h3>
     <h3>2021 - Present</h3>
