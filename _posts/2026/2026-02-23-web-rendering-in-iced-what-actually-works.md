@@ -47,11 +47,13 @@ iced_webview_v2 = { version = "0.1", features = ["litehtml"] }
 
 [Blitz](https://github.com/DioxusLabs/blitz) is DioxusLabs' Rust-native renderer. It uses Firefox's Stylo engine for CSS resolution and Taffy for layout. That means flexbox and grid support out of the box, all in pure Rust.
 
-Like litehtml, Blitz renders the full document to a buffer and the widget handles scrolling. No JavaScript, no incremental rendering, and `:hover` doesn't work through the embedding layer yet. But for static content with modern layouts, it's a significant step up from litehtml.
+Like litehtml, Blitz renders the full document to a buffer and the widget handles scrolling. No JavaScript, no incremental rendering, and `:hover` CSS styles aren't visually applied — the hover state is tracked (cursor changes work), but the full CPU re-render is skipped for performance. For static content with modern layouts, it's a significant step up from litehtml.
+
+Blitz is a git-only dependency — you need to build from the repo, not crates.io:
 
 ```toml
 [dependencies]
-iced_webview_v2 = { version = "0.1", features = ["blitz"] }
+iced_webview_v2 = { version = "0.1", default-features = false, features = ["blitz"] }
 ```
 
 ### 3. Servo — The Full Browser Engine
@@ -60,15 +62,17 @@ iced_webview_v2 = { version = "0.1", features = ["blitz"] }
 
 [Servo](https://servo.org/) is an experimental browser engine, originally from Mozilla Research and now hosted at Linux Foundation Europe. HTML5, CSS3, JavaScript via SpiderMonkey — the full stack. I thought Servo would be the answer. It turns out the story is more nuanced than that.
 
-Servo required a fundamentally different rendering approach. Instead of rendering to a pixel buffer that the widget scrolls, Servo manages its own viewport — I had to build a shader widget that uploads the engine's pixel buffers to a GPU texture each frame.
+Servo required a fundamentally different rendering approach. Instead of rendering to a pixel buffer that the widget scrolls, Servo manages its own viewport — I had to build a shader widget that uploads the engine's pixel buffers to a persistent GPU texture whenever Servo signals a new frame is ready.
 
 When it works, it works great. Pages render correctly, JavaScript executes, the layout matches what you'd expect from a browser. But SpiderMonkey crashes on pages with heavy JavaScript. Not every time - just often enough that you can't ship it for general use.
 
-On top of that, Servo pulls in a massive dependency tree and produces binaries in the 50-150 MB range. Text selection isn't wired through the embedding API yet. And since both Servo and Blitz depend on Stylo, I had to use Blitz from source instead of crates.io to get matching versions.
+On top of that, Servo pulls in a massive dependency tree and produces binaries in the 50-150 MB range. Text selection works visually within Servo (including Ctrl+C via its internal clipboard handling), but the selection can't be queried from the embedding API. And since both Servo and Blitz depend on Stylo, I had to use Blitz from source instead of crates.io to get matching versions.
+
+Like Blitz, Servo is a git-only dependency — build from the repo:
 
 ```toml
 [dependencies]
-iced_webview_v2 = { version = "0.1", features = ["servo"] }
+iced_webview_v2 = { version = "0.1", default-features = false, features = ["servo"] }
 ```
 
 ### 4. CEF / Chromium — The Pragmatic Choice
@@ -105,10 +109,10 @@ The `Engine` trait abstraction in `iced_webview` handles this difference. You sw
 | **JavaScript** | No | No | Yes (SpiderMonkey) | Yes (V8) |
 | **Rendering** | Buffer + widget scroll | Buffer + widget scroll | Shader / GPU texture | Shader / GPU texture |
 | **Binary Size** | Small | Moderate | 50-150 MB | 200-300 MB |
-| **Rust Toolchain** | Stable | Stable | Stable | Stable |
+| **Rust Toolchain** | Stable (1.90+) | Stable (1.90+) | Stable (1.90+) | Stable (1.90+) |
 | **crates.io** | Yes | No (git dep) | No (git dep) | Yes |
 | **Stability** | Stable | Stable | Crashes (JS-heavy pages) | Stable |
-| **Text Selection** | Yes | No | No (API gap) | Yes |
+| **Text Selection** | Yes | In blitz-dom, not yet wired | Yes (engine-managed, not queryable) | Yes |
 
 ## Where Things Stand
 
