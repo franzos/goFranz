@@ -51,9 +51,37 @@ $ echo 1 | sudo tee /sys/devices/system/cpu/cpufreq/boost
 1
 ```
 
-#### Guix-Style
+#### Guix-Style: AMD
 
-You can achieve the same via system config:
+For AMD Ryzen systems, `power-profiles-daemon` combined with `amd_pstate` is the cleaner approach. Add the kernel argument and service to your system config:
+
+```scheme
+(kernel-arguments
+ (cons* "amd_pstate=active"  ;; AMD Ryzen EPP power management
+        %default-kernel-arguments))
+
+(services
+ (cons*
+  (service power-profiles-daemon-service-type)
+  ...))
+```
+
+Then set the power-saver profile, which disables turbo boost and maximizes power saving:
+
+```bash
+$ powerprofilesctl set power-saver
+```
+
+This persists across reboots (stored in `/var/lib/power-profiles-daemon/state.ini`). Verify with:
+
+```bash
+$ powerprofilesctl get
+power-saver
+```
+
+#### Guix-Style: Intel
+
+For Intel systems, TLP gives you more granular control:
 
 ```scheme
 (service tlp-service-type
@@ -69,7 +97,7 @@ You can achieve the same via system config:
 
 The default fan control on the Framework laptop is sub-optimal. It tends to ramp up the fans too quickly, or runs them at higher speeds than necessary.
 
-The following steps assume that you have access to `ectool` and `fw-fanctrl`, both of which can be found on the on the [panther](https://channels.pantherx.org/panther.git/plain/README.md) channel.
+The following steps assume that you have access to `ectool` and `fw-fanctrl`, both of which can be found on the on the [panther](https://codeberg.org/gofranz/panther) channel.
 
 Spawn a shell with the required dependencies:
 
@@ -116,6 +144,8 @@ Active: True
 DefaultStrategy: 'lazy'
 DischargingStrategy: ''
 ```
+
+**Update: 2026-03-12** — Split the Guix-Style section into AMD and Intel. AMD systems work better with `power-profiles-daemon` + `amd_pstate=active`; Intel systems can stick with TLP.
 
 ### Credits
 
