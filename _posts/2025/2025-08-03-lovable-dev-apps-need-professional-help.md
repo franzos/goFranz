@@ -118,4 +118,4 @@ The most successful startups I work with treat AI as a powerful prototyping tool
 
 If you've built something with Lovable.dev, bolt.new, or similar platforms and are hitting the limits of vibe coding, I can help. From security audits to complete rebuilds, I specialize in transforming AI-generated prototypes into production-ready systems.
 
-[Get in touch for a consultation](/vibe-coding-rescue/) and let's turn your MVP into something that can handle real success.
+[Get in touch](/contact/) and let's turn your MVP into something that can handle real success.
