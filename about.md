@@ -17,25 +17,16 @@ Here's what I'm reading: [Bookshelf](/bookshelf/)
 
 ## Work
 
-I’m a principal engineer with 12+ years of experience delivering secure, scalable systems across industries and continents.
+Senior Identity Engineer at TWIN (IOTA Foundation). 12+ years building production systems across identity, crypto, IoT, and real estate — sometimes as the founder.
 
-My technical expertise includes:
+My current focus:
 
-- **Authentication & Security:** OAuth2/CIBA identity services, and mobile ID
-- **Blockchain:** Crypto exchanges, NFT marketplaces, and smart contract systems
-- **IoT:** Health monitoring platforms, real-time gateways, and device integration
-- **Web & Mobile:** Responsive applications using modern frameworks
+- **Digital Identity:** OID4VP, SD-JWT VC, W3C VCs, KERI/vLEI, OIDC/CIBA, OAuth 2.0
+- **Backend Systems:** TypeScript (Fastify, NestJS), Rust (Actix Web)
+- **Blockchain:** Smart contracts (Move, Solidity), NFT marketplaces with KYC, crypto exchanges
+- **IoT:** Patient monitoring, BLE/WebRTC, real-time gateways
 
-I focus on solutions that solve concrete problems and create lasting value—using technology as a tool, not an end in itself. My background spans everything from hands-on coding to leading development teams for clients from early-stage startups to international organizations.
-
-__Here's how I can help your organization:__
-
-- Architect and deploy secure, production-scale systems
-- Build authentication and identity solutions
-- Create blockchain and smart contract applications
-- Design IoT systems with real-time monitoring
-- Optimize infrastructure for cost and performance
-- Lead technical teams and project delivery
+I focus on solutions that solve concrete problems and create lasting value — using technology as a tool, not an end in itself.
 
 Checkout my [resume](/resume/) for more details on my work experience and skills.
 
