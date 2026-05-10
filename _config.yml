@@ -16,7 +16,7 @@ kramdown:
 pagination:
   enabled: true
   per_page: 20
-  permalink: '/blog/page/:num/'
+  permalink: "/blog/page/:num/"
 
 plugins:
   - jekyll-paginate-v2
@@ -47,6 +47,7 @@ exclude:
   - esbuild.config.js
   - TRAIL.md
   - TODO.md
+  - FRANZ-GUIDE.md
 
 collections:
   posts:
