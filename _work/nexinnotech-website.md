@@ -7,7 +7,7 @@ cover: nexinnotech-01.jpg
 bg: roman-kraft
 tags: "web development"
 introduction: Companies international website for product showcase.
-featured: true
+featured: false
 ---
 
 {% include project-image.html image="nexinnotech-01.jpg" %}

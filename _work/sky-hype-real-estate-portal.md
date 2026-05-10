@@ -7,7 +7,7 @@ cover: sky-hype-02.jpg
 bg: switzerland
 tags: "web development"
 introduction: Powerful, multi-lingual, worldwide real estate portal.
-featured: true
+featured: false
 ---
 
 ## The challenge

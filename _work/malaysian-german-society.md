@@ -6,7 +6,7 @@ client: "mgs"
 cover: mgs-01.jpg
 bg: malaysia
 introduction: Jekyll powered, static website for the Malaysian-German Society in Penang.
-featured: true
+featured: false
 ---
 
 {% include project-image.html image="mgs-01.jpg" %}

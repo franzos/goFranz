@@ -7,7 +7,7 @@ cover: onair-relaunch-01.png
 bg: california
 tags: "web development"
 introduction: Platform with integrated order management and staff backend for voice recordings.
-featured: true
+featured: false
 ---
 
 {% include project-image.html image="onair-relaunch-01.png" %}
