@@ -1,6 +1,6 @@
 ---
 title: "Customize Guix Shell Environment"
-summary: "How to set environment variables like OPENSSL_DIR within a Guix shell manifest for project-specific development environments."
+description: "How to set environment variables like OPENSSL_DIR within a Guix shell manifest for project-specific development environments."
 layout: blog
 source:
 date: 2025-7-7 0:00:00 +0000

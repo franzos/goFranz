@@ -3,7 +3,6 @@ layout: base
 title: "GEW UK Campaign"
 date: 2014-06-01 00:00:00 +0200
 client: "gewuk"
-cover: gewuk-01.jpg
 bg: david-east
 ---
 

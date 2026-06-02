@@ -1,6 +1,6 @@
 ---
 title: "The Perfect Linux Setup: Guix on a Framework Laptop"
-summary: "How I configured my Framework laptop with Guix for fingerprint login, YubiKey sudo, automatic theme switching, and more."
+description: "How I configured my Framework laptop with Guix for fingerprint login, YubiKey sudo, automatic theme switching, and more."
 layout: blog
 source:
 date: 2026-01-02 1:00:00 +0000

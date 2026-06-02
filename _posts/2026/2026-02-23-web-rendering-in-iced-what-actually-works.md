@@ -1,6 +1,6 @@
 ---
 title: "Web Rendering in Iced — What Actually Works"
-summary: "I tried four different rendering engines for web content in Iced. Here's what I learned."
+description: "I tried four different rendering engines for web content in Iced. Here's what I learned."
 layout: blog
 source:
 date: 2026-02-23 12:00:00 +0000

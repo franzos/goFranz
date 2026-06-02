@@ -1,6 +1,6 @@
 ---
 title: "AI prompt engineering: Teach your device or robot new tricks and personalities"
-summary: "Imagine AI devices or robots designed to learn and adapt to your unique needs, offering personalized experiences and moving beyond traditional apps and vendor restrictions. These versatile, connected solutions can be taught by users without the need for programming expertise."
+description: "Imagine AI devices or robots designed to learn and adapt to your unique needs, offering personalized experiences and moving beyond traditional apps and vendor restrictions. These versatile, connected solutions can be taught by users without the need for programming expertise."
 layout: blog
 source:
 date: 2023-03-28 0:00:00 +0000

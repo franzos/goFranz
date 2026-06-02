@@ -1,6 +1,6 @@
 ---
 title: "Jail Claude Code with Guix Shell Containers"
-summary: "How to run Claude Code in an isolated container on Guix, protecting your system from unintended changes."
+description: "How to run Claude Code in an isolated container on Guix, protecting your system from unintended changes."
 layout: blog
 source:
 date: 2026-01-02 0:00:00 +0000

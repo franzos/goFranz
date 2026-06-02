@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.name }} → GitHub</title>
+  <link rel="canonical" href="{{ page.repo }}">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={{ page.repo }}">
+  <script>location.replace({{ page.repo | jsonify }});</script>
+</head>
+<body>
+  <p>{{ page.name }} lives on GitHub — <a href="{{ page.repo }}">{{ page.repo }}</a>.</p>
+</body>
+</html>

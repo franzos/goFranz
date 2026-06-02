@@ -3,9 +3,10 @@ title: About Me
 layout: base
 bg: pattern_029
 permalink: /about/
+description: "I'm Franz Geffke — born in East Germany, at home between Europe, the Middle East and Southeast Asia. A developer, privacy advocate, and builder of systems that put users first."
 ---
 
-<u>My Name is Franz Geffke</u> - I was born and raised in East Germany but today my home is anywhere between Europe, the Middle-East and Southeast-Asia. New experiences and culture draw me to travel to, and live in different countries all around the world - With stronger foreign ties come a different, new perspective on all aspects of life and business which I continue to embrace.
+<strong>My Name is Franz Geffke</strong> - I was born and raised in East Germany but today my home is anywhere between Europe, the Middle-East and Southeast-Asia. New experiences and culture draw me to travel to, and live in different countries all around the world - With stronger foreign ties come a different, new perspective on all aspects of life and business which I continue to embrace.
 
 <div id="map" data-slideout-ignore></div>
 
@@ -30,15 +31,6 @@ I focus on solutions that solve concrete problems and create lasting value — u
 
 Checkout my [resume](/resume/) for more details on my work experience and skills.
 
-
-<div style="margin-left:2.5rem" markdown="0">
-<figure><embed style="max-height:400px" src="https://wakatime.com/share/@franz/864f220d-d347-456d-a511-5e9380433514.svg"></figure>
-</div>
-
 ### Recent Projects
 
 {% include about_featured.html %}
-
-<hr>
-
-[Have a project you'd like to discuss with me?](/contact/)

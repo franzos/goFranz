@@ -3,6 +3,7 @@ title: My GPG public key
 layout: base
 bg: mark-asthoff_02
 permalink: /gpg/
+description: "My GPG public key, so you can send me encrypted email or verify my signatures. Import it directly with curl and gpg --import."
 ---
 
 

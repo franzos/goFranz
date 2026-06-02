@@ -1,10 +1,12 @@
 <div class="image-wrapper">
-  <a href="#" class="thumbnail" style="background-image:url(/assets/images/projects/{{ include.image }});" 
-     data-bs-toggle="modal" 
-     data-bs-target="#imageModal" 
+  <button type="button" class="thumbnail"
+     data-bs-toggle="modal"
+     data-bs-target="#imageModal"
      data-image="/assets/images/projects/{{ include.image }}"
      data-caption="{% if include.caption %}{{ include.caption }}{% else %}{{ include.image }}{% endif %}"
+     aria-label="View larger image: {% if include.caption %}{{ include.caption }}{% else %}{{ include.image }}{% endif %}"
      title="Click to view larger image">
-    {% if include.caption %}<p class="caption">{{ include.caption }}</p>{% endif %}
-  </a>
+    <img src="/assets/images/projects/{{ include.image }}" alt="{% if include.caption %}{{ include.caption }}{% else %}{{ include.image }}{% endif %}" loading="lazy">
+    {% if include.caption %}<span class="caption">{{ include.caption }}</span>{% endif %}
+  </button>
 </div>

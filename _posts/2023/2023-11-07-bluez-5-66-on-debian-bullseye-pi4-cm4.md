@@ -1,6 +1,6 @@
 ---
 title: "Install Bluez 5.66 on Debian Bullseye (Pi4, CM4)"
-summary: Install newer Bluez version and update RPI bluetooth firmware
+description: Install newer Bluez version and update RPI bluetooth firmware
 layout: blog
 source:
 date: 2023-11-07 0:00:00 +0000

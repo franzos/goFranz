@@ -1,0 +1,254 @@
+profile:
+  - id: physical
+    q: "Do you operate your own physical offices or facilities?"
+  - id: employees
+    q: "Do you have employees beyond the founders?"
+  - id: cloud
+    q: "Do you run cloud or hosted infrastructure?"
+  - id: ai
+    q: "Do you build or ship AI/ML features to external users?"
+    unlocks: iso42001
+
+themes:
+  - id: management
+    iso_layer: "27001"
+    label: "Management System (Clauses 4–10)"
+    items:
+      - id: m-scope
+        q: "Have you defined the scope of your security programme in writing?"
+        controls: ["Clause 4.3 — Scope of the ISMS"]
+      - id: m-policy
+        q: "Is there a written information security policy leadership has signed off?"
+        controls: ["Clause 5.2 — Policy", "A.5.1 — Policies for information security"]
+      - id: m-roles
+        q: "Are security roles and responsibilities assigned to named people?"
+        controls: ["Clause 5.3 — Roles & responsibilities", "A.5.2 — Information security roles"]
+      - id: m-risk
+        q: "Do you run a documented information security risk assessment?"
+        controls: ["Clause 6.1.2 — Risk assessment", "Clause 8.2 — Risk assessment"]
+      - id: m-treatment
+        q: "Do you have a risk treatment plan and a Statement of Applicability?"
+        controls: ["Clause 6.1.3 — Risk treatment", "Clause 6.1.3 d) — Statement of Applicability"]
+      - id: m-objectives
+        q: "Have you set measurable security objectives?"
+        controls: ["Clause 6.2 — Information security objectives"]
+      - id: m-internal-audit
+        q: "Do you run internal audits of your security programme?"
+        controls: ["Clause 9.2 — Internal audit"]
+      - id: m-management-review
+        q: "Does leadership formally review security performance on a schedule?"
+        controls: ["Clause 9.3 — Management review"]
+      - id: m-improvement
+        q: "Do you track nonconformities and corrective actions?"
+        controls: ["Clause 10.1 — Nonconformity & corrective action", "Clause 10.2 — Continual improvement"]
+
+  - id: org
+    iso_layer: "27001"
+    label: "Organizational (A.5)"
+    items:
+      - id: o-access-policy
+        q: "Do you control who can access what, and review access regularly?"
+        controls:
+          - "A.5.15 — Access control"
+          - "A.5.16 — Identity management"
+          - "A.5.17 — Authentication information"
+          - "A.5.18 — Access rights"
+      - id: o-duties-mgmt
+        q: "Are duties separated so no single person can abuse a critical process, and does management enforce security responsibilities?"
+        controls:
+          - "A.5.3 — Segregation of duties"
+          - "A.5.4 — Management responsibilities"
+      - id: o-external-contacts
+        q: "Do you maintain contact with relevant authorities and security communities, and exchange threat intelligence?"
+        controls:
+          - "A.5.5 — Contact with authorities"
+          - "A.5.6 — Contact with special interest groups"
+          - "A.5.7 — Threat intelligence"
+      - id: o-projects
+        q: "Is information security built into projects from the start?"
+        controls:
+          - "A.5.8 — Information security in project management"
+      - id: o-classification
+        q: "Do you inventory your information assets, govern acceptable use and return, and classify, label and handle them by sensitivity?"
+        controls:
+          - "A.5.9 — Inventory of information and other associated assets"
+          - "A.5.10 — Acceptable use of information and other associated assets"
+          - "A.5.11 — Return of assets"
+          - "A.5.12 — Classification"
+          - "A.5.13 — Labelling"
+          - "A.5.14 — Information transfer"
+      - id: o-cloud-services
+        q: "Do you have policies governing the security of cloud services you use?"
+        na_if_no: cloud
+        controls:
+          - "A.5.23 — Information security for use of cloud services"
+      - id: o-suppliers
+        q: "Do you assess and monitor the security of your suppliers?"
+        controls:
+          - "A.5.19 — Supplier relationships"
+          - "A.5.20 — Addressing security in agreements"
+          - "A.5.21 — ICT supply chain"
+          - "A.5.22 — Monitoring supplier services"
+      - id: o-incident
+        q: "Do you have an incident response process people actually follow?"
+        controls:
+          - "A.5.24 — Incident management planning"
+          - "A.5.25 — Assessment of events"
+          - "A.5.26 — Response to incidents"
+          - "A.5.27 — Learning from incidents"
+          - "A.5.28 — Evidence collection"
+      - id: o-continuity
+        q: "Do you have business continuity / ICT readiness plans?"
+        controls:
+          - "A.5.29 — Security during disruption"
+          - "A.5.30 — ICT readiness for continuity"
+      - id: o-legal
+        q: "Do you meet legal, regulatory, IP and privacy obligations, protect records, and keep documented operating procedures?"
+        controls:
+          - "A.5.31 — Legal, statutory, regulatory and contractual requirements"
+          - "A.5.32 — Intellectual property rights"
+          - "A.5.33 — Protection of records"
+          - "A.5.34 — Privacy and protection of PII"
+          - "A.5.37 — Documented operating procedures"
+      - id: o-independent-review
+        q: "Is your security programme independently reviewed, and do you check that people actually follow your policies?"
+        controls:
+          - "A.5.35 — Independent review of information security"
+          - "A.5.36 — Compliance with policies, rules and standards for information security"
+
+  - id: people
+    iso_layer: "27001"
+    label: "People (A.6)"
+    items:
+      - id: pe-screening
+        q: "Do you screen new hires and set security terms in their contracts?"
+        na_if_no: employees
+        controls: ["A.6.1 — Screening", "A.6.2 — Terms and conditions of employment"]
+      - id: pe-awareness
+        q: "Do staff get security awareness training, with a disciplinary process for breaches?"
+        na_if_no: employees
+        controls: ["A.6.3 — Information security awareness, education and training", "A.6.4 — Disciplinary process"]
+      - id: pe-termination
+        q: "Are security responsibilities defined for when someone leaves or changes role?"
+        na_if_no: employees
+        controls: ["A.6.5 — Responsibilities after termination or change of employment"]
+      - id: pe-confidentiality
+        q: "Do the people who handle your data sign confidentiality / non-disclosure agreements?"
+        controls: ["A.6.6 — Confidentiality or non-disclosure agreements"]
+      - id: pe-remote
+        q: "Do you have remote-working rules and a way for people to report security events?"
+        controls: ["A.6.7 — Remote working", "A.6.8 — Information security event reporting"]
+
+  - id: physical
+    iso_layer: "27001"
+    label: "Physical (A.7)"
+    items:
+      - id: ph-perimeter
+        q: "Are your premises physically secured and access-controlled?"
+        na_if_no: physical
+        controls:
+          - "A.7.1 — Physical security perimeters"
+          - "A.7.2 — Physical entry"
+          - "A.7.3 — Securing offices, rooms and facilities"
+          - "A.7.4 — Physical security monitoring"
+      - id: ph-environment
+        q: "Are facilities protected against environmental and utility threats?"
+        na_if_no: physical
+        controls:
+          - "A.7.5 — Protecting against physical and environmental threats"
+          - "A.7.8 — Equipment siting and protection"
+          - "A.7.11 — Supporting utilities"
+          - "A.7.12 — Cabling security"
+      - id: ph-workspace
+        q: "Do you secure work areas, enforce a clear desk / clear screen, and maintain equipment?"
+        na_if_no: physical
+        controls:
+          - "A.7.6 — Working in secure areas"
+          - "A.7.7 — Clear desk and clear screen"
+          - "A.7.13 — Equipment maintenance"
+      - id: ph-devices
+        q: "Are off-premises devices and storage media protected, and is equipment securely wiped before disposal or re-use?"
+        controls:
+          - "A.7.9 — Security of assets off-premises"
+          - "A.7.10 — Storage media"
+          - "A.7.14 — Secure disposal or re-use of equipment"
+
+  - id: tech
+    iso_layer: "27001"
+    label: "Technological (A.8)"
+    items:
+      - id: t-endpoint
+        q: "Are user endpoints, privileged access and authentication controlled?"
+        controls:
+          - "A.8.1 — User endpoint devices"
+          - "A.8.2 — Privileged access rights"
+          - "A.8.3 — Information access restriction"
+          - "A.8.5 — Secure authentication"
+          - "A.8.18 — Use of privileged utility programs"
+      - id: t-malware-vuln
+        q: "Do you run malware protection and manage technical vulnerabilities/patching?"
+        controls:
+          - "A.8.7 — Protection against malware"
+          - "A.8.8 — Management of technical vulnerabilities"
+          - "A.8.19 — Software on operational systems"
+      - id: t-backup-logging
+        q: "Do you manage capacity, take backups, maintain redundancy and keep monitored logs?"
+        controls:
+          - "A.8.6 — Capacity management"
+          - "A.8.13 — Information backup"
+          - "A.8.14 — Redundancy of information processing facilities"
+          - "A.8.15 — Logging"
+          - "A.8.16 — Monitoring activities"
+          - "A.8.17 — Clock synchronisation"
+      - id: t-crypto-network
+        q: "Do you use encryption and segregate/secure your networks?"
+        controls:
+          - "A.8.20 — Networks security"
+          - "A.8.21 — Security of network services"
+          - "A.8.22 — Segregation of networks"
+          - "A.8.23 — Web filtering"
+          - "A.8.24 — Use of cryptography"
+      - id: t-data-ops
+        q: "Do you manage system configuration, and control data deletion, masking and leakage?"
+        controls:
+          - "A.8.9 — Configuration management"
+          - "A.8.10 — Information deletion"
+          - "A.8.11 — Data masking"
+          - "A.8.12 — Data leakage prevention"
+      - id: t-secure-dev
+        q: "Do you build software securely (SDLC, testing, change control)?"
+        controls:
+          - "A.8.4 — Access to source code"
+          - "A.8.25 — Secure development lifecycle"
+          - "A.8.26 — Application security requirements"
+          - "A.8.27 — Secure system architecture"
+          - "A.8.28 — Secure coding"
+          - "A.8.29 — Security testing"
+          - "A.8.30 — Outsourced development"
+          - "A.8.31 — Separation of environments"
+          - "A.8.32 — Change management"
+          - "A.8.33 — Test information"
+          - "A.8.34 — Protection of information systems during audit testing"
+
+  - id: iso42001
+    iso_layer: "42001"
+    label: "AI Governance (ISO 42001)"
+    items:
+      - id: ai-impact
+        q: "Do you run AI impact assessments on people, groups and society?"
+        controls: ["ISO 42001 — AI system impact assessment"]
+      - id: ai-bias
+        q: "Do you detect, measure and mitigate algorithmic bias?"
+        controls: ["ISO 42001 — Fairness & bias controls"]
+      - id: ai-explain
+        q: "Can you explain why a model made a decision, to those who need it?"
+        controls: ["ISO 42001 — Transparency & explainability"]
+      - id: ai-oversight
+        q: "Do humans stay meaningfully in the loop on AI-driven decisions?"
+        controls: ["ISO 42001 — Human oversight"]
+      - id: ai-data-gov
+        q: "Do you govern training-data quality, provenance and validation?"
+        controls: ["ISO 42001 — AI data governance"]
+      - id: ai-lifecycle
+        q: "Do you version, monitor and retire models as managed artefacts?"
+        controls: ["ISO 42001 — Model lifecycle management"]

@@ -1,6 +1,6 @@
 ---
 title: "GuixSD on DigitalOcean"
-summary: "Step-by-step guide to convert a DigitalOcean Debian 9.5 droplet into a GuixSD installation, requiring at least 2GB memory for successful compilation."
+description: "Step-by-step guide to convert a DigitalOcean Debian 9.5 droplet into a GuixSD installation, requiring at least 2GB memory for successful compilation."
 layout: blog
 date: 2018-11-22 00:00:00 +0200
 category:

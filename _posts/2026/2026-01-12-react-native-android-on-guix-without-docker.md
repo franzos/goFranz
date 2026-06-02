@@ -1,6 +1,6 @@
 ---
 title: "Build React Native Android Apps on Guix in 5 Minutes"
-summary: "No Docker, no Android Studio. Just Guix and a few commands."
+description: "No Docker, no Android Studio. Just Guix and a few commands."
 layout: blog
 source:
 date: 2026-01-12 0:00:00 +0000

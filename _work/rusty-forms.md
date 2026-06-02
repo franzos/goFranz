@@ -6,8 +6,10 @@ client: "independent_lisbon"
 cover: rusty-forms-01.jpg
 bg: switzerland
 tags: "web development"
+category: "Forms"
 introduction: "Formshive: Form handling in Rust"
 featured: true
+product: true
 ---
 
 Formshive (foremerly Rusty Forms) is a (form-) data processing platform, written in Rust.

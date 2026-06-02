@@ -1,6 +1,6 @@
 ---
 title: "SEEED reTerminal display stm32 stuck in boot mode"
-summary: Attempts to get stm32 unstuck
+description: Attempts to get stm32 unstuck
 layout: blog
 source:
 date: 2023-11-11 0:00:00 +0000

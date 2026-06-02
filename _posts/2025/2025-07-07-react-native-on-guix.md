@@ -1,6 +1,6 @@
 ---
 title: "React Native (and Android Development) on Guix"
-summary: "React Native development on Guix, without Android Studio using Docker."
+description: "React Native development on Guix, without Android Studio using Docker."
 layout: blog
 source:
 date: 2025-7-7 0:00:00 +0000

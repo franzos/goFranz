@@ -6,8 +6,10 @@ client: "independent_lisbon"
 cover: gpt-muse-01.jpg
 bg: switzerland
 tags: "development"
+category: "AI Platform"
 introduction: "Privacy-first AI platform"
 featured: true
+product: true
 ---
 
 GPTMuse is a privacy-first AI platform that provides access to ChatGPT, Claude, Gemini, Grok and other leading AI models through a single interface.

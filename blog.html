@@ -1,8 +1,11 @@
 ---
-title: Blog
-layout: page_wide
+title: Writing
+layout: layout
+fil: true
 bg: pattern_018
 permalink: /blog/
+description: "Notes on what actually worked — Guix, Rust, self-hosting, AI tooling, identity and privacy. Hands-on writing with real data and honest caveats, since 2014."
+footer_tagline: "show your work, not just conclusions"
 pagination:
   enabled: true
   collection: posts
@@ -11,65 +14,51 @@ pagination:
   permalink: '/page/:num/'
 ---
 
-<ul class="projects clean">
-  {% for post in paginator.posts %}
-    <li class="project">
+{% assign post_count = site.posts | size %}
+
+<div class="wide fil-blogindex">
+  <div class="bi-head">
+    <h1><span class="bar"></span>Writing</h1>
+    <span class="meta">{{ post_count }} entries · since 2014</span>
+  </div>
+
+  <ul class="bi-idx">
+    {% for post in paginator.posts %}
+    <li>
       <a href="{{ post.url }}">
-        {{ post.title | truncate: 60 }}
-        {% if post.summary %}
-          <br/><small>{{ post.summary }}</small>
-        {% endif %}
+        <span class="m">{{ post.date | date: "%d %b %Y" }}{% if post.tags and post.tags.size > 0 %}<span class="tag">#{{ post.tags | first }}</span>{% endif %}</span>
+        <div class="bi-body">
+          <h2>{{ post.title }}</h2>
+          {% if post.summary %}<p>{{ post.summary }}</p>{% endif %}
+        </div>
       </a>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
 
-{% if paginator.total_pages > 1 %}
-<nav aria-label="Blog pagination">
-  <ul class="pagination justify-content-center">
+  {% if paginator.total_pages > 1 %}
+  <nav class="fil-pager" aria-label="Blog pagination">
     {% if paginator.previous_page %}
-      <li class="page-item">
-        <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
+      <a href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">‹ Prev</a>
     {% else %}
-      <li class="page-item disabled">
-        <span class="page-link" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </span>
-      </li>
+      <span class="off">‹ Prev</span>
     {% endif %}
-    
+
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
-        <li class="page-item active" aria-current="page">
-          <span class="page-link">{{ page }}</span>
-        </li>
+        <span class="on" aria-current="page">{{ page }}</span>
       {% elsif page == 1 %}
-        <li class="page-item">
-          <a class="page-link" href="/blog/">{{ page }}</a>
-        </li>
+        <a href="/blog/">{{ page }}</a>
       {% else %}
-        <li class="page-item">
-          <a class="page-link" href="/blog/page/{{ page }}/">{{ page }}</a>
-        </li>
+        <a href="/blog/page/{{ page }}/">{{ page }}</a>
       {% endif %}
     {% endfor %}
-    
+
     {% if paginator.next_page %}
-      <li class="page-item">
-        <a class="page-link" href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </li>
+      <a href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">Next ›</a>
     {% else %}
-      <li class="page-item disabled">
-        <span class="page-link" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </span>
-      </li>
+      <span class="off">Next ›</span>
     {% endif %}
-  </ul>
-</nav>
-{% endif %}
+  </nav>
+  {% endif %}
+</div>

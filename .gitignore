@@ -17,3 +17,4 @@ assets/js
 assets/css
 !assets/css/print.css
 .bundle
+.superpowers/

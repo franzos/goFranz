@@ -1,6 +1,6 @@
 ---
 title: "Automate testing with Docker Compose and Claude Code"
-summary: "Use Claude Code to write tests for your Docker Compose based project, and run them automatically."
+description: "Use Claude Code to write tests for your Docker Compose based project, and run them automatically."
 layout: blog
 source:
 date: 2025-6-19 0:00:00 +0000

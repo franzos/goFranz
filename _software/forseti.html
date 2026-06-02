@@ -1,0 +1,173 @@
+---
+layout: product
+product_id: forseti
+featured: true
+category: self-hosted
+weight: 2
+name: Forseti
+logo: /assets/images/forseti-logo.svg
+card_blurb: "Self-service UI & OAuth2 login / consent bridge for Ory Kratos + Hydra. Server-rendered in Rust. AGPL-3.0."
+title: "Forseti — self-service UI & OAuth2 bridge for Ory"
+image: /assets/images/software/og/forseti.png
+app_os: "Linux"
+license_spdx: "AGPL-3.0-only"
+og_alt: "Forseti — a self-service UI and OAuth2 login/consent bridge for Ory Kratos and Hydra, server-rendered in Rust. AGPL-3.0."
+description: "A self-service UI and OAuth2 login/consent/logout bridge for Ory Kratos + Ory Hydra — login, registration, recovery, MFA, consent and admin tooling, server-rendered in Rust. AGPL-3.0 + commercial."
+theme_dark: "#0e1018"
+theme_light: "#f4f5fa"
+---
+
+<!-- top bar -->
+<div class="topbar"><div class="wide">
+  <div class="wordmark">
+    <span class="bar"></span>
+    <span><span class="name">Forseti</span><span class="sub">an open-source project</span></span>
+  </div>
+  <div class="topright">
+    <a class="gf mono" href="https://gofranz.com">↗ goFranz</a>
+    {% include theme-toggle.html extra="tog" %}
+  </div>
+</div></div>
+
+<!-- hero -->
+<div class="wide hero">
+  <span class="eye">Self-service identity portal · Ory Kratos + Ory Hydra</span>
+  <h1>The pages your <em>identity</em> stack is missing</h1>
+  <p class="dek">A self-service UI and OAuth2 login / consent / logout bridge for Ory Kratos + Ory Hydra. Login, registration, recovery, MFA, consent and admin tooling — all server-rendered in Rust.</p>
+  <div class="ctas">
+    <a class="cta" href="https://github.com/franzos/forseti">Get it on GitHub</a>
+    <a class="cta ghost" href="#install">Install →</a>
+  </div>
+
+  <div class="idstrip">
+    <div class="c"><span class="k">License</span><span class="v">AGPL-3.0 + commercial</span></div>
+    <div class="c"><span class="k">Stack</span><span class="v">Rust · Axum</span></div>
+    <div class="c"><span class="k">Rendering</span><span class="v">Server-side</span></div>
+    <div class="c"><span class="k">Status</span><span class="v"><span class="dot">●</span> Pre-release</span></div>
+  </div>
+
+  <!-- bridge / flow diagram -->
+  <div class="bridge">
+    <div class="lbl">— the bridge —</div>
+    <div class="flow">
+      <div class="node"><span class="nk">browser</span><span class="nn">User</span></div>
+      <span class="arrow">→</span>
+      <div class="node core"><span class="nk">pages</span><span class="nn">Forseti</span></div>
+      <span class="arrow">→</span>
+      <div class="node engines">
+        <div class="eng"><span class="nk">identity</span><span class="nn">Kratos</span></div>
+        <div class="eng"><span class="nk">oauth2 / oidc</span><span class="nn">Hydra</span></div>
+      </div>
+      <span class="arrow dim">→</span>
+      <div class="node"><span class="nk">protected</span><span class="nn">Your app</span></div>
+    </div>
+    <div class="mocks">
+      <div class="mockcard">
+        <div class="mt">/login</div>
+        <div class="mh">Sign in</div>
+        <div class="mline"></div><div class="mline s"></div>
+        <div class="mbtn"></div>
+      </div>
+      <div class="mockcard">
+        <div class="mt">/consent</div>
+        <div class="mh">Grant access</div>
+        <div class="mline"></div><div class="mline s"></div>
+        <div class="mbtn steel"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- positioning line -->
+<div class="posit"><div class="wide narrow inner">
+  <p>Ory's engines are <b>excellent</b>, but <span class="g">headless</span>. You get APIs; your users need pages. <b>Forseti</b> fills that gap.</p>
+</div></div>
+
+<!-- features -->
+<section class="wide">
+  <div class="shead"><span class="idxnum">01</span><h2>What it does</h2><span class="meta">6 surfaces · server-rendered</span></div>
+  <div class="feat">
+    <div class="fcard"><span class="tab"></span><span class="fn">Kratos flows</span><h3>Every flow, rendered</h3><p>Login, registration, recovery, verification and settings — profile, password, MFA / TOTP, social logins, active sessions. No flow left as raw JSON.</p></div>
+    <div class="fcard"><span class="tab"></span><span class="fn">Hydra bridge</span><h3>OAuth2 screens</h3><p>Login, consent and logout screens for the authorization-code flow. The glue Ory leaves up to you, done properly.</p></div>
+    <div class="fcard"><span class="tab"></span><span class="fn">Admin</span><h3>Admin surface</h3><p>Manage identities, sessions and OAuth2 clients. Append-only audit log and a status dashboard so you can see what's happening.</p></div>
+    <div class="fcard"><span class="tab"></span><span class="fn">Multi-tenant</span><h3>Organizations</h3><p>Multi-tenant orgs with members, invites and branding — plus per-org OIDC claims, so one deployment serves many tenants.</p></div>
+    <div class="fcard"><span class="tab"></span><span class="fn">Security</span><h3>Production-minded</h3><p>CSRF on every form, signed cookies, rate-limited Dynamic Client Registration, and an account-deletion webhook saga. The boring parts, handled.</p></div>
+    <div class="fcard"><span class="tab"></span><span class="fn">Runtime</span><h3>Rust + Axum</h3><p>Server-rendered in Rust on Axum — no JS-framework overhead. Backed by PostgreSQL or SQLite, your call.</p></div>
+  </div>
+</section>
+
+<!-- how it works -->
+<section class="wide">
+  <div class="shead"><span class="idxnum">02</span><h2>How it works</h2><span class="meta">user → forseti → ory → app</span></div>
+  <div class="steps">
+    <div class="step"><span class="sn">01</span><h4>User hits a page</h4><p>Someone lands on <code>/login</code>, <code>/registration</code> or an OAuth2 <code>/consent</code> screen. Forseti serves a real, branded HTML page — not a redirect into an API.</p></div>
+    <div class="step"><span class="sn">02</span><h4>Forseti talks to Ory</h4><p>It drives the Kratos self-service flows and the Hydra login / consent / logout requests over their admin APIs, handling CSRF, cookies and state along the way.</p></div>
+    <div class="step"><span class="sn">03</span><h4>Your app gets a session</h4><p>Kratos issues the session; Hydra issues the tokens for the authorization-code flow. Your app just trusts Ory — Forseti was only ever the front door.</p></div>
+  </div>
+</section>
+
+<!-- install -->
+<section class="wide" id="install">
+  <div class="shead"><span class="idxnum">03</span><h2>Install</h2><span class="meta">container or binary</span></div>
+  <div class="methods">
+    <a class="method" href="https://github.com/franzos/forseti/pkgs/container/forseti"><b>podman</b> ghcr.io</a>
+    <a class="method" href="https://github.com/franzos/forseti/releases"><b>↓</b> linux x86_64</a>
+    <a class="method" href="https://github.com/franzos/forseti/releases"><b>↓</b> linux aarch64</a>
+  </div>
+  <div class="installterms">
+    <div class="term">
+      <div class="bar"><i></i><i></i><i></i><span style="margin-left:.4rem">run the binary · x86_64-linux</span></div>
+<div class="body"><span class="c"># grab the latest release — aarch64 is on the releases page too</span>
+<span class="p">curl</span> -L -o forseti.tar.gz https://github.com/franzos/forseti/releases/latest/download/forseti-x86_64-unknown-linux-gnu.tar.gz
+<span class="p">tar</span> -xzf forseti.tar.gz
+<span class="p">cd</span> forseti-x86_64-unknown-linux-gnu
+<span class="c"># copy the example config, edit it, then run</span>
+<span class="p">cp</span> config.example.toml config.toml
+<span class="s">./forseti</span></div>
+    </div>
+    <div class="term">
+      <div class="bar"><i></i><i></i><i></i><span style="margin-left:.4rem">run with podman / docker</span></div>
+<div class="body"><span class="p">podman</span> pull ghcr.io/franzos/forseti:latest
+<span class="p">podman</span> run --rm -p 3000:3000 \
+  -v ./config.toml:/app/config.toml:ro \
+  ghcr.io/franzos/forseti:latest</div>
+    </div>
+  </div>
+  <p class="installnote">The binary needs <code>libpq5</code> (Debian/Ubuntu) or <code>libpq</code> elsewhere; the container bundles it. Point <code>config.toml</code> at your Kratos and Hydra admin endpoints — PostgreSQL or SQLite, both work.</p>
+</section>
+
+<!-- licensing + status -->
+<section class="wide">
+  <div class="shead"><span class="idxnum">04</span><h2>Licensing</h2><span class="meta">open core · commercial add-ons</span></div>
+  <div class="lic-wrap">
+    <div class="licbox">
+      <div class="lk">Open source</div>
+      <h4>AGPL-3.0 core</h4>
+      <p>The core is AGPL-3.0 — clone it, run it, change it. If you ship it as a service, the AGPL terms apply. Fair and predictable.</p>
+    </div>
+    <div class="licbox steel">
+      <div class="lk">Commercial</div>
+      <h4>Paid features</h4>
+      <p>Some features live under <code>src/commercial/</code> and need a commercial license. No upsell wall here — if you reach for them, you'll know. <a href="https://github.com/franzos/forseti">Details on GitHub →</a></p>
+    </div>
+  </div>
+  <div class="status-note">
+    <span class="badge">Pre-release</span>
+    <p>Forseti is in active development. The core flows work end-to-end against the Ory playground, but the APIs, config and schema are still moving. Pin a release, read the changelog, and don't be surprised by breaking changes yet.</p>
+  </div>
+</section>
+
+<!-- closing -->
+<section class="closing"><div class="wide inner">
+  <span class="eye">// the front door for Ory</span>
+  <h2>Give your identity stack a face</h2>
+  <a class="cta" href="https://github.com/franzos/forseti">Get it on GitHub →</a>
+  <div class="sub">github.com/franzos/forseti · AGPL-3.0 + commercial</div>
+</div></section>
+
+<!-- footer -->
+<footer class="wide foot">
+  <span>Forseti — AGPL-3.0 + commercial</span>
+  <span class="mid mono">a <a href="https://gofranz.com">goFranz</a> project</span>
+  <span class="right"><a href="https://github.com/franzos/forseti">GitHub ↗</a><a href="https://gofranz.com">↗ gofranz.com</a></span>
+</footer>

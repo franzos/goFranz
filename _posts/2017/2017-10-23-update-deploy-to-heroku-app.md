@@ -1,6 +1,6 @@
 ---
 title: "Manually update app after 'Deploy to Heroku' on Github"
-summary: "Instructions for manually updating Heroku apps after using the 'Deploy to Heroku' button on GitHub, including CLI setup and login steps."
+description: "Instructions for manually updating Heroku apps after using the 'Deploy to Heroku' button on GitHub, including CLI setup and login steps."
 layout: blog
 date: 2017-10-23 00:00:00 +0200
 category:

@@ -1,6 +1,6 @@
 ---
 title: "LLM models that run well on your laptop"
-summary: "A quick overview of some interesting LLM models that run well on modest hardware"
+description: "A quick overview of some interesting LLM models that run well on modest hardware"
 layout: blog
 source:
 date: 2025-09-09 0:00:00 +0000

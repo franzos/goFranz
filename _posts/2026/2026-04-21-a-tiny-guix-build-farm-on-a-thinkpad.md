@@ -1,6 +1,6 @@
 ---
 title: "A Tiny Guix Build Farm on a ThinkPad"
-summary: "Offloading Guix builds to a LAN ThinkPad, then serving the substitutes from a static file host."
+description: "Offloading Guix builds to a LAN ThinkPad, then serving the substitutes from a static file host."
 layout: blog
 source:
 date: 2026-04-21 0:00:00 +0000

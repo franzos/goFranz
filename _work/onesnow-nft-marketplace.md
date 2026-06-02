@@ -6,6 +6,7 @@ client: "onesnow"
 cover: onesnow-nft-01.png
 bg: roman-kraft
 tags: "web development"
+category: "Blockchain"
 introduction: OnesMarket makes it easy to create new NFT's without prior experience of blockchain technology.
 featured: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "OneGram ICO - a close look"
-summary: "Analysis of OneGram's ICO promising gold-backed cryptocurrency stored at Dubai International Airport, examining the credibility and setup behind the project."
+description: "Analysis of OneGram's ICO promising gold-backed cryptocurrency stored at Dubai International Airport, examining the credibility and setup behind the project."
 layout: blog
 source:
 date: 2017-05-14 08:00:00 +0200

@@ -10,19 +10,12 @@
     "build:assets": "node esbuild.config.js",
     "dev": "node esbuild.config.js --watch",
     "watch": "node esbuild.config.js --watch",
-    "sass": "sass src/scss/main.scss:assets/css/main.min.css --style=compressed"
+    "sass": "sass src/scss/main.scss:assets/css/main.min.css src/scss/software-stackpit.scss:assets/css/software-stackpit.min.css src/scss/software-forseti.scss:assets/css/software-forseti.min.css src/scss/software-guix-rs.scss:assets/css/software-guix-rs.min.css src/scss/software-iced-webview.scss:assets/css/software-iced-webview.min.css src/scss/iso-assessment.scss:assets/css/iso-assessment.min.css src/scss/leaflet.scss:assets/css/leaflet.min.css --style=compressed --no-source-map"
   },
   "dependencies": {
-    "axios": "^0.21.0",
     "bootstrap": "^5.3.0",
-    "chart.js": "^2.7.2",
-    "exlink": "^2.3.0",
-    "highlight.js": "^11.7.0",
-    "jquery": "1.12.4",
     "mapbox.js": "^3.1.1",
-    "mermaid": "^11.7.0",
-    "swipebox": "^1.4.6",
-    "vue": "^2.5.16"
+    "mermaid": "^11.7.0"
   },
   "devDependencies": {
     "esbuild": "^0.19.0",

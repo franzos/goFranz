@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% include theme-script.html %}
+
+  {% seo %}
+
+  {%- if page.image %}
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  {%- if page.og_alt %}
+  <meta property="og:image:alt" content="{{ page.og_alt }}">
+  <meta name="twitter:image:alt" content="{{ page.og_alt }}">
+  {%- endif %}
+  {%- endif %}
+  <meta name="author" content="Franz Geffke">
+  <meta name="fediverse:creator" content="@franzs@social.tchncs.de">
+
+  {%- if page.app_os %}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":{{ page.name | jsonify }},"description":{{ page.description | jsonify }},"applicationCategory":"DeveloperApplication","operatingSystem":{{ page.app_os | jsonify }},"url":{{ page.url | absolute_url | jsonify }},"image":{{ page.image | absolute_url | jsonify }},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Person","name":"Franz Geffke","url":"https://gofranz.com"}{% if page.license_spdx %},"license":{{ page.license_spdx | jsonify }}{% endif %}}
+  </script>
+  {%- endif %}
+
+  {% include favicons.html %}
+  <meta name="theme-color" content="{{ page.theme_light | default: '#f4f5fa' }}" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="{{ page.theme_dark | default: '#0e1018' }}" media="(prefers-color-scheme: dark)">
+
+  <link href="/assets/css/software-{{ page.product_id }}.min.css" rel="stylesheet">
+</head>
+
+<body class="software software-{{ page.product_id }}">
+  {{ content }}
+
+  {% include analytics.html %}
+</body>
+</html>

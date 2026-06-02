@@ -1,0 +1,40 @@
+<script>
+  // mapbox.min.js is deferred, so it is ready by DOMContentLoaded.
+  document.addEventListener('DOMContentLoaded', function () {
+  L.mapbox.accessToken = 'pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2oyN2h2M2VnMDA1bTJxbzY4dGhhc2V4NCJ9.Hb-yaLByaOY9LR7SF7JxmA';
+  var filMap = L.mapbox.map('{{ include.map_id }}')
+      .setView([27.2741606, 3.2739257], 2);
+  L.mapbox.styleLayer('mapbox://styles/dkkma/cj27hvld100112smweocii6o3').addTo(filMap);
+  var filLayer = L.mapbox.featureLayer().addTo(filMap);
+  var filGeojson = {
+      type: 'FeatureCollection',
+      features: [{% for place in site.data.places %}{
+          type: 'Feature',
+          properties: {
+              title: 'Life in {{ place.city }}, {{ place.country }}',
+              'marker-color': '{{ include.marker_color }}',
+              'marker-size': 'small',
+              'marker-symbol': 'building',
+              'description': '{{ place.introduction }}'
+          },
+          geometry: { type: 'Point', coordinates: [{{ place.longitude }}, {{ place.latitude }}] }
+      },
+      {% endfor %}
+      {% for client in site.clients %}{% if client.city != "Tehran" %}{
+          type: 'Feature',
+          properties: {
+              title: 'Client in {{ client.city }}, {{ client.country }}',
+              'marker-color': '{{ include.marker_color }}',
+              'marker-size': 'small',
+              'marker-symbol': 'suitcase',
+              'description': '{{ client.introduction }}'
+          },
+          geometry: { type: 'Point', coordinates: [{{ client.map }}] }
+      }{% if forloop.last %}{% else %},{% endif %}{% endif %}
+      {% endfor %}
+    ]
+  };
+  filMap.scrollWheelZoom.disable();
+  filLayer.setGeoJSON(filGeojson);
+  });
+</script>

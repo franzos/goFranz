@@ -1,6 +1,6 @@
 ---
 title: "All in on Sway with Guix"
-summary: Notes on what I have installed, and how-to fix things.
+description: Notes on what I have installed, and how-to fix things.
 layout: blog
 source:
 date: 2023-12-27 0:00:00 +0000

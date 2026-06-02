@@ -1,6 +1,6 @@
 ---
 title: "Supercharge Guix Shell with direnv"
-summary: "How to automatically activate Guix shell environments when entering a project directory using direnv."
+description: "How to automatically activate Guix shell environments when entering a project directory using direnv."
 layout: blog
 source:
 date: 2025-12-07 0:00:00 +0000

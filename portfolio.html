@@ -6,10 +6,17 @@ permalink: /portfolio/
 welcome:
 ---
 
-<div class="row">
+<div class="fil-portfolio">
   {% for work in site.work reversed %}
-    <div class="col-md-6 col-lg-4 mb-4">
-      {% include project-item.html work=work %}
-    </div>
+    {% assign pc = site.clients | where: "client", work.client | first %}
+    <a href="{{ work.url }}" class="pf-card">
+      {% if work.cover %}<span class="pf-cover" style="background-image:url(/assets/images/projects/preview/{{ work.cover }});"></span>{% endif %}
+      <span class="pf-body">
+        {% if work.category %}<span class="c">{{ work.category }}</span>{% elsif work.tags %}<span class="c">{{ work.tags | first }}</span>{% endif %}
+        <h4>{{ work.title }}</h4>
+        {% if work.introduction %}<p>{{ work.introduction | truncate: 110 }}</p>{% endif %}
+        {% if pc %}<span class="loc">{{ pc.city }}{% if pc.country %}, {{ pc.country }}{% endif %}</span>{% endif %}
+      </span>
+    </a>
   {% endfor %}
 </div>

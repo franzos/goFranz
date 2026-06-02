@@ -17,10 +17,9 @@ If you don't even want me to know that you're visiting, you can opt-out below:
 
 ## External
 
-This website also connects to three, external API's. To retrieve comments, to get the latest weather and to download the required set of maps to make this site look as good as it does.
+This website also connects to one external API: to download the required set of maps to make this site look as good as it does.
 
-1. Weather [query.yahooapis.com](https://query.yahooapis.com)
-2. Maps: [api.mapbox.com](https://api.mapbox.com)
+1. Maps: [api.mapbox.com](https://api.mapbox.com)
 
 ## Your Data
 
@@ -28,16 +27,9 @@ Depending on how you interact with this website, different data will be submitte
 
 ### Just visting
 
-Unless your browser is set to "Do Not Track", your visit will be recorded in my Manotog, a self-hosted, open-source analytics software.
+Unless your browser is set to "Do Not Track", your visit will be recorded in my Matomo (formerly Piwik), a self-hosted, open-source analytics software.
 
 - 1 byte of your IP address is anonymized
-- no data is shared with 3rd parties
-
-### Leaving a comment
-
-If you're leaving a comment, you submit your email address and chosen password to Talk, a self-hosted, open source commenting software. There's no additional tracking, and your data will never leave the software. It will only be used to authenticate you against the service.
-
-- uses email address and password to authenticate you
 - no data is shared with 3rd parties
 
 ### Getting in touch

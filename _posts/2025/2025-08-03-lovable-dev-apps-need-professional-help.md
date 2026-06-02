@@ -1,6 +1,6 @@
 ---
 title: "From Vibe Coding to Production: Why Your Lovable.dev MVP Needs Professional Help"
-summary: "AI-generated apps are fantastic for validation—but terrible for scaling. Here's what happens when your MVP gets traction."
+description: "AI-generated apps are fantastic for validation—but terrible for scaling. Here's what happens when your MVP gets traction."
 layout: blog
 source:
 date: 2025-08-03 0:00:00 +0000

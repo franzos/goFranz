@@ -1,0 +1,204 @@
+---
+layout: product
+product_id: iced-webview
+featured: true
+category: desktop
+weight: 2
+name: iced_webview
+card_blurb: "Embed web views in iced apps — pick a rendering engine (litehtml, Blitz, Servo or CEF), drop a widget in your view. A Rust library. Apache-2.0."
+title: "iced_webview — embed web content in iced"
+image: /assets/images/software/og/iced-webview.png
+app_os: "Linux, macOS, Windows"
+license_spdx: "Apache-2.0"
+og_alt: "iced_webview — a Rust library to embed web views in iced applications, with a choice of rendering engine: litehtml, Blitz, Servo or CEF. Apache-2.0."
+description: "A Rust library to embed web views in iced applications. Pick a rendering engine — litehtml, Blitz, Servo or CEF — and render HTML inside your own widget tree. Apache-2.0."
+theme_dark: "#0a0e14"
+theme_light: "#eef2f6"
+---
+
+<!-- TOP BAR -->
+<div class="topbar"><div class="wide">
+  <a class="wordmark" href="#" aria-label="iced_webview">
+    <span class="mk"></span>
+    <span class="tx">
+      <span class="name">iced<b>_webview</b></span>
+      <span class="sub">a webview for iced</span>
+    </span>
+  </a>
+  <div class="topright">
+    <a href="#engines">Engines</a>
+    <a href="#use">Use it</a>
+    <a href="#install">Install</a>
+    <a href="https://github.com/franzos/iced_webview_v2">GitHub</a>
+    <a href="https://gofranz.com" class="mono">↗ goFranz</a>
+    {% include theme-toggle.html extra="tgl" %}
+  </div>
+</div></div>
+
+<!-- HERO — headline + facts left, minimal embed snippet right -->
+<div class="wide hero">
+  <div class="hgrid">
+    <div>
+      <span class="eye">a rust library · for iced</span>
+      <h1>Put a <em>web view</em> in your iced app</h1>
+      <p class="dek">A library to embed web content in <a href="https://iced.rs">iced</a> applications. Pick a rendering engine, add the widget to your <code>view()</code>, and render HTML inside your own widget tree — not a separate window, not a screenshot.</p>
+      <div class="ctas">
+        <a class="cta" href="https://crates.io/crates/iced_webview_v2">crates.io</a>
+        <a class="cta ghost" href="https://github.com/franzos/iced_webview_v2">GitHub →</a>
+      </div>
+      <div class="idstrip">
+        <div class="c"><span class="k">Crate</span><span class="v">iced_webview_v2</span></div>
+        <div class="c"><span class="k">For iced</span><span class="v">0.14</span></div>
+        <div class="c"><span class="k">License</span><span class="v">Apache-2.0</span></div>
+        <div class="c"><span class="k">Status</span><span class="v"><span class="dot">●</span> 0.1 · pre-1.0</span></div>
+      </div>
+    </div>
+    <!-- minimal embed — the stable surface of the API -->
+    <div class="term">
+      <div class="bar"><i class="a"></i><i class="s"></i><i></i><span class="ttl">main.rs</span></div>
+<div class="body"><span class="c">// pick a rendering engine — swap the type, nothing else</span>
+<span class="kw">type</span> <span class="ty">Engine</span> = iced_webview::<span class="ty">Litehtml</span>;
+<span class="c">//                          Blitz · Servo · Cef</span>
+
+<span class="kw">let</span> webview = <span class="ty">WebView</span>::&lt;<span class="ty">Engine</span>, _&gt;::<span class="fn">new</span>()
+    .<span class="fn">on_create_view</span>(<span class="ty">Message</span>::Ready)
+    .<span class="fn">on_action</span>(<span class="ty">Message</span>::WebView);
+
+<span class="c">// then, in your view():</span>
+self.webview.<span class="fn">view</span>().<span class="fn">map</span>(<span class="ty">Message</span>::WebView)</div>
+    </div>
+  </div>
+</div>
+
+<!-- positioning line -->
+<div class="posit"><div class="wide">
+  <p>iced has no built-in way to show web content — your options were a screenshot or a whole second process. <b>iced_webview wires a real renderer into iced's widget tree</b>, and lets you choose how heavy that renderer is.</p>
+</div></div>
+
+<!-- ENGINES -->
+<section class="wide" id="engines">
+  <div class="shead"><span class="idxnum">01</span><h2>Pick an engine</h2><span class="meta">one widget · four backends</span></div>
+  <div class="engines">
+    <div class="eng">
+      <div class="top"><span class="en">litehtml</span><span class="badge">default</span></div>
+      <p>Lightweight CPU renderer for static HTML/CSS — think emails and documentation. Small, no surprises.</p>
+      <div class="stats">
+        <div class="stat"><span class="sk">JavaScript</span><span class="sv no">No</span></div>
+        <div class="stat"><span class="sk">CSS</span><span class="sv">flexbox</span></div>
+        <div class="stat"><span class="sk">Footprint</span><span class="sv">small</span></div>
+      </div>
+    </div>
+    <div class="eng">
+      <div class="top"><span class="en">Blitz</span></div>
+      <p>Rust-native engine on Firefox's Stylo — modern CSS including grid, GPU-rasterized. No JS, by design.</p>
+      <div class="stats">
+        <div class="stat"><span class="sk">JavaScript</span><span class="sv no">No</span></div>
+        <div class="stat"><span class="sk">CSS</span><span class="sv">flex + grid</span></div>
+        <div class="stat"><span class="sk">Footprint</span><span class="sv">moderate</span></div>
+      </div>
+    </div>
+    <div class="eng">
+      <div class="top"><span class="en">Servo</span></div>
+      <p>A full browser engine — HTML5, CSS3, JS via SpiderMonkey. The most capable, and the heaviest to build.</p>
+      <div class="stats">
+        <div class="stat"><span class="sk">JavaScript</span><span class="sv yes">Yes</span></div>
+        <div class="stat"><span class="sk">CSS</span><span class="sv">full</span></div>
+        <div class="stat"><span class="sk">Footprint</span><span class="sv">large</span></div>
+      </div>
+    </div>
+    <div class="eng">
+      <div class="top"><span class="en">CEF</span></div>
+      <p>Chromium Embedded Framework — full Chromium compatibility via cef-rs. Ships Chromium binaries alongside you.</p>
+      <div class="stats">
+        <div class="stat"><span class="sk">JavaScript</span><span class="sv yes">Yes</span></div>
+        <div class="stat"><span class="sk">CSS</span><span class="sv">full</span></div>
+        <div class="stat"><span class="sk">Footprint</span><span class="sv">large</span></div>
+      </div>
+    </div>
+  </div>
+  <p class="enginenote">litehtml and Blitz are pure renderers — no JavaScript — and best for static or semi-static HTML. Servo and CEF are real browser engines with JS, at the cost of build complexity and binary size. <code>litehtml</code> is the default; the others are feature flags.</p>
+
+  <!-- render strip: same page, four engines -->
+  <div class="renders">
+    <div class="rshot"><div class="chrome">litehtml</div><img src="/assets/images/software/iced-webview/webview_litehtml.png" alt="An HTML page rendered by the litehtml engine inside an iced window" loading="lazy" width="2880" height="1875"></div>
+    <div class="rshot"><div class="chrome">Blitz</div><img src="/assets/images/software/iced-webview/webview_blitz.png" alt="The same HTML page rendered by the Blitz engine inside an iced window" loading="lazy" width="2880" height="1875"></div>
+    <div class="rshot"><div class="chrome">Servo</div><img src="/assets/images/software/iced-webview/webview_servo.png" alt="The same HTML page rendered by the Servo browser engine inside an iced window" loading="lazy" width="2880" height="1875"></div>
+    <div class="rshot"><div class="chrome">CEF</div><img src="/assets/images/software/iced-webview/webview_cef.png" alt="The same HTML page rendered by the CEF (Chromium) engine inside an iced window" loading="lazy" width="2880" height="1875"></div>
+  </div>
+</section>
+
+<!-- USE IT -->
+<section class="wide" id="use">
+  <div class="shead"><span class="idxnum">02</span><h2>Use it</h2><span class="meta">create · switch · render</span></div>
+  <div class="usewrap">
+    <div class="side">
+      <p>The widget owns its views. Create one with <code>Action::CreateView</code> — pass a <code>PageType::Url</code> or a raw <code>PageType::Html</code> string — then switch between views and render the active one.</p>
+      <p>One thing to remember: a periodic <code>Action::Update</code> <b>subscription</b> drives rendering and engine state. Wire it up and the rest is just messages.</p>
+      <p>Need explicit tabs? There's an <code>advanced</code> module that hands you a <code>ViewId</code> per view instead of plain indices.</p>
+    </div>
+    <div class="term">
+      <div class="bar"><i class="a"></i><i class="s"></i><i></i><span class="ttl">update / view / subscription</span></div>
+<div class="body"><span class="c">// load a page</span>
+<span class="ty">Action</span>::CreateView(<span class="ty">PageType</span>::Url(
+    <span class="st">"https://example.com"</span>.<span class="fn">into</span>(),
+))
+
+<span class="c">// switch to it once created</span>
+self.webview.<span class="fn">update</span>(<span class="ty">Action</span>::ChangeView(<span class="kw">0</span>))
+
+<span class="c">// drive rendering (required)</span>
+<span class="fn">time::every</span>(<span class="ty">Duration</span>::<span class="fn">from_millis</span>(<span class="kw">10</span>))
+    .<span class="fn">map</span>(|_| <span class="ty">Action</span>::Update)</div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTALL -->
+<section class="wide" id="install">
+  <div class="shead"><span class="idxnum">03</span><h2>Install</h2><span class="meta">cargo · feature flags</span></div>
+  <div class="methods">
+    <a class="method" href="https://crates.io/crates/iced_webview_v2"><b>crates.io</b> iced_webview_v2</a>
+    <a class="method" href="https://docs.rs/iced_webview_v2"><b>docs</b> docs.rs</a>
+    <a class="method" href="https://github.com/franzos/iced_webview_v2"><b>↗</b> source</a>
+  </div>
+  <div class="installterms">
+    <div class="term">
+      <div class="bar"><i class="a"></i><i class="s"></i><i></i><span class="ttl">add the crate</span></div>
+<div class="body"><span class="c"># litehtml engine, the default</span>
+<span class="p">cargo</span> add iced_webview_v2
+
+<span class="c"># your app needs iced too</span>
+<span class="p">cargo</span> add iced <span class="st">-F</span> advanced,image,tokio,lazy</div>
+    </div>
+    <div class="term">
+      <div class="bar"><i class="a"></i><i class="s"></i><i></i><span class="ttl">choose another engine</span></div>
+<div class="body"><span class="c"># swap litehtml for blitz / servo / cef</span>
+<span class="p">cargo</span> add iced_webview_v2 \
+  <span class="st">--no-default-features</span> <span class="st">-F</span> blitz</div>
+    </div>
+  </div>
+  <p class="installnote">Each engine carries its own build needs: <code>litehtml</code> wants <code>clang</code>/<code>libclang</code>, <code>Servo</code> is git-only and pulls system deps, and <code>CEF</code> downloads the Chromium binaries at build time. The repo's <code>README</code> and <code>manifest.scm</code> spell out the specifics, including the Guix/FHS dance for CEF.</p>
+
+  <div class="status-note">
+    <span class="badge">Pre-1.0</span>
+    <p><b>This is a 0.1.x library and it moves.</b> The embedding API is small and fairly settled, but the engines underneath travel at their own pace — Blitz is pre-alpha, Servo is git-only. Pin a version and read the <code>CHANGELOG</code> before you bump.</p>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing"><div class="wide inner">
+  <span class="eye">// render the web, in iced</span>
+  <h2>One widget. Your choice of engine.</h2>
+  <div class="ctas">
+    <a class="cta" href="https://crates.io/crates/iced_webview_v2">Get it on crates.io →</a>
+    <a class="cta ghost" href="https://github.com/franzos/iced_webview_v2">Read the source</a>
+  </div>
+  <div class="sub">crates.io/crates/iced_webview_v2 · Apache-2.0</div>
+</div></section>
+
+<!-- FOOTER -->
+<footer class="wide foot">
+  <span>iced_webview — Apache-2.0 · forked from LegitCamper/iced_webview</span>
+  <span class="mid">a <a href="https://gofranz.com">goFranz</a> project</span>
+  <span class="right"><a href="https://github.com/franzos/iced_webview_v2">GitHub ↗</a><a href="https://gofranz.com">↗ gofranz.com</a></span>
+</footer>

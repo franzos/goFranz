@@ -1,0 +1,12 @@
+{% if include.tagline %}{% assign tagline = include.tagline %}{% else %}{%
+assign tagline = "user sovereignty by design" %}{% endif %}
+
+<footer class="wide foot">
+    <span>goFranz © {{ site.time | date: "%Y" }}</span>
+    <span>{{ tagline }}</span>
+    <span
+        ><a href="/privacy/">Privacy</a> ·
+        <a href="https://github.com/franzos/goFranz">Source ↗</a></span
+    >
+    <a rel="me" href="https://social.tchncs.de/@franzs" hidden>Mastodon</a>
+</footer>

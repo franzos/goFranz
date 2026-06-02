@@ -6,8 +6,10 @@ client: "onesnow"
 bg: thailand
 cover: ones-01.jpg
 tags: "development"
+category: "Healthcare"
 introduction: "Monitoring at-home patients remotely."
 featured: true
+mermaid: true
 ---
 
 ## The Challenge

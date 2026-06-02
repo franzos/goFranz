@@ -1,6 +1,6 @@
 ---
 title: "Install these two privacy enhancing browser plugins"
-summary: "Two must-have browser plugins that eliminate advertising, reduce tracking, speed up websites, and make your browser more responsive."
+description: "Two must-have browser plugins that eliminate advertising, reduce tracking, speed up websites, and make your browser more responsive."
 layout: blog
 source:
 date: 2017-01-02 08:00:00 +0200

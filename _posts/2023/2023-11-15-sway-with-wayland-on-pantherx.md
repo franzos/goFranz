@@ -1,6 +1,6 @@
 ---
 title: "Sway with Wayland on PantherX OS"
-summary: A 3-step guide on how-to try Sway Desktop in a VM on PantherX.
+description: A 3-step guide on how-to try Sway Desktop in a VM on PantherX.
 layout: blog
 source:
 date: 2023-11-15 0:00:00 +0000

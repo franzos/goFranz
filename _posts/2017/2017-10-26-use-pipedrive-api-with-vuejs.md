@@ -1,6 +1,6 @@
 ---
 title: "Use Pipedrive API with Vue.js"
-summary: "Guide to integrating Pipedrive's API with Vue.js applications using API tokens and the Pipedrive API reference."
+description: "Guide to integrating Pipedrive's API with Vue.js applications using API tokens and the Pipedrive API reference."
 layout: blog
 date: 2017-10-26 00:00:00 +0200
 category:

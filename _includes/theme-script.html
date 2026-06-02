@@ -1,0 +1,56 @@
+<!-- Theme control, shared by every page. Resolves the theme before first
+     paint (no flash), then wires the segmented toggle. Three modes:
+     system / light / dark. 'system' follows the OS and reacts live. -->
+<script>
+  (function () {
+    var KEY = 'theme';
+    var root = document.documentElement;
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function storedMode() {
+      var v = localStorage.getItem(KEY);
+      return (v === 'light' || v === 'dark') ? v : 'system';
+    }
+    function resolve(mode) {
+      if (mode === 'light' || mode === 'dark') return mode;
+      return mq.matches ? 'dark' : 'light';
+    }
+    function apply(mode) {
+      var resolved = resolve(mode);
+      root.setAttribute('data-theme-mode', mode);
+      root.setAttribute('data-bs-theme', resolved);
+      document.querySelectorAll('[data-theme-set]').forEach(function (opt) {
+        opt.setAttribute('aria-pressed', opt.getAttribute('data-theme-set') === mode ? 'true' : 'false');
+      });
+      document.dispatchEvent(new CustomEvent('themeChanged', {
+        detail: { theme: resolved, mode: mode }
+      }));
+    }
+
+    // Run before the stylesheet paints to avoid a flash of the wrong theme.
+    apply(storedMode());
+
+    // Follow the OS only while in system mode.
+    mq.addEventListener('change', function () {
+      if (storedMode() === 'system') apply('system');
+    });
+
+    function init() {
+      document.querySelectorAll('[data-theme-set]').forEach(function (opt) {
+        opt.addEventListener('click', function () {
+          var mode = opt.getAttribute('data-theme-set');
+          if (mode === 'system') localStorage.removeItem(KEY);
+          else localStorage.setItem(KEY, mode);
+          apply(mode);
+        });
+      });
+      apply(storedMode());
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>

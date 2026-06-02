@@ -1,7 +1,8 @@
 ---
 title: "Load Testing and Scaling (Formshive with Apache Bench)"
-summary: "Architecture analysis for a web application: Exploring performance bottlenecks and scaling strategies."
+description: "Architecture analysis for a web application: Exploring performance bottlenecks and scaling strategies."
 layout: blog
+mermaid: true
 source:
 date: 2025-08-11 0:00:00 +0000
 category:

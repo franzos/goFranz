@@ -1,6 +1,6 @@
 ---
 title: "Create a todo list using Firebase and Vue.js"
-summary: "Tutorial for building a todo list application using Firebase for data storage and Vue.js with Vuefire for the frontend."
+description: "Tutorial for building a todo list application using Firebase for data storage and Vue.js with Vuefire for the frontend."
 layout: blog
 date: 2017-10-26 00:00:00 +0200
 category:

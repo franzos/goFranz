@@ -1,6 +1,6 @@
 ---
 title: "A Surface-Level Look at LLM Vendor Privacy"
-summary: "A quick overview of how AI vendors handle your data, focusing on privacy and tracking practices."
+description: "A quick overview of how AI vendors handle your data, focusing on privacy and tracking practices."
 layout: blog
 source:
 date: 2025-08-05 0:00:00 +0000

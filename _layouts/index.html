@@ -2,87 +2,102 @@
 layout: layout
 ---
 
-{% include nav.html %}
+{% assign posts_sorted = site.posts | sort: 'date' | reverse %}
+{% assign post_count = site.posts | size %}
+{% assign work_featured = site.work | where: "featured", true | where_exp: "w", "w.product != true" | sort: 'date' | reverse %}
 
-<div class="container content-wrapper">
-  <div class="row">
-    <div class="col-sm-5">
-      <h4 class="text-uppercase">Hey there</h4>
-      <p>
-        I build secure, scalable systems that solve real problems and create value for organizations and their users. Learn more <a href="/about/">about me</a>, or check out my own projects:.
-      </p>
-
-      <ul class="tiny">
-        <li>
-          <a href="https://gpt-muse.com" style="display: flex; align-items: flex-start; gap: 12px;">
-            <img src="/assets/images/gpt-muse-logo.svg" alt="GPTMuse Logo" style="padding: 0.5rem; height: 100%; max-height: 50px; min-height: 40px; flex-shrink: 0;">
-            <div>
-              GPTMuse
-              <br/>
-              <small>
-                Privacy-first AI platform with access to ChatGPT, Claude, Gemini, Grok and others. Pay-per-use pricing.
-              </small>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://formshive.com" style="display: flex; align-items: flex-start; gap: 12px;">
-            <img src="/assets/images/formshive-logo.svg" alt="Formshive Logo" style="padding: 0.5rem; height: 100%; max-height: 50px; min-height: 40px; flex-shrink: 0;">
-            <div>
-              Formshive
-              <br/>
-              <small>
-                Embed and process forms from your website; Pay as you go or self-host from €590/year.
-              </small>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://checkoutbay.com" style="display: flex; align-items: flex-start; gap: 12px;">
-            <img src="/assets/images/checkoutbay-logo.svg" alt="Checkoutbay Logo" style="padding: 0.5rem; height: 100%; max-height: 50px; min-height: 40px; flex-shrink: 0;">
-            <div>
-              Checkoutbay
-              <br/>
-              <small>
-                E-Commerce platform for SMEs and individuals; Pay as you go or self-host from €790/year.
-              </small>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-sm-7">
-      <h4 class="text-uppercase">Blog</h4>
-      <ul class="tiny">
-        {% assign all_items_sorted = site.posts | sort: 'date' | reverse %}
-        {% for post in all_items_sorted limit:6 %}
-        <li>
-          <a href="{{ post.url }}">
-            {{ post.title | truncate: 60 }}
-            <br/><small>{{ post.summary | truncate: 110 }}</small>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
+<div class="wide fil-hero">
+  <span class="eye">Senior Identity Engineer · AI orchestrator · ½ machine</span>
+  <h1>I build <em>systems</em> that solve real problems</h1>
+  <p class="dek">Secure, scalable software across identity, crypto, IoT and the web — sometimes the engineer, sometimes the founder.</p>
+  <a class="cta" href="/contact/">Start a project</a>
+  <a class="cta ghost" href="/about/">About me →</a>
+  <div class="idstrip">
+    <div class="c"><span class="k">Role</span><span class="v">Senior Identity Engineer @ TWIN (IOTA Foundation)</span></div>
+    <div class="c"><span class="k">Stack</span><span class="v">TypeScript · Rust · Move · Solidity</span></div>
+    <div class="c"><span class="k">Focus</span><span class="v">OID4VP · SD-JWT VC · W3C VC · KERI/vLEI</span></div>
   </div>
+</div>
 
-  <h4 class="text-uppercase">Latest work</h4>
-  <div class="row">
-    {% assign work = site.work | where:"featured",true | sort: 'date' | reverse
-    %} {% for work in work limit:4 %}
-    <div class="col-sm-6 col-lg-3 mb-4">
-      {% include project-item.html work=work card_height="h-100" %}
-    </div>
+<section class="wide">
+  <div class="shead"><span class="idxnum">01</span><h2>What I build</h2><span class="meta">SaaS · self-hosted · desktop</span></div>
+  <div class="prod-rowlabel"><span class="bar"></span>SaaS · hosted</div>
+  <div class="prod">
+    <a class="pcard has-logo" href="https://gpt-muse.com"><img class="plogo" src="/assets/images/gpt-muse-logo.svg" alt="GPTMuse logo" loading="lazy" width="44" height="44"><span class="tab"></span><span class="pn">GPTMuse</span><span class="desc">Privacy-first AI platform with access to ChatGPT, Claude, Gemini, Grok and others. Pay-per-use pricing.</span><span class="go">gpt-muse.com →</span></a>
+    <a class="pcard has-logo" href="https://formshive.com"><img class="plogo" src="/assets/images/formshive-logo.svg" alt="Formshive logo" loading="lazy" width="44" height="44"><span class="tab"></span><span class="pn">Formshive</span><span class="desc">Embed and process forms from your website; Pay as you go or self-host from €590/year.</span><span class="go">formshive.com →</span></a>
+    <a class="pcard has-logo" href="https://checkoutbay.com"><img class="plogo" src="/assets/images/checkoutbay-logo.svg" alt="Checkoutbay logo" loading="lazy" width="44" height="44"><span class="tab"></span><span class="pn">Checkoutbay</span><span class="desc">E-Commerce platform for SMEs and individuals; Pay as you go or self-host from €790/year.</span><span class="go">checkoutbay.com →</span></a>
+  </div>
+  {% assign featured_software = site.software | where: "featured", true | sort: "weight" %}
+  {% assign self_hosted = featured_software | where: "category", "self-hosted" %}
+  {% assign desktop = featured_software | where: "category", "desktop" %}
+
+  {% if self_hosted.size > 0 %}
+  <div class="prod-rowlabel"><span class="bar"></span>Self-hosted · open source</div>
+  <div class="prod prod-oss">
+    {% for sw in self_hosted %}
+    <a class="pcard{% if sw.logo %} has-logo{% endif %}" href="{{ sw.url }}">{% if sw.logo %}<img class="plogo" src="{{ sw.logo }}" alt="{{ sw.name }} logo" loading="lazy" width="44" height="44">{% endif %}<span class="tab"></span><span class="pn">{{ sw.name }}</span><span class="desc">{{ sw.card_blurb }}</span><span class="go">/software/{{ sw.product_id }} →</span></a>
     {% endfor %}
   </div>
+  {% endif %}
 
-  <p>
-    <small>
-      Timestamp: {{ site.time | date_to_string }};
-      <a href="https://github.com/franzos/f-a.nz">Source</a>
-    </small>
-  </p>
+  {% if desktop.size > 0 %}
+  <div class="prod-rowlabel"><span class="bar"></span>Desktop apps &amp; libraries</div>
+  <div class="prod prod-oss">
+    {% for sw in desktop %}
+    <a class="pcard{% if sw.logo %} has-logo{% endif %}" href="{{ sw.url }}">{% if sw.logo %}<img class="plogo" src="{{ sw.logo }}" alt="{{ sw.name }} logo" loading="lazy" width="44" height="44">{% endif %}<span class="tab"></span><span class="pn">{{ sw.name }}</span><span class="desc">{{ sw.card_blurb }}</span><span class="go">/software/{{ sw.product_id }} →</span></a>
+    {% endfor %}
+    <a class="pcard more" href="/software/"><span class="tab"></span><span class="pn">See all</span><span class="desc">Every app, library, CLI and tool I've shipped — including the smaller Rust crates that don't get a page of their own.</span><span class="go">/software · {{ site.software | size }} projects →</span></a>
+  </div>
+  {% endif %}
+</section>
 
-  <a rel="me" href="https://social.tchncs.de/@franzs" hidden>Mastodon</a>
-</div>
+<section class="wide">
+  <div class="shead"><span class="idxnum">02</span><h2>Latest writing</h2><span class="meta">{{ post_count }} entries · since 2014</span></div>
+  <ul class="idx">
+    {% for post in posts_sorted limit:5 %}
+    <li>
+      <a href="{{ post.url }}">
+        <span class="m">{{ post.date | date: "%d %b %Y" }}</span>
+        <h3>{{ post.title }}</h3>
+        {% if post.tags %}<span class="tag">#{{ post.tags | first }}</span>{% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="wide">
+  <div class="shead"><span class="idxnum">03</span><h2>Around the world</h2><span class="meta">projects &amp; places</span></div>
+  <div class="map-wrap">
+    <div class="map-side">
+      <h3>Where I've worked</h3>
+      <p>Born in East Germany; at home between Europe, the Middle East and Southeast Asia. The pins are projects and places.</p>
+      <span class="stat">↳ live map · glowing pins</span>
+    </div>
+    <div class="map-frame">
+      <div id="home-map" data-slideout-ignore></div>
+    </div>
+  </div>
+</section>
+
+<section class="wide">
+  <div class="shead"><span class="idxnum">04</span><h2>Selected work</h2></div>
+  <div class="work">
+    {% for work in work_featured limit:4 %}
+    <a href="{{ work.url }}">
+      {% if work.category %}<span class="c">{{ work.category }}</span>{% elsif work.tags %}<span class="c">{{ work.tags | first }}</span>{% endif %}
+      <h4>{{ work.title }}</h4>
+      {% assign client = site.clients | where: "client", work.client | first %}
+      {% if client %}<span class="loc">{{ client.city }}{% if client.country %}, {{ client.country }}{% endif %}</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wide inner">
+    <span class="eye">// let's talk</span>
+    <h2>Have something to build?</h2>
+    <a class="cta" href="/contact/">Contact Franz →</a>
+  </div>
+</section>

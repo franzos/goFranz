@@ -1,9 +1,15 @@
 ---
 layout: layout
+fil: true
 ---
 
-{% include nav.html %}
-
-<div class="wrapper page">
+<div class="wide fil-article fil-page fil-clientprofile">
+  {% include welcome_referral.html %}
   {% include client-details.html client=page %}
+
+  {% if content != "" %}
+  <article class="fil-prose">
+    {{ content }}
+  </article>
+  {% endif %}
 </div>

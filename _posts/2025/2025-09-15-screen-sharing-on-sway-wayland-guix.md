@@ -1,6 +1,6 @@
 ---
 title: "Screen Sharing on Sway/Wayland with Guix"
-summary: "How to enable screen sharing on Sway/Wayland using Guix"
+description: "How to enable screen sharing on Sway/Wayland using Guix"
 layout: blog
 source:
 date: 2025-09-15 0:00:00 +0000

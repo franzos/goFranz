@@ -1,6 +1,6 @@
 ---
 title: "How-To set-up a UASF / SegWit ready Litecoin node on Ubuntu"
-summary: "Guide to setting up a UASF/SegWit ready Litecoin node on Ubuntu Linux with minimum 2GB RAM and 16GB free disk space."
+description: "Guide to setting up a UASF/SegWit ready Litecoin node on Ubuntu Linux with minimum 2GB RAM and 16GB free disk space."
 layout: blog
 os:
   - Linux

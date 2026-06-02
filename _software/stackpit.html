@@ -1,0 +1,188 @@
+---
+layout: product
+product_id: stackpit
+featured: true
+category: self-hosted
+weight: 1
+name: Stackpit
+logo: /assets/images/stackpit-logo.svg
+card_blurb: "Self-hosted, Sentry-compatible error tracking. Single binary, single SQLite file, no external dependencies. MIT."
+title: "Stackpit — self-hosted error tracking"
+image: /assets/images/software/og/stackpit.png
+app_os: "Linux, macOS"
+license_spdx: "MIT"
+og_alt: "Stackpit — a drop-in, self-hosted replacement for Sentry. Single binary, single SQLite file, MIT licensed."
+description: "A drop-in, self-hosted replacement for Sentry's event ingestion and browsing. Single binary, single SQLite file, no external dependencies. MIT licensed."
+theme_dark: "#0b0d11"
+theme_light: "#f3f5f7"
+---
+<!-- status ribbon -->
+<div class="ribbon"><div class="wide">
+  <span>Stackpit <b>//</b> self-hosted error tracking</span>
+  <span>SINGLE BINARY · SQLITE · <b>ZERO DEPS</b></span>
+  <span>STATUS: <span class="heart">●</span> <b>HEALTHY</b></span>
+</div></div>
+
+<!-- TOP BAR -->
+<header class="wide">
+  <div class="topbar">
+    <a class="wm" href="#" aria-label="Stackpit">
+      <span class="mk"></span>
+      <span class="tx"><span class="nm">Stackpit</span><span class="sub">an open-source project</span></span>
+    </a>
+    <div class="topnav">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#install">Install</a>
+      <a href="https://github.com/franzos/stackpit">GitHub</a>
+      <a href="https://gofranz.com" class="mono">↗ goFranz</a>
+      {% include theme-toggle.html extra="tgl" %}
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="wide hero">
+  <div class="hgrid">
+    <div>
+      <span class="eye">$ self-hosted error tracking</span>
+      <h1>Catch errors. <em>Drop</em> the Sentry bill.</h1>
+      <p class="dek">A drop-in, self-hosted replacement for Sentry's event ingestion and browsing. Single binary, single SQLite file, no external dependencies.</p>
+      <a class="cta" href="https://github.com/franzos/stackpit">Get it on GitHub</a>
+      <a class="cta ghost" href="#install">Quickstart ↓</a>
+      <div class="idstrip">
+        <div class="c"><span class="k">License</span><span class="v">MIT</span></div>
+        <div class="c"><span class="k">Stack</span><span class="v">Rust</span></div>
+        <div class="c"><span class="k">Storage</span><span class="v">single SQLite file</span></div>
+        <div class="c"><span class="k">Dependencies</span><span class="v">none</span></div>
+      </div>
+    </div>
+    <!-- HERO terminal motif -->
+    <div class="term">
+      <div class="bar"><i class="r"></i><i class="y"></i><i class="g"></i><span class="ttl">stackpit — zsh</span></div>
+      <div class="body">
+        <div class="l"><span class="p">~/app $</span> <span class="c">stackpit init</span></div>
+        <div class="l"><span class="o">  ↳ wrote config to ./stackpit.toml</span></div>
+        <div class="l"><span class="o">  ↳ admin token: </span><span class="ok">spk_3f9c…a21e</span></div>
+        <div class="l"><span class="p">~/app $</span> <span class="c">stackpit serve</span></div>
+        <div class="l"><span class="ok">  ✓ admin + API   127.0.0.1:3000</span></div>
+        <div class="l"><span class="ok">  ✓ ingestion     0.0.0.0:3001</span></div>
+        <div class="l"><span class="o">  listening for events…</span><span class="cur"></span></div>
+        <div class="feed">
+          <div class="fh">▾ issues · last hour</div>
+          <div class="issue"><span class="dot"></span><span class="ty"><b>TypeError</b> — undefined is not a function</span><span class="mt">14 events · 2m</span></div>
+          <div class="issue"><span class="dot"></span><span class="ty"><b>500</b> — POST /api/checkout</span><span class="mt">6 events · 11m</span></div>
+          <div class="issue"><span class="dot res"></span><span class="ty res"><b>KeyError</b> — resolved in v2.4.1</span><span class="mt">0 new · 1h</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- positioning line -->
+<div class="posit"><div class="wide">
+  <p>Built out of frustration with Sentry's pricing on smaller projects — and the pain of self-hosting the official thing. <b>Essential error tracking: ingest, group, browse</b> — without the cost or the ops overhead.</p>
+</div></div>
+
+<!-- FEATURES -->
+<section class="wide" id="features">
+  <div class="shead"><span class="idxnum">01</span><h2>What it does</h2><span class="meta">6 things · no fluff</span></div>
+  <div class="prod">
+    <div class="pcard"><span class="tab"></span><span class="pn">Drop-in Sentry protocol</span><p>Envelope and legacy store endpoints, all auth methods. Your existing Sentry SDKs work unmodified — just point the DSN.</p><span class="k">// compatible</span></div>
+    <div class="pcard"><span class="tab"></span><span class="pn">Single binary, zero deps</span><p>SQLite by default — one file, nothing to babysit. PostgreSQL optional when you outgrow it.</p><span class="k">// self-hosted</span></div>
+    <div class="pcard"><span class="tab"></span><span class="pn">Issue grouping</span><p>Fingerprint-based grouping, with regression and resolution tracking. Know when a fixed bug comes back.</p><span class="k">// signal</span></div>
+    <div class="pcard"><span class="tab"></span><span class="pn">Server-rendered UI</span><p>Issues, events, transactions, logs, traces, replays, monitors — plus a JSON API for everything you see.</p><span class="k">// browse</span></div>
+    <div class="pcard"><span class="tab"></span><span class="pn">Alerts</span><p>Email (Lettermint, Postmark, SendGrid), Slack and webhooks. Digests and thresholds so you're not spammed.</p><span class="k">// notify</span></div>
+    <div class="pcard"><span class="tab"></span><span class="pn">Extras</span><p>Source maps via sentry-cli, cron monitor check-ins, admin-token or OAuth/OIDC SSO, and import from existing Sentry.</p><span class="k">// batteries</span></div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="wide" id="how">
+  <div class="shead"><span class="idxnum">02</span><h2>How it works</h2><span class="meta">two listeners</span></div>
+  <div class="map-wrap">
+    <div class="map-side">
+      <h3>SDK → ingestion. You → admin.</h3>
+      <p>Two listeners, on purpose. Your apps push events to the ingestion port from anywhere; you browse them on a port that only answers to localhost.</p>
+      <div class="ports">
+        <div class="port"><span class="pp">127.0.0.1:3000</span><span class="pl">admin UI + JSON API · localhost only</span></div>
+        <div class="port ext"><span class="pp">0.0.0.0:3001</span><span class="pl">ingestion · all interfaces</span></div>
+      </div>
+    </div>
+    <div class="map-frame">
+      <div class="snip">
+        <span class="lbl">// illustrative — Sentry SDK pointed at stackpit</span>
+        <span class="cm">// browser / node — any Sentry SDK works</span><br>
+        <span class="kw">Sentry</span>.init({<br>
+        &nbsp;&nbsp;dsn: <span class="str">"https://<span class="pn">spk_public_key</span>@errors.example.com:3001/1"</span>,<br>
+        &nbsp;&nbsp;tracesSampleRate: <span class="pn">1.0</span>,<br>
+        });
+      </div>
+      <p class="note">Point the DSN host at your stackpit <b>ingestion</b> listener on <b>:3001</b>. The admin UI and JSON API stay on <b>:3000</b>, bound to localhost — put it behind your own VPN, SSH tunnel or reverse proxy. No SDK changes, no patched fork.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSTALL -->
+<section class="wide" id="install">
+  <div class="shead"><span class="idxnum">03</span><h2>Install &amp; run</h2><span class="meta">packages · docker · binaries</span></div>
+  <div class="methods">
+    <span class="method"><b>brew</b> tap franzos/tap</span>
+    <a class="method" href="https://github.com/franzos/stackpit/releases"><b>.deb</b> dpkg -i</a>
+    <a class="method" href="https://github.com/franzos/stackpit/releases"><b>.rpm</b> rpm -i</a>
+    <span class="method"><b>guix</b> -L panther</span>
+    <a class="method" href="https://github.com/franzos/stackpit/pkgs/container/stackpit"><b>docker</b> ghcr.io</a>
+    <a class="method" href="https://github.com/franzos/stackpit/releases"><b>↓</b> prebuilt binaries</a>
+  </div>
+  <div class="installterms">
+    <div class="term">
+      <div class="bar"><i class="r"></i><i class="y"></i><i class="g"></i><span class="ttl">run locally</span></div>
+      <div class="body">
+        <div class="l"><span class="o"># install — Debian/Ubuntu shown; .rpm &amp; macOS on the releases page</span></div>
+        <div class="l"><span class="p">$</span> <span class="c">sudo dpkg -i stackpit_*_amd64.deb</span></div>
+        <div class="l"><span class="o"># generate config + admin token, then start both listeners</span></div>
+        <div class="l"><span class="p">$</span> <span class="c">stackpit init</span></div>
+        <div class="l"><span class="p">$</span> <span class="c">stackpit serve</span></div>
+        <div class="l"><span class="ok">  ✓ admin + API   127.0.0.1:3000</span></div>
+        <div class="l"><span class="ok">  ✓ ingestion     0.0.0.0:3001</span><span class="cur"></span></div>
+      </div>
+    </div>
+    <div class="term">
+      <div class="bar"><i class="r"></i><i class="y"></i><i class="g"></i><span class="ttl">run with docker</span></div>
+      <div class="body">
+        <div class="l"><span class="o"># SQLite image — use :latest-postgres for PostgreSQL</span></div>
+        <div class="l"><span class="p">$</span> <span class="c">docker pull ghcr.io/franzos/stackpit:latest</span></div>
+        <div class="l"><span class="o"># generate config + admin token</span></div>
+        <div class="l"><span class="p">$</span> <span class="c">docker run --rm -v stackpit-data:/app \</span></div>
+        <div class="l"><span class="c">    ghcr.io/franzos/stackpit:latest ./stackpit init</span></div>
+        <div class="l"><span class="o"># run it (admin :3000 · ingestion :3001)</span></div>
+        <div class="l"><span class="p">$</span> <span class="c">docker run -d --name stackpit \</span></div>
+        <div class="l"><span class="c">    -p 3000:3000 -p 3001:3001 -v stackpit-data:/app \</span></div>
+        <div class="l"><span class="c">    ghcr.io/franzos/stackpit:latest</span><span class="cur"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LICENSE -->
+<div class="lic"><div class="wide">
+  <span class="tab"></span>
+  <p><b>MIT — free and open.</b> No seats, no event quotas, no "contact sales". Run it on a €5 box and forget about it.</p>
+</div></div>
+
+<!-- CLOSING -->
+<section class="closing">
+  <div class="wide inner">
+    <span class="eye">// ship it</span>
+    <h2>git clone, then forget the bill</h2>
+    <a class="cta" href="https://github.com/franzos/stackpit">Get it on GitHub →</a>
+    <a class="cta ghost" href="#install">Read the quickstart</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="wide foot">
+  <span>Stackpit — MIT licensed</span>
+  <span class="mid"><a href="https://gofranz.com">a goFranz project</a></span>
+  <span><a href="https://github.com/franzos/stackpit">GitHub</a> · <a href="https://gofranz.com">↗ gofranz.com</a></span>
+</footer>

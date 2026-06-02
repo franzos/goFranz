@@ -1,6 +1,6 @@
 ---
 title: "LLM Guardrails with OpenShield"
-summary: "Exploring OpenShield for LLM safety and compliance"
+description: "Exploring OpenShield for LLM safety and compliance"
 layout: blog
 source:
 date: 2025-08-04 0:00:00 +0000

@@ -1,0 +1,10 @@
+<!-- Segmented theme control: system / light / dark, active one highlighted.
+     Behaviour + glyphs live in theme-script.html and _theme-icon.scss.
+     Pass an `extra` param to add a context class (e.g. extra="tgl"). -->
+<span class="theme-toggle{% if include.extra %} {{ include.extra }}{% endif %}" role="group" aria-label="Theme">
+  <button type="button" class="theme-opt" data-theme-set="system" aria-label="Follow system theme" aria-pressed="false"><span class="visually-hidden">Follow system theme</span></button>
+  <span class="theme-sep" aria-hidden="true">/</span>
+  <button type="button" class="theme-opt" data-theme-set="light" aria-label="Light theme" aria-pressed="false"><span class="visually-hidden">Light theme</span></button>
+  <span class="theme-sep" aria-hidden="true">/</span>
+  <button type="button" class="theme-opt" data-theme-set="dark" aria-label="Dark theme" aria-pressed="false"><span class="visually-hidden">Dark theme</span></button>
+</span>

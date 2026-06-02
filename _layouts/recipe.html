@@ -1,0 +1,41 @@
+---
+layout: layout
+fil: true
+---
+
+<div class="wide fil-article fil-page sk-recipe">
+  {% if page.image %}
+  <div class="sk-hero-img"><img src="{{ page.image }}" alt="{{ page.image_alt | default: '' }}"></div>
+  {% endif %}
+
+  <header class="fil-art-head sk-rhead">
+    {% assign kick = page.cuisine %}
+    {% if page.cuisine and page.method %}{% assign kick = page.cuisine | append: " · " | append: page.method %}{% elsif page.method %}{% assign kick = page.method %}{% endif %}
+    {% if kick %}<span class="kicker">{{ kick }}</span>{% endif %}
+    <span class="bar sk-bar"></span>
+    <h1 class="headline">{{ page.title }}</h1>
+
+    {% if page.serves or page.time_active or page.time_total or page.cuisine %}
+    <div class="sk-meta">
+      {% if page.serves %}<div><span class="k">Serves</span><span class="v">{{ page.serves }}</span></div>{% endif %}
+      {% if page.time_active %}<div><span class="k">Active</span><span class="v">{{ page.time_active }}</span></div>{% endif %}
+      {% if page.time_total %}<div><span class="k">Total</span><span class="v">{{ page.time_total }}</span></div>{% endif %}
+      {% if page.cuisine %}<div><span class="k">Cuisine</span><span class="v">{{ page.cuisine }}</span></div>{% endif %}
+    </div>
+    {% endif %}
+  </header>
+
+  <article class="fil-prose sk-prose">
+    {{ content }}
+  </article>
+
+  {% assign more = site.recipes | where_exp: "r", "r.url != page.url" | sort: "date" | reverse %}
+  {% if more.size > 0 %}
+  <section class="sk-more">
+    <h2 class="fil-block">More recipes</h2>
+    <div class="sk-grid">
+      {% for r in more limit: 3 %}{% include recipe-card.html recipe=r %}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>

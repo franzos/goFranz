@@ -1,0 +1,17 @@
+{% assign r = include.recipe %}
+{% assign kick = r.cuisine %}
+{% if r.cuisine and r.method %}{% assign kick = r.cuisine | append: " · " | append: r.method %}{% elsif r.method %}{% assign kick = r.method %}{% endif %}
+{% capture facets %}{% if r.cuisine %}{{ r.cuisine | downcase }}{% endif %}{% if r.method %}|{{ r.method | downcase }}{% endif %}{% for t in r.tags %}|{{ t | downcase }}{% endfor %}{% if r.highlight %}|{{ r.highlight | downcase }}{% endif %}{% endcapture %}
+<a class="sk-card" href="{{ r.url }}" data-facets="{{ facets | strip }}">
+  {% if r.image %}
+  <span class="sk-thumb sk-photo" style="background-image:url('{{ r.image }}')" aria-hidden="true"></span>
+  {% else %}
+  <span class="sk-thumb sk-tile" aria-hidden="true"><span class="glyph">{{ r.glyph | default: "🍽" }}</span></span>
+  {% endif %}
+  <span class="sk-cbody">
+    {% if kick %}<span class="sk-ccat">{{ kick }}</span>{% endif %}
+    <span class="sk-ct">{{ r.title }}</span>
+    {% if r.tags %}<span class="sk-chips">{% for t in r.tags %}<span class="sk-chip">{{ t }}</span>{% endfor %}</span>{% endif %}
+    {% if r.serves or r.highlight %}<span class="sk-cmeta">{% if r.serves %}<span>SERVES {{ r.serves }}</span>{% endif %}{% if r.highlight %}<span>★ {{ r.highlight | upcase }}</span>{% endif %}</span>{% endif %}
+  </span>
+</a>

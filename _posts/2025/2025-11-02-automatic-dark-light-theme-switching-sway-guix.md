@@ -1,6 +1,6 @@
 ---
 title: "Automatic Dark/Light Theme Switching on Sway with Guix"
-summary: "How to automatically switch between dark and light themes based on time of day using darkman on Sway/Wayland with Guix"
+description: "How to automatically switch between dark and light themes based on time of day using darkman on Sway/Wayland with Guix"
 layout: blog
 source:
 date: 2025-11-02 0:00:00 +0000

@@ -1,6 +1,6 @@
 ---
 title: "Run an IOTA Node on Guix"
-summary: "How to run an IOTA full node on Guix System."
+description: "How to run an IOTA full node on Guix System."
 layout: blog
 source:
 date: 2026-01-27 0:00:00 +0000

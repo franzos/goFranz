@@ -1,6 +1,6 @@
 ---
 title: "Bitcoin's black market rate"
-summary: Two rates; Trusted Bitcoin with clear trail to KYC & Untrusted Bitcoin from unknown sources, offshore exchanges and mixers
+description: Two rates; Trusted Bitcoin with clear trail to KYC & Untrusted Bitcoin from unknown sources, offshore exchanges and mixers
 layout: blog
 source:
 date: 2023-11-18 0:00:00 +0000

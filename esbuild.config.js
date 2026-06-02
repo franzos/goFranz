@@ -15,12 +15,11 @@ const buildConfig = {
   bundle: true,
   outdir: 'assets/js',
   format: 'iife',
-  minify: false,
-  keepNames: true,
+  minify: true,
   sourcemap: false,
   target: ['es2017'],
   banner: {
-    js: '// jQuery global setup\nvar global = globalThis;'
+    js: 'var global = globalThis;'
   },
   outExtension: {
     '.js': '.js'
@@ -43,31 +42,36 @@ const buildConfig = {
   plugins: []
 }
 
-// SCSS build configuration - use sass CLI instead
-const scssConfig = {
-  entryPoints: ['src/scss/main.scss'],
+// Assessment tool — built separately so it gets NO global export (no `globalName`),
+// keeping it isolated from the main bundle that loads on the same page.
+const assessmentConfig = {
+  entryPoints: { 'iso-assessment.min': 'src/js/iso-assessment.js' },
   bundle: true,
-  outdir: 'assets/css',
+  outdir: 'assets/js',
+  format: 'iife',
   minify: true,
   sourcemap: false,
-  loader: {
-    '.scss': 'css',
-    '.css': 'css',
-    '.png': 'file',
-    '.gif': 'file',
-    '.jpg': 'file',
-    '.jpeg': 'file',
-    '.svg': 'file'
-  },
-  outExtension: {
-    '.css': '.min.css'
-  }
+  target: ['es2017'],
+  outExtension: { '.js': '.js' },
+  splitting: false,
 }
+
+// All SCSS entry:output pairs (main site + standalone software pages)
+const sassTargets = [
+  'src/scss/main.scss:assets/css/main.min.css',
+  'src/scss/software-stackpit.scss:assets/css/software-stackpit.min.css',
+  'src/scss/software-forseti.scss:assets/css/software-forseti.min.css',
+  'src/scss/software-guix-rs.scss:assets/css/software-guix-rs.min.css',
+  'src/scss/software-iced-webview.scss:assets/css/software-iced-webview.min.css',
+  'src/scss/iso-assessment.scss:assets/css/iso-assessment.min.css',
+  'src/scss/leaflet.scss:assets/css/leaflet.min.css'
+]
 
 function startSassWatch() {
   const sassProcess = spawn('sass', [
-    'src/scss/main.scss:assets/css/main.min.css',
+    ...sassTargets,
     '--style=compressed',
+    '--no-source-map',
     '--watch'
   ], {
     stdio: 'inherit'
@@ -84,8 +88,9 @@ function startSassWatch() {
 async function buildSass() {
   return new Promise((resolve, reject) => {
     const sassProcess = spawn('sass', [
-      'src/scss/main.scss:assets/css/main.min.css',
-      '--style=compressed'
+      ...sassTargets,
+      '--style=compressed',
+      '--no-source-map'
     ], {
       stdio: 'inherit'
     })
@@ -109,18 +114,21 @@ async function build() {
       // Watch JS files
       const jsContext = await esbuild.context(buildConfig)
       await jsContext.watch()
-      
+      const assessmentContext = await esbuild.context(assessmentConfig)
+      await assessmentContext.watch()
+
       // Watch SASS files
       const sassProcess = startSassWatch()
-      
+
       console.log('✅ JavaScript watching started')
       console.log('🎉 Watching both JS and SASS files')
-      
+
       // Handle cleanup on exit
       process.on('SIGINT', () => {
         console.log('\n🛑 Stopping watchers...')
         sassProcess.kill()
         jsContext.dispose()
+        assessmentContext.dispose()
         process.exit(0)
       })
       
@@ -130,7 +138,9 @@ async function build() {
       // Build JS
       await esbuild.build(buildConfig)
       console.log('✅ JavaScript built')
-      
+      await esbuild.build(assessmentConfig)
+      console.log('✅ Assessment JS built')
+
       // Build SASS
       await buildSass()
       

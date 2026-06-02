@@ -1,0 +1,175 @@
+---
+layout: product
+product_id: guix-rs
+featured: true
+category: desktop
+weight: 1
+name: guix-rs
+logo: /assets/images/guix-rs-logo.svg
+card_blurb: "Desktop GUI for GNU Guix — search, install, upgrade and reconfigure, no terminal. Built in Rust on Iced; ships the libguix crate. GPL-3.0."
+title: "guix-rs — the missing desktop GUI for Guix"
+image: /assets/images/software/og/guix-rs.png
+app_os: "Linux"
+license_spdx: "GPL-3.0-only"
+og_alt: "guix-rs — the missing desktop GUI for Guix: browse, install, upgrade and reconfigure Guix from a real desktop app. GPL-3.0."
+description: "An unofficial desktop GUI for day-to-day Guix: browse and search the catalogue, install/remove/upgrade packages, and (with polkit) pull and reconfigure the system. Built in Rust on Iced."
+theme_dark: "#0d0b12"
+theme_light: "#f6f4fa"
+---
+
+<!-- TOP BAR -->
+<div class="topbar"><div class="wide">
+  <a class="wordmark" href="#" aria-label="guix-rs">
+    <img class="logo" src="/assets/images/software/guix-rs/logo.svg" alt="guix-rs amber package box logo" width="34" height="34">
+    <span class="tx">
+      <span class="name">guix<b>-rs</b></span>
+      <span class="sub">a GUI for Guix</span>
+    </span>
+  </a>
+  <div class="topright">
+    <a href="#features">Features</a>
+    <a href="#screens">Screens</a>
+    <a href="#install">Install</a>
+    <a href="https://github.com/franzos/guix-rs">GitHub</a>
+    <a href="https://gofranz.com" class="mono">↗ goFranz</a>
+    {% include theme-toggle.html extra="tgl" %}
+  </div>
+</div></div>
+
+<!-- HERO — headline + facts left, big framed screenshot right -->
+<div class="wide hero">
+  <div class="hgrid">
+    <div>
+      <span class="eye">unofficial · for day-to-day Guix</span>
+      <h1>The <em>GUI</em> Guix has been <span class="pp">missing</span></h1>
+      <p class="dek">Search, install and upgrade software, manage channels and updates, and — with <code>polkit</code> — run <code>guix pull</code> and reconfigure the system, all without dropping to a terminal. A real desktop app, not a web view.</p>
+      <div class="ctas">
+        <a class="cta" href="https://github.com/franzos/guix-rs">Get it on GitHub</a>
+        <a class="cta ghost" href="#install">Install →</a>
+      </div>
+      <div class="idstrip">
+        <div class="c"><span class="k">App</span><span class="v">guix-gui · GPL-3.0</span></div>
+        <div class="c"><span class="k">Stack</span><span class="v">Rust · Iced (wgpu)</span></div>
+        <div class="c"><span class="k">Privileges</span><span class="v">polkit for system ops</span></div>
+      </div>
+    </div>
+    <div class="shot">
+      <div class="chrome"><span class="ttl">guix-gui — search</span></div>
+      <img src="/assets/images/software/guix-rs/search.png" alt="guix-rs search view: a results list on the left and a package detail pane on the right showing version, synopsis, homepage, license, upstream screenshots and an amber Install button" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<!-- positioning line -->
+<div class="posit"><div class="wide">
+  <p>I run Guix daily, and most things still mean a terminal and the right incantation. <b>guix-rs is the unofficial GUI for the everyday bits</b> — find software, install it, keep it current, and pull &amp; reconfigure when you mean to — with the <span class="pp">power user</span> always one command away.</p>
+</div></div>
+
+<!-- FEATURES -->
+<section class="wide" id="features">
+  <div class="shead"><span class="idxnum">01</span><h2>What it does</h2><span class="meta">6 things · no fluff</span></div>
+  <div class="prod">
+    <div class="pcard"><span class="tab"></span><span class="pk">// home</span><span class="pn">Browse the catalogue</span><p>A Home view of curated apps by category — Graphics, Audio &amp; Video, Office and more. One click to install, no package name to remember first.</p></div>
+    <div class="pcard"><span class="tab"></span><span class="pk">// search</span><span class="pn">Search, then decide</span><p>Fast package search with a detail pane: version, synopsis, homepage, license and upstream screenshots. Read it, then hit Install.</p></div>
+    <div class="pcard"><span class="tab"></span><span class="pk">// profile</span><span class="pn">Install · remove · upgrade</span><p>User-profile package management against <code>$GUIX_PROFILE</code>. No root for any of it — it's your profile, your call.</p></div>
+    <div class="pcard"><span class="tab"></span><span class="pk">// updates</span><span class="pn">Stay current</span><p>Fetch the latest catalog and update your packages. Channel revisions are right there, so you know what you're moving from and to.</p></div>
+    <div class="pcard"><span class="tab"></span><span class="pk">// polkit</span><span class="pn">System ops, gated</span><p><code>guix pull</code> and <code>guix system reconfigure</code> from the GUI — gated behind a polkit admin prompt. Privileged work stays privileged.</p></div>
+    <div class="pcard"><span class="tab"></span><span class="pk">// native</span><span class="pn">Native &amp; fast</span><p>Built in Rust on Iced (wgpu). A proper desktop app that starts quick and stays light — not an Electron wrapper around a browser.</p></div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section class="wide" id="screens">
+  <div class="shead"><span class="idxnum">02</span><h2>The app</h2><span class="meta">real captures · not mockups</span></div>
+  <div class="gallery">
+    <div class="gitem span">
+      <div class="shot">
+        <div class="chrome"><span class="ttl">guix-gui — home</span></div>
+        <img src="/assets/images/software/guix-rs/home.png" alt="guix-rs Home view: a catalogue browser showing curated applications grouped by category — Graphics (GIMP, Inkscape, Krita, Blender, Darktable and more) and Audio & Video — each with an icon, name and short description" loading="lazy">
+      </div>
+      <div class="cap"><b>Home</b><span>The catalogue, by category. Click an app to install it — the package name is the app's problem, not yours.</span></div>
+    </div>
+    <div class="gitem">
+      <div class="shot">
+        <div class="chrome"><span class="ttl">guix-gui — installed</span></div>
+        <img src="/assets/images/software/guix-rs/installed.png" alt="guix-rs Installed view: a list of installed user-profile packages, each with its store path and version, and an amber Remove button per row" loading="lazy">
+      </div>
+      <div class="cap"><b>Installed</b><span>What's in your profile, with a Remove on each row.</span></div>
+    </div>
+    <div class="gitem">
+      <div class="shot">
+        <div class="chrome"><span class="ttl">guix-gui — updates</span></div>
+        <img src="/assets/images/software/guix-rs/updates.png" alt="guix-rs Updates view: a Your packages panel to fetch the latest catalog and update user packages with channel revisions shown, and a System panel for guix pull and reconfigure gated behind admin authentication" loading="lazy">
+      </div>
+      <div class="cap"><b>Updates</b><span>Your packages, and the system path behind a polkit prompt.</span></div>
+    </div>
+    <div class="gitem span">
+      <div class="shot">
+        <div class="chrome"><span class="ttl">guix-gui — settings</span></div>
+        <img src="/assets/images/software/guix-rs/settings.png" alt="guix-rs Settings view: paths to the system configuration, third-party icon and screenshot metadata sources (Flathub, screenshots.debian.net), a cache control, extra Scheme load paths, and the discovered Guix channels — guix, panther and nonguix — with their revisions" loading="lazy">
+      </div>
+      <div class="cap"><b>Settings</b><span>Point it at your system config, toggle third-party icon/screenshot sources, set extra load paths, and see your channels — guix, panther, nonguix — and their revisions.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTALL -->
+<section class="wide" id="install">
+  <div class="shead"><span class="idxnum">03</span><h2>Install</h2><span class="meta">guix · cargo · source</span></div>
+  <div class="methods">
+    <span class="method"><b>guix</b> panther channel</span>
+    <span class="method"><b>cargo</b> from source</span>
+    <a class="method" href="https://github.com/franzos/guix-rs"><b>↓</b> source</a>
+  </div>
+  <div class="installterms">
+    <div class="term">
+      <div class="bar"><i class="a"></i><i class="p"></i><i></i><span class="ttl">guix · panther channel</span></div>
+      <div class="body"><span class="c"># add the panther channel first — see the repo</span>
+<span class="c"># https://codeberg.org/gofranz/panther</span>
+<span class="p">guix</span> package -i guix-gui</div>
+    </div>
+    <div class="term">
+      <div class="bar"><i class="a"></i><i class="p"></i><i></i><span class="ttl">from source</span></div>
+      <div class="body"><span class="c"># run it straight from a checkout</span>
+<span class="p">cargo</span> run -p guix-gui <span class="s">--release</span>
+
+<span class="c"># reproducible build via the bundled manifest</span>
+<span class="p">guix</span> shell -m manifest.scm -- \
+  cargo build <span class="s">--release</span></div>
+    </div>
+  </div>
+  <p class="installnote">The privileged paths — <code>guix system reconfigure</code> and <code>guix pull</code> as root — need a polkit auth agent running; everything else is unprivileged and touches only your own profile.</p>
+</section>
+
+<!-- LICENSING + library -->
+<section class="wide" id="licensing">
+  <div class="shead"><span class="idxnum">04</span><h2>Licensing</h2><span class="meta">app · library</span></div>
+  <div class="lic-wrap">
+    <div class="licbox">
+      <div class="lk">The app</div>
+      <h4>guix-gui <span class="sp">— GPL-3.0-only</span></h4>
+      <p>The GUI itself. Clone it, run it, change it — GPL terms apply if you ship it on.</p>
+    </div>
+    <div class="licbox purple">
+      <div class="lk">The library</div>
+      <h4>libguix <span class="sp">— MIT OR Apache-2.0</span></h4>
+      <p>Under the GUI sits <code>libguix</code>, the Rust crate that does the actual Guix work — permissively licensed so you can build your own tools on it. It's the secondary artifact here; the headline is the app.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing"><div class="wide inner">
+  <span class="eye">// a face for Guix</span>
+  <h2>Manage Guix without the terminal tax</h2>
+  <a class="cta" href="https://github.com/franzos/guix-rs">Get it on GitHub →</a>
+  <a class="cta ghost" href="#install">Read the install notes</a>
+  <div class="sub">github.com/franzos/guix-rs · guix-gui GPL-3.0 · libguix MIT/Apache-2.0</div>
+</div></section>
+
+<!-- FOOTER -->
+<footer class="wide foot">
+  <span>guix-rs — unofficial GUI for Guix</span>
+  <span class="mid">a <a href="https://gofranz.com">goFranz</a> project</span>
+  <span class="right"><a href="https://github.com/franzos/guix-rs">GitHub ↗</a><a href="https://gofranz.com">↗ gofranz.com</a></span>
+</footer>

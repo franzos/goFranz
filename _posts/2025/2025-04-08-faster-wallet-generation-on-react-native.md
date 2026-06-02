@@ -1,6 +1,6 @@
 ---
 title: "Generate ETH wallet 20x faster on React Native"
-summary: "How to speed up wallet generation on React Native using ethers.js and react-native-quick-crypto."
+description: "How to speed up wallet generation on React Native using ethers.js and react-native-quick-crypto."
 layout: blog
 source:
 date: 2025-4-8 0:00:00 +0000

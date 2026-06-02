@@ -1,6 +1,6 @@
 ---
 title: "Rust and React: Tips for Full-Stack Development"
-summary: "How to stay productive with Rust and React using Typeshare, Garde and Mantine."
+description: "How to stay productive with Rust and React using Typeshare, Garde and Mantine."
 layout: blog
 source:
 date: 2025-07-20 0:00:00 +0000

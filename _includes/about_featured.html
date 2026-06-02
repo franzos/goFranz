@@ -1,9 +1,15 @@
-<div class="row">
+<div class="fil-worklist">
 {% for work in site.work reversed %}
   {% if work.featured and work.tags contains "development" %}
-  <div class="col-md-6 col-lg-4 mb-4">
-    {% include project-item.html work=work card_height="h-100" %}
-  </div>
+  {% assign pc = site.clients | where: "client", work.client | first %}
+  <a href="{{ work.url }}">
+    {% if work.cover %}<span class="cover"><img src="/assets/images/projects/preview/{{ work.cover }}" alt="{{ work.title }}" loading="lazy"></span>{% endif %}
+    <span class="body">
+      {% if work.category %}<span class="c">{{ work.category }}</span>{% elsif work.tags %}<span class="c">{{ work.tags | first }}</span>{% endif %}
+      <h4>{{ work.title }}</h4>
+      {% if pc %}<span class="loc">{{ pc.city }}{% if pc.country %}, {{ pc.country }}{% endif %}</span>{% elsif work.client %}<span class="loc">{{ work.client }}</span>{% endif %}
+    </span>
+  </a>
   {% endif %}
 {% endfor %}
 </div>

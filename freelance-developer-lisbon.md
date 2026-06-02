@@ -3,6 +3,7 @@ title: Freelance Developer
 layout: base
 bg: mark-asthoff_02
 permalink: /freelance-developer-lisbon-portugal/
+description: "Freelance full-stack developer in Lisbon, Portugal. 12+ years building web, backend and mobile for clients worldwide — from scoping and team-building to production code."
 ---
 
 ### Looking for a Freelance Developer in Lisbon?

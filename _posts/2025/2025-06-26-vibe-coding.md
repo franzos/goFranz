@@ -1,7 +1,8 @@
 ---
 title: "Vibe Coding with Rust: The Key To Success. Not."
-summary: "It works until it doesn't. My experience with AI agents and coding."
+description: "It works until it doesn't. My experience with AI agents and coding."
 layout: blog
+mermaid: true
 source:
 date: 2025-6-26 0:00:00 +0000
 category:

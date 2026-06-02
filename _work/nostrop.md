@@ -6,6 +6,7 @@ client: "independent_lisbon"
 cover: nostrop-client-01.jpg
 bg: switzerland
 tags: "web development"
+category: "Web · Nostr"
 introduction: Nostr Web Client, written in React
 featured: true
 ---

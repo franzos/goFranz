@@ -1,6 +1,6 @@
 ---
 title: "OpenVPN on Android + Wi-Fi Tethering w/o root"
-summary: "How to set up OpenVPN connection on Android with Wi-Fi tethering to your laptop without needing third-party apps or root access."
+description: "How to set up OpenVPN connection on Android with Wi-Fi tethering to your laptop without needing third-party apps or root access."
 layout: blog
 source:
 date: 2018-02-03 22:00:00 +0350

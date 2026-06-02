@@ -6,8 +6,10 @@ client: "independent_lisbon"
 cover: rusty-shops-01.jpg
 bg: switzerland
 tags: "web development"
+category: "E-Commerce"
 introduction: "Your Store. Your Way. Checkoutbay."
 featured: true
+product: true
 ---
 
 Checkoutbay is a shop- platform, written in Rust.

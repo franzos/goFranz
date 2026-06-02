@@ -1,47 +1,51 @@
-<div class="container-fluid entry">
-  <div class="row">
-    <div class="col-md-7 offset-md-1 col-12 content-wrapper">
-      <div class="content">
+{% assign c = include.client %}
+{% assign is_independent = false %}
+{% if c.client == "independent" or c.client == "independent_lisbon" %}{% assign is_independent = true %}{% endif %}
+{% assign client_projects = site.work | where: "client", c.client | sort: 'date' | reverse %}
 
-        <h2 class="block">{{ include.client.title }}</h2>
-
-        <ul class="projects small clean">
-        {% for work in site.work reversed %}
-        {% if include.client.client == work.client %}
-          <li class="project"><a href="{{ work.url }}"><intro>Open project</intro>
-          <br>{{ work.title }}<country>{{ work.client }}</country></a></li>
-        {% endif %}
-        {% endfor %}
-        </ul>
-
-        {% for testimonial in site.testimonials reversed %}
-        {% if include.client.client == testimonial.client %}
-          <h3>Testimonial</h3>
-          <blockquote>
-          <span>{{ testimonial.content }}</span>
-          <footer>- {{ testimonial.title }} <cite title="Source Title">{{ testimonial.position }}</cite></footer>
-          </blockquote>
-        {% endif %}
-        {% endfor %}
-
-      </div>
+<article class="fil-client">
+  <header class="fil-client-head">
+    {% unless is_independent %}<span class="kicker">Client</span>{% endunless %}
+    <div class="fil-client-title">
+      <h2 class="fil-block">{{ c.title }}</h2>
+      {% unless is_independent %}<img class="fil-client-logo" src="/assets/images/clients/{{ c.client }}.png" alt="{{ c.title }} logo" loading="lazy">{% endunless %}
     </div>
-    <div class="col-md-3 offset-md-1 col-12 mt-3 mt-md-0 sidebar">
-
-        <p class="title clean">{% unless include.client.client == "independent" %}Client{% endunless %}</p>
-
-        {% unless include.client.client == "independent" or include.client.client == "independent_lisbon" %}<img class="grayscale client-logo" src="/assets/images/clients/{{ include.client.client }}.png">{% endunless %}
-
-        <p><b>{{ include.client.title }}</b>
-        <br><a href="{{ include.client.web }}" target="_blank">{{ include.client.web }}</a>
-        {% unless include.client.client == "independent" %}<br>{{ include.client.city }}, {{ include.client.country }}{% endunless %}</p>
-	  
-        <div class="map-static">
-          <img class="img-fluid" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ include.client.map }},6,0/200x100@2x?access_token={{ site.mapbox_token }}&logo=false">
-        </div>
-
-        <p>{{ include.client.introduction }}</p>
-
+    <div class="fil-client-meta mono">
+      {% unless is_independent %}<span>{{ c.city }}{% if c.country %}, {{ c.country }}{% endif %}</span>{% endunless %}
+      {% if c.web %}<span><a href="{% unless c.web contains "http" %}http://{% endunless %}{{ c.web }}" target="_blank" rel="noopener">{{ c.web }} ↗</a></span>{% endif %}
+      {% if c.since %}<span>since {{ c.since }}</span>{% endif %}
     </div>
+  </header>
+
+  {% if c.introduction %}<p class="fil-client-intro">{{ c.introduction }}</p>{% endif %}
+
+  {% if client_projects.size > 0 or c.map %}
+  <div class="fil-worklist">
+    {% if c.map %}
+    <figure class="fil-mapcard">
+      <img class="map-light" src="https://api.mapbox.com/styles/v1/mapbox/light-v11/static/{{ c.map }},9,0/600x600@2x?access_token={{ site.mapbox_token }}&logo=false" alt="Map of {{ c.city }}" loading="lazy">
+      <img class="map-dark" src="https://api.mapbox.com/styles/v1/mapbox/dark-v8/static/{{ c.map }},9,0/600x600@2x?access_token={{ site.mapbox_token }}&logo=false" alt="" aria-hidden="true" loading="lazy">
+      <figcaption class="mono">{{ c.city }}{% if c.country %}, {{ c.country }}{% endif %}</figcaption>
+    </figure>
+    {% endif %}
+    {% for work in client_projects %}
+    <a href="{{ work.url }}">
+      {% if work.cover %}<span class="cover"><img src="/assets/images/projects/preview/{{ work.cover }}" alt="{{ work.title }}" loading="lazy"></span>{% endif %}
+      <span class="body">
+        {% if work.category %}<span class="c">{{ work.category }}</span>{% elsif work.tags %}<span class="c">{{ work.tags | first }}</span>{% endif %}
+        <h4>{{ work.title }}</h4>
+      </span>
+    </a>
+    {% endfor %}
   </div>
-</div>
+  {% endif %}
+
+  {% for testimonial in site.testimonials reversed %}
+  {% if c.client == testimonial.client %}
+    <figure class="fil-pull">
+      <blockquote>{{ testimonial.content }}</blockquote>
+      <figcaption class="mono">— {{ testimonial.title }}{% if testimonial.position %} · {{ testimonial.position }}{% endif %}</figcaption>
+    </figure>
+  {% endif %}
+  {% endfor %}
+</article>

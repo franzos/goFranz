@@ -1,6 +1,6 @@
 ---
 title: "Private Ethereum Network with Besu"
-summary: "Goes over how to use Besu to create a private Ethereum network (on your guix machine)"
+description: "Goes over how to use Besu to create a private Ethereum network (on your guix machine)"
 layout: blog
 source:
 date: 2025-3-10 0:00:00 +0000

@@ -8,7 +8,7 @@ category:
   - growth
 tags:
   - 'inbound marketing'
-summary: "Here's how you make sure that your tweets are seen and reach the maximum number of people."
+description: "Here's how you make sure that your tweets are seen and reach the maximum number of people."
 cover: inbound-marketing-4-step-how-to-guide.jpg
 newsletter: true
 author: Franz Geffke

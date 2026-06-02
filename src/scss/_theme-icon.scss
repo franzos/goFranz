@@ -1,0 +1,35 @@
+/* Segmented theme control — system / light / dark, the active one highlighted.
+   Shared by the main site and every product page. The segments inherit the
+   surrounding font/colour so the control fits each design; the active one is
+   shown at full strength while the others are dimmed. Active is keyed off
+   <html data-theme-mode>, so highlighting needs no JS. */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+}
+.theme-opt {
+  all: unset;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  opacity: 0.4;
+  transition: opacity 0.15s ease;
+}
+.theme-opt:hover { opacity: 0.8; }
+.theme-opt::before { display: inline-block; }
+.theme-opt[data-theme-set="system"]::before { content: "\25D0"; } /* ◐ */
+.theme-opt[data-theme-set="light"]::before  { content: "\263C"; } /* ☼ */
+.theme-opt[data-theme-set="dark"]::before   { content: "\263E"; } /* ☾ */
+.theme-sep {
+  opacity: 0.3;
+  margin: 0 0.3em;
+  user-select: none;
+}
+
+/* Active segment = the one matching the current mode. */
+[data-theme-mode="system"] .theme-opt[data-theme-set="system"],
+[data-theme-mode="light"]  .theme-opt[data-theme-set="light"],
+[data-theme-mode="dark"]   .theme-opt[data-theme-set="dark"] {
+  opacity: 1;
+  font-weight: 700;
+}

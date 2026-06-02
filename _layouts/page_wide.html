@@ -1,25 +1,17 @@
 ---
 layout: layout
+fil: true
 ---
 
-{% include nav.html %}
-
-<div class="wrapper page">
+<div class="wide fil-article fil-page fil-wide">
   {% if page.title %}
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-11 offset-sm-1">
-      <h1>{{ page.title }}</h1>
-    </div>
-  </div>
-</div>
-{% endif %}
+  <header class="fil-art-head">
+    <span class="bar"></span>
+    <h1 class="headline">{{ page.title }}</h1>
+  </header>
+  {% endif %}
 
-<div class="container-fluid np">
-  <div class="row">
-    <div class="col-md-11 offset-md-1">
-      {{ content }}
-    </div>
+  <div class="fil-listing">
+    {{ content }}
   </div>
-</div>
 </div>

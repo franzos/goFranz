@@ -1,54 +1,48 @@
 ---
 layout: layout
+fil: true
+ribbon_right: '<b><span aria-hidden="true">←</span> all writing</b>'
+footer_tagline: "show your work, not just conclusions"
 ---
 
-{% include nav.html %}
+{% assign cat = page.category | first %}
+{% if page.tags and page.tags.size > 0 %}{% assign first_tag = page.tags.first %}{% endif %}
+{% if cat and first_tag %}{% assign kicker = cat | append: " · " | append: first_tag %}{% elsif cat %}{% assign kicker = cat %}{% elsif first_tag %}{% assign kicker = first_tag %}{% endif %}
 
-<div class="wrapper page">
-  {% if page.title %}
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-11 offset-sm-1">
-        <h1>{{ page.title }}</h1>
+<div class="wide fil-article">
+  <article>
+    <header class="fil-art-head">
+      {% if kicker %}<span class="kicker">{{ kicker }}</span>{% endif %}
+      <span class="bar"></span>
+      <h1 class="headline">{{ page.title }}</h1>
+      {% if page.description %}<p class="dek">{{ page.description }}</p>{% endif %}
+      <div class="byline">
+        <span>By <b>{{ page.author | default: "Franz Geffke" }}</b></span>
+        <span>{{ page.date | date: "%d %b %Y" }}</span>
+        <span>{{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+        {% if page.tags %}<span class="tag">{{ page.tags | join: " #" | prepend: "#" }}</span>{% endif %}
       </div>
+    </header>
+
+    <div class="fil-prose">
+      {{ content }}
     </div>
-  </div>
-  {% endif %}
+  </article>
 
-  <div class="container-fluid np">
-    <div class="row">
-      <div class="col-md-11 offset-md-1">
-        <div class="content">
-          {% include summary.html %}
-          {{ content }}
-        </div>
+  <div class="colophon">
+    <div class="colo-grid">
+      <div class="colo fil-related">
+        {% include related.html %}
+        <p class="contact-rss"><span class="meta">Subscribe via <a href="/feed.xml">Atom (RSS)</a></span></p>
       </div>
-    </div>
-  </div>
-
-  <div class="container-fluid np">
-    <div class="row">
-      <div class="col-md-11 offset-md-1">
-        <div class="content">
-          <div class="inline-section">
-            {% include related.html %}
-            <p>Subscribe via <a href="/feed.xml">Atom (RSS)</a></p>
-          </div>
-          <div class="inline-section">
-            <h2 class="block">Contact the author</h2>
-            <div itemscope itemtype="http://schema.org/Person" class="schema">
-
-              <div class="row">
-                <div class="col-sm-4">
-                  <p><a href="/about/" itemprop="author">Franz Geffke</a>
-                  <br><a href="mailto:mail@gofranz.com" itemprop="email">mail@gofranz.com</a> (<a href="/gpg/">public key</a>)
-                  <br>on <a href="https://social.tchncs.de/@franzs">Mastodon</a></p>
-                </div>
-              </div>
-              <p>Published on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %B %Y"}}</time></p>
-          </div>
+      <div class="colo contact">
+        <h3>Contact the author</h3>
+        <div itemscope itemtype="http://schema.org/Person" class="schema">
+          <p><strong><a href="/about/" itemprop="author">Franz Geffke</a></strong></p>
+          <p><a href="mailto:mail@gofranz.com" itemprop="email">mail@gofranz.com</a> · <a href="/gpg/">public key</a></p>
+          <p>on <a href="https://social.tchncs.de/@franzs">Mastodon</a></p>
+          <span class="meta">Published on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d %B %Y" }}</time></span>
         </div>
-      </div>
       </div>
     </div>
   </div>

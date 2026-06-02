@@ -3,7 +3,11 @@ description: "Full-Stack Developer, AI Orchestrator, ½ Machine - Personal websi
 baseurl: ""
 url: "https://gofranz.com"
 destination: _site/
+image: /assets/images/og-default.png
 mapbox_token: "pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw"
+
+twitter:
+  username: franzos
 
 # Build settings
 markdown: kramdown
@@ -48,6 +52,9 @@ exclude:
   - TRAIL.md
   - TODO.md
   - FRANZ-GUIDE.md
+  - public
+  - _design
+  - assets/css/*.map
 
 collections:
   posts:
@@ -64,3 +71,32 @@ collections:
   til:
     output: true
     permalink: /til/:title/
+  recipes:
+    output: true
+    permalink: /cooking/recipes/:title/
+  software:
+    output: true
+    permalink: /software/:name/
+
+# Site-wide default share image (jekyll-seo-tag reads page.image, so set a default)
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og-default.png
+  - scope:
+      path: ""
+      type: software
+    values:
+      twitter:
+        card: summary_large_image
+  - scope:
+      path: ""
+      type: posts
+    values:
+      twitter:
+        card: summary_large_image
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false

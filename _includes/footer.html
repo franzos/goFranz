@@ -1,127 +1,34 @@
-{% if page.url contains "/client/" or page.url contains "/work/" or page.url contains "/portfolio/" %}
-<div class="footer d-print-none">
-  <div class="call-out-contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <p>
-            <a href="/contact/?internal_referral"
-              >Have a project you'd like to discuss with me?</a
-            >
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{% endif %}
+<script src="/assets/js/main.min.js" defer></script>
 
-<script src="/assets/js/main.min.js"></script>
+{% if page.mermaid %}<script src="/assets/js/mermaid.min.js" defer></script>{% endif %}
 
-{% if page.url contains "/blog/" or page.url contains "/work" %}
-<script src="/assets/js/mermaid.min.js"></script>
-{% endif %}
+{% if page.js_assessment %}<script src="/assets/js/iso-assessment.min.js" defer></script>{% endif %}
 
 <!-- Bootstrap offcanvas and jQuery initialization handled in main.js -->
 <script type="text/javascript">
   var url = window.location.href;
-  var msg = document.getElementById('welcome_referral');
-  if( url.search( 'client_referral' ) > 0 ) {
-      msg.style.display = "block";
+  var welcomeReferral = document.getElementById('welcome_referral');
+  if( welcomeReferral && url.search( 'client_referral' ) > 0 ) {
+      welcomeReferral.style.display = "block";
   }
   {% if page.url contains "/contact/" %}
-  var msg = document.getElementById('internal_referral');
-  if( url.search( 'internal_referral' ) > 0 ) {
-      msg.style.display = "block";
+  var internalReferral = document.getElementById('internal_referral');
+  if( internalReferral && url.search( 'internal_referral' ) > 0 ) {
+      internalReferral.style.display = "block";
   }
-  var msg = document.getElementById('introduction');
-  if( url.search( 'internal_referral' ) > 0 ) {
-      msg.style.display = "none";
+  var introduction = document.getElementById('introduction');
+  if( introduction && url.search( 'internal_referral' ) > 0 ) {
+      introduction.style.display = "none";
   }
   {% endif %}
 </script>
+{% if page.layout == "index" %}
+<script src="/assets/js/mapbox.min.js" defer></script>
+{% include fil-map.html map_id="home-map" marker_color="#e2a55f" %}
+{% endif %}
 {% if page.url == "/about/" %}
-<script src="/assets/js/mapbox.min.js"></script>
-<style>
-  .navbar,
-  .quick-contact,
-  .innovative-product-award.loaded {
-    z-index: 1000;
-  }
-  #map {
-    height: 360px;
-    width: 100%;
-  }
-</style>
-<!--  in {{ place.year }} -->
-<script>
-  L.mapbox.accessToken = 'pk.eyJ1IjoiZGtrbWEiLCJhIjoiY2oyN2h2M2VnMDA1bTJxbzY4dGhhc2V4NCJ9.Hb-yaLByaOY9LR7SF7JxmA';
-  var map = L.mapbox.map('map')
-      .setView([27.2741606,3.2739257], 2);
-      var myLayer = L.mapbox.featureLayer().addTo(map);
-      var styleLayer = L.mapbox.styleLayer('mapbox://styles/dkkma/cj27hvld100112smweocii6o3').addTo(map);
-      var geojson = {
-          type: 'FeatureCollection',
-          features: [{% for place in site.data.places %}{
-              type: 'Feature',
-              properties: {
-                  title: 'Life in {{ place.city }}, {{ place.country }}',
-                  'marker-color': '#451668',
-                  'marker-size': 'small',
-                  'marker-symbol': 'building',
-                  'description': '{{ place.introduction }}'
-              },
-              geometry: {
-                  type: 'Point',
-                  coordinates: [{{ place.longitude }}, {{ place.latitude }}]
-              }
-          },
-          {% endfor %}
-          {% for client in site.clients %}{% if client.city != "Tehran" %}{
-              type: 'Feature',
-              properties: {
-                  title: 'Client in {{ client.city }}, {{ client.country }}',
-                  'marker-color': '#451668',
-                  'marker-size': 'small',
-                  'marker-symbol': 'suitcase',
-                  'description': '{{ client.introduction }}'
-              },
-              geometry: {
-                  type: 'Point',
-                  coordinates: [{{ client.map }}]
-              }
-          }{% if forloop.last %}{% else %},{% endif %}{% endif %}
-          {% endfor %}
-        ]
-      };
-      map.scrollWheelZoom.disable();
-      myLayer.setGeoJSON(geojson);
-</script>
+<script src="/assets/js/mapbox.min.js" defer></script>
+{% include fil-map.html map_id="map" marker_color="#451668" %}
 {% endif %}
 
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(["trackPageView"]);
-  _paq.push(["enableLinkTracking"]);
-  (function () {
-    var u = "https://stats.dkkma.com/";
-    _paq.push(["setTrackerUrl", u + "piwik.php"]);
-    _paq.push(["setSiteId", "8"]);
-    var d = document,
-      g = d.createElement("script"),
-      s = d.getElementsByTagName("script")[0];
-    g.type = "text/javascript";
-    g.async = true;
-    g.defer = true;
-    g.src = u + "piwik.js";
-    s.parentNode.insertBefore(g, s);
-  })();
-</script>
-<noscript
-  ><p>
-    <img
-      src="https://stats.dkkma.com/piwik.php?idsite=8&rec=1"
-      style="border: 0"
-      alt=""
-    /></p
-></noscript>
+{% include analytics.html %}

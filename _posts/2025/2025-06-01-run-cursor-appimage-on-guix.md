@@ -1,6 +1,6 @@
 ---
 title: "Run (Cursor) AppImage on Guix"
-summary: "Use Guix to run AppImages in a container with the necessary dependencies."
+description: "Use Guix to run AppImages in a container with the necessary dependencies."
 layout: blog
 source:
 date: 2025-6-01 0:00:00 +0000

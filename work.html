@@ -1,13 +1,21 @@
 ---
 title: Work
-layout: blog
+layout: page_wide
 bg: pattern_015
 permalink: /work/
+description: "Selected projects I've built and led — across identity, crypto, IoT and the web, for clients around the world. Sometimes the engineer, sometimes the founder."
 ---
 
-<ul class="projects clean">
+<div class="fil-worklist">
 {% for work in site.work reversed %}
-  <li class="project{% if forloop.last %} last{% endif %}"><a {% if forloop.last %}class="last" {% endif %}href="{{ work.url }}"><intro>Open project</intro>
-  <br>{{ work.title }}<country>{% for client in site.clients %}{% if work.client == client.client %}{{ client.country }}{% endif %}{% endfor %}</country></a></li>
+  {% assign pc = site.clients | where: "client", work.client | first %}
+  <a href="{{ work.url }}">
+    {% if work.cover %}<span class="cover"><img src="/assets/images/projects/preview/{{ work.cover }}" alt="{{ work.title }}" loading="lazy"></span>{% endif %}
+    <span class="body">
+      {% if work.category %}<span class="c">{{ work.category }}</span>{% elsif work.tags %}<span class="c">{{ work.tags | first }}</span>{% endif %}
+      <h4>{{ work.title }}</h4>
+      {% if pc %}<span class="loc">{{ pc.city }}{% if pc.country %}, {{ pc.country }}{% endif %}</span>{% elsif work.client %}<span class="loc">{{ work.client }}</span>{% endif %}
+    </span>
+  </a>
 {% endfor %}
-</ul>
+</div>

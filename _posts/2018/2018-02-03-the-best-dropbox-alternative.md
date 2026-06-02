@@ -1,6 +1,6 @@
 ---
 title: "The best Dropbox alternative"
-summary: "Using Syncthing as an open-source Dropbox alternative to sync files between laptop and Android phone over mobile data while traveling."
+description: "Using Syncthing as an open-source Dropbox alternative to sync files between laptop and Android phone over mobile data while traveling."
 layout: blog
 source:
 date: 2018-02-03 22:00:00 +0350

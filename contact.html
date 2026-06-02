@@ -6,27 +6,30 @@ map: "-9.1564857, 38.7207929"
 location: Lisbon
 offset: 1
 permalink: /contact/
+description: "Get in touch with Franz Geffke about a project, freelance work, or collaboration. Based in Lisbon, working with clients worldwide. Email or encrypted GPG welcome."
 ---
 
 <!-- Istanbul: 28.7320023, 41.0049823 -->
 <!-- Tehran: 51.2097351, 35.696733 -->
 <!-- Lisbon: -9.1564857, 38.7207929 -->
 
-<p id="introduction">
-  For project enquiries, job offers or your thoughts on issues I discuss on my
-  gist, e-mail me at
-  <a href="mailto:mail@gofranz.com?subject=What's on your mind?">mail@gofranz.com</a>. If you
-  prefer a different format, reach out via <a href="https://social.tchncs.de/@franzs">Mastodon</a>.
-</p>
+<div class="fil-contact-intro fil-prose">
+  <p id="introduction">
+    For project enquiries, job offers or your thoughts on issues I discuss on my
+    gist, e-mail me at
+    <a href="mailto:mail@gofranz.com?subject=What's on your mind?">mail@gofranz.com</a>. If you
+    prefer a different format, reach out via <a href="https://social.tchncs.de/@franzs">Mastodon</a>.
+  </p>
 
-<p id="ai-build-callout">
-  Looking for AI consultancy?
-  <br/><a href="/ai-build/">EU-native, deep integration - no non-fit SaaS</a>.
-  <br/>Already shipped? <a href="/ai-security-review/">AI security review</a> - human-led, AI-aided.
-</p>
+  <p id="ai-build-callout">
+    Looking for AI consultancy?
+    <br/><a href="/ai-build/">EU-native, deep integration - no non-fit SaaS</a>.
+    <br/>Already shipped? <a href="/ai-security-review/">AI security review</a> - human-led, AI-aided.
+  </p>
+</div>
 
-<div id="contact">
-  <div class="contact-form">
+<div class="fil-contact-grid">
+  <div id="contact" class="contact-form">
     <form action="https://api.rusty-forms.com/v1/digest/60d8a103-62a4-47a0-91b2-02d363ab8851" method="post">
       <div class="form-group">
         <label for="name">What's your name?</label>
@@ -40,9 +43,25 @@ permalink: /contact/
         <label for="message">Tell me more:</label>
         <textarea class="form-control" name="message" id="message" placeholder="Message" rows="10"></textarea>
       </div>
-      <button type="submit" class="btn btn-outline-secondary">Send Message</button>
+      <button type="submit" class="btn">Send Message</button>
     </form>
   </div>
+
+  <aside class="fil-details">
+    <h2 class="fil-details-head">Details</h2>
+    <dl>
+      <dt>Email</dt>
+      <dd><a href="mailto:mail@gofranz.com?subject=What's on your mind?">mail@gofranz.com</a></dd>
+      <dt>GPG key</dt>
+      <dd><a href="/gpg/">Public key</a></dd>
+      <dt>Resume</dt>
+      <dd><a href="/resume/">View resume</a></dd>
+      <dt>Mastodon</dt>
+      <dd><a rel="me" href="https://social.tchncs.de/@franzs">@franzs ↗</a></dd>
+      <dt>Based in</dt>
+      <dd>{{ page.location }}</dd>
+    </dl>
+  </aside>
 </div>
 
 <style>

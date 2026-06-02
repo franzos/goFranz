@@ -6,6 +6,7 @@ client: "onesnow"
 cover: mobile-authenticator-01.png
 bg: roman-kraft
 tags: "mobile development"
+category: "Mobile"
 introduction: User identity application for SSO-login, digital signatures and consent requests.
 featured: true
 ---

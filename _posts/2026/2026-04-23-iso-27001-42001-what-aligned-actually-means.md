@@ -1,6 +1,6 @@
 ---
 title: "ISO 27001, ISO 42001, and What 'Aligned' Actually Means"
-summary: "A plain-English read on the two ISO standards that come up when customers ask about security and AI governance — and the honest difference between following them and being certified."
+description: "A plain-English read on the two ISO standards that come up when customers ask about security and AI governance — and the honest difference between following them and being certified."
 layout: blog
 date: 2026-04-23 0:00:00 +0000
 category:
@@ -102,6 +102,14 @@ For a small or mid-sized EU company shipping software — especially if there's 
 3. **Upgrade to certification when a deal demands it.** If an enterprise customer blocks a contract on an accredited certificate, *that's* the signal to start the external audit. Budget: €15–60k in certification-body fees, €60–300k in internal effort depending on organisation size — though if you've already done the alignment work properly, much of that internal cost collapses because the evidence already exists.
 
 The trap I see repeatedly is companies pursuing 42001 first without 27001, discovering they need the security baseline anyway, and paying for both audits sequentially instead of as one integrated engagement. Avoid that.
+
+<div class="fil-callout" markdown="1">
+**Curious where you stand right now?** I built a quick, plain-terms self-assessment
+— profile your business, work through the controls, get a rough alignment score
+(and the gaps worth tackling first). It's not a certification, just an honest read.
+
+<span class="fil-callout-cta">→ [Take the ISO 27001 self-assessment](/tools/iso-27001-self-assessment/)</span>
+</div>
 
 ## How I help
 

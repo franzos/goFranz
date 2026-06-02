@@ -1,6 +1,6 @@
 ---
 title: "How-To connect FreeIPA LDAP with Atlassian Crowd"
-summary: "Guide to integrate FreeIPA LDAP authentication with Atlassian Crowd for SSO with Confluence and Jira applications."
+description: "Guide to integrate FreeIPA LDAP authentication with Atlassian Crowd for SSO with Confluence and Jira applications."
 layout: blog
 date: 2018-06-17 00:00:00 +0200
 category:

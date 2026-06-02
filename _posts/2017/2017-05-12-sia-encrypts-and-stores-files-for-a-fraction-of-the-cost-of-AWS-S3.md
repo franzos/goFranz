@@ -1,6 +1,6 @@
 ---
 title: "Sia encrypts and stores files for a fraction of the cost of AWS S3"
-summary: "Sia offers private, decentralized cloud storage at 1/10th the cost of AWS S3 by splitting, encrypting, and distributing files across a network of computers."
+description: "Sia offers private, decentralized cloud storage at 1/10th the cost of AWS S3 by splitting, encrypting, and distributing files across a network of computers."
 layout: blog
 source:
 date: 2017-05-12 08:00:00 +0200

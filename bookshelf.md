@@ -3,6 +3,7 @@ title: Bookshelf
 layout: base
 bg: pattern_029
 permalink: /bookshelf/
+description: "Books I've read and the ones I'd actually recommend — fiction and non-fiction, with the standouts in bold. A running list, not a curated brag."
 ---
 
 Bold denotes books I highly recommend.

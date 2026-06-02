@@ -1,6 +1,6 @@
 ---
 title: "ExpressionEngine and MySQL 5.7: this is incompatible with DISTINCT"
-summary: "Fix for ExpressionEngine 2.9.2+ compatibility issues with MySQL 5.7's stricter DISTINCT clause requirements."
+description: "Fix for ExpressionEngine 2.9.2+ compatibility issues with MySQL 5.7's stricter DISTINCT clause requirements."
 layout: blog
 version: 2.9.2
 os:

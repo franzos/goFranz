@@ -1,6 +1,6 @@
 ---
 title: Backup a remote server with Rsync on macOS or Linux
-summary: "How to use Rsync for incremental backups of remote servers on macOS or Linux systems."
+description: "How to use Rsync for incremental backups of remote servers on macOS or Linux systems."
 layout: blog
 version:
 os:

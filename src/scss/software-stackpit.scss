@@ -1,0 +1,177 @@
+@import "fonts-overpass";
+@import "theme-icon";
+/* ============================================================
+   STACKPIT — "CONSOLE / SIGNAL"  (cool slate · terminal · telemetry)
+   Sibling of goFranz "Filament": same bones (CSS-var theming, mono
+   kickers, idxnum tabs, accent bar motif, facts strip, mono foot),
+   but cooler & more technical. Overpass Mono carries the display
+   headings for a terminal feel. Lime = healthy signal, red = error.
+   ============================================================ */
+:root[data-bs-theme="dark"]{
+  --bg:#0b0d11;--bg-2:#0f1217;--panel:#12151b;--panel-2:#161a22;
+  --ink:#dde3ea;--ink-soft:#8a94a3;--line:#1e242e;--line-2:#2a323f;
+  --lime:#9ef01a;--lime-soft:#8aff5a;--red:#ff5c5c;
+  --glow:#9ef01a26;--glow-2:#9ef01a12;--red-glow:#ff5c5c1f}
+:root[data-bs-theme="light"]{
+  --bg:#f3f5f7;--bg-2:#fff;--panel:#fff;--panel-2:#f7f9fb;
+  --ink:#10151c;--ink-soft:#5a6675;--line:#e2e7ec;--line-2:#cdd5dd;
+  --lime:#3d8b00;--lime-soft:#4ea000;--red:#d92020;
+  --glow:#3d8b0014;--glow-2:#3d8b000a;--red-glow:#d9202012}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Overpass',system-ui,sans-serif;font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.mono{font-family:'Overpass Mono',monospace}
+a{color:var(--lime-soft);text-decoration:none}
+.wide{max-width:1140px;margin:0 auto;padding:0 clamp(1.1rem,3.5vw,3rem)}
+/* cool scanline + grid backdrop, faint lime signal glow (no warm radial) */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(circle at 84% -4%,var(--glow),transparent 38%),
+    radial-gradient(circle at 4% 102%,var(--glow-2),transparent 40%),
+    repeating-linear-gradient(0deg,transparent 0 2px,color-mix(in srgb,var(--ink) 2.6%,transparent) 2px 3px),
+    repeating-linear-gradient(90deg,transparent 0 46px,color-mix(in srgb,var(--ink) 2.2%,transparent) 46px 47px)}
+
+/* status ribbon */
+.ribbon .wide{display:flex;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;font-family:'Overpass Mono',monospace;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);padding:.55rem clamp(1.1rem,3.5vw,3rem);border-bottom:1px solid var(--line)}
+.ribbon b{color:var(--lime-soft)}
+.ribbon .heart{color:var(--lime);animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* TOP BAR — wordmark left, ↗ goFranz + toggle right */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:clamp(1.1rem,3vw,1.6rem) 0}
+.wm{display:flex;align-items:center;gap:.7rem}
+.wm .mk{display:block;width:9px;height:30px;background:var(--lime);box-shadow:0 0 16px var(--glow)}
+.wm .tx{line-height:1}
+.wm .nm{font-family:'Overpass Mono',monospace;font-weight:700;font-size:1.32rem;letter-spacing:-.01em;color:var(--ink)}
+.wm .sub{display:block;font-family:'Overpass Mono',monospace;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-top:3px}
+.topnav{display:flex;align-items:center;gap:.3rem;flex-wrap:wrap}
+.topnav a{font-family:'Overpass Mono',monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);padding:.4rem .8rem;font-weight:600}
+.topnav a:hover{color:var(--lime-soft)}
+.tgl{all:unset;cursor:pointer;font-family:'Overpass Mono',monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);border:1px solid var(--line-2);padding:.38rem .7rem;font-weight:600}
+.tgl:hover{border-color:var(--lime);color:var(--lime-soft)}
+
+/* HERO */
+.hero{padding:clamp(2.4rem,5.5vw,4rem) 0 clamp(1.4rem,3vw,2.2rem)}
+.hgrid{display:grid;grid-template-columns:1fr;gap:clamp(1.8rem,4vw,2.8rem);align-items:start}
+@media(min-width:920px){.hgrid{grid-template-columns:1.05fr .95fr}}
+.hero .eye{font-family:'Overpass Mono',monospace;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--lime-soft)}
+.hero h1{font-family:'Overpass Mono',monospace;font-weight:700;font-size:clamp(2.1rem,5vw,3.5rem);line-height:1.02;letter-spacing:-.02em;margin:1rem 0 1.1rem;max-width:15ch}
+.hero h1 em{font-style:normal;color:var(--lime-soft);text-shadow:0 0 22px var(--glow)}
+.hero .dek{font-weight:300;font-size:clamp(1.05rem,2vw,1.28rem);color:var(--ink-soft);line-height:1.5;max-width:34rem;margin:0 0 1.6rem}
+.cta{display:inline-block;font-family:'Overpass Mono',monospace;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:.72rem 1.2rem;margin:0 .5rem .5rem 0;color:#07110a;background:var(--lime);transition:box-shadow .15s,background .15s}
+.cta:hover{background:var(--lime-soft);box-shadow:0 0 26px var(--glow)}
+.cta.ghost{background:transparent;color:var(--ink);border:1px solid var(--line-2)}
+.cta.ghost:hover{border-color:var(--lime);color:var(--lime-soft);box-shadow:0 0 24px var(--glow-2)}
+
+/* facts strip */
+.idstrip{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:1.9rem}
+@media(min-width:720px){.idstrip{grid-template-columns:repeat(4,1fr)}}
+.idstrip .c{padding:.85rem 1rem .85rem 0}
+.idstrip .c+.c{border-left:1px solid var(--line);padding-left:1.05rem}
+.idstrip .k{font-family:'Overpass Mono',monospace;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lime-soft);display:block;margin-bottom:.25rem}
+.idstrip .v{font-size:.82rem;line-height:1.3;color:var(--ink)}
+
+/* TERMINAL window */
+.term{border:1px solid var(--line-2);background:var(--panel);box-shadow:0 0 60px var(--glow-2);font-family:'Overpass Mono',monospace;overflow:hidden}
+.term .bar{display:flex;align-items:center;gap:.55rem;padding:.6rem .85rem;border-bottom:1px solid var(--line);background:var(--panel-2)}
+.term .bar i{width:11px;height:11px;border-radius:50%;background:var(--line-2);display:block}
+.term .bar i.r{background:var(--red)}.term .bar i.y{background:#e0b341}.term .bar i.g{background:var(--lime)}
+.term .bar .ttl{margin-left:.5rem;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.term .body{padding:1rem 1.1rem;font-size:.8rem;line-height:1.75;color:var(--ink)}
+.term .body .l{white-space:pre-wrap;word-break:break-word}
+.term .p{color:var(--lime)}.term .c{color:var(--ink)}.term .o{color:var(--ink-soft)}
+.term .ok{color:var(--lime-soft)}.term .cur{display:inline-block;width:9px;height:1.05em;background:var(--lime);vertical-align:-2px;animation:blink 1.1s steps(1) infinite;margin-left:2px}
+@keyframes blink{50%{opacity:0}}
+.term .feed{border-top:1px solid var(--line);margin-top:.9rem;padding-top:.85rem}
+.term .feed .fh{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.55rem}
+.issue{display:grid;grid-template-columns:auto 1fr auto;gap:.7rem;align-items:center;padding:.32rem 0;font-size:.76rem}
+.issue .dot{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 8px var(--red-glow)}
+.issue .dot.res{background:var(--lime);box-shadow:0 0 8px var(--glow)}
+.issue .ty{color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.issue .ty b{color:var(--red);font-weight:700}
+.issue .ty.res b{color:var(--lime-soft)}
+.issue .mt{color:var(--ink-soft);font-size:.68rem;white-space:nowrap}
+
+/* positioning line */
+.posit{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.posit .wide{padding:clamp(1.8rem,3.5vw,2.6rem) 0}
+.posit p{margin:0;font-size:clamp(1.1rem,2.2vw,1.5rem);font-weight:300;line-height:1.45;max-width:46rem;color:var(--ink)}
+.posit p b{font-weight:700;color:var(--lime-soft)}
+
+/* section heads */
+section{padding:clamp(2.2rem,4.5vw,3.2rem) 0}
+/* sections also carry .wide, whose padding shorthand zeroes the vertical
+   padding above; restore (and increase) it with a more specific selector. */
+section.wide{padding-top:clamp(2.9rem,5.5vw,4.2rem);padding-bottom:clamp(2.9rem,5.5vw,4.2rem)}
+.shead{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}
+.shead .idxnum{font-family:'Overpass Mono',monospace;font-weight:700;font-size:.76rem;color:var(--lime-soft);border:1px solid var(--line-2);padding:.28rem .55rem;letter-spacing:.05em}
+.shead h2{font-family:'Overpass Mono',monospace;font-weight:700;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.01em;margin:0}
+.shead .meta{margin-left:auto;font-family:'Overpass Mono',monospace;font-size:.66rem;color:var(--ink-soft);letter-spacing:.1em;text-transform:uppercase}
+
+/* feature grid */
+.prod{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:620px){.prod{grid-template-columns:1fr 1fr}}
+@media(min-width:920px){.prod{grid-template-columns:repeat(3,1fr)}}
+.pcard{background:var(--panel);padding:1.4rem;display:flex;flex-direction:column;min-height:190px;color:var(--ink);transition:background .15s}
+.pcard .tab{display:block;width:40px;height:6px;background:var(--lime);margin-bottom:.8rem}
+.pcard:nth-child(3n+2) .tab{background:var(--ink-soft)}.pcard:nth-child(3n) .tab{background:var(--red)}
+.pcard .pn{font-family:'Overpass Mono',monospace;font-weight:700;font-size:1.08rem;letter-spacing:-.01em;margin:0 0 .5rem;line-height:1.1}
+.pcard p{margin:0;color:var(--ink-soft);font-size:.86rem;line-height:1.5}
+.pcard .k{font-family:'Overpass Mono',monospace;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:auto;padding-top:1rem}
+.pcard:hover{background:var(--panel-2)}
+
+/* how it works — split */
+.map-wrap{display:grid;grid-template-columns:1fr;border:1px solid var(--line)}
+@media(min-width:840px){.map-wrap{grid-template-columns:1fr 1.25fr}}
+.map-side{padding:1.6rem;display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid var(--line);background:var(--panel)}
+@media(min-width:840px){.map-side{border-bottom:0;border-right:1px solid var(--line)}}
+.map-side h3{font-family:'Overpass Mono',monospace;font-weight:700;font-size:1.15rem;margin:0 0 .6rem;line-height:1.1}
+.map-side p{margin:0 0 1rem;color:var(--ink-soft);font-size:.88rem;line-height:1.55}
+.ports{display:flex;flex-direction:column;gap:.6rem;margin-top:.3rem}
+.port{display:flex;align-items:baseline;gap:.7rem;font-family:'Overpass Mono',monospace;font-size:.74rem;border:1px solid var(--line);padding:.55rem .7rem;background:var(--panel-2)}
+.port .pp{color:var(--lime-soft);font-weight:700;white-space:nowrap}
+.port .pl{color:var(--ink-soft)}
+.port.ext .pp{color:var(--red)}
+.map-frame{padding:1.4rem;background:var(--bg-2)}
+.snip{font-family:'Overpass Mono',monospace;font-size:.76rem;line-height:1.7;background:var(--panel);border:1px solid var(--line);padding:1rem 1.1rem;overflow-x:auto;color:var(--ink)}
+.snip .lbl{display:block;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.6rem}
+.snip .kw{color:var(--lime-soft)}.snip .str{color:#e0b341}.snip .cm{color:var(--ink-soft)}.snip .pn{color:var(--lime)}
+.note{font-family:'Overpass Mono',monospace;font-size:.7rem;color:var(--ink-soft);line-height:1.6;margin-top:1rem;letter-spacing:.02em}
+.note b{color:var(--lime-soft)}
+
+/* install */
+.methods{display:flex;flex-wrap:wrap;gap:.5rem;align-content:flex-start}
+.method{display:inline-block;font-family:'Overpass Mono',monospace;font-size:.74rem;letter-spacing:.04em;color:var(--ink);border:1px solid var(--line-2);padding:.5rem .85rem;background:var(--panel)}
+.method:hover{border-color:var(--lime);color:var(--lime-soft)}
+.method b{color:var(--lime-soft);font-weight:700;margin-right:.3rem}
+.installterms{display:grid;grid-template-columns:1fr;gap:1.2rem;margin-top:1.2rem}
+@media(min-width:840px){.installterms{grid-template-columns:1fr 1fr}}
+.installterms .term{align-self:start}
+
+/* license */
+.lic{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.lic .wide{padding:clamp(1.6rem,3vw,2.2rem) 0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.lic .tab{width:40px;height:6px;background:var(--lime);display:block}
+.lic p{margin:0;font-size:clamp(1rem,2vw,1.25rem);font-weight:300;color:var(--ink)}
+.lic p b{font-weight:700;color:var(--lime-soft)}
+
+/* closing */
+.closing{text-align:center;border-top:1px solid var(--line)}
+.closing .inner{padding:clamp(2.6rem,5vw,4rem) 0}
+.closing .eye{font-family:'Overpass Mono',monospace;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--lime-soft)}
+.closing h2{font-family:'Overpass Mono',monospace;font-weight:700;font-size:clamp(1.7rem,4vw,2.8rem);margin:.5rem 0 1.4rem}
+
+/* footer */
+.foot{padding:1.5rem 0;font-family:'Overpass Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.7rem;border-top:1px solid var(--line)}
+.foot a{color:var(--lime-soft)}
+.foot .mid{color:var(--ink-soft)}
+
+/* ---- mobile ---- */
+/* these blocks set `padding: <v> 0`, whose shorthand zeroes the horizontal
+   gutter `.wide` provides; on desktop the centred max-width hides it, on
+   mobile it runs edge-to-edge. Restore the inline padding. */
+.wm .nm{white-space:nowrap}
+.hero,.posit .wide,.lic .wide,.closing .inner,.foot{padding-left:clamp(1.1rem,3.5vw,3rem);padding-right:clamp(1.1rem,3.5vw,3rem)}
+@media(max-width:640px){
+  .ribbon{display:none}
+  .topnav a[href^="#"],.topnav a[href*="github.com"]{display:none}
+}

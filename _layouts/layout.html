@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  {% assign is_kitchen = false %}{% if page.url contains "/cooking/recipes" %}{% assign is_kitchen = true %}{% endif %}
   {% include header.html %}
 
-  <body class="bg{% if page.layout == "index" %} index{% endif %}">
+  <body class="bg fil{% if page.layout == "index" %} index{% endif %}{% if is_kitchen %} kitchen{% endif %}">
+    <a class="visually-hidden-focusable" href="#main-content">Skip to content</a>
     {% include mobile-nav.html %}
-    <main id="panel" class="bg{% if page.layout == "index" %} index{% endif %}">
+
+    {% assign rr = page.ribbon_right | default: layout.ribbon_right | default: "" %}
+    {% include fil-header.html ribbon_right=rr %}
+
+    <main id="main-content" class="bg fil{% if page.layout == "index" %} index{% endif %}{% if is_kitchen %} kitchen{% endif %}" tabindex="-1">
       {{ content }}
     </main>
-    
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+
+    {% if page.url contains "/client/" or page.url contains "/work/" or page.url contains "/portfolio/" or page.url == "/about/" %}
+    <section class="fil-cta d-print-none" aria-label="Call to action">
+      <div class="wide inner">
+        <span class="eye">// let's talk</span>
+        <h2>Have something to build?</h2>
+        <a class="cta" href="/contact/?internal_referral">Contact Franz →</a>
+      </div>
+    </section>
+    {% endif %}
+
+    {% assign ft = page.footer_tagline | default: layout.footer_tagline | default: "user sovereignty by design" %}
+    {% include fil-footer.html tagline=ft %}
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true" role="dialog" aria-label="Image preview">
       <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body text-center position-relative">
             <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-            <img id="modalImage" src="" alt="" class="img-fluid">
+            <img id="modalImage" src="data:," alt="" class="img-fluid">
           </div>
         </div>
       </div>

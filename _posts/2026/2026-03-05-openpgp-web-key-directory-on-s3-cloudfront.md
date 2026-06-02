@@ -1,6 +1,6 @@
 ---
 title: "OpenPGP Web Key Directory on S3 and CloudFront"
-summary: "Setting up WKD so email clients can automatically find your PGP key — hosted on S3 with CloudFront."
+description: "Setting up WKD so email clients can automatically find your PGP key — hosted on S3 with CloudFront."
 layout: blog
 source:
 date: 2026-03-05 0:00:00 +0000

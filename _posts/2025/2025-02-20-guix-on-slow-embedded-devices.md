@@ -1,6 +1,6 @@
 ---
 title: "GUIX on slow, embedded devices"
-summary: "How to use guix on a slow, embedded device, without actually running guix on it."
+description: "How to use guix on a slow, embedded device, without actually running guix on it."
 layout: blog
 source:
 date: 2025-2-20 0:00:00 +0000

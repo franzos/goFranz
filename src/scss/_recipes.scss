@@ -1,0 +1,291 @@
+// Recipes — "Souk" skin, scoped under body.kitchen so it never leaks site-wide.
+body.kitchen {
+  --sk-paper: #f4ede0;
+  --sk-paper2: #fffdf8;
+  --sk-ink: #241d14;
+  --sk-soft: #6f6451;
+  --sk-terra: #b4621f;
+  --sk-terra-d: #7c2d12;
+  --sk-saffron: #d99520;
+  --sk-olive: #6b7233;
+  --sk-teal: #1f6f6b;
+  --sk-line: #e0d3bc;
+
+  background: var(--sk-paper);
+  color: var(--sk-ink);
+}
+
+[data-bs-theme="dark"] body.kitchen {
+  --sk-paper: #1c1712;
+  --sk-paper2: #241d16;
+  --sk-ink: #f0e6d6;
+  --sk-soft: #b3a690;
+  --sk-terra: #e08542;
+  --sk-terra-d: #e8a060;
+  --sk-saffron: #e0a93a;
+  --sk-olive: #9aa552;
+  --sk-teal: #4fb3ac;
+  --sk-line: #3a3026;
+}
+
+// Dark mode: replace Filament's cool tech-glow backdrop with a warm kitchen one.
+[data-bs-theme="dark"] body.kitchen.fil::before {
+  background:
+    radial-gradient(120% 80% at 50% -10%, rgba(180, 98, 31, .2), transparent 55%),
+    radial-gradient(80% 60% at 100% 105%, rgba(107, 114, 51, .1), transparent 50%),
+    linear-gradient(180deg, #2a1d12 0%, #1d150d 55%, #150f09 100%);
+}
+
+main.kitchen {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 10px;
+    background: repeating-conic-gradient(from 0deg at 50% 50%,
+      var(--sk-terra) 0 15deg, var(--sk-saffron) 15deg 30deg,
+      var(--sk-olive) 30deg 45deg, var(--sk-teal) 45deg 60deg);
+    background-size: 24px 24px;
+  }
+}
+
+body.kitchen {
+  .kicker { color: var(--sk-terra) !important; }
+  .headline { color: var(--sk-terra-d); }
+  a { color: var(--sk-teal); }
+
+  .fil-art-head .bar.sk-bar {
+    display: block;
+    width: 64px;
+    height: 10px;
+    margin: 1rem 0 1.2rem;
+    background: repeating-linear-gradient(45deg,
+      var(--sk-terra) 0 6px, var(--sk-saffron) 6px 12px);
+  }
+
+  .sk-lede {
+    max-width: 560px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--sk-ink);
+  }
+
+  .sk-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 1.4rem;
+  }
+
+  .sk-filter {
+    font-family: 'Overpass Mono', monospace;
+    font-size: .68rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: 6px 13px;
+    border-radius: 999px;
+    border: 1px solid var(--sk-line);
+    background: var(--sk-paper2);
+    color: var(--sk-soft);
+    cursor: pointer;
+    transition: color .12s, background .12s, border-color .12s;
+
+    &:hover { color: var(--sk-terra-d); border-color: var(--sk-terra); }
+    &.on { background: var(--sk-terra-d); color: #fff; border-color: var(--sk-terra-d); }
+  }
+
+  .sk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 22px;
+    margin: 2rem 0 1rem;
+  }
+
+  .sk-card {
+    display: block;
+    background: var(--sk-paper2);
+    border: 1px solid var(--sk-line);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .15s, box-shadow .15s;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 34px rgba(36, 24, 12, .16);
+    }
+  }
+
+  .sk-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 128px;
+
+    &.sk-tile {
+      background: repeating-conic-gradient(from 0deg at 50% 50%,
+        var(--sk-terra) 0 15deg, var(--sk-saffron) 15deg 30deg,
+        var(--sk-olive) 30deg 45deg, var(--sk-teal) 45deg 60deg);
+      background-size: 40px 40px;
+
+      .glyph { font-size: 2rem; filter: drop-shadow(0 1px 3px rgba(0, 0, 0, .4)); }
+    }
+
+    &.sk-photo { background-size: cover; background-position: center; }
+  }
+
+  .sk-cbody { display: block; padding: 14px 15px 17px; }
+
+  .sk-ccat {
+    display: block;
+    font-family: 'Overpass Mono', monospace;
+    font-size: .6rem;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--sk-teal);
+  }
+
+  .sk-ct {
+    display: block;
+    font-weight: 700;
+    font-size: 1.08rem;
+    line-height: 1.16;
+    margin: .34rem 0 .6rem;
+    color: var(--sk-ink);
+  }
+
+  .sk-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+  .sk-chip {
+    font-family: 'Overpass Mono', monospace;
+    font-size: .6rem;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: var(--sk-paper);
+    color: var(--sk-terra-d);
+    border: 1px solid var(--sk-line);
+  }
+
+  .sk-cmeta {
+    display: flex;
+    gap: 14px;
+    margin-top: 11px;
+    font-family: 'Overpass Mono', monospace;
+    font-size: .6rem;
+    letter-spacing: .07em;
+    color: var(--sk-soft);
+  }
+
+  .sk-empty { color: var(--sk-soft); margin: 2rem 0; }
+
+  .sk-hero-img {
+    margin-bottom: 1.6rem;
+    border-radius: 12px;
+    overflow: hidden;
+    max-height: 420px;
+
+    img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  }
+
+  .sk-meta {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.4rem 0 .4rem;
+    border-top: 1px solid var(--sk-line);
+    border-bottom: 1px solid var(--sk-line);
+
+    div {
+      padding: 11px 18px 11px 0;
+      margin-right: 18px;
+      border-right: 1px solid var(--sk-line);
+    }
+
+    div:last-child { border-right: 0; margin-right: 0; }
+
+    .k {
+      display: block;
+      font-family: 'Overpass Mono', monospace;
+      font-size: .58rem;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      color: var(--sk-soft);
+    }
+
+    .v { font-weight: 700; font-size: .98rem; color: var(--sk-ink); }
+  }
+
+  .sk-prose {
+    > p:first-of-type::first-letter { color: var(--sk-terra); }
+
+    h2, h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-top: 0;
+      font-weight: 800;
+      color: var(--sk-terra-d);
+
+      &::before {
+        content: "";
+        position: static;
+        width: 22px;
+        height: 22px;
+        flex: none;
+        border-radius: 4px;
+        background: repeating-conic-gradient(from 0deg at 50% 50%,
+          var(--sk-terra) 0 30deg, var(--sk-saffron) 30deg 60deg);
+      }
+    }
+
+    ul li::marker { color: var(--sk-saffron); }
+
+    // Instruction steps: ordered list rendered as numbered badges.
+    ol {
+      list-style: none;
+      counter-reset: step;
+      padding-left: 0;
+      margin: 1.4rem 0;
+    }
+
+    ol > li {
+      counter-increment: step;
+      position: relative;
+      padding-left: 3.4rem;
+      min-height: 2.2rem;
+      margin-bottom: 1.5rem;
+
+      &::before {
+        content: counter(step);
+        position: absolute;
+        left: 0;
+        top: -.15rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--sk-terra-d);
+        color: var(--sk-paper2);
+        font-family: 'Overpass Mono', monospace;
+        font-weight: 700;
+        font-size: 1rem;
+      }
+
+      strong:first-child { color: var(--sk-terra-d); }
+    }
+  }
+
+  .sk-more {
+    margin-top: 3rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--sk-line);
+
+    .fil-block::before {
+      background: repeating-linear-gradient(45deg,
+        var(--sk-terra) 0 6px, var(--sk-saffron) 6px 12px);
+    }
+  }
+}

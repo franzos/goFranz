@@ -1,6 +1,6 @@
 ---
 title: "Claude Code vs. Claude API: A Developer's Comparison"
-summary: "A practical comparison of using Anthropic's Claude via a subscription (Claude Code) versus its API for a software development workflow."
+description: "A practical comparison of using Anthropic's Claude via a subscription (Claude Code) versus its API for a software development workflow."
 layout: blog
 source:
 date: 2025-6-18 0:00:00 +0000

@@ -1,9 +1,0 @@
-@media print
-{
-  body.bg {
-    background-image: none;
-  }
-  .print {
-    display: none;
-  }
-}

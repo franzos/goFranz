@@ -1,6 +1,6 @@
 ---
 title: "Using LLMs to Accelerate Non-Critical Work"
-summary: "LLMs are great for knocking out quick scripts and one-off tools, but they’re no substitute for a careful human review when it really counts."
+description: "LLMs are great for knocking out quick scripts and one-off tools, but they’re no substitute for a careful human review when it really counts."
 layout: blog
 source:
 date: 2025-6-01 0:00:00 +0000

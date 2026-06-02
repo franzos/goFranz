@@ -1,6 +1,6 @@
 ---
 title: "Screen Sharing on Niri/Wayland with Guix"
-summary: "How to enable screen sharing on Niri/Wayland using Guix"
+description: "How to enable screen sharing on Niri/Wayland using Guix"
 layout: blog
 source:
 date: 2026-03-04 0:00:00 +0000

@@ -2,12 +2,12 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ page.title }}",
-  "description": "{{ page.summary | default: page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | jsonify }},
   "url": "{{ site.url }}{{ page.url }}",
   "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.updated | default: page.date | date_to_xmlschema }}",
   "author": {
     "@type": "Person",
     "name": "Franz Geffke",
@@ -19,18 +19,16 @@
     "url": "{{ site.url }}",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ site.url }}/assets/images/gofranz.svg"
+      "url": "{{ site.url }}/assets/images/gofranz_embed.png"
     }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ site.url }}{{ page.url }}"
   },
-  {% if page.bg %}
-  "image": "{{ site.url }}/assets/bg/{{ page.bg }}.jpg",
-  {% endif %}
-  "articleSection": "{{ page.category | first | default: 'Blog' }}",
-  "keywords": "{{ page.tags | join: ', ' }}"
+  "image": "{{ site.url }}{{ site.image }}",
+  "articleSection": {{ page.category | first | default: 'Blog' | jsonify }},
+  "keywords": {{ page.tags | join: ', ' | jsonify }}
 }
 </script>
 {% endif %}

@@ -1,6 +1,6 @@
 ---
 title: "From Docker to Podman on Guix"
-summary: "A guide on transitioning from Docker to Podman using Guix."
+description: "A guide on transitioning from Docker to Podman using Guix."
 layout: blog
 source:
 date: 2025-09-07 0:00:00 +0000

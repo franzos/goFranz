@@ -1,0 +1,33 @@
+---
+layout: layout
+fil: true
+title: Recipes
+sitemap: true
+permalink: /cooking/recipes/
+description: "A small, growing pile of recipes I actually cook — mostly one-pan, Eastern-Mediterranean leaning."
+---
+
+<div class="wide sk-listing">
+  <header class="fil-art-head sk-lhead">
+    <span class="bar sk-bar"></span>
+    <h1 class="headline">Recipes</h1>
+    <p class="sk-lede">A small, growing pile of things I actually cook — mostly one-pan, Eastern-Mediterranean leaning, written the way I'd explain them to a friend. No life stories before the ingredients.</p>
+
+    {% assign cuisines = site.recipes | map: "cuisine" | compact | uniq | sort %}
+    {% if cuisines.size > 1 %}
+    <div class="sk-filters" data-recipe-filters>
+      <button class="sk-filter on" data-facet="all" type="button">All</button>
+      {% for c in cuisines %}<button class="sk-filter" data-facet="{{ c | downcase }}" type="button">{{ c }}</button>{% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  {% assign recipes = site.recipes | sort: "date" | reverse %}
+  {% if recipes.size > 0 %}
+  <div class="sk-grid" data-recipe-grid>
+    {% for r in recipes %}{% include recipe-card.html recipe=r %}{% endfor %}
+  </div>
+  {% else %}
+  <p class="sk-empty">No recipes yet — check back soon.</p>
+  {% endif %}
+</div>
