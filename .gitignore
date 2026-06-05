@@ -15,6 +15,5 @@ project.config
 assets/images/projects/preview/
 assets/js
 assets/css
-!assets/css/print.css
 .bundle
 .superpowers/

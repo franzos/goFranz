@@ -17,6 +17,19 @@
 }
 .theme-opt:hover { opacity: 0.8; }
 .theme-opt::before { display: inline-block; }
+/* Glyph-only control: collapse the SR labels even where Bootstrap's
+   .visually-hidden isn't loaded (standalone product-page stylesheets). */
+.theme-toggle .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .theme-opt[data-theme-set="system"]::before { content: "\25D0"; } /* ◐ */
 .theme-opt[data-theme-set="light"]::before  { content: "\263C"; } /* ☼ */
 .theme-opt[data-theme-set="dark"]::before   { content: "\263E"; } /* ☾ */

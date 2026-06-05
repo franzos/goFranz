@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env bash
 
 # Prompt the user which folder to upload
 FOLDER_NAME="./_site"

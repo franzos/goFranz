@@ -1303,12 +1303,16 @@ body.fil {
   // ===== blog post reading view =====
   .measure { max-width: 42rem; margin-left: auto; margin-right: auto; }
 
-  // editorial reading column: article caps at 64rem; text sits at ~54rem,
-  // while images / code blocks / tables break out to the full 64rem.
+  // editorial reading column, left-aligned to the masthead: the column caps
+  // at 64rem; text sits at ~54rem, while images / code blocks / tables break
+  // out to the full 64rem. Left-aligning (not centring) keeps the headline and
+  // body flush with the logo/nav, matching the home, blog-index and contact pages.
   .fil-article:not(.fil-wide):not(.fil-contact):not(.fil-clientprofile) {
-    max-width: 64rem;
+    > article,
+    > .colophon,
+    > .fil-otherwork { max-width: 64rem; }
 
-    .fil-art-head { max-width: 54rem; margin-inline: auto; }
+    .fil-art-head { max-width: 54rem; margin-inline: 0; }
 
     .fil-prose > p,
     .fil-prose > h2,
@@ -1319,7 +1323,7 @@ body.fil {
     .fil-prose > dl,
     .fil-prose > blockquote,
     .fil-prose > hr,
-    .fil-prose > .footnotes { max-width: 54rem; margin-inline: auto; }
+    .fil-prose > .footnotes { max-width: 54rem; margin-inline: 0; }
   }
 
   .fil-article {
@@ -1452,7 +1456,7 @@ body.fil {
       margin: 0 0 1.8rem;
       background: var(--fil-codebg);
       color: #e9e2f3;
-      padding: 1.1rem 1.2rem;
+      padding: .85rem 1.2rem;
       overflow: auto;
       border: 1px solid var(--fil-line-2);
       border-left: 4px solid var(--fil-accent);
@@ -1703,7 +1707,7 @@ body.fil {
       text-transform: uppercase;
       color: var(--fil-amber);
     }
-    h4 { font-weight: 800; font-size: 1.05rem; margin: .35rem 0; line-height: 1.05; text-transform: uppercase; }
+    h4 { font-weight: 800; font-size: 1.05rem; margin: .35rem 0; line-height: 1.05; text-transform: uppercase; min-height: 2.2rem; }
     .loc {
       font-family: 'Overpass Mono', monospace;
       font-size: .64rem;
@@ -1910,7 +1914,7 @@ body.fil {
 
     .fil-contact-grid {
       display: grid;
-      grid-template-columns: 1.6fr 1fr;
+      grid-template-columns: minmax(0, 1fr) 15rem;
       gap: clamp(1.6rem, 4vw, 3rem);
       margin-top: clamp(1.8rem, 4vw, 2.6rem);
       align-items: start;
@@ -2349,7 +2353,7 @@ body.index.fil {
       text-transform: uppercase;
       color: var(--fil-amber);
     }
-    h4 { font-weight: 800; font-size: 1.05rem; margin: .35rem 0; line-height: 1.05; text-transform: uppercase; }
+    h4 { font-weight: 800; font-size: 1.05rem; margin: .35rem 0; line-height: 1.05; text-transform: uppercase; min-height: 2.2rem; }
     .loc {
       font-family: 'Overpass Mono', monospace;
       font-size: .64rem;
