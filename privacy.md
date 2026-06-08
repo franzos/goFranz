@@ -9,11 +9,9 @@ This website is completely static. There's no CMS, PHP, MYSQL, Ruby, ... - It's 
 
 ## Tracking
 
-Unlike the remaining 99% of the web, this website only contains one tracking snippet: I'm running my own analytics server so the fact that you've visited remains a secret between you and me. But really, unlike Google (Analytics), I respect your privacy and don't use the data for anything other than to know that you've visited.
+Unlike the remaining 99% of the web, this website only contains one analytics snippet, served from my own server at `stats.gofranz.com`. So the fact that you've visited remains a secret between you and me. Unlike Google (Analytics), I respect your privacy and don't use the data for anything other than to know that you've visited.
 
-If you don't even want me to know that you're visiting, you can opt-out below:
-
-<iframe style="border: 0; height: 200px; width: 600px;" src="https://stats.dkkma.com/index.php?module=CoreAdminHome&action=optOut&language=en"></iframe>
+No cookies are set, and no personal data leaves my server. If you'd rather I didn't count your visit at all, enable "Do Not Track" in your browser or block requests to `stats.gofranz.com`.
 
 ## External
 
@@ -27,9 +25,10 @@ Depending on how you interact with this website, different data will be submitte
 
 ### Just visting
 
-Unless your browser is set to "Do Not Track", your visit will be recorded in my Matomo (formerly Piwik), a self-hosted, open-source analytics software.
+Unless your browser is set to "Do Not Track", your visit will be recorded by my self-hosted analytics at `stats.gofranz.com`.
 
-- 1 byte of your IP address is anonymized
+- no cookies are set
+- your IP address is not stored
 - no data is shared with 3rd parties
 
 ### Getting in touch
