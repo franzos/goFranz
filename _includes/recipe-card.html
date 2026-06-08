@@ -3,8 +3,8 @@
 {% if r.cuisine and r.method %}{% assign kick = r.cuisine | append: " · " | append: r.method %}{% elsif r.method %}{% assign kick = r.method %}{% endif %}
 {% capture facets %}{% if r.cuisine %}{{ r.cuisine | downcase }}{% endif %}{% if r.method %}|{{ r.method | downcase }}{% endif %}{% for t in r.tags %}|{{ t | downcase }}{% endfor %}{% if r.highlight %}|{{ r.highlight | downcase }}{% endif %}{% endcapture %}
 <a class="sk-card" href="{{ r.url }}" data-facets="{{ facets | strip }}">
-  {% if r.image %}
-  <span class="sk-thumb sk-photo" style="background-image:url('{{ r.image }}')" aria-hidden="true"></span>
+  {% if r.photo %}
+  <span class="sk-thumb sk-photo" style="background-image:url('{{ r.photo }}')" aria-hidden="true"></span>
   {% else %}
   <span class="sk-thumb sk-tile" aria-hidden="true"><span class="glyph">{{ r.glyph | default: "🍽" }}</span></span>
   {% endif %}
