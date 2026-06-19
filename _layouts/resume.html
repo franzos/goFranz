@@ -113,6 +113,7 @@
       .contact a { color: #000; }
     }
   </style>
+  {% if page.md_twin_url %}<link rel="alternate" type="text/markdown" href="{{ page.md_twin_url | absolute_url }}">{% endif %}
   </head>
 
   <body>

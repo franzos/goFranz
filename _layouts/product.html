@@ -7,6 +7,7 @@
   {% include theme-script.html %}
 
   {% seo %}
+  {% if page.md_twin_url %}<link rel="alternate" type="text/markdown" href="{{ page.md_twin_url | absolute_url }}">{% endif %}
 
   {%- if page.image %}
   <meta property="og:image:width" content="1200">

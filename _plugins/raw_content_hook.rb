@@ -19,6 +19,17 @@ module Jekyll
       ['.md', '.markdown'].include?(ext)
     end
 
+    # Whether this item should get a .md twin. Single source of truth shared by
+    # the writer and the <head> alternate link. Call at/after :pre_render so
+    # item.content holds the raw body.
+    def twin?(item)
+      return false unless markdown_source?(item)
+      # Work entries are image-heavy showcases; their twins would be mostly markup.
+      return false if item.respond_to?(:collection) && item.collection&.label == 'work'
+      return false if item.content.nil? || item.content.strip.empty?
+      !rel_md_path(item.url).nil?
+    end
+
     # Expand Liquid (includes, raw blocks, variables) but NOT markdown, so the
     # twin is real source rather than leaked {% %} tags. Falls back to raw on error.
     def render_liquid(site, item, raw)
@@ -45,24 +56,31 @@ module Jekyll
     end
   end
 
-  # Stash the pre-render markdown before Liquid/kramdown touch it.
-  Hooks.register [:documents, :pages], :pre_render do |item|
-    item.data['raw_content'] = item.content
+  # Stash the raw markdown and flag twinned items before rendering. A generator
+  # (not a :pre_render hook) so the flag is set before any to_liquid is built —
+  # otherwise standalone Page drops don't expose it to the <head> template.
+  class RawMarkdownGenerator < Generator
+    safe true
+    priority :lowest
+
+    def generate(site)
+      (site.documents + site.pages).each do |item|
+        item.data['raw_content'] = item.content
+        item.data['md_twin_url'] = RawMarkdown.rel_md_path(item.url) if RawMarkdown.twin?(item)
+      end
+    end
   end
 
   # Write the .md twins straight to the destination, bypassing kramdown.
   Hooks.register :site, :post_write do |site|
     (site.documents + site.pages).each do |item|
       next unless item.write?
-      next unless RawMarkdown.markdown_source?(item)
-      # Work entries are image-heavy showcases; their twins would be mostly markup.
-      next if item.respond_to?(:collection) && item.collection&.label == 'work'
+
+      rel = item.data['md_twin_url']
+      next if rel.nil?
 
       raw = item.data['raw_content']
       next if raw.nil? || raw.strip.empty?
-
-      rel = RawMarkdown.rel_md_path(item.url)
-      next if rel.nil?
 
       dest = File.join(site.dest, rel)
       FileUtils.mkdir_p(File.dirname(dest))
