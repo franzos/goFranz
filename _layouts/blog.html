@@ -46,4 +46,19 @@ footer_tagline: "show your work, not just conclusions"
       </div>
     </div>
   </div>
+
+  {% if page.mastodon_id %}
+  {% assign toot_url = "https://" | append: site.mastodon.instance | append: "/@" | append: site.mastodon.user | append: "/" | append: page.mastodon_id %}
+  <section class="fil-comments" id="mastodon-comments"
+           data-instance="{{ site.mastodon.instance }}" data-toot-id="{{ page.mastodon_id }}">
+    <div class="mc-head">
+      <h3>Comments</h3>
+      <a class="mc-discuss" href="{{ toot_url }}" target="_blank" rel="noopener">Discuss on Mastodon ↗</a>
+    </div>
+    <p class="mc-intro">Reply to <a href="{{ toot_url }}" target="_blank" rel="noopener">this post on Mastodon</a> and it shows up below.</p>
+    <button type="button" class="mc-load">Load comments</button>
+    <p class="mc-status" role="status" aria-live="polite" hidden></p>
+    <ol class="mc-list"></ol>
+  </section>
+  {% endif %}
 </div>

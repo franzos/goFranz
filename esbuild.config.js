@@ -9,8 +9,9 @@ const isWatch = process.argv.includes('--watch')
 const buildConfig = {
   entryPoints: {
     'main.min': 'src/js/main.js',
-    'mermaid.min': 'src/js/mermaid.js',  
-    'mapbox.min': 'src/mapbox.js'
+    'mermaid.min': 'src/js/mermaid.js',
+    'mapbox.min': 'src/mapbox.js',
+    'mastodon-comments.min': 'src/js/mastodon-comments.js'
   },
   bundle: true,
   outdir: 'assets/js',

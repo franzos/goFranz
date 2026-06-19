@@ -9,6 +9,10 @@ mapbox_token: "pk.eyJ1IjoiZGtrbWEiLCJhIjoiU05aOVdrRSJ9._Ahj-qQ5cCyLUCM2dp4tAw"
 twitter:
   username: franzos
 
+mastodon:
+  instance: social.tchncs.de
+  user: franzs
+
 # Build settings
 markdown: kramdown
 encoding: utf-8

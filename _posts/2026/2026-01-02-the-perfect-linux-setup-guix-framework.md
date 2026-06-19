@@ -13,6 +13,7 @@ tags:
 bg: austin-neill
 bg-author: Austin Neill
 author: Franz Geffke
+mastodon_id: 115829534498648535
 ---
 
 After years of configuration tweaking, I think I've finally landed on a setup that feels complete. Everything works together. My Framework laptop (AMD) boots to a fingerprint scan, I sudo with a touch of my YubiKey, themes switch automatically at sunset, and my entire configuration syncs effortlessly between this, and my older ThinkPad.

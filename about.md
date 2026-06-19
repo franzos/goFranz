@@ -6,6 +6,11 @@ permalink: /about/
 description: "I'm Franz Geffke — born in East Germany, at home between Europe, the Middle East and Southeast Asia. A developer, privacy advocate, and builder of systems that put users first."
 ---
 
+<figure class="fil-portrait fil-portrait--about">
+  <img src="/assets/images/me.jpg" alt="Franz Geffke at the controls of a light aircraft" width="500" height="500" loading="lazy">
+  <figcaption>Off the clock.</figcaption>
+</figure>
+
 <strong>My Name is Franz Geffke</strong> - I was born and raised in East Germany but today my home is anywhere between Europe, the Middle-East and Southeast-Asia. New experiences and culture draw me to travel to, and live in different countries all around the world - With stronger foreign ties come a different, new perspective on all aspects of life and business which I continue to embrace.
 
 <div id="map" data-slideout-ignore></div>
