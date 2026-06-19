@@ -18,6 +18,8 @@ echo "Destination: $AWS_BUCKET_URL"
 
 # Upload the folder to S3 using AWS CLI
 guix shell awscli -- aws s3 sync $FOLDER_NAME $AWS_BUCKET_URL --profile $PROFILE_NAME --content-type "text/html; charset=utf-8" --exclude "*" --include "*.html"
+guix shell awscli -- aws s3 sync $FOLDER_NAME $AWS_BUCKET_URL --profile $PROFILE_NAME --content-type "text/markdown; charset=utf-8" --exclude "*" --include "*.md"
+guix shell awscli -- aws s3 sync $FOLDER_NAME $AWS_BUCKET_URL --profile $PROFILE_NAME --content-type "text/plain; charset=utf-8" --exclude "*" --include "*.txt"
 guix shell awscli -- aws s3 cp $FOLDER_NAME/.well-known/openpgpkey/hu/ $AWS_BUCKET_URL/.well-known/openpgpkey/hu/ --recursive --content-type "application/octet-stream" --profile $PROFILE_NAME
 guix shell awscli -- aws s3 sync $FOLDER_NAME $AWS_BUCKET_URL --profile $PROFILE_NAME --delete
 

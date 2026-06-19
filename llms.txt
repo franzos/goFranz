@@ -1,0 +1,41 @@
+---
+permalink: /llms.txt
+sitemap: false
+---
+# Franz Geffke
+
+> {{ site.description }}
+
+Most pages have a plain-markdown version, available by appending `.md` to the URL
+(e.g. `{{ site.url }}/about.md`). The links below point at it where one exists.
+
+## Blog
+{% assign posts = site.posts | sort: 'date' | reverse -%}
+{% for post in posts -%}
+- [{{ post.title }}]({{ site.url }}{{ post.url | md_url }}){% assign d = post.description | default: post.excerpt -%}
+{% if d %}: {{ d | strip_html | strip_newlines | truncate: 200 }}{% endif %}
+{% endfor %}
+## Today I Learned
+{% assign tils = site.til | sort: 'date' | reverse -%}
+{% for item in tils -%}
+- [{{ item.title }}]({{ site.url }}{{ item.url | md_url }})
+{% endfor %}
+## Work
+{% for item in site.work -%}
+- [{{ item.title }}]({{ site.url }}{{ item.url }}){% if item.introduction %}: {{ item.introduction | strip_html | strip_newlines | truncate: 200 }}{% endif %}
+{% endfor %}
+## Software
+{% for item in site.software -%}
+- [{{ item.name }}]({% if item.repo %}{{ item.repo }}{% else %}{{ site.url }}{{ item.url }}{% endif %}){% if item.blurb %}: {{ item.blurb | strip_html | strip_newlines }}{% endif %}
+{% endfor %}
+## Recipes
+{% for item in site.recipes -%}
+- [{{ item.title }}]({{ site.url }}{{ item.url | md_url }}){% if item.summary %}: {{ item.summary | strip_html | strip_newlines | truncate: 200 }}{% endif %}
+{% endfor %}
+## Pages
+- [About]({{ site.url }}/about.md)
+- [Résumé]({{ site.url }}/resume.md)
+- [Software overview]({{ site.url }}/software.md)
+- [Bookshelf]({{ site.url }}/bookshelf.md)
+- [Privacy]({{ site.url }}/privacy.md)
+- [GPG / contact]({{ site.url }}/gpg.md)
