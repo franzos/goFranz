@@ -7,7 +7,7 @@ sitemap:
  exclude: 'yes'
 ---
 
-I'm a systems architect and technical leader who ships. Currently Senior Identity Engineer at TWIN (IOTA Foundation), shipping OID4VP, SD-JWT VC, and a KERI/vLEI ↔ IOTA DID bridge for global trade. Principal engineer at Softmax before TWIN - built the digital identity platform now backing KYC across 10+ partner products, IoT remote patient monitoring (BLE/WebRTC), and a regulated crypto exchange. 12+ years building products end-to-end and guiding the teams that deliver, sometimes as the founder.
+I'm a systems architect and technical leader who ships. Currently Senior Identity Engineer at TWIN (IOTA Foundation), shipping OID4VP, SD-JWT VC, and a KERI/vLEI ↔ IOTA DID bridge for global trade. Principal engineer at Softmax before TWIN - built the digital identity platform now backing KYC across 10+ partner products, IoT remote patient monitoring (BLE/WebRTC), and a regulated crypto exchange. 14 years building products end-to-end and guiding the teams that deliver, sometimes as the founder.
 
 My non-traditional path through international business and self-directed learning - 15+ years across Singapore, Thailand, Malaysia, China, Iran, UAE, Turkey, and Portugal - has made me stronger. I understand users, markets, and the business impact of technical decisions. I design and build secure, scalable platforms end to end - turning ambiguous business goals into simple, reliable systems. I'm at my best in high-ownership, fast-moving environments - because this is more than a job to me.
 

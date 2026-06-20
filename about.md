@@ -23,7 +23,7 @@ Here's what I'm reading: [Bookshelf](/bookshelf/)
 
 ## Work
 
-Senior Identity Engineer at TWIN (IOTA Foundation). 12+ years building production systems across identity, crypto, IoT, and real estate — sometimes as the founder.
+Senior Identity Engineer at TWIN (IOTA Foundation). 14 years building production systems across identity, crypto, IoT, and real estate — sometimes as the founder.
 
 My current focus:
 
