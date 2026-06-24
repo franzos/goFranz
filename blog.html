@@ -29,7 +29,7 @@ pagination:
         <span class="m">{{ post.date | date: "%d %b %Y" }}{% if post.tags and post.tags.size > 0 %}<span class="tag">#{{ post.tags | first }}</span>{% endif %}</span>
         <div class="bi-body">
           <h2>{{ post.title }}</h2>
-          {% if post.summary %}<p>{{ post.summary }}</p>{% endif %}
+          {% if post.description %}<p>{{ post.description }}</p>{% endif %}
         </div>
       </a>
     </li>

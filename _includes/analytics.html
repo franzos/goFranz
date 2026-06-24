@@ -1,1 +1,36 @@
 <script type="module" data-entity="gofranz.com" src="https://stats.gofranz.com/script.js"></script>
+
+<script type="module">
+  // Liwan counts a lone pageview (no neighbouring event within 30 min) as a bounce.
+  // Firing a second event for engaged readers de-bounces the session and feeds
+  // avg-time-on-site. Sent via sendBeacon so it survives the reader navigating away —
+  // Liwan's own event() uses fetch without keepalive and can drop the request on exit.
+  const tag = document.querySelector('script[src^="https://stats.gofranz.com/script.js"]');
+  const entity = tag && tag.getAttribute("data-entity");
+  const host = location.hostname;
+  const isLocal = host === "localhost" || host === "127.0.0.1" || host === "[::1]" || location.protocol === "file:";
+
+  if (entity && !isLocal && !localStorage.getItem("disable-liwan")) {
+    const endpoint = "https://stats.gofranz.com/api/event";
+    const send = (name) => {
+      const body = JSON.stringify({ name, entity_id: entity, url: location.origin + location.pathname, referrer: document.referrer });
+      const blob = new Blob([body], { type: "application/json" });
+      if (!(navigator.sendBeacon && navigator.sendBeacon(endpoint, blob))) {
+        fetch(endpoint, { method: "POST", body, headers: { "Content-Type": "application/json" }, keepalive: true }).catch(() => {});
+      }
+    };
+
+    let scrollSent = false;
+    const onScroll = () => {
+      if (scrollSent) return;
+      if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight * 0.5) {
+        scrollSent = true;
+        window.removeEventListener("scroll", onScroll);
+        send("scroll-50%");
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    setTimeout(() => send("engaged-30s"), 30000);
+  }
+</script>

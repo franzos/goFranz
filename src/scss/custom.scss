@@ -1527,6 +1527,37 @@ body.fil {
     .contact-rss { margin-top: 1rem; }
   }
 
+  // prev/next post navigation (post)
+  .fil-postnav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 3rem;
+    border-top: 1px solid var(--fil-line);
+    padding-top: 1.6rem;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      gap: .35rem;
+      padding: 1rem;
+      border: 1px solid var(--fil-line-2);
+      color: var(--fil-ink);
+      transition: border-color .18s ease, background .18s ease;
+    }
+    a:hover { border-color: var(--fil-accent); background: color-mix(in srgb, var(--fil-accent) 6%, transparent); }
+    a:hover .pn-title { color: var(--fil-accent-bright); }
+    .pn-next { text-align: right; }
+    .pn-dir {
+      font-family: 'Overpass Mono', monospace;
+      font-size: .68rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--fil-ink-soft);
+    }
+    .pn-title { font-weight: 700; font-size: 1.02rem; line-height: 1.2; }
+  }
+
   // ===== blog index =====
   .fil-blogindex {
     .bi-head {

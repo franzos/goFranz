@@ -11,6 +11,8 @@ gem "jekyll-paginate-v2"
 gem "csv"
 gem "base64"
 gem "bigdecimal"
+gem "logger"
+gem "cgi"
 
 
 

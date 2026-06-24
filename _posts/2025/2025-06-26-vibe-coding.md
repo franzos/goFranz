@@ -47,7 +47,7 @@ In one example, I wanted to expand a billing library to include subscriptions al
 
 I've also tried to keep a closer eye on what it's doing, reviewing milestones and giving feedback on what I don't agree on, but this sometimes gets the LLM confused, so more often than not, I put it aside and make the changes myself.
 
-There's ways to manage this somewhat: [Recommendations for Claude Code](h/blog/claude-code-vs-claude-api/#recommendations)
+There's ways to manage this somewhat: [Recommendations for Claude Code](/blog/claude-code-vs-claude-api/#recommendations)
 
 ## Review: Disappointment
 

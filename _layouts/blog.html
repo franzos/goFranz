@@ -29,6 +29,23 @@ footer_tagline: "show your work, not just conclusions"
     </div>
   </article>
 
+  {% if page.previous.url or page.next.url %}
+  <nav class="fil-postnav" aria-label="More posts">
+    {% if page.previous.url %}
+    <a class="pn-prev" href="{{ page.previous.url }}">
+      <span class="pn-dir"><span aria-hidden="true">←</span> Older</span>
+      <span class="pn-title">{{ page.previous.title }}</span>
+    </a>
+    {% else %}<span></span>{% endif %}
+    {% if page.next.url %}
+    <a class="pn-next" href="{{ page.next.url }}">
+      <span class="pn-dir">Newer <span aria-hidden="true">→</span></span>
+      <span class="pn-title">{{ page.next.title }}</span>
+    </a>
+    {% else %}<span></span>{% endif %}
+  </nav>
+  {% endif %}
+
   <div class="colophon">
     <div class="colo-grid">
       <div class="colo fil-related">
