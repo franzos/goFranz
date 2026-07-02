@@ -20,7 +20,22 @@ layout: layout
 </div>
 
 <section class="wide">
-  <div class="shead"><span class="idxnum">01</span><h2>What I build</h2><span class="meta">SaaS · self-hosted · desktop</span></div>
+  <div class="shead"><span class="idxnum">01</span><h2>Latest writing</h2><span class="meta">{{ post_count }} entries · since 2014</span></div>
+  <ul class="idx">
+    {% for post in posts_sorted limit:5 %}
+    <li>
+      <a href="{{ post.url }}">
+        <span class="m">{{ post.date | date: "%d %b %Y" }}</span>
+        <h3>{{ post.title }}</h3>
+        {% if post.tags %}<span class="tag">#{{ post.tags | first }}</span>{% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="wide">
+  <div class="shead"><span class="idxnum">02</span><h2>What I build</h2><span class="meta">SaaS · self-hosted · desktop</span></div>
   <div class="prod-rowlabel"><span class="bar"></span>SaaS · hosted</div>
   <div class="prod">
     <a class="pcard has-logo" href="https://gpt-muse.com"><img class="plogo" src="/assets/images/gpt-muse-logo.svg" alt="GPTMuse logo" loading="lazy" width="44" height="44"><span class="tab"></span><span class="pn">GPTMuse</span><span class="desc">Privacy-first AI platform with access to ChatGPT, Claude, Gemini, Grok and others. Pay-per-use pricing.</span><span class="go">gpt-muse.com →</span></a>
@@ -49,21 +64,6 @@ layout: layout
     <a class="pcard more" href="/software/"><span class="tab"></span><span class="pn">See all</span><span class="desc">Every app, library, CLI and tool I've shipped — including the smaller Rust crates that don't get a page of their own.</span><span class="go">/software · {{ site.software | size }} projects →</span></a>
   </div>
   {% endif %}
-</section>
-
-<section class="wide">
-  <div class="shead"><span class="idxnum">02</span><h2>Latest writing</h2><span class="meta">{{ post_count }} entries · since 2014</span></div>
-  <ul class="idx">
-    {% for post in posts_sorted limit:5 %}
-    <li>
-      <a href="{{ post.url }}">
-        <span class="m">{{ post.date | date: "%d %b %Y" }}</span>
-        <h3>{{ post.title }}</h3>
-        {% if post.tags %}<span class="tag">#{{ post.tags | first }}</span>{% endif %}
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
 </section>
 
 <section class="wide">
