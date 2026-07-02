@@ -1,0 +1,14 @@
+<!-- Segmented skin control: filament / cyberpunk / sumi / zellige / phosphor.
+     Behaviour lives in theme-script.html, styling in _skins.scss.
+     Orthogonal to the theme (light/dark) toggle. -->
+<span class="skin-toggle{% if include.extra %} {{ include.extra }}{% endif %}" role="group" aria-label="Skin">
+  <button type="button" class="skin-opt" data-skin-set="filament" aria-label="Filament skin" aria-pressed="false"><span class="visually-hidden">Filament skin</span></button>
+  <span class="skin-sep" aria-hidden="true">/</span>
+  <button type="button" class="skin-opt" data-skin-set="cyberpunk" aria-label="Cyberpunk skin" aria-pressed="false"><span class="visually-hidden">Cyberpunk skin</span></button>
+  <span class="skin-sep" aria-hidden="true">/</span>
+  <button type="button" class="skin-opt" data-skin-set="sumi" aria-label="Sumi ink skin" aria-pressed="false"><span class="visually-hidden">Sumi ink skin</span></button>
+  <span class="skin-sep" aria-hidden="true">/</span>
+  <button type="button" class="skin-opt" data-skin-set="zellige" aria-label="Zellige skin" aria-pressed="false"><span class="visually-hidden">Zellige skin</span></button>
+  <span class="skin-sep" aria-hidden="true">/</span>
+  <button type="button" class="skin-opt" data-skin-set="phosphor" aria-label="Phosphor terminal skin" aria-pressed="false"><span class="visually-hidden">Phosphor terminal skin</span></button>
+</span>

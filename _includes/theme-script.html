@@ -1,9 +1,13 @@
-<!-- Theme control, shared by every page. Resolves the theme before first
-     paint (no flash), then wires the segmented toggle. Three modes:
-     system / light / dark. 'system' follows the OS and reacts live. -->
+<!-- Theme + skin control, shared by every page. Resolves both before first
+     paint (no flash), then wires the segmented toggles.
+     Two independent axes:
+       - mode: system / light / dark  (brightness, key 'theme')
+       - skin: filament / cyberpunk   (palette + effects, key 'skin')
+     'system' follows the OS and reacts live. -->
 <script>
   (function () {
     var KEY = 'theme';
+    var SKIN_KEY = 'skin';
     var root = document.documentElement;
     var mq = window.matchMedia('(prefers-color-scheme: dark)');
 
@@ -27,8 +31,22 @@
       }));
     }
 
-    // Run before the stylesheet paints to avoid a flash of the wrong theme.
+    var SKINS = { cyberpunk: 1, sumi: 1, zellige: 1, phosphor: 1 };
+    function storedSkin() {
+      var v = localStorage.getItem(SKIN_KEY);
+      return SKINS[v] ? v : 'filament';
+    }
+    function applySkin(skin) {
+      root.setAttribute('data-skin', skin);
+      document.querySelectorAll('[data-skin-set]').forEach(function (opt) {
+        opt.setAttribute('aria-pressed', opt.getAttribute('data-skin-set') === skin ? 'true' : 'false');
+      });
+      document.dispatchEvent(new CustomEvent('skinChanged', { detail: { skin: skin } }));
+    }
+
+    // Run before the stylesheet paints to avoid a flash of the wrong theme/skin.
     apply(storedMode());
+    applySkin(storedSkin());
 
     // Follow the OS only while in system mode.
     mq.addEventListener('change', function () {
@@ -44,7 +62,16 @@
           apply(mode);
         });
       });
+      document.querySelectorAll('[data-skin-set]').forEach(function (opt) {
+        opt.addEventListener('click', function () {
+          var skin = opt.getAttribute('data-skin-set');
+          if (SKINS[skin]) localStorage.setItem(SKIN_KEY, skin);
+          else localStorage.removeItem(SKIN_KEY);
+          applySkin(skin);
+        });
+      });
       apply(storedMode());
+      applySkin(storedSkin());
     }
 
     if (document.readyState === 'loading') {
