@@ -16,7 +16,7 @@ bg-author: Austin Neill
 author: Franz Geffke
 ---
 
-I have recently started using Claude Code more frequently, and was wondering whether there's a good solution to isolate it: Docker, of course.
+I have recently started using Claude Code more frequently (I'd settled on [Claude Code over the raw API](/blog/claude-code-vs-claude-api/) for day-to-day work), and was wondering whether there's a good solution to isolate it: Docker, of course.
 
 ### Setup
 

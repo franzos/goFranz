@@ -1,6 +1,6 @@
 ---
-title: "Screen Sharing on Niri/Wayland with Guix"
-description: "How to enable screen sharing on Niri/Wayland using Guix"
+title: "Screen Sharing on Niri (Wayland)"
+description: "Get screen sharing working on Niri (Wayland): the xdg-desktop-portal and PipeWire setup that actually works, including the fix for the Chrome/WebRTC black screen."
 layout: blog
 source:
 date: 2026-03-04 0:00:00 +0000

@@ -1,6 +1,6 @@
 ---
 title: "Develop your own LLM like ChatGPT with Tensorflow and Keras"
-description: "In this post, I will show you how to develop your own LLM like ChatGPT with Tensorflow and Keras."
+description: "Build a small GPT-style language model from scratch with TensorFlow and Keras: tokenizer, transformer blocks, training loop, and text generation."
 layout: blog
 source:
 date: 2023-04-05 0:00:00 +0000

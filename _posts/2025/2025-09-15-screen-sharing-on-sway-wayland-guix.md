@@ -7,8 +7,8 @@ date: 2025-09-15 0:00:00 +0000
 category:
   - Tools
 tags:
-  - llm
-  - 
+  - guix
+  - wayland
 bg: austin-neill
 bg-author: Austin Neill
 author: Franz Geffke
@@ -16,6 +16,8 @@ author: Franz Geffke
 
 This week I got tired enough, of not being able to share my screen on sway/wayland, that I decided to fix it.
 Here's some of what worked; You probably don't need all of this, but it generally improves your wayland experience.
+
+I've since switched to Niri; if that's you, see [Screen Sharing on Niri (Wayland)](/blog/screen-sharing-on-niri-wayland-with-guix/) for the updated setup.
 
 (1) Include this in your sway config:
 

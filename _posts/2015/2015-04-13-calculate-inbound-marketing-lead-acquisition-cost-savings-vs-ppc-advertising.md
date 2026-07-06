@@ -36,5 +36,5 @@ If you have no data to start with, you can still play around to find out about t
 
 [Preview and download the file from Google Docs][spreadsheet]. Simply go to File > Download As > Microsoft Excel. (You do not need to have a Google Account to download the document.)
 
-[inbound]: /blog/entry/inbound-marketing-how-to-get-started-in-5-minutes/
+[inbound]: /blog/inbound-marketing-how-to-get-started-in-5-minutes/
 [spreadsheet]: https://docs.google.com/spreadsheets/d/1-N0vYWKF4cUZlJhvty5TJ796H4Nqng66j0yfszLnSqQ/edit?usp=sharing

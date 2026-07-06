@@ -1,6 +1,6 @@
 ---
 title: "Claude Code vs. Claude API: A Developer's Comparison"
-description: "A practical comparison of using Anthropic's Claude via a subscription (Claude Code) versus its API for a software development workflow."
+description: "Claude Code vs the Claude API vs the Console: which to use, what each costs, and when a flat subscription beats pay-per-token for real dev work."
 layout: blog
 source:
 date: 2025-6-18 0:00:00 +0000
@@ -40,6 +40,16 @@ This post compares my experience using the pay-per-request Claude API with the s
 | Value               | High                        | Very High                    |
 
 ---
+
+## Claude Code, the Console, and the API
+
+People search for a few different comparisons here, so it's worth separating the three ways you actually reach Claude:
+
+- **The Claude API** is the raw endpoint. You (or a tool like Cline) send requests and pay per token. Maximum flexibility and model choice, metered cost. That's the "pay-per-request" column above.
+- **Claude Code** is Anthropic's terminal agent. It runs on a flat subscription instead of per-token billing, defaults to Sonnet, and gives you a limited amount of Opus. That's the "subscription" column.
+- **The Claude Console** is the web dashboard: API keys, billing, usage, and a Workbench for prototyping prompts. It's where you manage API access, not a coding agent in its own right.
+
+So "Console vs Claude Code" isn't really the question. The Console and the API are two sides of pay-per-token access, one a dashboard and one programmatic; Claude Code is the flat-fee agent sitting on top. The rest of this post is about when that flat fee wins.
 
 ## Detailed Comparison
 
@@ -146,3 +156,9 @@ While Claude Code has its limitations, it provides good value when managed caref
 ## Conclusion
 
 Claude Code is a powerful tool for the bulk of my development work, especially for bootstrapping new projects. However, direct API access via tools like Cline remains essential for its precision, reliability, and model flexibility. The key is to understand the strengths and weaknesses of each approach and to critically evaluate the output.
+
+<hr>
+
+**Update: 2026-07-06**
+
+I wrote this in mid-2025, and the specifics have moved on. The current models are Fable 5, Opus 4.8, Sonnet 5, and Haiku 4.5, and both Claude Code and the subscription plans have changed since. Two things stand out after a year of daily use. The subscription is far more stable now: the timeouts and overload I complained about above are mostly gone. And the cost savings have become enormous. On a heavy day I can burn through $1000 in API credits doing work that a $200/month subscription covers outright. Treat the model names, prices, and usage limits above as a snapshot in time, but the core tradeoff, pay-per-token API against a flat subscription, still holds, and the subscription has only pulled further ahead.

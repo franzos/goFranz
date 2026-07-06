@@ -1,5 +1,5 @@
 ---
-title: "Web Rendering in Iced — What Actually Works"
+title: "Web Rendering in Iced: What Actually Works"
 description: "I tried four different rendering engines for web content in Iced. Here's what I learned."
 layout: blog
 source:

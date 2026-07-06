@@ -129,4 +129,4 @@ This concludes our first post, in a series of how-to’s. Feel free to ask quest
 [2]: https://www.google.com/analytics/
 [3]: https://www.google.com/webmasters/tools/
 [4]: https://www.gosquared.com/
-[5]: https://www.dkkma.com/blog/entry/is-facebook-an-effective-marketing-tool-for-your-business/
+[5]: /blog/is-facebook-an-effective-marketing-tool-for-your-business/

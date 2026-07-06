@@ -1,6 +1,6 @@
 ---
-title: "Automatic Dark/Light Theme Switching on Sway with Guix"
-description: "How to automatically switch between dark and light themes based on time of day using darkman on Sway/Wayland with Guix"
+title: "Automatic Dark/Light Theme Switching with darkman on Wayland"
+description: "Automatic dark/light theme switching on Wayland with darkman: GTK apps, the foot terminal, and notifications, switched at sunrise and sunset."
 layout: blog
 source:
 date: 2025-11-02 0:00:00 +0000

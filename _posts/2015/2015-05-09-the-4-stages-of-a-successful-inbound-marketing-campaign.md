@@ -168,6 +168,6 @@ Your inbound journey doesn’t end after you’ve closed the deal. After all, a 
 Want to receive a free, no-obligation, inbound marketing report? [Request now][request report].
 
 [Groove Blog]: https://www.groovehq.com/blog#timeline
-[Schedule on Twitter]:/blog/entry/reach-your-twitter-target-audience-at-the-right-time/
+[Schedule on Twitter]:/blog/reach-your-twitter-target-audience-at-the-right-time/
 [Delight Customer]:#delight-customer
 [request report]:/contact/
