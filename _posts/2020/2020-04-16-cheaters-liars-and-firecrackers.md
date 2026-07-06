@@ -31,7 +31,7 @@ Today I've discovered a couple of gems about me, on the internet! It appears, **
 
 #### The website
 
-First of all, it appears they have set-up a website for me: <a rel="nofollow" target="_blank" href="https://franzgeffke.com/">franzgeffke.com</a>
+First of all, it appears they have set-up a website for me:
 
 <img src="/assets/images/blog/cheaters-liars-and-firecrackers.jpg">
 
@@ -50,8 +50,6 @@ You may check out the article <a rel="nofollow" target="_blank" href="https://ww
 > I’d stay far, far away from G&P Mutual Investment Fund
 
 Apparently they have discovered my _for fun_ Mutual Fund, which I used to keep track of theoretical earnings, across multiple cryptocurrencies. Everything was in Excel, but I published some graph under a hidden link on this website, to share with family and friends - I never actually completed it, so nobody has really seen it either.
-
-You can find it here: [Investment Fund](/mutual-investment-fund/)
 
 This was inspired by _Melon coin's_ crypto-fund platform! Though if I was serious, I probably wouldn't put this on my private website?
 

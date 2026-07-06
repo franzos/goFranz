@@ -14,7 +14,7 @@ bg-author: Austin Neill
 author: Franz Geffke
 ---
 
-This is a follow-up to my earlier post on [Screen Sharing on Sway/Wayland with Guix](/tools/2025/09/15/screen-sharing-on-sway-wayland-guix.html). I've since switched from Sway to [Niri](https://github.com/YaLTeR/niri) — a scrollable-tiling Wayland compositor — and the screen sharing setup is a bit different.
+This is a follow-up to my earlier post on [Screen Sharing on Sway/Wayland with Guix](/blog/screen-sharing-on-sway-wayland-guix/). I've since switched from Sway to [Niri](https://github.com/YaLTeR/niri) — a scrollable-tiling Wayland compositor — and the screen sharing setup is a bit different.
 
 The main change: Niri implements the `org.gnome.Mutter.ScreenCast` D-Bus interface, so you use `xdg-desktop-portal-gnome` instead of the `wlr` portal.
 

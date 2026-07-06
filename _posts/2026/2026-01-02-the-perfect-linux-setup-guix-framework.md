@@ -92,7 +92,7 @@ Now `sudo` just needs a tap - more secure and more convenient than passwords.
 
 ## Automatic Dark/Light Themes
 
-I [wrote about this previously](/tools/2025/11/02/automatic-dark-light-theme-switching-sway-guix.html) - Darkman switches themes at sunrise and sunset. What's changed since then is coverage. The theme switch now propagates to:
+I [wrote about this previously](/blog/automatic-dark-light-theme-switching-sway-guix/) - Darkman switches themes at sunrise and sunset. What's changed since then is coverage. The theme switch now propagates to:
 
 - **GTK apps** (Thunar, GNOME apps) via gsettings
 - **Foot terminal** with custom shell scripts

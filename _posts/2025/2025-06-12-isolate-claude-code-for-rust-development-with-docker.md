@@ -165,4 +165,4 @@ I’m just getting started with VS Code dev containers, so this is a basic setup
 
 **Update: 2025-06-19**
 
-Published a follow-up: [Automate testing with Docker Compose and Claude Code](/dev/automate-testing-with-docker-compose-and-claude-code/)
+Published a follow-up: [Automate testing with Docker Compose and Claude Code](/blog/automate-testing-with-docker-compose-and-claude-code/)

@@ -15,7 +15,7 @@ bg-author: Austin Neill
 author: Franz Geffke
 ---
 
-In a [previous post](/dev/isolate-claude-code-for-rust-development-with-docker/), I covered running Claude Code in Docker containers. But on Guix, there's a simpler approach: `guix shell --container`.
+In a [previous post](/blog/isolate-claude-code-for-rust-development-with-docker/), I covered running Claude Code in Docker containers. But on Guix, there's a simpler approach: `guix shell --container`.
 
 ## Why Isolate?
 
