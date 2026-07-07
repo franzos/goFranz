@@ -1,10 +1,9 @@
-{% assign post_count = site.posts | size %}
 {% if include.ribbon_right %}{% assign ribbon_right = include.ribbon_right %}{% else %}{% assign ribbon_right = "" %}{% endif %}
 
 <div class="fil-ribbon">
   <div class="wide">
     <span>goFranz <b>//</b> personal journal</span>
-    <span>EST <b>2012</b> · {{ post_count }} ENTRIES · 14Y SHIPPING</span>
+    <span>EST <b>2012</b> · 14Y SHIPPING</span>
     <span>{{ ribbon_right }}
       {% include skin-toggle.html %}
       <span class="ribbon-sep" aria-hidden="true">·</span>
