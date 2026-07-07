@@ -32,5 +32,15 @@
     window.addEventListener("scroll", onScroll, { passive: true });
 
     setTimeout(() => send("engaged-30s"), 30000);
+
+    // Outbound clicks -> Liwan, so we can see what readers click through to.
+    document.addEventListener("click", (e) => {
+      const a = e.target.closest && e.target.closest("a[href]");
+      if (!a) return;
+      let url;
+      try { url = new URL(a.href); } catch { return; }
+      if (url.protocol.indexOf("http") !== 0 || url.hostname === host) return;
+      send("outbound: " + url.hostname);
+    }, { capture: true });
   }
 </script>
