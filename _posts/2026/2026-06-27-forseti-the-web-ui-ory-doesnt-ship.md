@@ -56,7 +56,7 @@ Server-rendered pages, no SPA, no build step. A self-service dashboard and setti
 
 ## Forseti vs the identity crowd
 
-This comparison is a little apples-to-oranges, and that's rather the point. Rauthy, Kanidm, Keycloak and FreeIPA each bring their own protocol stack and datastore; they *are* the engine. Forseti is the UI, admin console, orgs, and governance layer sitting in front of Ory. So the honest question isn't "which engine wins", it's "if you've already bet on Ory, what gives it a face". Accurate as of mid-2026:
+This comparison is a little apples-to-oranges, and that's rather the point. Rauthy, Kanidm, Keycloak and FreeIPA each bring their own protocol stack and datastore; they *are* the engine. Forseti is the UI, admin console, orgs, and governance layer sitting in front of Ory. So the question isn't "which engine wins", it's "if you've already bet on Ory, what gives it a face". Accurate as of mid-2026:
 
 | | **Forseti** | **Rauthy** | **Kanidm** | **Keycloak** | **FreeIPA** |
 | --- | :---: | :---: | :---: | :---: | :---: |

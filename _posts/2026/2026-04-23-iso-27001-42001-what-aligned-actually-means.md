@@ -127,7 +127,7 @@ This fits naturally alongside the [AI build](/ai-build/) and [AI security review
 
 ---
 
-**The honest caveat:** regulation around AI and information security is still moving. The EU AI Act's implementing acts are still landing; ISO 42001's accredited-certification-body network is still being built out. If you're selling on "certified" language, work with an accredited body directly. If you're building for "aligned," you're doing real and defensible work, just don't oversell the words.
+**The caveat:** regulation around AI and information security is still moving. The EU AI Act's implementing acts are still landing; ISO 42001's accredited-certification-body network is still being built out. If you're selling on "certified" language, work with an accredited body directly. If you're building for "aligned," you're doing real and defensible work, just don't oversell the words.
 
 Do take these with a grain of salt; your specific context (industry, jurisdiction, customer base) will shape what "enough" means in your case.
 

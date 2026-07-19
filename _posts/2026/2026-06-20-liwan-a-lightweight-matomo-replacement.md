@@ -52,11 +52,11 @@ The Matomo import and OIDC are the two that made this a drop-in rather than a fr
 
 If you're coming from Google Analytics, the pitch is the same, only more so. You swap a third-party script that phones home for a one-line snippet pointing at your own server, and the analytics stop being someone else's product. Liwan doesn't try to be a marketing suite; it answers "who visited, what did they read, where did they come from" and stops there. For most sites, that's the whole question.
 
-It won't replace Matomo for everyone. If you lean on goals, funnels, e-commerce tracking, or Matomo's heavier reporting, those aren't here, and that's fine: run the real thing. For the common case of wanting honest, private, low-maintenance numbers, Liwan is the trade I wanted.
+It won't replace Matomo for everyone. If you lean on goals, funnels, e-commerce tracking, or Matomo's heavier reporting, those aren't here, and that's fine: run the real thing. For the common case of wanting private, low-maintenance numbers, Liwan is the trade I wanted.
 
 ## How it stacks up
 
-This isn't a feature-count contest, and if it were, Liwan would lose it. Matomo, GA, Plausible, and the rest all do far more. The honest point is that for a lot of sites you don't need most of it, and the features that actually matter to me are "can I self-host it, does it respect visitors, and how much is there to run." On those, the picture flips:
+This isn't a feature-count contest, and if it were, Liwan would lose it. Matomo, GA, Plausible, and the rest all do far more. The point is that for a lot of sites you don't need most of it, and the features that actually matter to me are "can I self-host it, does it respect visitors, and how much is there to run." On those, the picture flips:
 
 | Tool | Self-host | What you run | Cookieless | Open source | Cost |
 |------|-----------|--------------|------------|-------------|------|
@@ -79,4 +79,4 @@ The full setup, the OIDC configuration, and the Matomo import walkthrough live i
 
 Upstream is at [liwan.dev](https://liwan.dev) and [github.com/explodingcamera/liwan](https://github.com/explodingcamera/liwan). My fork, with the Matomo import and OIDC, is at [github.com/franzos/liwan](https://github.com/franzos/liwan). There's a live demo on [demo.liwan.dev](https://demo.liwan.dev/p/liwan.dev) if you want to click around before installing anything.
 
-That's the shape I was after: a tool that answers the analytics question honestly, keeps the data on my server, and is boring to run. One binary, one config file, my history carried over, and no database server to keep alive.
+That's the shape I was after: a tool that answers the analytics question, keeps the data on my server, and is boring to run. One binary, one config file, my history carried over, and no database server to keep alive.

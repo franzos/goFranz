@@ -12,7 +12,7 @@ I build AI features that fit. Deep integration into your existing stack, EU-resi
 
 ## How I help
 
-**Honest scoping.** Not every problem is an AI problem. I'll tell you where it helps and where it doesn't — before you spend on a build.
+**Scoping.** Not every problem is an AI problem. I'll tell you where it helps and where it doesn't — before you spend on a build.
 
 **Deep integration into your stack.** No bolt-on chat bubble. Proper integration into your data, your workflows, your auth. If you have an identity system, the AI respects it.
 

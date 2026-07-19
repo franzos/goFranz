@@ -49,7 +49,7 @@ It seeds a private dir from the account's stashed credentials, then symlinks you
 
 A few flags if you want to shape that: `--ephemeral` for a throwaway dir deleted on exit, `--clean` for a bare instance with none of the shared skills/plugins, and `--copy` to copy the shared dirs instead of symlinking them.
 
-## The honest caveats
+## The caveats
 
 - Token usage inside an `exec` session is written to the isolated dir, so it does not show up in `tku` reports. That's the trade for isolation.
 - It refuses to run if the account is already live, whether as your active login or another `exec`. Claude's OAuth refresh tokens are single-use, so two live sessions on one login invalidate each other and brick both. To run two of the same account at once, add a second login with fresh credentials as a separate stash entry.

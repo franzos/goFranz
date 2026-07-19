@@ -17,7 +17,7 @@ bg-author: Austin Neill
 author: Franz Geffke
 ---
 
-Four years ago I wrote a post called [All at once: I made a huge mistake](/blog/all-at-once-i-made-a-huge-mistake/). The short version: we set out to build a whole distribution from scratch, tried to do too much ourselves, and I eventually admitted that the honest path was to stop reinventing the wheel and lean on [Guix](https://guix.gnu.org/) instead. Move the whole system into one repository, apply changes with inheritance, revert a bad release in half a second. That part still resonates.
+Four years ago I wrote a post called [All at once: I made a huge mistake](/blog/all-at-once-i-made-a-huge-mistake/). The short version: we set out to build a whole distribution from scratch, tried to do too much ourselves, and I eventually admitted that the best path was to stop reinventing the wheel and lean on [Guix](https://guix.gnu.org/) instead. Move the whole system into one repository, apply changes with inheritance, revert a bad release in half a second. That part still resonates.
 
 What I didn't have a good answer for back then was the gap between "Guix is the right foundation" and "a normal person, or a company, can actually run this." Guix is excellent on the command line and fairly unforgiving off it. So the last stretch has been less about grand vision and more about filling that gap, piece by piece. PantherX was always a layer on top of Guix; what's changed is that we've stopped trying to build everything ourselves and started **picking the high-value pieces** instead: the parts that improve the day-to-day experience for an end user, make Guix more approachable, and make it more attractive for enterprise. The same Guix underneath, with the rough edges sanded down.
 
