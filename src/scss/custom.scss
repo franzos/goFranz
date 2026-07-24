@@ -1911,12 +1911,12 @@ body.index.fil {
   }
   .fil-hero h1 {
     font-weight: 900;
-    font-size: clamp(2.8rem, 7.5vw, 5.8rem);
-    line-height: .86;
+    font-size: clamp(2.4rem, 6vw, 4.6rem);
+    line-height: .9;
     letter-spacing: -.02em;
     margin: 1.1rem 0 1.1rem;
     text-transform: uppercase;
-    max-width: 16ch;
+    max-width: 20ch;
 
     em {
       font-style: normal;

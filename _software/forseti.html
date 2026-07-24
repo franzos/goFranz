@@ -20,7 +20,7 @@ theme_light: "#f4f5fa"
 <!-- top bar -->
 <div class="topbar"><div class="wide">
   <div class="wordmark">
-    <span class="bar"></span>
+    <img class="logo" src="/assets/images/software/forseti/logo.png" alt="Forseti logo" width="116" height="180">
     <span><span class="name">Forseti</span><span class="sub">an open-source project</span></span>
   </div>
   <div class="topright">
@@ -97,9 +97,19 @@ theme_light: "#f4f5fa"
   </div>
 </section>
 
+<!-- screenshots -->
+<section class="wide" id="screens">
+  <div class="shead"><span class="idxnum">02</span><h2>A look inside</h2><span class="meta">the portal · rendered</span></div>
+  <div class="shots">
+    <figure class="shot span"><img src="/assets/images/software/forseti/dashboard.png" alt="Forseti self-service dashboard showing account health and recent sign-ins" loading="lazy" width="1600" height="1000"><figcaption><b>Dashboard</b> — account health, recent activity and quick actions</figcaption></figure>
+    <figure class="shot"><img src="/assets/images/software/forseti/settings.png" alt="Forseti settings overview: profile, password, 2FA, sessions and linked providers" loading="lazy" width="1600" height="1000"><figcaption><b>Settings</b> — everything a user manages, on one page</figcaption></figure>
+    <figure class="shot"><img src="/assets/images/software/forseti/admin.png" alt="Forseti admin: create a new OAuth2 client from typed presets" loading="lazy" width="1600" height="1000"><figcaption><b>Admin</b> — create OAuth2 clients from typed presets</figcaption></figure>
+  </div>
+</section>
+
 <!-- how it works -->
 <section class="wide">
-  <div class="shead"><span class="idxnum">02</span><h2>How it works</h2><span class="meta">user → forseti → ory → app</span></div>
+  <div class="shead"><span class="idxnum">03</span><h2>How it works</h2><span class="meta">user → forseti → ory → app</span></div>
   <div class="steps">
     <div class="step"><span class="sn">01</span><h4>User hits a page</h4><p>Someone lands on <code>/login</code>, <code>/registration</code> or an OAuth2 <code>/consent</code> screen. Forseti serves a real, branded HTML page — not a redirect into an API.</p></div>
     <div class="step"><span class="sn">02</span><h4>Forseti talks to Ory</h4><p>It drives the Kratos self-service flows and the Hydra login / consent / logout requests over their admin APIs, handling CSRF, cookies and state along the way.</p></div>
@@ -109,7 +119,7 @@ theme_light: "#f4f5fa"
 
 <!-- install -->
 <section class="wide" id="install">
-  <div class="shead"><span class="idxnum">03</span><h2>Install</h2><span class="meta">container or binary</span></div>
+  <div class="shead"><span class="idxnum">04</span><h2>Install</h2><span class="meta">container or binary</span></div>
   <div class="methods">
     <a class="method" href="https://github.com/franzos/forseti/pkgs/container/forseti"><b>podman</b> ghcr.io</a>
     <a class="method" href="https://github.com/franzos/forseti/releases"><b>↓</b> linux x86_64</a>
@@ -139,7 +149,7 @@ theme_light: "#f4f5fa"
 
 <!-- licensing + status -->
 <section class="wide">
-  <div class="shead"><span class="idxnum">04</span><h2>Licensing</h2><span class="meta">open core · commercial add-ons</span></div>
+  <div class="shead"><span class="idxnum">05</span><h2>Licensing</h2><span class="meta">open core · commercial add-ons</span></div>
   <div class="lic-wrap">
     <div class="licbox">
       <div class="lk">Open source</div>
