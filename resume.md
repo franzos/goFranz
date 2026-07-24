@@ -7,9 +7,9 @@ sitemap:
  exclude: 'yes'
 ---
 
-I'm a systems architect and technical leader who ships. Currently Senior Identity Engineer at TWIN (IOTA Foundation), shipping OID4VP, SD-JWT VC, and a KERI/vLEI ↔ IOTA DID bridge for global trade. Principal engineer at Softmax before TWIN - built the digital identity platform now backing KYC across 10+ partner products, IoT remote patient monitoring (BLE/WebRTC), and a regulated crypto exchange. 14 years building products end-to-end and guiding the teams that deliver, sometimes as the founder.
+I'm a systems architect and technical leader who ships. The protocols are the easy part now; what's scarce is judgment: knowing what to build, what it costs you in a year, and when the confident answer is the wrong one. Currently Senior Identity Engineer at TWIN (IOTA Foundation), shipping OID4VP, SD-JWT VC, and a KERI/vLEI ↔ IOTA DID bridge for global trade. Before TWIN, principal engineer at Softmax: the digital identity platform now backing KYC across 10+ partner products, IoT remote patient monitoring (BLE/WebRTC), and a regulated crypto exchange. 14 years building products end to end and guiding the teams that deliver, sometimes as the founder.
 
-My non-traditional path through international business and self-directed learning - 15+ years across Singapore, Thailand, Malaysia, China, Iran, UAE, Turkey, and Portugal - has made me stronger. I understand users, markets, and the business impact of technical decisions. I design and build secure, scalable platforms end to end - turning ambiguous business goals into simple, reliable systems. I'm at my best in high-ownership, fast-moving environments - because this is more than a job to me.
+My non-traditional path through international business and self-directed learning - 15+ years across Singapore, Thailand, Malaysia, China, Iran, UAE, Turkey, and Portugal - taught me to read users, markets, and the business impact of a technical call. I design and build secure, scalable platforms end to end, turning ambiguous goals into simple, reliable systems. AI makes me fast, but the aim is mine: I'm the driver, not the passenger. I'm at my best in high-ownership, fast-moving environments, because this is more than a job to me.
 
 ## TECHNOLOGY STACK
 
@@ -26,27 +26,26 @@ My non-traditional path through international business and self-directed learnin
     <h3>2025 - Present</h3>
 </div>
 
-*Building digital identity infrastructure for global trade - bridging GLEIF/vLEI, EU eID, and country-specific KYC with decentralized identity on IOTA.*
+*Building the digital identity platform for global trade - bridging GLEIF/vLEI, EU eID, and country-specific KYC with decentralized identity on IOTA.*
 
-* **GLEIF vLEI ↔ IOTA DID Two-Way Binding - no off-the-shelf bridge between these trust roots, so I built one:**
-    * Bidirectional cryptographic linkage between **GLEIF's KERI/vLEI ecosystem** and **IOTA DIDs** (`did:iota`, `did:webs`).
-    * Issued a self-issued **Designated Aliases ACDC** anchored in the Legal Entity's **KEL/TEL**, plus an on-chain **W3C VC JWT** embedding the KERI anchor seal (KEL `anc` + TEL `iss` SAIDs), with three independent on-chain authority checks.
-    * Built full-stack: **Move smart contract** (VleiAttestation), Express/Node backend, **React 19 + Vite** frontend running **`signify-ts` directly in the browser** (keys never leave the device), Sally verifier integration.
+* **GLEIF vLEI ↔ IOTA DID two-way binding - no off-the-shelf bridge between these trust roots, so I built one:**
+    * Bidirectional cryptographic linkage between **GLEIF's KERI/vLEI ecosystem** and **IOTA DIDs** (`did:iota`, `did:webs`): a self-issued **Designated Aliases ACDC** anchored in the Legal Entity's **KEL/TEL**, plus an on-chain **W3C VC JWT** carrying the KERI anchor seal (KEL `anc` + TEL `iss` SAIDs), verified by three independent on-chain authority checks.
+    * Full-stack: **Move contract** (VleiAttestation), Express/Node backend, **React 19 + Vite** frontend running **`signify-ts` in the browser** (keys never leave the device), Sally verifier integration.
 
-* **OID4VP Verifier on the HAIP profile - interop-tested against the EUDI Reference Wallet:**
-    * Caught three bugs in spec review - silent **KB-JWT** skip, **JWE** dual-version trap, **DCQL** PII leak.
-    * Implemented **`x509_hash` client ID scheme**, **SD-JWT VC** verification with **KB-JWT** holder-binding, **DCQL** queries, and **JARM `direct_post.jwt`** (ECDH-ES JWE).
+* **Identity platform on Keycloak - Keycloak as the OIDC authorization server for the TWIN identity stack:**
+    * Extended Keycloak with a custom **SPI** for **HashiCorp Vault**-backed token signing.
+    * **Multi-tenant** IdP: per-realm and shared-realm tenancy, machine-to-machine service accounts
+    * Standard OIDC hardening: **`private_key_jwt`** client auth (RFC 7523), refresh-token rotation; JWKS verification at the edge.
+    * **Casbin ABAC + RBAC** authorization, **GDPR right-to-erasure**, and a headless provisioning CLI.
 
-* **Identity Management Platform - features I delivered end-to-end on the team:**
-    * Backend (**TypeScript, Fastify, TWIN framework**) and frontend (**Next.js 16 App Router, React 19, TanStack Query, Tailwind, shadcn/ui**).
-    * Shipped a **W3C VC** issuance pipeline (OID4VCI-aligned) - schema-validated templates, status-list revocation, auto-issuance after KYC/KYB.
-    * Built a **plugin-based KYC/KYB verification provider architecture**, with first concrete implementation against **KRA (Kenya Revenue Authority) PIN + OTP**.
-    * **Casbin ABAC + RBAC policy engine** with rank-derived hierarchies and circular-reference guards - replaced ad-hoc admin checks across the codebase. `usePermissions` hook + server-side enforcement on the frontend.
-    * **GDPR right-to-erasure** with cascading deletion across DID documents, HashiCorp Vault key wipe, and audit-log scrubbing. **Argon2** + **ALTCHA** PoW captcha + sliding-window rate limiting + hashed identifier storage hardening.
+* **TWIN Notary - a credential trust anchor, whitepaper to a running service:**
+    * **OID4VCI 1.0 Final** issuer (pre-authorized code flow) minting **W3C VCDM 1.1** `jwt_vc_json` credentials signed as a **`did:iota`** via Vault, plus an **OID4VP 1.0 Final** verifier (DCQL) for permissionless presentation.
+    * **Dual-lane revocation**: W3C **Bitstring Status List** over HTTPS and on-chain **RevocationBitmap2022** in the issuer DID document, with configurable strict/resilient policy.
+    * Pluggable **`INotaryProcess`** core (`initiate / advance / finalize`) with two backings - contract attestation and **KRA (Kenya Revenue Authority) / KYB** business verification - plus signed **verification-lineage** claims across renewals.
 
-* **Notary Trust Anchor Service - whitepaper to PoC:**
-    * Plugin-based issuer architecture: three-artifact issuance (W3C VC + Soulbound Move object + IOTA Hierarchies entry), multi-artifact revocation, signed verification-lineage claims.
-    * Defined the `INotaryProvider` plugin contract (`initiate / advance / finalize` lifecycle, per-plugin freshness/binding policy); proposed a new `attestationAdd` Move op upstream to **IOTA Hierarchies**.
+* **OID4VP verifier on the HAIP profile - interop-tested against the EUDI Reference Wallet:**
+    * Implemented the **`x509_hash`** client ID scheme, **SD-JWT VC** verification with **KB-JWT** holder binding, **DCQL** queries, and **JARM `direct_post.jwt`** (ECDH-ES JWE).
+    * Caught three bugs in spec review: a silent **KB-JWT** skip, a **JWE** dual-version trap, and a **DCQL** PII leak.
 
 <div class="item-header">
     <h3>Principal Engineer / Technical Lead at Softmax Co., Ltd</h3>

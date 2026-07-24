@@ -7,15 +7,15 @@ layout: layout
 {% assign work_featured = site.work | where: "featured", true | where_exp: "w", "w.product != true" | sort: 'date' | reverse %}
 
 <div class="wide fil-hero">
-  <span class="eye">Senior Identity Engineer · AI orchestrator · ½ machine</span>
-  <h1>I build <em>systems</em> that solve real problems</h1>
-  <p class="dek">Secure, scalable software across identity, crypto, IoT and the web — sometimes the engineer, sometimes the founder.</p>
+  <span class="eye">Senior Identity Engineer · AI for regulated systems · ½ machine</span>
+  <h1>I build <em>identity and trust systems</em>, and now the AI inside them</h1>
+  <p class="dek">Twelve years across digital identity, compliant crypto, medical and IoT. These days a lot of that is putting AI into products where a wrong answer has consequences. Sometimes the engineer, sometimes the founder.</p>
   <a class="cta" href="/contact/">Start a project</a>
   <a class="cta ghost" href="/about/">About me →</a>
   <div class="idstrip">
     <div class="c"><span class="k">Role</span><span class="v">Senior Identity Engineer @ TWIN (IOTA Foundation)</span></div>
     <div class="c"><span class="k">Stack</span><span class="v">TypeScript · Rust · Move · Solidity</span></div>
-    <div class="c"><span class="k">Focus</span><span class="v">OID4VP · SD-JWT VC · W3C VC · KERI/vLEI</span></div>
+    <div class="c"><span class="k">Focus</span><span class="v">Regulated AI · OID4VP · SD-JWT VC · EU AI Act</span></div>
   </div>
 </div>
 
@@ -35,7 +35,17 @@ layout: layout
 </section>
 
 <section class="wide">
-  <div class="shead"><span class="idxnum">02</span><h2>What I build</h2><span class="meta">SaaS · self-hosted · desktop</span></div>
+  <div class="shead"><span class="idxnum">02</span><h2>Work with me</h2><span class="meta">selective · EU-based · identity, systems &amp; AI</span></div>
+  <p class="dek">I take on a few outside engagements a year: identity and systems work, or AI where a wrong answer has consequences.</p>
+  <div class="prod">
+    <a class="pcard" href="/contact/"><span class="tab"></span><span class="pn">Identity &amp; systems</span><span class="desc">Digital identity, verifiable credentials, KYC, and the backend around them. TypeScript and Rust, architecture to production.</span><span class="go">start a conversation →</span></a>
+    <a class="pcard" href="/work-with-me/#ai-that-fits-your-stack"><span class="tab"></span><span class="pn">AI build</span><span class="desc">AI that fits your stack. EU-resident or self-hosted, compliance as an output, not a chatbot bolted on the side.</span><span class="go">/work-with-me →</span></a>
+    <a class="pcard" href="/work-with-me/#ai-security-review"><span class="tab"></span><span class="pn">AI security review</span><span class="desc">Find out whether the AI you already shipped leaks. Prompt injection, RAG leaks, agent abuse: the things a normal pentest misses.</span><span class="go">/work-with-me →</span></a>
+  </div>
+</section>
+
+<section class="wide">
+  <div class="shead"><span class="idxnum">03</span><h2>What I build</h2><span class="meta">SaaS · self-hosted · desktop</span></div>
   <div class="prod-rowlabel"><span class="bar"></span>SaaS · hosted</div>
   <div class="prod">
     <a class="pcard has-logo" href="https://gpt-muse.com"><img class="plogo" src="/assets/images/gpt-muse-logo.svg" alt="GPTMuse logo" loading="lazy" width="44" height="44"><span class="tab"></span><span class="pn">GPTMuse</span><span class="desc">Privacy-first AI platform with access to ChatGPT, Claude, Gemini, Grok and others. Pay-per-use pricing.</span><span class="go">gpt-muse.com →</span></a>
@@ -67,7 +77,7 @@ layout: layout
 </section>
 
 <section class="wide">
-  <div class="shead"><span class="idxnum">03</span><h2>Around the world</h2><span class="meta">projects &amp; places</span></div>
+  <div class="shead"><span class="idxnum">04</span><h2>Around the world</h2><span class="meta">projects &amp; places</span></div>
   <div class="map-wrap">
     <div class="map-side">
       <h3>Where I've worked</h3>
@@ -81,7 +91,7 @@ layout: layout
 </section>
 
 <section class="wide">
-  <div class="shead"><span class="idxnum">04</span><h2>Selected work</h2></div>
+  <div class="shead"><span class="idxnum">05</span><h2>Selected work</h2></div>
   <div class="work">
     {% for work in work_featured limit:4 %}
     <a href="{{ work.url }}">

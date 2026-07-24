@@ -16,7 +16,7 @@ author: Franz Geffke
 
 A client asked me recently if they were "ISO 27001 ready." What they meant was *"we have backups and MFA, are we good?"*, which is not what the question actually means, but it's a fair place to start. The gap between *"we follow sensible practices"* and *"an accredited auditor signed a certificate"* is where most of this conversation happens, and it's where a lot of the confusion lives too.
 
-Since I'm now offering [AI integration](/ai-build/) and [AI security review](/ai-security-review/) work for EU teams, and both touch on this stuff constantly, here's a plain-English read on what ISO 27001 and ISO 42001 actually are, how they relate, whether you can skip one, and what it means to be "aligned" without paying for a certificate.
+Since I'm now offering [AI integration](/work-with-me/#ai-that-fits-your-stack) and [AI security review](/work-with-me/#ai-security-review) work for EU teams, and both touch on this stuff constantly, here's a plain-English read on what ISO 27001 and ISO 42001 actually are, how they relate, whether you can skip one, and what it means to be "aligned" without paying for a certificate.
 
 ## What ISO 27001 actually is
 
@@ -123,7 +123,7 @@ I can't certify your organisation, that's the job of an accredited certification
 
 When you're ready for formal certification, I'll help you pick an accredited certification body with proper scope and prep your team for the Stage 1 and Stage 2 audits. I won't be the one stamping the certificate, but I'll get you in a state where stamping it is a formality.
 
-This fits naturally alongside the [AI build](/ai-build/) and [AI security review](/ai-security-review/) work, most teams needing one end up wanting the others too.
+This fits naturally alongside the [AI build](/work-with-me/#ai-that-fits-your-stack) and [AI security review](/work-with-me/#ai-security-review) work, most teams needing one end up wanting the others too.
 
 ---
 

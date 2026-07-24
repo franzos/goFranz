@@ -34,6 +34,8 @@ My current focus:
 
 I focus on solutions that solve concrete problems and create lasting value — using technology as a tool, not an end in itself.
 
+Some of that experience is available directly. I take a few outside engagements: identity and systems work, building AI into regulated products, or reviewing AI features other teams already shipped. See [what I take on](/work-with-me/).
+
 Checkout my [resume](/resume/) for more details on my work experience and skills.
 
 ### Recent Projects
