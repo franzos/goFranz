@@ -162,3 +162,29 @@ Claude Code is a powerful tool for the bulk of my development work, especially f
 **Update: 2026-07-06**
 
 I wrote this in mid-2025, and the specifics have moved on. The current models are Fable 5, Opus 4.8, Sonnet 5, and Haiku 4.5, and both Claude Code and the subscription plans have changed since. Two things stand out after a year of daily use. The subscription is far more stable now: the timeouts and overload I complained about above are mostly gone. And the cost savings have become enormous. On a heavy day I can burn through $1000 in API credits doing work that a $200/month subscription covers outright. Treat the model names, prices, and usage limits above as a snapshot in time, but the core tradeoff, pay-per-token API against a flat subscription, still holds, and the subscription has only pulled further ahead.
+
+<hr>
+
+**Update: 2026-07-26**
+
+The $1000-a-day figure above was an estimate. I got tired of estimating, so I wrote [tku](https://github.com/franzos/tku) - it reads the local session logs and prices them at current API rates, which tells you what the month would have cost if you'd paid per token instead of paying for a plan.
+
+Here's my own `tku model-burn`, sorted by cost per active hour. `$/act-hr` is the API-equivalent spend for each hour I actually had a session running; `tok/min` is throughput while running.
+
+| model      | $/act-hr | tok/min |
+|------------|----------|---------|
+| fable-5    | $23.31   | 237.0K  |
+| opus-4     | $22.32   | 148.3K  |
+| opus-5     | $18.46   | 435.5K  |
+| opus-4-7   | $16.06   | 367.9K  |
+| opus-4-8   | $13.39   | 272.4K  |
+| opus-4-5   | $12.97   | 256.6K  |
+| opus-4-6   | $12.71   | 271.6K  |
+| sonnet-4-6 | $10.08   | 313.6K  |
+| sonnet-4-5 | $8.40    | 192.9K  |
+| sonnet-5   | $6.81    | 366.8K  |
+| haiku-4-5  | $6.11    | 560.6K  |
+| sonnet-4   | $4.46    | 138.1K  |
+| **ALL**    | $13.52   | 305.4K  |
+
+That's January through July 2026.
