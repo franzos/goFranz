@@ -1,0 +1,75 @@
+profile:
+  - id: ships_software
+    q: "Does your team write and ship software?"
+  - id: customer_facing_ai
+    q: "Do you already have AI in front of customers?"
+  - id: regulated
+    q: "Do you handle personal, health, financial or identity data?"
+
+themes:
+  - id: access
+    label: "Access & tooling"
+    items:
+      - id: a-accounts
+        q: "Does everyone who'd be in the room have a paid AI account of their own?"
+        note: "Shared logins and free tiers cap the day. People hit a rate limit halfway through an exercise and the momentum goes with it."
+      - id: a-install
+        q: "Can people install and run a new tool on their work machine without opening a ticket?"
+        note: "If IT is a two-week loop, we spend the workshop planning instead of building."
+      - id: a-context
+        q: "Can your AI tools see your real context: repos, docs, tickets, the CRM?"
+        note: "A model with no access to your data gives generic answers. Connecting it properly is most of the value."
+      - id: a-approved
+        q: "Is there an agreed list of which AI tools are fine to use?"
+        note: "Without one, half the room is quietly using something the other half isn't allowed to."
+
+  - id: practice
+    label: "How the team actually works"
+    items:
+      - id: p-agentic
+        q: "Does anyone here use a coding agent (Claude Code, Codex, Cursor) for work that actually ships?"
+        na_if_no: ships_software
+        note: "One person who's already there makes a real difference. They become the internal champion after I leave."
+      - id: p-shared
+        q: "Do people share prompts and setups, or does everyone start from scratch?"
+        note: "Most teams have one quiet power user, and nobody else knows what they're doing differently."
+      - id: p-review
+        q: "Does AI output get reviewed as carefully as a colleague's would?"
+        note: "This is the habit that separates teams shipping AI-assisted work from teams shipping AI-assisted bugs."
+      - id: p-failure
+        q: "Can you point at something AI got wrong for you, and say why it went wrong?"
+        note: "Teams that can name a failure are past the magic phase. That's where the useful part starts."
+
+  - id: governance
+    label: "Data, risk & rules"
+    items:
+      - id: g-policy
+        q: "Is there something written down about what data may go into an AI tool?"
+        note: "Usually there isn't. Where it's missing, people either overshare or freeze, and both are expensive."
+      - id: g-residency
+        q: "Do you know where your prompts and your data actually get processed?"
+        na_if_no: regulated
+        note: "EU, US, or somebody's inference provider. Your DPO will ask eventually."
+      - id: g-disclosure
+        q: "Do customers know when they're talking to, or being assessed by, a model?"
+        na_if_no: customer_facing_ai
+        note: "The EU AI Act has an opinion about this. So do your customers."
+      - id: g-logs
+        q: "When an agent acts on a real system, is there a log of what it did?"
+        note: "The moment an agent gets write access, this stops being optional."
+
+  - id: intent
+    label: "What you want out of it"
+    items:
+      - id: i-task
+        q: "Can you name one task that eats hours every week and might be automatable?"
+        note: "We build that one on the day. If there's no candidate, the training has nothing to land on."
+      - id: i-owner
+        q: "Is there a named person who'll own this after I leave?"
+        note: "Training without an owner decays in about three weeks."
+      - id: i-mandate
+        q: "Has leadership actually asked for this?"
+        note: "Bottom-up works too. But then we should plan how you'll show results upward, or the budget won't come twice."
+      - id: i-time
+        q: "Will people get real time to practice afterwards, or is it straight back to the sprint on Monday?"
+        note: "The follow-up month exists because the honest answer here is usually no."

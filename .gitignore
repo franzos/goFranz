@@ -1,5 +1,6 @@
 .DS_Store
 _site
+_deploy
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
@@ -13,6 +14,7 @@ vendor/
 public/
 project.config
 assets/images/projects/preview/
+assets/images/og/
 assets/js
 assets/css
 .bundle

@@ -27,6 +27,10 @@ Most off-the-shelf AI SaaS is built for American startups: generic workflows, US
 
 You already shipped the AI, and now you want to know whether it leaks. Traditional security review doesn't catch this: the linters pass, the pentester cleared the endpoints, and the chatbot still hands one customer's data to another who asked nicely. I test the AI layer specifically (prompt injection, RAG data exfiltration, agent abuse, PII in outputs and logs), human-led and AI-aided where it helps, and hand back a report your engineers can act on, not a pile of findings with no fix plan.
 
+## Training your team
+
+Sometimes you don't need me to build it, you need your own people to stop treating AI as a party trick. I fly out for a day or two, teach how the tools actually work, sit with people while they work to find out where the hours go, then build agents on those workflows with the people who'll own them. A month of follow-up after, so it doesn't decay the week I leave. Europe, UK, UAE and Southeast Asia. More on [AI training](/ai-training/), including a readiness check worth running before you ask.
+
 ## Where I come from
 
 Fourteen years building products end to end, currently Senior Identity Engineer at TWIN (IOTA Foundation). A few concrete examples:

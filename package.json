@@ -10,7 +10,7 @@
     "build:assets": "node esbuild.config.js",
     "dev": "node esbuild.config.js --watch",
     "watch": "node esbuild.config.js --watch",
-    "sass": "sass src/scss/main.scss:assets/css/main.min.css src/scss/software-stackpit.scss:assets/css/software-stackpit.min.css src/scss/software-forseti.scss:assets/css/software-forseti.min.css src/scss/software-guix-rs.scss:assets/css/software-guix-rs.min.css src/scss/software-iced-webview.scss:assets/css/software-iced-webview.min.css src/scss/iso-assessment.scss:assets/css/iso-assessment.min.css src/scss/leaflet.scss:assets/css/leaflet.min.css --style=compressed --no-source-map"
+    "sass": "sass src/scss/main.scss:assets/css/main.min.css src/scss/software-stackpit.scss:assets/css/software-stackpit.min.css src/scss/software-forseti.scss:assets/css/software-forseti.min.css src/scss/software-guix-rs.scss:assets/css/software-guix-rs.min.css src/scss/software-iced-webview.scss:assets/css/software-iced-webview.min.css src/scss/iso-assessment.scss:assets/css/iso-assessment.min.css src/scss/training-assessment.scss:assets/css/training-assessment.min.css src/scss/leaflet.scss:assets/css/leaflet.min.css --style=compressed --no-source-map"
   },
   "dependencies": {
     "bootstrap": "^5.3.0",
@@ -18,8 +18,11 @@
     "mermaid": "^11.7.0"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "esbuild": "^0.19.0",
     "esbuild-plugin-copy": "^2.1.1",
-    "sass": "^1.70.0"
+    "gray-matter": "^4.0.3",
+    "sass": "^1.70.0",
+    "satori": "^0.29.0"
   }
 }

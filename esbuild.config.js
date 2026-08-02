@@ -43,10 +43,13 @@ const buildConfig = {
   plugins: []
 }
 
-// Assessment tool — built separately so it gets NO global export (no `globalName`),
-// keeping it isolated from the main bundle that loads on the same page.
+// Assessment tools — built separately so they get NO global export (no `globalName`),
+// keeping them isolated from the main bundle that loads on the same page.
 const assessmentConfig = {
-  entryPoints: { 'iso-assessment.min': 'src/js/iso-assessment.js' },
+  entryPoints: {
+    'iso-assessment.min': 'src/js/iso-assessment.js',
+    'training-assessment.min': 'src/js/training-assessment.js'
+  },
   bundle: true,
   outdir: 'assets/js',
   format: 'iife',
@@ -65,6 +68,7 @@ const sassTargets = [
   'src/scss/software-guix-rs.scss:assets/css/software-guix-rs.min.css',
   'src/scss/software-iced-webview.scss:assets/css/software-iced-webview.min.css',
   'src/scss/iso-assessment.scss:assets/css/iso-assessment.min.css',
+  'src/scss/training-assessment.scss:assets/css/training-assessment.min.css',
   'src/scss/leaflet.scss:assets/css/leaflet.min.css'
 ]
 
@@ -107,6 +111,11 @@ async function buildSass() {
   })
 }
 
+// og-images.mjs is ESM-only (satori); import() is the bridge from this CJS config.
+async function buildOgImages() {
+  await import('./scripts/og-images.mjs')
+}
+
 async function build() {
   try {
     if (isWatch) {
@@ -144,7 +153,10 @@ async function build() {
 
       // Build SASS
       await buildSass()
-      
+
+      // Render per-post share cards
+      await buildOgImages()
+
       console.log('🎉 Build complete!')
     }
   } catch (error) {

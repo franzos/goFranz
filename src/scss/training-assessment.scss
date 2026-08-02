@@ -1,0 +1,173 @@
+#training-assessment {
+  --ta-good: #2f7d32;
+  margin: 1.5rem 0 0;
+
+  .ta-reset, .ta-disclaimer {
+    font-size: .85rem;
+    color: var(--fil-ink-soft);
+  }
+  .ta-reset {
+    border: 1px solid var(--fil-line-2);
+    background: var(--fil-glow);
+    padding: .5rem .75rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+
+  .ta-panel {
+    background: var(--fil-panel);
+    border: 1px solid var(--fil-line);
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .ta-panel > h3 {
+    font-size: 1.05rem;
+    margin: 0 0 .25rem;
+    letter-spacing: .02em;
+  }
+  .ta-panel-sub { color: var(--fil-ink-soft); font-size: .9rem; margin: 0 0 .9rem; }
+
+  .ta-profile-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 0;
+    border-top: 1px solid var(--fil-line);
+  }
+  .ta-profile-q:first-of-type { border-top: 0; }
+  .ta-toggle { display: inline-flex; gap: .35rem; flex: none; }
+  .ta-toggle label {
+    cursor: pointer;
+    border: 1px solid var(--fil-line-2);
+    border-radius: 999px;
+    padding: .15rem .8rem;
+    font-size: .85rem;
+  }
+  .ta-toggle input { position: absolute; opacity: 0; pointer-events: none; }
+  .ta-toggle input:checked + span { font-weight: 700; }
+  .ta-toggle label:has(input:checked) {
+    border-color: var(--fil-accent);
+    background: var(--fil-glow-p);
+    color: var(--fil-accent-bright);
+  }
+
+  .ta-theme { margin-bottom: 1.1rem; }
+  .ta-theme:last-of-type { margin-bottom: 0; }
+  .ta-theme.is-na { opacity: .45; }
+  .ta-theme.is-na .ta-item input { pointer-events: none; }
+  .ta-theme-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin: 0 0 .4rem;
+  }
+  .ta-theme-head h4 { font-size: 1rem; margin: 0; }
+  .ta-na-badge {
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--fil-ink-soft);
+    border: 1px solid var(--fil-line-2);
+    border-radius: 4px;
+    padding: .05rem .4rem;
+    display: none;
+  }
+  .ta-theme.is-na .ta-na-badge { display: inline-block; }
+
+  .ta-item { padding: .45rem 0; border-top: 1px solid var(--fil-line); }
+  .ta-item.is-na { opacity: .5; }
+  .ta-item.is-na label { text-decoration: line-through; }
+  .ta-item label {
+    display: flex;
+    gap: .6rem;
+    align-items: flex-start;
+    cursor: pointer;
+  }
+  .ta-item input { margin-top: .35rem; flex: none; }
+  .ta-item details { margin: .3rem 0 0 1.8rem; }
+  .ta-item summary {
+    cursor: pointer;
+    font-size: .82rem;
+    color: var(--fil-accent-bright);
+  }
+  .ta-item details p {
+    margin: .4rem 0 0;
+    font-size: .85rem;
+    color: var(--fil-ink-soft);
+  }
+
+  .ta-score { display: flex; align-items: baseline; gap: .6rem; }
+  .ta-score b { font-size: 2.4rem; line-height: 1; color: var(--fil-accent-bright); }
+  .ta-score .ta-band { font-weight: 700; }
+  .ta-read { margin: .5rem 0 .2rem; }
+
+  .ta-bar { margin: .5rem 0; }
+  .ta-bar-label { display: flex; justify-content: space-between; font-size: .85rem; }
+  .ta-bar-track {
+    height: 8px;
+    background: var(--fil-line);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .ta-bar-fill { height: 100%; background: var(--ta-good); }
+
+  .ta-gaps h4, .ta-gaps h5 { font-size: 1rem; margin: 1rem 0 .3rem; }
+  .ta-gaps h5 { font-size: .9rem; color: var(--fil-ink-soft); }
+  .ta-gaps ul { margin: .2rem 0 .8rem; padding-left: 1.1rem; }
+}
+
+.ta-optional {
+  border: 1px solid var(--fil-line);
+  border-radius: 10px;
+  padding: .8rem 1.1rem;
+  margin: 1.5rem 0;
+
+  > summary {
+    cursor: pointer;
+    font-weight: 700;
+  }
+  > summary::marker { color: var(--fil-accent-bright); }
+  > summary span {
+    font-weight: 400;
+    font-size: .85rem;
+    color: var(--fil-ink-soft);
+    margin-left: .4rem;
+  }
+  &[open] > summary {
+    padding-bottom: .6rem;
+    border-bottom: 1px solid var(--fil-line);
+  }
+
+  #training-assessment { margin-top: 1rem; }
+  .ta-panel:last-child { margin-bottom: 0; }
+}
+
+// Field styling comes from .form-group / .form-control / .btn in custom.scss;
+// this only adds the panel frame and the two-up rows.
+.ta-enquiry {
+  background: var(--fil-panel);
+  border: 1px solid var(--fil-line);
+  border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+  margin: 1.5rem 0;
+
+  select.form-control {
+    background: var(--fil-bg-2);
+    color: var(--fil-ink);
+    font: inherit;
+  }
+
+  .ta-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1rem;
+  }
+  @media (max-width: 600px) {
+    .ta-row { grid-template-columns: 1fr; }
+  }
+
+  .ta-note { font-size: .85rem; color: var(--fil-ink-soft); margin: 0 0 1rem; }
+}

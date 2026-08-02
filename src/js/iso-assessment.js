@@ -128,7 +128,7 @@ function resultsHTML(data, checks, naItems, aiUnlocked) {
     ${gapBlock}
     <div class="ia-cta">
       <p>Want help closing these gaps? I get teams to <em>aligned</em> — the state you need before certification.
-      See <a href="/ai-security-review/">AI security review</a> and <a href="/ai-build/">AI build</a>.</p>
+      See <a href="/work-with-me/#ai-security-review">AI security review</a> and <a href="/work-with-me/#ai-that-fits-your-stack">AI build</a>.</p>
     </div>
   </section>`
 }
